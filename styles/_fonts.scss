@@ -1,0 +1,67 @@
+// // ######################################## //
+// // ## FONTS.SCSS ## //
+// // ######################################## //
+
+@font-face {
+  font-family: "messina-sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/MessinaSansTrial-Hairline.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansTrial-Hairline.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "messina-sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/MessinaSansTrial-Thin.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansTrial-Thin.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "messina-sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/MessinaSansTrial-Light.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansTrial-Light.otf") format('truetype');
+}
+
+// @font-face {
+//   font-family: "messina-sans";
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url("../assets/fonts/MessinaSansTrial-Book.otf"); /* IE9 Compat Modes */
+//   src: url("../assets/fonts/MessinaSansTrial-Book.otf") format('truetype');
+// }
+
+@font-face {
+  font-family: "messina-sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/MessinaSansTrial-Regular.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansTrial-Regular.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "messina-sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/MessinaSansTrial-SemiBold.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansTrial-SemiBold.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "messina-sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/MessinaSansTrial-Bold.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansTrial-Bold.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "messina-sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/MessinaSansTrial-Black.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/MessinaSansTrial-Black.otf") format('truetype');
+}
