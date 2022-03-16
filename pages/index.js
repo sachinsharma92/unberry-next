@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import HomeScreen from './home'
-import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -18,7 +16,6 @@ export default function Home() {
           content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
         />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
         {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"></Script>

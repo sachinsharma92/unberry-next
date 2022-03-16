@@ -5,16 +5,15 @@ import axios from 'axios';
 import LayoutPrimary from '../../common/layoutPrimary';
 import { Mixpanel } from '../../services/mixpanel';
 import DemoForm from '../../components/demoForm';
+import Link from 'next/link';
+import Image from 'next/image';
 
 // Images
 import logoTheme from "../../assets/logo-brown.svg"
-import Link from 'next/link';
 
 export default function BlogScreen() {
-
   const [blogs, setBlogs] = useState([])
   const [isLoading, setIsLoading] = useState(false)
-
   const { pathname } = useRouter();
 
 
@@ -47,14 +46,18 @@ export default function BlogScreen() {
     <div className='blog-page-style'>
       <LayoutPrimary footer>
         <div className='mobile-header'>
-          <Link  href="/"><img src={logoTheme} className='logo-white' alt="logo" /></Link>
+          <Link href="/"><Image src={logoTheme} className='logo-white' alt="logo" /></Link>
           <Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
         </div>
 
         {/* ======= Section Bury Biases ======= */}
         <section className='section-style section-bury'>
           <div className='menu-section'>
-            <Link href="/" className='d-xs-none'><img src={logoTheme} alt="logo" /></Link>
+            <Link href="/" className='d-xs-none'>
+              <a className='logo-style'>
+                <Image height={24} width={84} src={logoTheme} alt="logo" />
+              </a>
+            </Link>
           </div>
           <div className='content-section'>
             <div className='border-section border-bottom-first'>

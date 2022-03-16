@@ -35,9 +35,6 @@ import psychology from "../../assets/json/psychology.json";
 import Image from 'next/image';
 
 
-// Videos here
-
-
 export default function HomeScreen() {
 
   const [blogs, setBlogs] = useState([]);
@@ -114,49 +111,8 @@ export default function HomeScreen() {
     });
   }, []);
 
-  // const formRef = useRef(null);
 
-  // const openNotificationWithIcon = type => {
-  //   notification[type]({
-  //     message: 'Error',
-  //     description:
-  //       'Oops! Something went wrong',
-  //   });
-  // };
-
-  // const bookADemo = (values) => {
-  //   axios
-  //     .post(
-  //       "https://prod-api.unberry.com/api/query/v1/create-query",
-  //       values, // the data to post'
-  //       {
-  //         headers: {
-  //           "Content-type": "application/json",
-  //         },
-  //       }
-  //     )
-  //     .then((response) => {
-  //       // handleClick();
-  //       setThankModal(true);
-  //       Mixpanel.track('Demo Booked');
-  //       window.dataLayer.push({
-  //         event: 'demoBooked',
-  //       })
-  //     })
-  //     .catch((err) => {
-  //       openNotificationWithIcon('error');
-  //     });
-  // }
-
-  // useEffect(() => {
-  //   const head = document.querySelector('head');
-  //   const script = document.createElement('script');
-  //   script.setAttribute(
-  //     'src',
-  //     'https://assets.calendly.com/assets/external/widget.js'
-  //   );
-  //   head.appendChild(script);
-  // }, []);
+  // Integration here
 
   useEffect(() => {
     const headers = {

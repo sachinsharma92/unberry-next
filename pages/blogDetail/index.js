@@ -12,6 +12,8 @@ import arrowNext from "../../assets/icons/arrow-next.svg"
 import { Button } from 'antd'
 import DemoForm from '../../components/demoForm'
 import LayoutPrimary from '../../common/layoutPrimary'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const BlogDetail = (props) => {
 
@@ -40,7 +42,7 @@ const BlogDetail = (props) => {
 	}, [])
 
 	// BacK function
-	const navigate = useNavigate();
+	const navigate = useRouter();
 
 	useEffect(() => {
 		window.scrollTo({
@@ -63,7 +65,7 @@ const BlogDetail = (props) => {
 				<div className='header-style'>
 					<div className='blog-layout'>
 						<div className='info-section'>
-							<Link href="/"><img src={logoTheme} className='logo-white' alt="logo" /></Link>
+							<Link href="/"><Image src={logoTheme} className='logo-white' alt="logo" /></Link>
 							<Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
 						</div>
 						<div>
@@ -76,7 +78,8 @@ const BlogDetail = (props) => {
 									}
 								}}
 							>
-								<img src={arrowNext} />Back</a>
+								<Image src={arrowNext} /><span>Back</span>
+							</a>
 							<h2 className='title2' itemprop="headline">{data?.heading}</h2>
 						</div>
 					</div>
@@ -89,7 +92,7 @@ const BlogDetail = (props) => {
 				</div>
 			</div>
 			<DemoForm id="bookDemo" />
-</LayoutPrimary>
+		</LayoutPrimary>
 	);
 };
 
