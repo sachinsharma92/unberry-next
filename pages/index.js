@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import HomeScreen from './home'
-import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -19,7 +18,7 @@ export default function Home() {
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
         <title>Unberry</title>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZKKD686VB"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZKKD686VB" ></script>
         <script
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
