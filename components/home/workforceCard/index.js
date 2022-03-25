@@ -10,6 +10,7 @@ import preciseSignal from "../../../assets/json/small/precise-signal.json";
 import fastEfficient from "../../../assets/json/small/fast-efficient.json";
 import hiddenPools from "../../../assets/json/small/hidden-pools.json";
 import longImpact from "../../../assets/json/small/long-impact.json";
+import Image from 'next/image';
 
 
 export default function WorkforceCard() {
@@ -87,7 +88,7 @@ export default function WorkforceCard() {
           {textBoxData.map((item) => (
             <div className='box-style'>
               <div className='img-box'>
-                <img src={item.mobileIcon} className={`icon-style ${item.iconStyle}`} />
+                <Image src={item.mobileIcon} className={`icon-style ${item.iconStyle}`} />
               </div>
               <div className='title'>
                 {item.title}

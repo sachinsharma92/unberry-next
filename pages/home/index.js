@@ -132,15 +132,15 @@ export default function HomeScreen() {
       <LayoutPrimary footer>
 
         <div className='mobile-header'>
-          <Link href="/" className='logo-white'><Image src={logoTheme} alt="logo" /></Link>
+          <Link href="/" className='logo-white'><Image src={logoTheme} className="logo-white" alt="logo" /></Link>
           <Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
         </div>
 
         {/* ======= Section Bury Biases ======= */}
         <section className='section-style section-bury'>
           <div className='menu-section'>
-            <Link href="/" className='d-xs-none'>
-              <a className='logo-style'>
+            <Link href="/">
+              <a className='logo-style d-xs-none'>
                 <Image height={24} width={84} src={logoTheme} alt="logo" />
               </a>
             </Link>
@@ -366,7 +366,9 @@ export default function HomeScreen() {
             <Row>
               <Col xs={24} sm={7}>
                 <div className='heading-section'>
-                  <img src={potentialImage} className='img-icon' alt="" />
+                  <div className='img-icon'>
+                  <Image src={potentialImage} alt="" />
+                  </div>
                   <h1 className='title1 text-gradient'>Find the <br /> Perfect <br /> Talent for <br /> Your <br /> Workforce</h1>
                 </div>
               </Col>

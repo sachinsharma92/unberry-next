@@ -243,6 +243,33 @@ p {
         margin-top: 20px;
         align-items: flex-start;
       }
+
+      .icon-link {
+        width: 35px;
+        height: 35px;
+        background: #F7F1E4;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        padding: 8px;
+        box-shadow: 0 5px 32px rgba($black, 0.05);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.15);
+        }
+  
+        @include mobile {
+          margin-left: 0;
+          margin-right: 10px;
+        }
+  
+        .icon {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -716,7 +743,7 @@ p {
     justify-content: center;
 
     @include mobile {
-      padding: 80px 20px 100px;
+      padding: 50px 20px 100px;
       max-width: 90%;
     }
 
@@ -751,7 +778,7 @@ p {
       margin-left: -15px;
 
       @include mobile {
-        margin-left: 0px;
+        margin-left: -10px;
       }
 
       &:nth-child(2) {

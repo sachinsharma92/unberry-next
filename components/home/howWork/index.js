@@ -9,6 +9,7 @@ import detailedReports from "../../../assets/json/detailed-reports.json";
 import playRemotelyIcon from "../../../assets/json/play-remotely.gif";
 import customBenchmarksIcon from "../../../assets/json/custom-benchmarks.gif";
 import detailedReportsIcon from "../../../assets/json/detailed-reports.gif";
+import Image from 'next/image';
 
 
 export default function HowWorkCard() {
@@ -86,7 +87,7 @@ export default function HowWorkCard() {
                 {item.description}
               </div>
               <div className='img-sec'>
-                <img src={item.mobileIcon} className='jsonIcon icon-style' id={item.lottieID} />
+                <Image src={item.mobileIcon} className='jsonIcon icon-style' id={item.lottieID} />
               </div>
             </div>
           ))}
