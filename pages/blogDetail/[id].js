@@ -82,9 +82,8 @@ const BlogDetail = ({ heading }) => {
                     </div> */}
 						<ReactMarkdown
 							className='markdown-style'
-							children={data?.articleContent}
 							rehypePlugins={[rehypeRaw]}
-							remarkPlugins={[remarkGfm]} />
+							remarkPlugins={[remarkGfm]}>{data?.articleContent}</ReactMarkdown>
 					</div>
 				</div>
 				<DemoForm id="bookDemo" />
