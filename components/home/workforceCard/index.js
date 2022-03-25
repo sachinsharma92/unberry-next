@@ -67,8 +67,8 @@ export default function WorkforceCard() {
   return (
     <div className='workforce-card'>
       <div className='grid-layout d-xs-none'>
-        {textBoxData.map((item) => (
-          <div className='box-style'>
+        {textBoxData.map((item, index) => (
+          <div className='box-style' key={index}>
             <div className='img-box'>
               <div className='jsonIcon icon-style' id={item.lottieID} />
             </div>
@@ -85,10 +85,10 @@ export default function WorkforceCard() {
       {/* On Mobile */}
       <div className='d-xs-visible'>
         <Carousel autoplay>
-          {textBoxData.map((item) => (
-            <div className='box-style'>
+          {textBoxData.map((item, index) => (
+            <div className='box-style' key={index}>
               <div className='img-box'>
-                <Image src={item.mobileIcon} className={`icon-style ${item.iconStyle}`} />
+                <Image src={item.mobileIcon} className={`icon-style ${item.iconStyle}`} alt="" />
               </div>
               <div className='title'>
                 {item.title}

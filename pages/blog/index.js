@@ -46,15 +46,17 @@ export default function BlogScreen() {
     <div className='blog-page-style'>
       <LayoutPrimary footer>
         <div className='mobile-header'>
-          <Link href="/"><Image src={logoTheme} className='logo-white' alt="logo" /></Link>
+          <Link href="/">
+            <a><Image src={logoTheme} className='logo-white' alt="logo" /></a>
+          </Link>
           <Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
         </div>
 
         {/* ======= Section Bury Biases ======= */}
         <section className='section-style section-bury'>
           <div className='menu-section'>
-            <Link href="/" className='d-xs-none'>
-              <a className='logo-style'>
+            <Link href="/">
+              <a className='logo-style d-xs-none'>
                 <Image height={24} width={84} src={logoTheme} alt="logo" />
               </a>
             </Link>
@@ -76,21 +78,21 @@ export default function BlogScreen() {
         {/* ======= Section Why Unberry ======= */}
         <section className='section-style blog-unberry'>
 
-          {blogs.map((item) => (
-            <div itemscope='' itemtype='https://schema.org/Blog' className='border-section'>
+          {blogs.map((item, index) => (
+            <div key={index} className='border-section'>
               <div className='menu-section' />
               <div className='content-section'>
                 <Row gutter={28} align="middle">
                   <Col xs={24} sm={8}>
-                    <div className='blog-thumb-image' itemscope="" itemtype="https://schema.org/ImageObject">
-                      <img itemprop='url' src={item.bannerImage} alt={item.heading}></img>
+                    <div className='blog-thumb-image'>
+                      <Image itemprop='url' src={item.bannerImage} alt={item.heading} />
                     </div>
                   </Col>
                   <Col xs={24} sm={16}>
                     <div className='blog-content-item'>
                       <div className='title'>{item.heading}</div>
                       <div className='description'>{item.content}</div>
-                      <Link to={`/blog/${item.id}`} state={{ backTo: pathname }}>Read More</Link>
+                      <Link to={`/blog/${item.id}`} state={{ backTo: pathname }}><a>Read More</a></Link>
                     </div>
                   </Col>
                 </Row>
@@ -98,7 +100,6 @@ export default function BlogScreen() {
             </div>
           ))}
         </section>
-
         <DemoForm id="bookDemo" />
       </LayoutPrimary>
     </div>

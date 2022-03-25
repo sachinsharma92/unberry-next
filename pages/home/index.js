@@ -132,7 +132,11 @@ export default function HomeScreen() {
       <LayoutPrimary footer>
 
         <div className='mobile-header'>
-          <Link href="/" className='logo-white'><Image src={logoTheme} className="logo-white" alt="logo" /></Link>
+          <Link href="/">
+            <a className='logo-white'>
+              <Image src={logoTheme} className="logo-white" alt="logo" />
+            </a>
+          </Link>
           <Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
         </div>
 
@@ -350,7 +354,7 @@ export default function HomeScreen() {
 
           <div className='content-section'>
             <div className='heading-section'>
-              <h1 className='title1 text-gradient'>“Here's how Unberry works and it’s simply a game changer”</h1>
+              <h1 className='title1 text-gradient'>“Here&rsquo;s how Unberry works and it&rsquo;s simply a game changer”</h1>
             </div>
 
             <HowWorkCard />
@@ -367,7 +371,7 @@ export default function HomeScreen() {
               <Col xs={24} sm={7}>
                 <div className='heading-section'>
                   <div className='img-icon'>
-                  <Image src={potentialImage} alt="" />
+                    <Image src={potentialImage} alt="" />
                   </div>
                   <h1 className='title1 text-gradient'>Find the <br /> Perfect <br /> Talent for <br /> Your <br /> Workforce</h1>
                 </div>

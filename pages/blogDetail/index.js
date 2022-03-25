@@ -39,7 +39,7 @@ const BlogDetail = (props) => {
 		}).catch(e => {
 			console.log('blog detail err', e)
 		})
-	}, [])
+	}, [id])
 
 	// BacK function
 	const navigate = useRouter();
@@ -61,11 +61,11 @@ const BlogDetail = (props) => {
 
 	return (
 		<LayoutPrimary footer>
-			<div className='blog-detail-section' itemscope="" itemtype="https://schema.org/BlogPosting">
+			<div className='blog-detail-section'>
 				<div className='header-style'>
 					<div className='blog-layout'>
 						<div className='info-section'>
-							<Link href="/"><Image src={logoTheme} className='logo-white' alt="logo" /></Link>
+							<Link href="/"><a><Image src={logoTheme} className='logo-white' alt="logo" /></a></Link>
 							<Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
 						</div>
 						<div>
@@ -78,17 +78,23 @@ const BlogDetail = (props) => {
 									}
 								}}
 							>
-								<Image src={arrowNext} /><span>Back</span>
+								<Image src={arrowNext} alt="" /><span>Back</span>
 							</a>
-							<h2 className='title2' itemprop="headline">{data?.heading}</h2>
+							<h2 className='title2'>{data?.heading}</h2>
 						</div>
 					</div>
 				</div>
-				<div className='markdown-layout' itemprop="description">
+				<div className='markdown-layout'>
 					{/* <div className="img-round">
                         <img className='img-blog' src={data?.bannerImage} alt={data?.heading} />
                     </div> */}
-					<ReactMarkdown className='markdown-style' children={data?.articleContent} rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]} />,
+					<ReactMarkdown
+						className='markdown-style'
+						// children={}
+						rehypePlugins={[rehypeRaw]}
+						remarkPlugins={[remarkGfm]}>
+						{data?.articleContent}
+					</ReactMarkdown>
 				</div>
 			</div>
 			<DemoForm id="bookDemo" />
