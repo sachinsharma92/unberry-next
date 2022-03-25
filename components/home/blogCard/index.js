@@ -10,7 +10,7 @@ const BlogCard = ({ data, currentPath }) => {
           <Link
             href={{
               pathname: `/blogDetail/${item.id}`,
-              query: { backTo: currentPath, title: item.heading},
+              query: { backTo: currentPath},
             }}
             as={`/blogDetail/${item.id}`}
             key={index}>
@@ -34,7 +34,7 @@ const BlogCard = ({ data, currentPath }) => {
             <Link
               href={{
                 pathname: `/blogDetail/${item.id}`,
-                query: { backTo: currentPath, title: item.heading },
+                query: { backTo: currentPath },
               }}
               as={`/blogDetail/${item.id}`}
               key={index}>

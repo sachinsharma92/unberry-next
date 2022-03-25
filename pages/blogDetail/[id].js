@@ -10,20 +10,14 @@ import DemoForm from '../../components/demoForm'
 import LayoutPrimary from '../../common/layoutPrimary'
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from 'next/head'
 
 // Images
 import logoTheme from "../../assets/logo-brown.svg"
 import arrowNext from "../../assets/icons/arrow-next.svg"
-import { NextSeo } from 'next-seo';
-import Head from 'next/head'
 
-
-const BlogDetail = () => {
+const BlogDetail = ({ heading }) => {
 	const router = useRouter();
-
-	console.log("🚀 ~ file: [id].js ~ line 21 ~ BlogDetail ~ router", router)
-
-	// const { asPath, state } = useRouter()
 	let pathArr = router.asPath?.split('/')
 	let id = pathArr[pathArr?.length - 1]
 
@@ -52,18 +46,10 @@ const BlogDetail = () => {
 		});
 	}, [])
 
-
-	const seoModifiedHtml = (html) => {
-		return `<div itemprop="description">
-                ${html}
-                </div>`
-	}
-	
-
 	return (
 		<>
-		<Head>
-			<title>{router?.query?.title} | Unberry</title>
+			<Head>
+				<title>{heading}</title>
 			</Head>
 			<LayoutPrimary footer>
 				<div className='blog-detail-section'>
@@ -108,3 +94,12 @@ const BlogDetail = () => {
 };
 
 export default BlogDetail;
+
+BlogDetail.getInitialProps = async (ctx) => {
+	const { asPath } = ctx
+	let pathArr = asPath?.split('/')
+	let id = pathArr[pathArr?.length - 1]
+
+	const res = await axios.get(`https://cms-api.unberry.com/api/v1/article/${id}`)
+	return { heading: res?.data?.data?.heading }
+}

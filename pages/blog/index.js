@@ -99,7 +99,7 @@ export default function BlogScreen() {
                       <Link
                         href={{
                           pathname: `/blogDetail/${item.id}`,
-                          query: { backTo: asPath, title: item.heading  },
+                          query: { backTo: asPath},
                         }}
                         as={`/blogDetail/${item.id}`}
                         >
