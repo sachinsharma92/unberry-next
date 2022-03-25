@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import HomeScreen from './home'
-import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -18,8 +17,9 @@ export default function Home() {
         />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZKKD686VB"></Script>
-        <Script
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZKKD686VB" ></script>
+
+        <script
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -30,9 +30,9 @@ export default function Home() {
                     gtag('config', 'G-8ZKKD686VB');
             `,
           }}
-        />
+        ></script>
 
-        <Script
+        <script
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -43,11 +43,11 @@ export default function Home() {
               })(window,document,'script','dataLayer','GTM-T929WHR');
             `,
           }}
-        />
+        ></script>
 
         <title>Unberry</title>
 
-        <Script
+        <script
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -92,7 +92,7 @@ export default function Home() {
             `,
           }}
         >
-        </Script>
+        </script>
       </Head>
       <main>
         <HomeScreen />
