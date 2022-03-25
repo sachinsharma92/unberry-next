@@ -8,7 +8,7 @@ const BlogCard = ({data, currentPath}) => {
     <div className='blog-card'>
       <div className='grid-layout d-xs-none'>
         {data?.map((item) => (
-          <Link to={`/blog/${item.id}`} state={{backTo: currentPath}}>
+          // <Link to={`/blog/${item.id}`} state={{backTo: currentPath}}>
             <div className='box-style'>
               <div className='img-sec'>
                 <Image height={250} width={250} src={item.bannerImage} alt="" />
@@ -18,7 +18,7 @@ const BlogCard = ({data, currentPath}) => {
               </div>
               <div className='read-more-link'>Read More</div>
             </div>
-          </Link>
+          // </Link>
         ))}
       </div>
 
