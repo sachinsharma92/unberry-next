@@ -34,7 +34,7 @@ export default function BlogScreen() {
   useEffect(() => {
     setIsLoading(true)
     axios.get('https://cms-api.unberry.com/api/v1/article').then(res => {
-      // setBlogs(res?.data?.data)
+      setBlogs(res?.data?.data)
       setIsLoading(false)
     }).catch(err => {
       console.log('blog data err', err)
@@ -77,7 +77,6 @@ export default function BlogScreen() {
 
         {/* ======= Section Why Unberry ======= */}
         <section className='section-style blog-unberry'>
-
           {blogs.map((item, index) => (
             <div key={index} className='border-section'>
               <div className='menu-section' />
@@ -85,14 +84,14 @@ export default function BlogScreen() {
                 <Row gutter={28} align="middle">
                   <Col xs={24} sm={8}>
                     <div className='blog-thumb-image'>
-                      <Image itemprop='url' src={item.bannerImage} alt={item.heading} />
+                      <div className='img-style' style={{ backgroundImage: `url(${item.bannerImage})` }} />
                     </div>
                   </Col>
                   <Col xs={24} sm={16}>
                     <div className='blog-content-item'>
                       <div className='title'>{item.heading}</div>
                       <div className='description'>{item.content}</div>
-                      <Link to={`/blog/${item.id}`} state={{ backTo: pathname }}><a>Read More</a></Link>
+                      <Link href={`/blog/${item.id}`} state={{ backTo: pathname }}><a>Read More</a></Link>
                     </div>
                   </Col>
                 </Row>

@@ -121,7 +121,7 @@ export default function HomeScreen() {
     };
 
     axios.get('https://cms-api.unberry.com/api/v1/article', { headers }).then(res => {
-      // setBlogs(res?.data?.data)
+      setBlogs(res?.data?.data)
     }).catch(err => {
       console.log('blog data err', err)
     })

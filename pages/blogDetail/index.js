@@ -16,9 +16,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const BlogDetail = (props) => {
-
 	const location = useRouter();
-
 
 	const { pathname, state } = useRouter()
 	let pathArr = pathname?.split('/')
