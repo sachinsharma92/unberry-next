@@ -7,7 +7,13 @@ const BlogCard = ({ data, currentPath }) => {
     <div className='blog-card'>
       <div className='grid-layout d-xs-none'>
         {data?.map((item, index) => (
-          <Link href={`/blog/${item.id}`} state={{ backTo: currentPath }} key={index}>
+          <Link
+            href={{
+              pathname: `/blogDetail/${item.id}`,
+              query: { backTo: currentPath, title: item.heading},
+            }}
+            as={`/blogDetail/${item.id}`}
+            key={index}>
             <div className='box-style'>
               <div className='img-sec'>
                 <div className='img-style' style={{ backgroundImage: `url(${item.bannerImage})` }} />
@@ -25,7 +31,13 @@ const BlogCard = ({ data, currentPath }) => {
       <div className='d-xs-visible'>
         <Carousel>
           {data?.map((item, index) => (
-            <Link href={`/blog/${item.id}`} key={index}>
+            <Link
+              href={{
+                pathname: `/blogDetail/${item.id}`,
+                query: { backTo: currentPath, title: item.heading },
+              }}
+              as={`/blogDetail/${item.id}`}
+              key={index}>
               <div className='box-style'>
                 <div className='img-sec'>
                   <div className='img-style' style={{ backgroundImage: `url(${item.bannerImage})` }} />

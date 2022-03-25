@@ -7,6 +7,7 @@ import { Mixpanel } from '../../services/mixpanel';
 import DemoForm from '../../components/demoForm';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head'
 
 // Images
 import logoTheme from "../../assets/logo-brown.svg"
@@ -14,7 +15,7 @@ import logoTheme from "../../assets/logo-brown.svg"
 export default function BlogScreen() {
   const [blogs, setBlogs] = useState([])
   const [isLoading, setIsLoading] = useState(false)
-  const { pathname } = useRouter();
+  const { asPath } = useRouter();
 
 
   useEffect(() => {
@@ -44,6 +45,10 @@ export default function BlogScreen() {
 
   return (
     <div className='blog-page-style'>
+      <Head>
+        <title>Blog | Unberry</title>
+      </Head>
+
       <LayoutPrimary footer>
         <div className='mobile-header'>
           <Link href="/">
@@ -91,7 +96,15 @@ export default function BlogScreen() {
                     <div className='blog-content-item'>
                       <div className='title'>{item.heading}</div>
                       <div className='description'>{item.content}</div>
-                      <Link href={`/blog/${item.id}`} state={{ backTo: pathname }}><a>Read More</a></Link>
+                      <Link
+                        href={{
+                          pathname: `/blogDetail/${item.id}`,
+                          query: { backTo: asPath, title: item.heading  },
+                        }}
+                        as={`/blogDetail/${item.id}`}
+                        >
+                        <a>Read More</a>
+                      </Link>
                     </div>
                   </Col>
                 </Row>

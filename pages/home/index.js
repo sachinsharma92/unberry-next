@@ -44,7 +44,7 @@ export default function HomeScreen() {
     setThankModal(!isThankModal);
   };
 
-  const { pathname } = useRouter();
+  const { asPath } = useRouter();
 
   useEffect(() => {
     document.title = 'Unberry'
@@ -394,7 +394,7 @@ export default function HomeScreen() {
               <h1 className='title1'>Inside Unberry</h1>
               <div className='view-all'><Link href="/blog">View All</Link></div>
             </div>
-            <BlogCard data={blogs} currentPath={pathname} />
+            <BlogCard data={blogs} currentPath={asPath} />
           </div>
         </section>
 
