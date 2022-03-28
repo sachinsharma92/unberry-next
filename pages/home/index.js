@@ -34,6 +34,9 @@ import exhaustiveJson from "../../assets/json/exhaustive.json";
 import psychology from "../../assets/json/psychology.json";
 import Image from 'next/image';
 
+// Videos here
+import unberryMix from "../../static/video/unberry-mix.mp4";
+
 
 export default function HomeScreen() {
 
@@ -245,8 +248,8 @@ export default function HomeScreen() {
             <Row>
               <Col sm={17}>
                 <div className='video-image'>
-                  <video muted autoPlay loop playsInline style={{ width: '500px', height: '500px' }}>
-                    <source src="../../assets/video/unberry-mix.mp4" type="video/mp4" />
+                  <video controls muted autoPlay loop playsInline style={{ width: '500px', height: '500px' }}>
+                    <source src={unberryMix} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <Image src={videoImage1} className='img-full' alt="" />
