@@ -9,10 +9,10 @@ const BlogCard = ({ data, currentPath }) => {
         {data?.map((item, index) => (
           <Link
             href={{
-              pathname: `/blogDetail/${item.id}`,
+              pathname: `/blogDetail/${item.slug}`,
               query: { backTo: currentPath},
             }}
-            as={`/blogDetail/${item.id}`}
+            as={`/blogDetail/${item.slug}`}
             key={index}>
             <div className='box-style'>
               <div className='img-sec'>
@@ -33,10 +33,10 @@ const BlogCard = ({ data, currentPath }) => {
           {data?.map((item, index) => (
             <Link
               href={{
-                pathname: `/blogDetail/${item.id}`,
+                pathname: `/blogDetail/${item.slug}`,
                 query: { backTo: currentPath },
               }}
-              as={`/blogDetail/${item.id}`}
+              as={`/blogDetail/${item.slug}`}
               key={index}>
               <div className='box-style'>
                 <div className='img-sec'>

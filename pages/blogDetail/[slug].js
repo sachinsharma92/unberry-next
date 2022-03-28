@@ -20,23 +20,28 @@ const BlogDetail = ({ heading }) => {
 	const router = useRouter();
 	let pathArr = router.asPath?.split('/')
 	let id = pathArr[pathArr?.length - 1]
+	console.log("🚀 ~ file: [id].js ~ line 23 ~ BlogDetail ~ id", id)
 
 	const [data, setData] = useState({})
 
+	let params = { slug: id };
+
 	useEffect(() => {
-		axios.get(`https://cms-api.unberry.com/api/v1/article/${id}`).then(res => {
-			setData(res?.data?.data)
-			Mixpanel.track(`Blog Opened: ${res?.data?.data?.heading}`);
+		axios.get(`https://cms-api.unberry.com/api/v1/article/`,
+			{ params }
+		).then(res => {
+			setData(res?.data?.data[0])
+			Mixpanel.track(`Blog Opened: ${res?.data?.data[0]?.heading}`);
 			window.dataLayer.push({
 				event: 'blogOpened',
 				category: 'blog',
-				label: res?.data?.data?.heading
+				label: res?.data?.data[0]?.heading
 			})
-			document.title = `Unberry | ${res?.data?.data?.heading || 'Blog'}`
+			document.title = `Unberry | ${res?.data?.data[0]?.heading || 'Blog'}`
 		}).catch(e => {
 			console.log('blog detail err', e)
 		})
-	}, [id])
+	}, [])
 
 	useEffect(() => {
 		window.scrollTo({
@@ -77,9 +82,6 @@ const BlogDetail = ({ heading }) => {
 						</div>
 					</div>
 					<div className='markdown-layout'>
-						{/* <div className="img-round">
-                        <img className='img-blog' src={data?.bannerImage} alt={data?.heading} />
-                    </div> */}
 						<ReactMarkdown
 							className='markdown-style'
 							rehypePlugins={[rehypeRaw]}
@@ -98,7 +100,7 @@ BlogDetail.getInitialProps = async (ctx) => {
 	const { asPath } = ctx
 	let pathArr = asPath?.split('/')
 	let id = pathArr[pathArr?.length - 1]
-
-	const res = await axios.get(`https://cms-api.unberry.com/api/v1/article/${id}`)
-	return { heading: res?.data?.data?.heading }
+	let params = { slug: id };
+	const res = await axios.get(`https://cms-api.unberry.com/api/v1/article/`, { params })
+	return { heading: res?.data?.data[0]?.heading }
 }
