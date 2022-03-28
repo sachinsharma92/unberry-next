@@ -20,7 +20,7 @@ export default function LayoutPrimary(props) {
         <div className='footer'>
           <div className='copyright-section'>
             <div><Image src={logoFooter} alt="logo-footer" /></div>
-            <p className='copyright'>© Copyright 2021. UNBERRY. All Rights Reserved.</p>
+            <p className='copyright'>© Copyright 2022. UNBERRY. All Rights Reserved.</p>
           </div>
 
           <div className='social-sec'>

@@ -35,7 +35,6 @@ import psychology from "../../assets/json/psychology.json";
 import Image from 'next/image';
 
 // Videos here
-import unberryMix from "../../static/video/unberry-mix.mp4";
 
 
 export default function HomeScreen() {
@@ -189,7 +188,7 @@ export default function HomeScreen() {
           </div>
           <div className='content-section'>
             <div className='header-section'>
-              <div className="title-lg text-gradient">“The hiring landscape is rapidly evolving.”</div>
+              <h2 className="title-lg text-gradient">“The hiring landscape is rapidly evolving.”</h2>
             </div>
             <div className='boxes-style'>
               <Row>
@@ -233,8 +232,8 @@ export default function HomeScreen() {
               <Row className='h-100'>
                 <Col xs={24} sm={17}>
                   <div className='heading-section'>
-                    <h1 className='description'>Meet Unberry</h1>
-                    <h1 className='title1'>Game based assessments for high performing teams</h1>
+                    <div className='description'>Meet Unberry</div>
+                    <h3 className='title1'>Game based assessments for high performing teams</h3>
                   </div>
                 </Col>
                 <Col xs={24} sm={7}>
@@ -248,8 +247,8 @@ export default function HomeScreen() {
             <Row>
               <Col sm={17}>
                 <div className='video-image'>
-                  <video controls muted autoPlay loop playsInline style={{ width: '500px', height: '500px' }}>
-                    <source src={unberryMix} type="video/mp4" />
+                  <video muted autoPlay loop playsInline width="100%" height="100%">
+                    <source src="../../static/video/unberry-mix.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <Image src={videoImage1} className='img-full' alt="" />
@@ -290,7 +289,7 @@ export default function HomeScreen() {
                 <div className='heading-section'>
                   <div className='text-sec'>
                     <p className='description'>The Competency Traits</p>
-                    <h1 className='title1'>New age traits for <br /> modern workplaces</h1>
+                    <h3 className='title1'>New age traits for <br /> modern workplaces</h3>
                   </div>
                 </div>
               </Col>
@@ -357,7 +356,7 @@ export default function HomeScreen() {
 
           <div className='content-section'>
             <div className='heading-section'>
-              <h1 className='title1 text-gradient'>“Here&rsquo;s how Unberry works and it&rsquo;s simply a game changer”</h1>
+              <h3 className='title1 text-gradient'>“Here&rsquo;s how Unberry works and it&rsquo;s simply a game changer”</h3>
             </div>
 
             <HowWorkCard />
@@ -376,7 +375,7 @@ export default function HomeScreen() {
                   <div className='img-icon'>
                     <Image src={potentialImage} alt="" />
                   </div>
-                  <h1 className='title1 text-gradient'>Find the <br /> Perfect <br /> Talent for <br /> Your <br /> Workforce</h1>
+                  <h3 className='title1 text-gradient'>Find the <br /> Perfect <br /> Talent for <br /> Your <br /> Workforce</h3>
                 </div>
               </Col>
               <Col xs={24} sm={17}>
@@ -394,7 +393,7 @@ export default function HomeScreen() {
 
           <div className='content-section'>
             <div className='heading-section'>
-              <h1 className='title1'>Inside Unberry</h1>
+              <h3 className='title1'>Inside Unberry</h3>
               <div className='view-all'><Link href="/blog">View All</Link></div>
             </div>
             <BlogCard data={blogs} currentPath={asPath} />
