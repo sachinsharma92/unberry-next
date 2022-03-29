@@ -98,10 +98,10 @@ export default function BlogScreen() {
                       <div className='description'>{item.content}</div>
                       <Link
                         href={{
-                          pathname: `/blogDetail/${item.slug}`,
+                          pathname: `/blog/${item.slug}`,
                           query: { backTo: asPath},
                         }}
-                        as={`/blogDetail/${item.slug}`}
+                        as={`/blog/${item.slug}`}
                         >
                         <a>Read More</a>
                       </Link>

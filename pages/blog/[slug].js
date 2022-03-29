@@ -20,7 +20,7 @@ const BlogDetail = ({ heading }) => {
 	const router = useRouter();
 	let pathArr = router.asPath?.split('/')
 	let id = pathArr[pathArr?.length - 1]
-	console.log("🚀 ~ file: [id].js ~ line 23 ~ BlogDetail ~ id", id)
+	// console.log("🚀 ~ file: [id].js ~ line 23 ~ BlogDetail ~ id", id)
 
 	const [data, setData] = useState({})
 
