@@ -33,6 +33,22 @@ export default function Home() {
         />
         <meta name="twitter:card" content="summary_large_image" />
 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"></script>
+        <script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag() {
+                    dataLayer.push(arguments);
+                  }
+                  gtag("js", new Date());
+              
+                  gtag("config", "UA-303682441");
+                  `,
+          }}
+        ></script>
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZKKD686VB" ></script>
         <script
           strategy="afterInteractive"
