@@ -14,5 +14,37 @@
    <ror:sortOrder>0</ror:sortOrder>
    <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
+<item>
+   <title>Blog | Unberry</title>  
+   <link>https://unberry.com/blog</link>
+   <description>Blog | Unberry</description>
+   <ror:updatePeriod>weekly</ror:updatePeriod>
+   <ror:sortOrder>1</ror:sortOrder>
+   <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+   <title>Hiring in current scenario - Do you still rely on resumes</title>  
+   <link>https://unberry.com/blog/hiring-in-current-scenario-do-you-still-rely-on-resumes</link>
+   <description>Unberry</description>
+   <ror:updatePeriod>weekly</ror:updatePeriod>
+   <ror:sortOrder>0</ror:sortOrder>
+   <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+   <title>Time to Build a More ‘Human’ Approach to Hiring</title>  
+   <link>https://unberry.com/blog/time-to-build-a-more-human-approach-to-hiring</link>
+   <description>Unberry</description>
+   <ror:updatePeriod>weekly</ror:updatePeriod>
+   <ror:sortOrder>0</ror:sortOrder>
+   <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+   <title>How distracted are we? The science behind attention</title>  
+   <link>https://unberry.com/blog/how-distracted-are-we-the-science-behind-attention</link>
+   <description>Unberry</description>
+   <ror:updatePeriod>weekly</ror:updatePeriod>
+   <ror:sortOrder>0</ror:sortOrder>
+   <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
 </channel>
 </rss>
