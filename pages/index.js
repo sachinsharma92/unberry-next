@@ -19,17 +19,17 @@ export default function Home() {
         <title>Unberry</title>
 
         {/* OG Section  */}
-        <meta property="og:url" content="https://main.d28b5diof4q1mr.amplifyapp.com/static/og.png" />
+        <meta property="og:url" content="https://unberry.com/static/og.png" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
-        <meta property="og:image" content="https://main.d28b5diof4q1mr.amplifyapp.com/static/og.png" />
+        <meta property="og:image" content="https://unberry.com/static/og.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter OG Section  */}
         <meta
           name="twitter:image"
-          content="https://main.d28b5diof4q1mr.amplifyapp.com/static/og.png"
+          content="https://unberry.com/static/og.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
 
