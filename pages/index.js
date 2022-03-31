@@ -78,47 +78,46 @@ export default function Home() {
 
         <script
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: `
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Unberry",
-            "image": "",
-            "@id": "",
-            "url": "https://unberry.com/",
-            "telephone": "9810046260",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Second Floor, S S Plaza, 218-220, Block A, Sector 47",
-              "addressLocality": "Gurugram",
-              "postalCode": "122018",
-              "addressCountry": "India",
-              "addressRegion": "Haryana"
-            },
-            "openingHoursSpecification": [
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday"
-                ],
-                "opens": "10:00",
-                "closes": "17:00"
-              }
-            ],
-          "sameAs": [
-              "https://www.linkedin.com/company/unberry/",
-              "https://www.instagram.com/unberry_official/",
-              "https://www.linkedin.com/in/vini-khabya-6a0aa419/",
-              "https://www.linkedin.com/in/aakaargandhi/",
-              "https://www.linkedin.com/in/anuj-birla-55a84822/",
-              "https://www.linkedin.com/in/dhruv-goel-9042b824/"
-            ]
-            `,
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Unberry",
+              "image": "",
+              "@id": "",
+              "url": "https://unberry.com/",
+              "telephone": "9810046260",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Second Floor, S S Plaza, 218-220, Block A, Sector 47",
+                "addressLocality": "Gurugram",
+                "postalCode": "122018",
+                "addressCountry": "India",
+                "addressRegion": "Haryana"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  "opens": "10:00",
+                  "closes": "17:00"
+                }
+              ],
+              "sameAs": [
+                "https://www.linkedin.com/company/unberry/",
+                "https://www.instagram.com/unberry_official/",
+                "https://www.linkedin.com/in/vini-khabya-6a0aa419/",
+                "https://www.linkedin.com/in/aakaargandhi/",
+                "https://www.linkedin.com/in/anuj-birla-55a84822/",
+                "https://www.linkedin.com/in/dhruv-goel-9042b824/"
+              ]
+            })
           }}
         >
         </script>
