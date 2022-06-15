@@ -12,11 +12,8 @@ export default function Home() {
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
-        <title>Unberry</title>
-        <meta
-          name="description"
-          content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
-        />
+        <title>Unberry : Transforming the future of hiring and developing talent.</title>
+        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
 
         {/* OG Section  */}
         <meta property="og:url" content="https://unberry.com/static/og.png" />
@@ -35,12 +32,7 @@ export default function Home() {
         <meta name="twitter:title" content="Transforming the future of hiring and developing talent." />
         <meta name="twitter:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
         <meta name="twitter:image" content="twitter OG image image path here" />
-
-        <meta
-          name="twitter:image"
-          content="https://unberry.com/static/og.png"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://unberry.com/static/og.png" />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"></script>
         <script
