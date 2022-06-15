@@ -20,13 +20,22 @@ export default function Home() {
 
         {/* OG Section  */}
         <meta property="og:url" content="https://unberry.com/static/og.png" />
+        <meta property="og:site_name" content="unberry.com" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
         <meta property="og:image" content="https://unberry.com/static/og.png" />
+        <meta name="og:title" content="Transforming the future of hiring and developing talent." />
+        <meta name="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter OG Section  */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="Twitter @unberry.com" />
+        <meta name="twitter:title" content="Transforming the future of hiring and developing talent." />
+        <meta name="twitter:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
+        <meta name="twitter:image" content="twitter OG image image path here" />
+
         <meta
           name="twitter:image"
           content="https://unberry.com/static/og.png"
