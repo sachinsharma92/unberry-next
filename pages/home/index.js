@@ -133,7 +133,7 @@ export default function HomeScreen() {
   return (
     <div className='home-section-style'>
        <Head>
-        <title>Unberry</title>
+        <title>Unberry : unberry.com</title>
         <meta
           name="description"
           content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
