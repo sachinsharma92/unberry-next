@@ -33,6 +33,7 @@ import beyondJson from "../../assets/json/beyond.json";
 import exhaustiveJson from "../../assets/json/exhaustive.json";
 import psychology from "../../assets/json/psychology.json";
 import Image from 'next/image';
+import Head from 'next/head';
 
 // Videos here
 
@@ -131,6 +132,9 @@ export default function HomeScreen() {
 
   return (
     <div className='home-section-style'>
+      <Head>
+        <title>Unberry - Transforming the future of hiring and developing talent...</title>
+      </Head>
 
       <LayoutPrimary footer>
 
