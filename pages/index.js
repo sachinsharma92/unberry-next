@@ -11,12 +11,12 @@ export default function Home() {
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
+        <title>Unberry</title>
         <meta
           name="description"
           content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
         />
-        <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
-        <title>Unberry</title>
 
         {/* OG Section  */}
         <meta property="og:url" content="https://unberry.com/static/og.png" />
