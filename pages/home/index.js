@@ -50,7 +50,7 @@ export default function HomeScreen() {
   const { asPath } = useRouter();
 
   useEffect(() => {
-    document.title = 'Unberry'
+    document.title = 'Unberry - Transforming the future of hiring and developing talent.'
     Mixpanel.track('Unberry Home Page Opened, Path: /')
 
     lottie.loadAnimation({
@@ -132,6 +132,10 @@ export default function HomeScreen() {
 
   return (
     <div className='home-section-style'>
+          <Head>
+        <title>Unberry - Transforming the future of hiring and developing talent...</title>
+      </Head>
+
       <LayoutPrimary footer>
 
         <div className='mobile-header'>
