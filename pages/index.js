@@ -15,9 +15,9 @@ export default function Home() {
 
         {/* Main Title */}
         <title>Unberry - Transforming the future of hiring and developing talent.</title>
-        <meta name="title" property="og:title" content="Unberry - Transforming the future of hiring and developing talent."/>
-        <meta name="description" property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
-        <meta name="image" property="og:type" content="https://unberry.com/static/og.png" />
+        <meta name="title" content="Unberry - Transforming the future of hiring and developing talent."/>
+        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
+        <meta name="image" content="https://unberry.com/static/og.png" />
 
         {/* OG Section  */}
         <meta property="og:type" content="website" />
