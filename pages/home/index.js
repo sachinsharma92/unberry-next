@@ -133,7 +133,7 @@ export default function HomeScreen() {
   return (
     <div className='home-section-style'>
       <Head>
-        <title>Unberry - Transforming the future of hiring and developing talent....</title>
+        <title>Unberry - Transforming the future of hiring and developing talent.</title>
         <meta name="title" content="Unberry - Transforming the future of hiring and developing talent." />
         <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
       </Head>
