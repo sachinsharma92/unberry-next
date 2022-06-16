@@ -4,7 +4,7 @@ import HomeScreen from './home'
 export default function Home() {
   return (
     <div>
-      <Head>
+      <Head prefix="og: https://ogp.me/ns#">
         <meta charset="utf-8" />
         <link rel="icon" href="../static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
