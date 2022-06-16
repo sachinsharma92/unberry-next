@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
 
         {/* Main Title */}
-        <title>Unberry - Transforming the future of hiring and developing talent.</title>
+        <title>Unberry - Transforming the future of hiring and developing talent...</title>
         <meta name="title" content="Unberry - Transforming the future of hiring and developing talent."/>
         <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
         <meta name="image" content="https://unberry.com/static/og.png" />
