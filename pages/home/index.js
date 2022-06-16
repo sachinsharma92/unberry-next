@@ -132,34 +132,6 @@ export default function HomeScreen() {
 
   return (
     <div className='home-section-style'>
-      <Head>
-        {/* Main Title */}
-        <title>Unberry - Transforming the future of hiring and developing talent..</title>
-        <meta name="name" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
-        <meta name="image" content="https://unberry.com/static/og.png" />
-
-        {/* OG Section  */}
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="unberry.com" />
-        <meta name="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta property="og:url" content="https://unberry.com/static/og.png" />
-        <meta name="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
-        <meta property="og:image" content="https://unberry.com/static/og.png" />
-        <meta property="og:image:url" content="https://unberry.com/static/og.png" />
-        <meta property="og:image:alt" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta property="og:image:type" content="website" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-
-        {/* Twitter OG Section  */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="Twitter @unberry.com" />
-        <meta name="twitter:title" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta name="twitter:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
-        <meta name="twitter:image" content="https://unberry.com/static/og.png" />
-      </Head>
-
       <LayoutPrimary footer>
 
         <div className='mobile-header'>
