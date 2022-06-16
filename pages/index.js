@@ -12,18 +12,23 @@ export default function Home() {
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
+
+        {/* Main Title */}
         <title>Unberry - Transforming the future of hiring and developing talent.</title>
         <meta name="name" content="Unberry - Transforming the future of hiring and developing talent."/>
         <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
+        <meta name="image" content="https://unberry.com/static/og.png" />
 
         {/* OG Section  */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="unberry.com" />
         <meta name="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta name="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
         <meta property="og:url" content="https://unberry.com/static/og.png" />
+        <meta name="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
         <meta property="og:image" content="https://unberry.com/static/og.png" />
+        <meta property="og:image:url" content="https://unberry.com/static/og.png" />
         <meta property="og:image:alt" content="Unberry - Transforming the future of hiring and developing talent."/>
+        <meta property="og:image:type" content="website" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
