@@ -33,7 +33,7 @@ import beyondJson from "../../assets/json/beyond.json";
 import exhaustiveJson from "../../assets/json/exhaustive.json";
 import psychology from "../../assets/json/psychology.json";
 import Image from 'next/image';
-import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 
 // Videos here
 
@@ -132,10 +132,11 @@ export default function HomeScreen() {
 
   return (
     <>
-      <NextSeo
-        title="Unberry - Transforming the future of hiring and developing talent."
-        description="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
-      />
+     <Head>
+        <title>Unberry - Transforming the future of hiring and developing talent.</title>
+        <meta name="title" content="Unberry - Transforming the future of hiring and developing talent." />
+        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
+      </Head>
       <div className='home-section-style'>
         <LayoutPrimary footer>
           <div className='mobile-header'>
