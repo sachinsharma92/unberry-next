@@ -33,7 +33,7 @@ import beyondJson from "../../assets/json/beyond.json";
 import exhaustiveJson from "../../assets/json/exhaustive.json";
 import psychology from "../../assets/json/psychology.json";
 import Image from 'next/image';
-import Head from 'next/head';
+import SeoHead from '../../components/seoHead';
 
 // Videos here
 
@@ -131,10 +131,14 @@ export default function HomeScreen() {
   }, [])
 
   return (
+    <>
+     <SeoHead
+          mainTitle=" Get in touch with us"
+          title=" Get in touch with us"
+          description="For full-stack product management services, please get in touch with us."
+        />
+
     <div className='home-section-style'>
-      <Head>
-        <title>Unberry | Transforming the future of hiring and developing talent!!!</title>
-      </Head>
       <LayoutPrimary footer>
         <div className='mobile-header'>
           <Link href="/">
@@ -409,5 +413,6 @@ export default function HomeScreen() {
 
       <ThankModal visible={isThankModal} onCancel={thankToggleModal} />
     </div>
+    </>
   )
 }
