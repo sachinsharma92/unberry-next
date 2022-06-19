@@ -13,6 +13,22 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
 
+           {/* OG Section  */}
+           <meta property="og:url" content="https://grappus.com/static/og.png" />
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="546555445835110" />
+        <meta property="og:image" content="https://grappus.com/static/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="author" content="Grappus" />
+
+        {/* Twitter OG Section  */}
+        <meta
+          name="twitter:image"
+          content="https://grappus.com/static/og.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
         {/* Main Title */}
         {/* <title>Unberry - Transforming the future of hiring and developing talent!</title>
         <meta name="title" content="Unberry - Transforming the future of hiring and developing talent."/>
@@ -20,19 +36,18 @@ export default function Home() {
         <meta name="image" content="https://unberry.com/static/og.png" /> */}
 
         {/* OG Section  */}
-        <meta property="og:image" content="https://unberry.com/static/og.png" />
+        {/* <meta property="og:image" content="https://unberry.com/static/og.png" />
         <meta property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
         <meta property="og:url" content="https://unberry.com/static/og.png" />
         <meta property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        {/* Twitter OG Section  */}
         <meta name="twitter:image" content="https://unberry.com/static/og.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="Twitter @unberry.com" />
         <meta name="twitter:title" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta name="twitter:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
+        <meta name="twitter:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" /> */}
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"></script>
         <script
