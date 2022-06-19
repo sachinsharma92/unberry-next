@@ -14,18 +14,18 @@ export default function Home() {
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
 
            {/* OG Section  */}
-           <meta property="og:url" content="https://grappus.com/static/og.png" />
+        <meta property="og:url" content="https://unberry.com/static/og.png" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
-        <meta property="og:image" content="https://grappus.com/static/og.png" />
+        <meta property="og:image" content="https://unberry.com/static/og.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta name="author" content="Grappus" />
+        <meta name="author" content="Unberry" />
 
         {/* Twitter OG Section  */}
         <meta
           name="twitter:image"
-          content="https://grappus.com/static/og.png"
+          content="https://unberry.com/static/og.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
 
