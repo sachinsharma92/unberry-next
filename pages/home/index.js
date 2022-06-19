@@ -133,9 +133,9 @@ export default function HomeScreen() {
   return (
     <>
      <SeoHead
-          mainTitle=" Get in touch with us"
-          title=" Get in touch with us"
-          description="For full-stack product management services, please get in touch with us."
+          mainTitle="Unberry - Transforming the future of hiring and developing talent!"
+          title="Unberry - Transforming the future of hiring and developing talent!"
+          description="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
         />
 
     <div className='home-section-style'>
