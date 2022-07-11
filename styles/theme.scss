@@ -344,7 +344,7 @@ p {
 }
 
 .blog-card {
-   // slick-dots-bottom
+
    .slick-dots-bottom {
 
     @include mobile {
@@ -548,8 +548,6 @@ p {
   }
 
   .grid-layout {
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
     display: flex;
     position: relative;
     height: 100%;
