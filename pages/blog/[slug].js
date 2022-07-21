@@ -58,8 +58,11 @@ const BlogDetail = ({ heading }) => {
 		<>
 			<Head>
 				<title>{heading}</title>
-				<meta property="og:image" content={data.bannerImage} />
-        <meta name="twitter:image" content={data.bannerImage}/>
+				<meta property="og:image" content="https://grappus.com/static/ogImage.png" />
+				<meta
+          name="twitter:image"
+          content="https://grappus.com/static/ogImage.png"
+        />
 			</Head>
 			<LayoutPrimary footer>
 				<div className='blog-detail-section'>
