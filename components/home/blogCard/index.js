@@ -6,7 +6,7 @@ const BlogCard = ({ data, currentPath }) => {
   return (
     <div className='blog-card'>
       <div className='grid-layout d-xs-none'>
-        {data?.map((item, index) => (
+        {data?.reverse().map((item, index) => (
           <Link
             href={{
               pathname: `/blog/${item.slug}`,
@@ -30,7 +30,7 @@ const BlogCard = ({ data, currentPath }) => {
       {/* On Mobile */}
       <div className='d-xs-visible'>
         <Carousel>
-          {data?.map((item, index) => (
+          {data?.reverse().map((item, index) => (
             <Link
               href={{
                 pathname: `/blog/${item.slug}`,

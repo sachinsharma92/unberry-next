@@ -43,6 +43,7 @@ export default function BlogScreen() {
     })
   }, [])
 
+
   return (
     <div className='blog-page-style'>
       <Head>
@@ -80,9 +81,8 @@ export default function BlogScreen() {
           </div>
         </section>
 
-        {/* ======= Section Why Unberry ======= */}
         <section className='section-style blog-unberry'>
-          {blogs.map((item, index) => (
+          {[...blogs].reverse().map((item, index) => (
             <div key={index} className='border-section'>
               <div className='menu-section' />
               <div className='content-section'>

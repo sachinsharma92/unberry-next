@@ -30,6 +30,7 @@ const BlogDetail = ({ heading }) => {
 		axios.get(`https://cms-api.unberry.com/api/v1/article/`,
 			{ params }
 		).then(res => {
+			console.log(res?.data?.data[0], 'hhhhsahshshassah')
 			setData(res?.data?.data[0])
 			Mixpanel.track(`Blog Opened: ${res?.data?.data[0]?.heading}`);
 			window.dataLayer.push({
@@ -43,6 +44,8 @@ const BlogDetail = ({ heading }) => {
 		})
 	}, [])
 
+
+
 	useEffect(() => {
 		window.scrollTo({
 			top: 0,
@@ -55,6 +58,8 @@ const BlogDetail = ({ heading }) => {
 		<>
 			<Head>
 				<title>{heading}</title>
+				<meta property="og:image" content={data.bannerImage} />
+        <meta name="twitter:image" content={data.bannerImage}/>
 			</Head>
 			<LayoutPrimary footer>
 				<div className='blog-detail-section'>
