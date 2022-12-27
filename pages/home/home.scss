@@ -32,7 +32,11 @@
   }
 
   .text-gradient {
-    background: -webkit-linear-gradient(top, rgba($theme-primary-dark, 1) 40px, rgba(#c95632, 1));
+    background: -webkit-linear-gradient(
+      top,
+      rgba($theme-primary-dark, 1) 40px,
+      rgba(#c95632, 1)
+    );
     @include clip-text;
   }
 
@@ -80,8 +84,37 @@
 
   // Section Bury
   .section-bury {
-    background: #f7f1e5 url("../../assets/bg/gradient-first.svg");
-    background-size: cover;
+    background: #f7f1e5;
+    overflow: hidden;
+    position: relative;
+    // background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1062px;
+      height: 482px;
+      left: -503px;
+      top: 791px;
+      background: linear-gradient(262.63deg, #ffd49f 8.02%, #ff82b4 127.42%);
+      filter: blur(240px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 482px;
+      height: 387px;
+      right: 0;
+      background: linear-gradient(
+        262.63deg,
+        rgba(255, 212, 159, 0.5) 8.02%,
+        rgba(255, 130, 180, 0.5) 127.42%
+      );
+      filter: blur(186px);
+      transform: rotate(-180deg);
+      top: -170px;
+    }
 
     .menu-section {
       @include mobile {
@@ -92,15 +125,30 @@
       }
     }
 
+    .border-style {
+      width: 100%;
+      height: 1px;
+      background: $border-color-2;
+      position: relative;
+    }
+
     .heading-section {
       width: 100%;
+
+      .border-style {
+        top: -25px;
+      }
+    }
+
+    .heading-section2 {
+      margin-top: 10px;
     }
 
     .title1 {
       font-weight: 300;
-      font-size: 120px;
+      font-size: 96px;
       line-height: 1.2;
-      letter-spacing: -6px;
+      letter-spacing: -9px;
       margin: 0;
       position: relative;
       display: flex;
@@ -118,9 +166,8 @@
       }
 
       &.bold {
-        font-weight: 500;
+        font-weight: 600;
         position: relative;
-        top: -20px;
 
         @include mobile {
           font-size: 72px;
@@ -136,55 +183,64 @@
     }
 
     .text-gradient {
-      background: -webkit-linear-gradient(top, rgba($theme-primary-dark, 1) 80px, rgba(#c95632, 1));
+      background: linear-gradient(
+        180deg,
+        #2e1500 0%,
+        #1b0c07 34.63%,
+        #7b351f 83.87%,
+        #c95632 100%
+      );
       @include clip-text;
     }
 
-    .content-section {
-      @include mobile {
-        padding-top: 40px;
-      }
+    .button-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 48px;
+      position: relative;
+      z-index: 1;
 
+      .btn-demo {
+        margin-bottom: 30px;
+        display: flex;
+        width: 179.65px;
+        height: 58px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        background: $theme-primary-dark;
+        color: #f7f1e4;
+        font-size: 18px;
+        top: 40px;
+      }
+    }
+
+    .img-hero {
+      width: 600px;
+      height: 600px;
+      position: absolute;
+      right: 0;
+      bottom: -200px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: right;
+      }
+    }
+
+    .content-section {
       .heading-section {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         position: relative;
         z-index: 1;
-
-        &::after {
-          width: 100%;
-          height: 1px;
-          background: $border-color-2;
-          content: '';
-          position: relative;
-          top: -25px;
-
-          @include mobile {
-            top: 0px;
-          }
-        }
-
-        &:nth-child(2) {
-          &::after {
-            top: -50px;
-
-            @include mobile {
-              top: 0px;
-            }
-          }
-        }
-
-        .border-style {
-          margin-right: 15px;
-
-          @include mobile {
-            width: 100%;
-            height: 1px;
-            background: $border-color-2;
-            position: relative;
-          }
-        }
 
         .d-flex {
           z-index: 1;
@@ -200,32 +256,20 @@
           width: 100%;
 
           span {
-
             @include mobile {
               padding: 0 10px;
-              background: -webkit-linear-gradient(top, rgba($theme-primary-dark, 1) 30px, rgba(#c95632, 1));
+              background: -webkit-linear-gradient(
+                top,
+                rgba($theme-primary-dark, 1) 30px,
+                rgba(#c95632, 1)
+              );
               @include clip-text;
             }
           }
         }
-
-        .btn-demo {
-          margin-bottom: 30px;
-          min-width: 177px;
-          display: flex;
-          height: 58px;
-          align-items: center;
-          justify-content: center;
-          text-transform: uppercase;
-          background: $theme-primary-dark;
-          color: #F7F1E4;
-          font-weight: 600;
-          font-size: 18px;
-        }
       }
 
       .hide-xs {
-
         @include mobile {
           display: none;
         }
@@ -265,10 +309,12 @@
       }
 
       .description {
-        font-size: 25px;
-        width: 460px;
+        font-size: 36px;
+        width: 50%;
         padding-left: 50px;
         margin-bottom: 80px;
+        letter-spacing: -0.03em;
+        line-height: 50px;
 
         @include mobile {
           margin-bottom: 0;
@@ -297,12 +343,31 @@
       justify-content: center;
     }
 
+    .content-section-why {
+      display: flex;
+
+      .header-section {
+        width: 40%;
+        padding: 20px 40px;
+      }
+
+      .boxes-style {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-left: 1px solid $border-color-2;
+      }
+    }
+
     .header-section {
-      padding: 0px 30px;
-      background: linear-gradient(262.63deg, rgba(255, 212, 159, 0.05) 8.02%, rgba(255, 130, 180, 0.05) 127.42%);
+      background: linear-gradient(
+        262.63deg,
+        rgba(255, 212, 159, 0.05) 8.02%,
+        rgba(255, 130, 180, 0.05) 127.42%
+      );
       min-height: 279px;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
 
       @include mobile {
@@ -312,15 +377,24 @@
     }
 
     .icon-box-sec {
-      padding: 20px 40px;
+      padding: 60px 40px;
+      position: relative;
 
-      @include mobile {
-        padding: 20px;
+      &:nth-child(1) {
         border-bottom: 1px solid $border-color-2;
       }
 
+      &:nth-child(2) {
+        border-left: 1px solid $border-color-2;
+        border-bottom: 1px solid $border-color-2;
+      }
+
+      &:nth-child(4) {
+        border-left: 1px solid $border-color-2;
+      }
+
       .jsonIcon {
-        width: 120px;
+        width: 80px;
 
         @include mobile {
           width: 100px;
@@ -332,16 +406,24 @@
         margin-left: -15px;
       }
 
-      img {
-        width: 90px;
-        margin-bottom: 20px;
+      .img-box {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        margin-bottom: 32px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
 
     .title-lg {
-      font-size: 68px;
-      letter-spacing: -5px;
-      font-weight: 400;
+      font-size: 58px;
+      line-height: 68px;
+      letter-spacing: -3px;
+      font-weight: 600;
 
       @include mobile {
         font-size: 33px;
@@ -362,8 +444,14 @@
     }
 
     .description {
-      font-size: 18px;
-      max-width: 87%;
+      font-size: 25px;
+      color: #533f2e;
+      letter-spacing: -0.5px;
+      max-width: 88%;
+
+      span {
+        font-weight: 500;
+      }
     }
 
     .border-section {
@@ -426,46 +514,19 @@
       position: relative;
       width: 100%;
       height: 100%;
-      border-bottom: 1px solid rgba($white, 0.2);
-
-      &::before {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../../assets/bg/product1.png");
-        background-repeat: no-repeat;
-        content: "";
-
-        @include mobile {
-          // background: url('../../assets/bg/mobile-product1.png');
-          // background-size: cover;
-
-          display: none;
-        }
-      }
 
       .heading-section {
-        border-right: 1px solid rgba($white, 0.2);
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-left: 50px;
-
-        @include mobile {
-          padding-left: 20px;
-          padding-top: 50px;
-          border-bottom: 1px solid rgba($white, $alpha: 0.3);
-        }
       }
 
       .description {
         color: $white;
-        text-transform: uppercase;
-        font-weight: 600;
         margin: 0;
-        font-size: 20px;
+        font-size: 22px;
       }
 
       .title1 {
@@ -535,55 +596,50 @@
       }
     }
 
-    .img-list {
-      padding: 50px 0px;
-      display: flex;
-      // align-items: center;
-      justify-content: center;
-      flex-direction: column;
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 47px;
+      padding-right: 106px;
+      padding-top: 68px;
 
-      .list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 24px;
-
-        @include mobile {
-          justify-content: flex-start;
-          padding-left: 10px;
-        }
+      .p-card {
+        padding: 35px 25px;
+        background: rgba(50, 49, 49, 0.5);
+        position: relative;
       }
 
-      .img-icon {
-        width: 80px;
-        height: 80px;
-        position: relative;
-
-        &::before {
-          position: absolute;
-          top: 0;
-          left: 0;
-          content: '';
-          box-shadow: 0 0px 42px rgba($black, 0.3);
-          background: rgba($black, 0.1);
-          border-radius: 50px;
-          width: 100%;
-          height: 100%;
-          transform: scale(0.7);
-        }
+      .title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 32px;
+        color: #fffbf1;
+        max-width: 70%;
       }
 
       .description {
-        line-height: 1.4;
-        font-size: 18px;
-        color: $white;
-        max-width: 55%;
-        margin: 0;
-        margin-left: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fffbf1;
+        opacity: 0.8;
+        margin-top: 118px;
+      }
 
-        @include mobile {
-          max-width: 60%;
+      .icon-sec {
+        width: 102px;
+        height: 102px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.4;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -591,7 +647,7 @@
 
   // Section Competency Style
   .competency-section {
-    background: #1F1E20;
+    background: #1f1e20;
     min-height: auto;
 
     .product-img1 {
@@ -687,7 +743,6 @@
       }
 
       video {
-
         @include mobile {
           width: 95%;
           margin-right: 0px;
@@ -779,7 +834,7 @@
       justify-content: center;
 
       @include mobile {
-        background: #1F1E20;
+        background: #1f1e20;
         height: auto;
       }
 
@@ -800,7 +855,6 @@
     }
 
     .hide-on-mobile {
-
       @include mobile {
         display: none;
       }
@@ -817,7 +871,7 @@
 
   // Section How works Style
   .how-works {
-    background: #FFFCF6;
+    background: #fffcf6;
     min-height: auto;
 
     .menu-section {
@@ -881,7 +935,7 @@
           display: block;
           width: 54px;
           height: 2px;
-          content: '';
+          content: "";
           margin-left: 10px;
           background: $theme-primary;
         }
@@ -932,7 +986,7 @@
 
   // Section Your Workforce
   .your-workforce {
-    background-color: #F7F1E5;
+    background-color: #f7f1e5;
     min-height: auto;
 
     .heading-section {
@@ -943,7 +997,7 @@
       height: 100%;
       padding: 0 30px;
       border-right: 1px solid $border-color;
-      background: url('../../assets/bg/bg4.png');
+      background: url("../../assets/bg/bg4.png");
       background-size: cover;
 
       @include mobile {
@@ -970,7 +1024,6 @@
       }
 
       br {
-
         @include mobile {
           display: none;
         }
@@ -987,7 +1040,7 @@
 
   // Section Blog
   .blog-section {
-    background-color: #FFFCF6;
+    background-color: #fffcf6;
     min-height: auto;
     display: flex;
 
@@ -1023,7 +1076,11 @@
       .title1 {
         font-size: 50px;
         margin-bottom: 0;
-        background: -webkit-linear-gradient(top, rgba($theme-primary-dark, 1) 30px, rgba(#F46731, 1));
+        background: -webkit-linear-gradient(
+          top,
+          rgba($theme-primary-dark, 1) 30px,
+          rgba(#f46731, 1)
+        );
         @include clip-text;
 
         @include mobile {
@@ -1036,7 +1093,11 @@
       .view-all {
         font-size: 22px;
         font-weight: 600;
-        background: -webkit-linear-gradient(top, rgba($theme-primary-dark, 1) 0px, rgba(#c95632, 1));
+        background: -webkit-linear-gradient(
+          top,
+          rgba($theme-primary-dark, 1) 0px,
+          rgba(#c95632, 1)
+        );
         @include clip-text;
 
         @include mobile {
@@ -1058,7 +1119,7 @@
       min-height: auto;
 
       @include mobile {
-        background-image: linear-gradient(to bottom, #1C1C1C 280px, white 20%)
+        background-image: linear-gradient(to bottom, #1c1c1c 280px, white 20%);
       }
     }
 
@@ -1121,14 +1182,14 @@
     .text-sm {
       margin: 0 0 10px;
       font-size: 16px;
-      color: #BA4A17;
+      color: #ba4a17;
       font-weight: 600;
       text-transform: uppercase;
     }
 
     .ant-input {
       border: none;
-      border-bottom: 1px solid #C4C2DA;
+      border-bottom: 1px solid #c4c2da;
       padding: 0;
       border-radius: 0;
       padding-bottom: 5px;
@@ -1157,6 +1218,5 @@
     .ant-form-item-explain-error {
       display: none;
     }
-
   }
 }
