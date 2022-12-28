@@ -14,28 +14,28 @@ import Image from 'next/image';
 
 export default function HowWorkCard() {
   const mediaboxData = [
-  {
-    number: '1',
-    title: 'We create your custom screening benchmarks for assesment',
-    description: 'To find out what ‘good’ looks like in each role within the company.',
-    lottieID: "playRemotely",
-    mobileIcon: playRemotelyIcon,
-  },
-  {
-    number: '2',
-    title: 'Candidates play remotely and get assessed immediately',
-    description: 'A link with the automated Unberry gameplay takes care of everything.',
-    lottieID: "customBenchmarks",
-    mobileIcon: customBenchmarksIcon,
-  },
-  {
-    number: '3',
-    title: 'You get detailed reports with relevant, predictive insights',
-    description: 'To identify right job-fits and high potential candidates early in the process',
-    lottieID: "detailedReports",
-    mobileIcon: detailedReportsIcon,
-  }
-]
+    {
+      number: '1',
+      title: 'We create your custom screening benchmarks for assesment',
+      description: 'To find out what ‘good’ looks like in each role within the company.',
+      lottieID: "playRemotely",
+      mobileIcon: playRemotelyIcon,
+    },
+    {
+      number: '2',
+      title: 'Candidates play remotely and get assessed immediately',
+      description: 'A link with the automated Unberry gameplay takes care of everything.',
+      lottieID: "customBenchmarks",
+      mobileIcon: customBenchmarksIcon,
+    },
+    {
+      number: '3',
+      title: 'You get detailed reports with relevant, predictive insights',
+      description: 'To identify right job-fits and high potential candidates early in the process',
+      lottieID: "detailedReports",
+      mobileIcon: detailedReportsIcon,
+    }
+  ]
   useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#playRemotely"),

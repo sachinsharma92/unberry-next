@@ -19,28 +19,24 @@ export default function WorkforceCard() {
     {
       lottieID: "preciseSignal",
       mobileIcon: preciseSignalIcon,
-      title: 'A Much More Precise Signal',
-      description: 'Improve the efficiency in Hiring. Reduce time to hire by 45% and cost to hire by 28%',
+      description: <><span>Churn in human capital</span> has never been more. Skill sets are becoming obsolete very fast.</>,
     },
     {
       lottieID: "fastEfficient",
       mobileIcon: fastEfficientIcon,
-      title: 'Fast and Efficient Process',
-      description: 'We increase yield in last round by upto 37%. Reduction in number of rounds by 21%',
+      description: <><span>Salaries have spiralled out</span> of control. Conventional hiring is becoming unsustainable.</>,
       imgStyle: 'icon-style',
-      iconStyle:'icon-scale'
+      iconStyle: 'icon-scale'
     },
     {
       lottieID: "hiddenPools",
       mobileIcon: hiddenPoolsIcon,
-      title: 'Access to Hidden Talent Pools',
-      description: `Don't miss out on a great hire early in the process. 35% of them get rejected currently.`,
+      description: <>Work 4.0 is going to be far more <span>diverse & distributed.</span> Remote hiring is the new normal.</>,
     },
     {
       lottieID: "longImpact",
       mobileIcon: longImpactIcon,
-      title: 'Long Lasting Brand Impact',
-      description: 'Candidates find game based assessments to be better experience by 95%.',
+      description: <>Most admit to <span>bad hiring decisions.</span> Reliable people insights are the key to hiring the best.</>,
     }
   ]
 
@@ -72,9 +68,6 @@ export default function WorkforceCard() {
             <div className='img-box'>
               <div className='jsonIcon icon-style' id={item.lottieID} />
             </div>
-            <div className='title'>
-              {item.title}
-            </div>
             <div className='description'>
               {item.description}
             </div>
@@ -89,9 +82,6 @@ export default function WorkforceCard() {
             <div className='box-style' key={index}>
               <div className='img-box'>
                 <Image src={item.mobileIcon} className={`icon-style ${item.iconStyle}`} alt="" />
-              </div>
-              <div className='title'>
-                {item.title}
               </div>
               <div className='description'>
                 {item.description}
