@@ -1,7 +1,7 @@
 import { Button, Col, Row } from 'antd'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-import videoImage1 from "../../../assets/video-img1.png";
+import videoImage1 from "../../../assets/mac-full.svg";
 
 import productImage1 from "../../../assets/icons/the-product/game.svg"
 import productImage2 from "../../../assets/icons/the-product/strategy.svg"
@@ -48,7 +48,7 @@ export default function AssessmentSection() {
   useEffect(() => {
     const leftController = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
-      duration: '55%',
+      duration: '53%',
       triggerElement: ".sticky-style",
       triggerHook: 0,
       offset: -50

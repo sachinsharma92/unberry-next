@@ -60,7 +60,7 @@ export default function CompetencySection() {
     },
     {
       jsonID: 'intelligenceJson',
-      title: 'Intelligence Traits',
+      title: 'Behavioural Traits',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
         "Tactical Planning", "Patience", "Decision Making", "Emotional Intelligence"
@@ -68,7 +68,7 @@ export default function CompetencySection() {
     },
     {
       jsonID: 'behaviouralJson',
-      title: 'Intelligence Traits',
+      title: 'Social Traits',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
         "Cooperation", "Reciprocity", "Integrity", "People Management"
@@ -76,7 +76,7 @@ export default function CompetencySection() {
     },
     {
       jsonID: 'communicationJson',
-      title: 'Intelligence Traits',
+      title: 'Communication Skills',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
         "Learning", "Listening", "Reading", "Writing", "Basic Comprehension"
@@ -84,7 +84,7 @@ export default function CompetencySection() {
     },
     {
       jsonID: 'functionalJson',
-      title: 'Intelligence Traits',
+      title: 'Functional Skills',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
         "Coding Assessments", "Patience", "Functional Skill Assessments"
