@@ -425,7 +425,7 @@
   }
 
   // Section The Products
-  .product-section {
+  .assessment-section {
     background: $theme-secondary;
 
     .menu-section {
@@ -582,15 +582,21 @@
       padding-right: 70px;
       margin-bottom: 68px;
 
-      .p-card {
-        padding: 35px 25px;
-        background: rgba(50, 49, 49, 0.5);
+      .content {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 2;
+        height: 100%;
       }
 
-      .p-card:nth-child(odd) {
-        position: relative;
-        top: 68px;
+      .explore {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #fffbf1;
+        margin-top: 26px;
       }
 
       .title {
@@ -606,7 +612,7 @@
         line-height: 24px;
         color: #fffbf1;
         opacity: 0.8;
-        margin-top: 118px;
+        transition: all 0.5s ease-in-out;
       }
 
       .icon-sec {
@@ -616,6 +622,7 @@
         top: 0;
         right: 0;
         opacity: 0.4;
+        z-index: 1;
 
         img {
           position: absolute;
@@ -625,6 +632,56 @@
           height: 100%;
           object-fit: contain;
         }
+      }
+
+      .hover-action {
+        transition: all 0.5s ease-in-out;
+        transform: translateY(60px);
+      }
+
+      .p-card {
+        padding: 35px 25px;
+        background: rgba(50, 49, 49, 0.5);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        height: 343px;
+
+        &::before {
+          position: absolute;
+          top: -18vw;
+          right: -10vw;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, #776152 0%, #d87e96 100%);
+          filter: blur(67px);
+          content: "";
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+        }
+
+        &:hover {
+          &::before {
+            opacity: 1;
+          }
+
+          .description {
+            top: 0;
+          }
+
+          .hover-action {
+            transform: translateY(0px);
+          }
+
+          .icon-sec {
+            opacity: 1;
+          }
+        }
+      }
+
+      .p-card:nth-child(odd) {
+        position: relative;
+        top: 68px;
       }
     }
   }

@@ -1,4 +1,4 @@
-import { Button, Col, Image, Row } from 'antd'
+import { Button, Col, Row } from 'antd'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
 import videoImage1 from "../../../assets/video-img1.png";
@@ -9,6 +9,7 @@ import productImage3 from "../../../assets/icons/the-product/cube.svg"
 import productImage4 from "../../../assets/icons/the-product/chat.svg"
 import productImage5 from "../../../assets/icons/the-product/code.svg"
 import productImage6 from "../../../assets/icons/the-product/git.svg"
+import Image from 'next/image';
 
 export default function AssessmentSection() {
   const producrCard = [
@@ -19,27 +20,27 @@ export default function AssessmentSection() {
     },
     {
       imgUrl: productImage2,
-      title: 'Cognitive & Skill-based Games',
+      title: 'Story-format Immersive Exercises',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
     },
     {
       imgUrl: productImage3,
-      title: 'Cognitive & Skill-based Games',
+      title: 'Interactive Workplace Simulations',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
     },
     {
       imgUrl: productImage4,
-      title: 'Cognitive & Skill-based Games',
+      title: 'Instant AI Communication Check',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
     },
     {
       imgUrl: productImage5,
-      title: 'Cognitive & Skill-based Games',
+      title: 'Automated Coding Assessments',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
     },
     {
       imgUrl: productImage6,
-      title: 'Cognitive & Skill-based Games',
+      title: 'Functional Domain Knowledge',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
     }
   ]
@@ -47,7 +48,7 @@ export default function AssessmentSection() {
   useEffect(() => {
     const leftController = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
-      duration: '56%',
+      duration: '55%',
       triggerElement: ".sticky-style",
       triggerHook: 0,
       offset: -50
@@ -58,7 +59,7 @@ export default function AssessmentSection() {
   }, []);
 
   return (
-    <section className='section-style product-section'>
+    <section className='section-style assessment-section'>
       <div className='menu-section'>
         <Link href="">03 The product</Link>
       </div>
@@ -84,19 +85,24 @@ export default function AssessmentSection() {
               </div>
             </Col>
             <Col xs={24} sm={12}>
-              <div className="card-grid">
-                {producrCard.map((data, index) => (
-                  <div key={index} className="p-card">
-                    <div className="icon-sec">
-                      <Image src={data.imgUrl} layout="fill" alt="" />
+              <Link href="">
+                <a className="card-grid">
+                  {producrCard.map((data, index) => (
+                    <div key={index} className="p-card">
+                      <div className="icon-sec">
+                        <Image src={data.imgUrl} layout="fill" alt="" />
+                      </div>
+                      <div className="content">
+                        <h4 className="title"> {data.title}</h4>
+                        <div className='hover-action'>
+                          <p className="description">{data.description}</p>
+                          <div className="explore">Explore</div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h4 className="title"> {data.title}</h4>
-                      <p className="description">{data.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </a>
+              </Link>
             </Col>
           </Row>
         </div>
