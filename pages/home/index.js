@@ -297,10 +297,13 @@ export default function HomeScreen() {
             <div className='content-section'>
               <div className='sec-first'>
                 <Row className='h-100'>
-                  <Col xs={24} sm={10}>
+                  <Col xs={24} sm={12}>
                     <div className='heading-section'>
                       <h3 className='title1'>The Assessment Suite</h3>
                       <p className="description">A suite of multi-dimensional, psychometrically-rigorous, gamified assessments that demand exploration and hands-on problem solving from the players to progress.</p>
+                      <div className="button-section">
+                        <Button type="primary" href="#bookDemo" className='btn-demo d-xs-none'>Book Demo</Button>
+                      </div>
                     </div>
                     <div className='video-image'>
                       <video muted autoPlay loop playsInline width="100%" height="100%">
@@ -310,7 +313,7 @@ export default function HomeScreen() {
                       <Image src={videoImage1} className='img-full' alt="" />
                     </div>
                   </Col>
-                  <Col xs={24} sm={14}>
+                  <Col xs={24} sm={12}>
                     <div className="card-grid">
                       {producrCard.map((data, index) => (
                         <div key={index} className="p-card">

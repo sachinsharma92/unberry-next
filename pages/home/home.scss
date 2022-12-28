@@ -474,6 +474,10 @@
       }
     }
 
+    .content-section {
+      padding: 68px 0;
+    }
+
     .gameJson {
       width: 75%;
 
@@ -516,7 +520,6 @@
       height: 100%;
 
       .heading-section {
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -527,6 +530,7 @@
         color: $white;
         margin: 0;
         font-size: 22px;
+        max-width: 80%;
       }
 
       .title1 {
@@ -548,17 +552,31 @@
       }
     }
 
+    .button-section {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 48px;
+
+      .btn-demo {
+        background: $white;
+        color: $black;
+        text-transform: uppercase;
+        width: 180px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
     .video-image {
-      background: url("../../assets/bg/product2.png");
-      background-size: cover;
-      background-position: bottom;
-      border-right: 1px solid rgba($white, 0.2);
       position: relative;
-      height: 100%;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 80px;
+      padding: 0 50px;
 
       @include mobile {
         width: 100vw;
@@ -566,7 +584,7 @@
       }
 
       video {
-        width: 715px;
+        width: 100%;
         position: absolute;
         left: 0;
         right: 0;
@@ -600,13 +618,18 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 47px;
-      padding-right: 106px;
-      padding-top: 68px;
+      padding-right: 70px;
+      margin-bottom: 68px;
 
       .p-card {
         padding: 35px 25px;
         background: rgba(50, 49, 49, 0.5);
         position: relative;
+      }
+
+      .p-card:nth-child(odd) {
+        position: relative;
+        top: 68px;
       }
 
       .title {
@@ -626,8 +649,8 @@
       }
 
       .icon-sec {
-        width: 102px;
-        height: 102px;
+        width: 92px;
+        height: 92px;
         position: absolute;
         top: 0;
         right: 0;
