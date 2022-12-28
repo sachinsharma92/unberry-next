@@ -20,6 +20,7 @@ import SeoHead from '../../components/seoHead';
 
 // Images
 import logoTheme from "../../assets/logo-brown.svg";
+import CompetencySection from '../../components/home/competencySection';
 
 
 export default function HomeScreen() {
@@ -75,6 +76,8 @@ export default function HomeScreen() {
           <WhyUnberrySection />
 
           <AssessmentSection />
+
+          <CompetencySection />
 
           <HowWorkSection />
 

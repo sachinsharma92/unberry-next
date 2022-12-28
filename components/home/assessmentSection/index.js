@@ -11,8 +11,6 @@ import productImage5 from "../../../assets/icons/the-product/code.svg"
 import productImage6 from "../../../assets/icons/the-product/git.svg"
 
 export default function AssessmentSection() {
-
-
   const producrCard = [
     {
       imgUrl: productImage1,
@@ -49,13 +47,14 @@ export default function AssessmentSection() {
   useEffect(() => {
     const leftController = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
-      duration: '50%',
+      duration: '56%',
       triggerElement: ".sticky-style",
       triggerHook: 0,
+      offset: -50
     })
       .setPin(".sticky-style")
       .addTo(leftController)
-      .addIndicators({ name: "pin scene", colorEnd: "#000" })
+    // .addIndicators({ name: "pin scene", colorEnd: "#000" })
   }, []);
 
   return (
