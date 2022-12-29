@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Carousel } from 'antd';
+import { Button, Carousel } from 'antd';
 import lottie from "lottie-web";
 
 import playRemotely from "../../../assets/json/play-remotely.json";
@@ -15,23 +15,21 @@ import Image from 'next/image';
 export default function HowWorkCard() {
   const mediaboxData = [
     {
-      number: '1',
-      title: 'We create your custom screening benchmarks for assesment',
-      description: 'To find out what ‘good’ looks like in each role within the company.',
+      title: 'Tech Operations',
+      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
       lottieID: "playRemotely",
       mobileIcon: playRemotelyIcon,
     },
     {
-      number: '2',
-      title: 'Candidates play remotely and get assessed immediately',
-      description: 'A link with the automated Unberry gameplay takes care of everything.',
+      title: 'Sales & Operations',
+      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
       lottieID: "customBenchmarks",
       mobileIcon: customBenchmarksIcon,
+      listStyle: 'focusStyle'
     },
     {
-      number: '3',
-      title: 'You get detailed reports with relevant, predictive insights',
-      description: 'To identify right job-fits and high potential candidates early in the process',
+      title: 'Grey Collar Workforce',
+      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
       lottieID: "detailedReports",
       mobileIcon: detailedReportsIcon,
     }
@@ -56,17 +54,21 @@ export default function HowWorkCard() {
       <div className='media-section d-xs-none'>
         {mediaboxData.map((item, index) => (
           <div className='media-box' key={index}>
-            <div className='number'>
-              {item.number}
-            </div>
-            <div className='title'>
-              {item.title}
-            </div>
-            <div className='description'>
-              {item.description}
-            </div>
-            <div className='img-sec'>
-              <div className='jsonIcon icon-style' id={item.lottieID} />
+            <ul className={`list-sec ${item.listStyle}`}>
+              <li>Privacy Engineer</li>
+              <li>Research Scientist</li>
+              <li>On-ground Sales Forse</li>
+              <li>Privacy Engineer</li>
+              <li>Research Scientist</li>
+            </ul>
+            <div className="content-box">
+              <div className='title'>
+                {item.title}
+              </div>
+              <div className='description'>
+                {item.description}
+              </div>
+              <Button type="primary" className='btn-demo btn-demo-lg'>Book Demo</Button>
             </div>
           </div>
         ))}

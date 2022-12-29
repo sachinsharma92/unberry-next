@@ -11,7 +11,7 @@
     min-height: auto;
 
     @include mobile {
-      background-image: linear-gradient(to bottom, #1C1C1C 280px, white 20%)
+      background-image: linear-gradient(to bottom, #1c1c1c 280px, white 20%);
     }
   }
 
@@ -74,14 +74,14 @@
   .text-sm {
     margin: 0 0 10px;
     font-size: 16px;
-    color: #BA4A17;
+    color: #ba4a17;
     font-weight: 600;
     text-transform: uppercase;
   }
 
   .ant-input {
     border: none;
-    border-bottom: 1px solid #C4C2DA;
+    border-bottom: 1px solid #c4c2da;
     padding: 0;
     border-radius: 0;
     padding-bottom: 5px;
@@ -110,5 +110,4 @@
   .ant-form-item-explain-error {
     display: none;
   }
-
 }

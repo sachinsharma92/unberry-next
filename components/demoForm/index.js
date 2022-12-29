@@ -11,7 +11,7 @@ export default function DemoForm(props) {
   const thankToggleModal = () => {
     setThankModal(!isThankModal);
   };
-  
+
   const formRef = useRef(null);
 
   const openNotificationWithIcon = type => {
@@ -65,68 +65,86 @@ export default function DemoForm(props) {
   return (
     <section className='section-style contact-section' id={props.id} >
       <div className='menu-section'></div>
-      <Row className='w-100'>
-        <Col xs={24} sm={16}>
-          <div className='gradint-section'>
-            <Image src={demoGroup} className='img-full' alt="" />
+      <div className="contact-section">
+        <div className='header-style'>
+          <div className="heading-first">
+            <h4 className='title4'>Take the guesswork out…</h4>
+            <div className='border-style' />
           </div>
-        </Col>
-        <Col xs={24} sm={8}>
-          <div className='contact-form-section'>
-            <div className='content'>
-              <p className='text-sm'>Book a demo</p>
-              <h4 className='title4'>Take the guesswork out…</h4>
-              <p className='description'>Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
-            </div>
+          <div className="heading-second">
+            <div className='text-demo'>Book A Demo</div>
+            <div className='border-style' />
+          </div>
 
-            <Form
-              name="basic"
-              autoComplete="off"
-              layout="vertical"
-              className='form-style'
-              onFinish={bookADemo}
-              preserve={false}
-              ref={formRef}
-              initialValues={{
-                name: '',
-                email: '',
-                designation: ''
-              }}
-            >
-              <Form.Item
-                name="name"
-                rules={[{ required: true, }]}
+        </div>
+        <Row className='w-100'>
+          <Col xs={12} sm={10}>
+            <div className='contact-form-section'>
+              <div className='content'>
+                <p className='description'>Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
+              </div>
+
+              <Form
+                name="basic"
+                autoComplete="off"
+                layout="vertical"
+                className='form-style'
+                onFinish={bookADemo}
+                preserve={false}
+                ref={formRef}
+                initialValues={{
+                  name: '',
+                  email: '',
+                  designation: ''
+                }}
               >
-                <Input placeholder='Enter Name'
-                //  value={name} onChange={e => setName(e.target.value)}
-                />
-              </Form.Item>
 
-              <Form.Item
-                name="email"
-                rules={[{ type: 'email', required: true, }]}
-              >
-                <Input placeholder='Enter Email' />
-              </Form.Item>
+                <div className="grid-form">
+                  <Form.Item
+                    name="name"
+                    rules={[{ required: true, }]}
+                  >
+                    <Input placeholder='Enter Name'
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    name="name"
+                    rules={[{ required: true, }]}
+                  >
+                    <Input placeholder='Enter Phone'
+                    />
+                  </Form.Item>
 
-              <Form.Item
-                name="designation"
-                rules={[{ required: true, }]}
-              >
-                <Input placeholder='Role at company' />
-              </Form.Item>
+                  <Form.Item
+                    name="email"
+                    rules={[{ type: 'email', required: true, }]}
+                  >
+                    <Input placeholder='Enter Email' />
+                  </Form.Item>
 
-              <Form.Item>
+                  <Form.Item
+                    name="designation"
+                    rules={[{ required: true, }]}
+                  >
+                    <Input placeholder='Role at company' />
+                  </Form.Item>
+                </div>
+
                 <Button type="primary" htmlType="submit" >
                   Get Started
                 </Button>
-              </Form.Item>
-            </Form>
-          </div>
-        </Col>
-      </Row>
+              </Form>
+            </div>
+          </Col>
+          <Col xs={12} sm={14}>
+            <div className='gradint-section'>
+              <Image src={demoGroup} className='img-full' alt="" />
+            </div>
+          </Col>
+        </Row>
+      </div>
 
-      <ThankModal visible={isThankModal} onCancel={thankToggleModal}/>
+      <ThankModal visible={isThankModal} onCancel={thankToggleModal} />
     </section>
   )
 }

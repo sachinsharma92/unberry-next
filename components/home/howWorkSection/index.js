@@ -11,7 +11,7 @@ export default function HowWorkSection() {
 
       <div className='content-section'>
         <div className='heading-section'>
-          <h3 className='title1 text-gradient'>“Here&rsquo;s how Unberry works and it&rsquo;s simply a game changer”</h3>
+          <h3 className='title1 text-gradient'>Applicability across a wide variety of roles</h3>
         </div>
         <HowWorkCard />
       </div>

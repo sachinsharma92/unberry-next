@@ -1,12 +1,17 @@
 import React, { useEffect } from 'react'
-import { Col, Row } from 'antd'
+import { Button, Col, Row } from 'antd'
+import { useMediaQuery } from 'react-responsive'
+import Image from 'next/image';
 import Link from 'next/link'
 import lottie from "lottie-web";
 import focusJson from "../../../assets/json/focus.json";
 import hireJson from "../../../assets/json/hire.json";
 import bestfitJson from "../../../assets/json/bestfit.json";
+import laptop1 from "../../../assets/automation-l1.png";
 
 export default function AutomationSection() {
+  const isSmallScreen = useMediaQuery({ query: '(max-width: 767px)' })
+
   useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#focus1"),
@@ -27,7 +32,7 @@ export default function AutomationSection() {
       <div className='menu-section'>
         <Link href="">02 Why Unberry</Link>
       </div>
-      <div className='content-section'>
+      {isSmallScreen ? <div className='content-section'>
         <div className='header-section'>
           <h2 className="title-lg text-gradient">End to end automation</h2>
         </div>
@@ -58,6 +63,40 @@ export default function AutomationSection() {
           </Row>
         </div>
       </div>
+
+        :
+
+        <div className='content-section'>
+
+          <div className='boxes-style'>
+            <Row>
+              <Col sm={11}>
+                <div className='header-section'>
+                  <h2 className="title-lg">End to end <br /> automation</h2>
+                </div>
+                <div className='icon-box-sec'>
+                  <div className='jsonIcon icon1' id="focus1" />
+                  <h4 className='title4'>Real Time Reporting</h4>
+                  <p className='description'>Evidence suggests that nearly 50% applicants embellish their CVs, reducing the utility of résumés as initial screening tools.</p>
+
+                  <div className="title-faded">Candidate Communication</div>
+                  <div className="title-faded">Proctoring</div>
+                  <Button type="primary" className='btn-demo btn-demo-lg'>Book Demo</Button>
+                </div>
+              </Col>
+              <Col sm={13}>
+                <div className="asset-section">
+                  <div className='img-box'>
+                    <Image src={laptop1} layout="fill" alt='' />
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
+
+
+      }
     </section>
   )
 }
