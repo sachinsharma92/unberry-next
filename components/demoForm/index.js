@@ -76,15 +76,14 @@ export default function DemoForm(props) {
         </div>
         <div className='header-style'>
           <div className="heading-first">
-            {isBigScreen ?
+            <div className="show-on-desktop">
               <h4 className='title4'>Take the guesswork out…</h4>
-              :
-              <div>
-                <h4 className='title4'>Take the</h4>
-                <span className='border-style' />
-                <h4 className='title4'> guesswork out…</h4>
-              </div>
-            }
+            </div>
+            <div className="show-on-mobile">
+              <h4 className='title4'>Take the</h4>
+              <span className='border-style' />
+              <h4 className='title4'> guesswork out…</h4>
+            </div>
             <div className='border-style' />
           </div>
           <div className="heading-second">

@@ -8,7 +8,7 @@ import laptop1 from "../../../assets/automation-l1.png";
 import bestfitJson from "../../../assets/json/bestfit.json";
 import focusJson from "../../../assets/json/focus.json";
 import hireJson from "../../../assets/json/hire.json";
-import laptop2 from "../../../assets/video-img1.png";
+import laptop2 from "../../../assets/automation-l2.png";
 
 
 export default function AutomationSection() {
