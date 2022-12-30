@@ -1,26 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import { Button, Col, Collapse, Row } from 'antd'
-import { useMediaQuery } from 'react-responsive'
-import Image from 'next/image';
-import Link from 'next/link'
+import { Button, Col, Row } from 'antd';
 import lottie from "lottie-web";
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive'
 
+import laptop1 from "../../../assets/automation-l1.png";
+import bestfitJson from "../../../assets/json/bestfit.json";
 import focusJson from "../../../assets/json/focus.json";
 import hireJson from "../../../assets/json/hire.json";
-import bestfitJson from "../../../assets/json/bestfit.json";
-import laptop1 from "../../../assets/automation-l1.png";
 import laptop2 from "../../../assets/video-img1.png";
 
-const { Panel } = Collapse;
-
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
 
 export default function AutomationSection() {
-  const isSmallScreen = useMediaQuery({ query: '(max-width: 767px)' })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
+
   const [count, setCount] = useState(5);
   const [activeTitle, setActiveTitle] = useState(1)
 
@@ -84,37 +78,28 @@ export default function AutomationSection() {
       <div className='menu-section'>
         <Link href="">02 Why Unberry</Link>
       </div>
-      {isSmallScreen ? <div className='content-section'>
-        <div className='header-section'>
-          <h2 className="title-lg text-gradient">End to end automation</h2>
+      {!isBigScreen ?
+        <div className='content-section mobile-layout'>
+          <div className='header-section'>
+            <h2 className="title-lg text-gradient">End to end automation</h2>
+          </div>
+          <div className='horizontal-card'>
+            {dataList.map((data, index) => (
+              <div className='icon-box-sec' key={index}>
+                <div className="img-box">
+                  <Image
+                    src={laptop2}
+                    alt="Picture of the author"
+                    layout="fill"
+                  />
+                </div>
+                <div className='jsonIcon icon1' id={data.jsonID} />
+                <h4 className='title4'>{data.title}</h4>
+                <p className='description'>{data.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className='boxes-style'>
-          <Row>
-            <Col sm={8}>
-              <div className='icon-box-sec'>
-                <div className='jsonIcon icon1' id="focus1" />
-                <h4 className='title4'>Focus on potential</h4>
-                <p className='description'>Widen your sourcing pool with an unbiased way of hiring. Increase diversity by 56%</p>
-              </div>
-            </Col>
-            <Col sm={8}>
-              <div className='icon-box-sec border-section'>
-                <div className='jsonIcon icon2' id="hires2" />
-                <h4 className='title4'>Avoid bad hires</h4>
-                <p className='description'>Improve the efficiency in Hiring. Reduce time to hire by 45% and cost to hire by 28%</p>
-              </div>
-            </Col>
-
-            <Col sm={8}>
-              <div className='icon-box-sec'>
-                <div className='jsonIcon icon3' id="bestfit3" />
-                <h4 className='title4'>Identify your best-fit</h4>
-                <p className='description'>Top Performers yields up to 67% more productivity and profit. Know the key traits required for successful teams.</p>
-              </div>
-            </Col>
-          </Row>
-        </div>
-      </div>
 
         :
 

@@ -51,7 +51,7 @@ export default function HowWorkCard() {
   }, []);
   return (
     <div className='how-work-card'>
-      <div className='media-section d-xs-none'>
+      <div className='media-sectio'>
         {mediaboxData.map((item, index) => (
           <div className='media-box' key={index}>
             <ul className={`list-sec ${item.listStyle}`}>
@@ -72,28 +72,6 @@ export default function HowWorkCard() {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* On Mobile */}
-      <div className='d-xs-visible'>
-        <Carousel autoplay>
-          {mediaboxData.map((item, index) => (
-            <div className='media-box' key={index}>
-              <div className='number'>
-                {item.number}
-              </div>
-              <div className='title'>
-                {item.title}
-              </div>
-              <div className='description'>
-                {item.description}
-              </div>
-              <div className='img-sec'>
-                <Image src={item.mobileIcon} className='jsonIcon icon-style' alt="" id={item.lottieID} />
-              </div>
-            </div>
-          ))}
-        </Carousel>
       </div>
     </div>
   )

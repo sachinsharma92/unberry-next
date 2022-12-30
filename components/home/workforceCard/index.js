@@ -77,7 +77,7 @@ export default function WorkforceCard() {
 
       {/* On Mobile */}
       <div className='d-xs-visible'>
-        <Carousel autoplay>
+        <div className='horizontal-scroll'>
           {textBoxData.map((item, index) => (
             <div className='box-style' key={index}>
               <div className='img-box'>
@@ -88,7 +88,7 @@ export default function WorkforceCard() {
               </div>
             </div>
           ))}
-        </Carousel>
+        </div>
       </div>
     </div>
   )

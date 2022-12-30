@@ -1,7 +1,8 @@
 import { Button, Col, Row } from 'antd'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-import videoImage1 from "../../../assets/mac-full.svg";
+import { useMediaQuery } from 'react-responsive'
+import videoImage1 from "../../../assets/video-img1.png";
 
 import productImage1 from "../../../assets/icons/the-product/game.svg"
 import productImage2 from "../../../assets/icons/the-product/strategy.svg"
@@ -12,6 +13,8 @@ import productImage6 from "../../../assets/icons/the-product/git.svg"
 import Image from 'next/image';
 
 export default function AssessmentSection() {
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
+
   const producrCard = [
     {
       imgUrl: productImage1,
@@ -46,16 +49,18 @@ export default function AssessmentSection() {
   ]
 
   useEffect(() => {
-    const leftController = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-      duration: '53%',
-      triggerElement: ".sticky-style",
-      triggerHook: 0,
-      offset: -50
-    })
-      .setPin(".sticky-style")
-      .addTo(leftController)
-    // .addIndicators({ name: "pin scene", colorEnd: "#000" })
+    if (isBigScreen) {
+
+      const leftController = new ScrollMagic.Controller();
+      new ScrollMagic.Scene({
+        duration: '53%',
+        triggerElement: ".sticky-style",
+        triggerHook: 0,
+        offset: -50
+      })
+        .setPin(".sticky-style")
+        .addTo(leftController)
+    }
   }, []);
 
   return (
