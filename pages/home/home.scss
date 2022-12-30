@@ -376,20 +376,12 @@
 
       .jsonIcon {
         width: 80px;
+        height: 80px;
+        display: none;
 
         @include mobile {
           width: 100px;
         }
-      }
-
-      .icon1,
-      .icon3 {
-        margin-left: -15px;
-      }
-
-      img {
-        width: 90px;
-        margin-bottom: 20px;
       }
     }
 
@@ -416,6 +408,8 @@
       letter-spacing: -1.8px;
       text-transform: capitalize;
       color: #313131;
+      opacity: 0.5;
+      transition: all 0.5s ease-in-out;
 
       @include mobile {
         font-weight: 600;
@@ -432,6 +426,7 @@
       color: #2e1500;
       opacity: 0.8;
       margin-bottom: 0;
+      transition: all 0.5s ease-in-out;
     }
 
     .asset-section {
@@ -477,6 +472,48 @@
     .border-section {
       border-left: 1px solid $border-color;
       border-right: 1px solid $border-color;
+    }
+
+    .button-section {
+      padding: 0 40px;
+    }
+
+    .icon-list-section {
+      list-style: none;
+      padding: 0;
+
+      .title4 {
+        margin-bottom: 8px;
+      }
+
+      .description {
+        translate: -10px 0px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+      }
+
+      .active-style {
+        .title4 {
+          opacity: 1;
+        }
+        .description {
+          opacity: 1;
+          translate: 0px 0px;
+          position: relative;
+        }
+
+        .jsonIcon {
+          display: block;
+        }
+      }
+    }
+
+    .imageSection {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
     }
   }
 
