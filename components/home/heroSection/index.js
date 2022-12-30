@@ -2,8 +2,8 @@ import { Button } from 'antd'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import heroImage from "../../../assets/illustration/hero-img.svg"
 import logoTheme from "../../../assets/logo-brown.svg"
-import heroImage from "../../../assets/illustration/hero-img.svg";
 
 export default function HomeHeroSection() {
   return (
@@ -22,22 +22,39 @@ export default function HomeHeroSection() {
           <Button type="primary" href="#bookDemo" className='btn-demo d-xs-none'>Book Demo</Button>
         </div>
 
-        <div className='heading-section'>
-          <div className='d-flex'>
-            <h1 className='title1'>
-              <span>Building People Analytics For</span>
-            </h1>
+        <div className="show-on-desktop">
+          <div>
+            <div className='heading-section'>
+              <h1 className='title1'>
+                <span>Building People Analytics For</span>
+              </h1>
+              <div className='border-style' />
+            </div>
+            <div className='heading-section heading-section2'>
+              <h1 className='title1 bold text-gradient'>
+                <span>The Modern Workplace</span>
+              </h1>
+              <div className='border-style' />
+            </div>
           </div>
-          <div className='border-style' />
         </div>
 
-        <div className='heading-section heading-section2'>
-          <div className='d-flex'>
-            <h1 className='title1 bold text-gradient'>
-              <span>The Modern Workplace</span>
-            </h1>
+        <div className="show-on-mobile">
+          <div className='heading-section'>
+            <div className='d-flex'>
+              <h1 className='title1'>
+                <span>Building People</span>
+                <div className='border-style' />
+                <span>Analytics For</span>
+                <div className='border-style' />
+                <span className='bold'>The Modern</span>
+                <div className='border-style' />
+                <span className='bold'>Workplace</span>
+                <div className='border-style' />
+              </h1>
+            </div>
+            <div className='border-style' />
           </div>
-          <div className='border-style' />
         </div>
 
         <div className='illustration-section'>

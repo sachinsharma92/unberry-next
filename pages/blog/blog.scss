@@ -31,7 +31,11 @@
   }
 
   .text-gradient {
-    background: -webkit-linear-gradient(top, rgba($theme-primary-dark, 1) 40px, rgba(#c95632, 1));
+    background: -webkit-linear-gradient(
+      top,
+      rgba($theme-primary-dark, 1) 40px,
+      rgba(#c95632, 1)
+    );
     @include clip-text;
   }
 
@@ -81,7 +85,7 @@
   .section-bury {
     background: #f7f1e5 url("../../assets/bg/gradient-first.svg");
     background-size: cover;
-    border-bottom: 1px solid #DCC797;
+    border-bottom: 1px solid #dcc797;
 
     .menu-section {
       @include mobile {
@@ -131,11 +135,19 @@
     }
 
     .text-gradient {
-      background: -webkit-linear-gradient(top, rgba($theme-primary-dark, 1) 80px, rgba(#c95632, 1));
+      background: -webkit-linear-gradient(
+        top,
+        rgba($theme-primary-dark, 1) 80px,
+        rgba(#c95632, 1)
+      );
       @include clip-text;
-      
+
       @include mobile {
-        background: -webkit-linear-gradient(top, rgba($theme-primary-dark, 1) 20px, rgba(#c95632, 1));
+        background: -webkit-linear-gradient(
+          top,
+          rgba($theme-primary-dark, 1) 20px,
+          rgba(#c95632, 1)
+        );
         @include clip-text;
       }
     }
@@ -182,7 +194,7 @@
           justify-content: center;
           text-transform: uppercase;
           background: $theme-primary-dark;
-          color: #F7F1E4;
+          color: $colorCream;
           font-weight: 600;
           font-size: 18px;
         }
@@ -191,18 +203,15 @@
           &::before {
             bottom: 25px;
           }
-
         }
 
         &.border-bottom-second {
-
           &::before {
             bottom: 52px;
           }
         }
 
         &:nth-child(2) {
-
           @include mobile {
             flex-direction: column;
           }
@@ -210,7 +219,6 @@
       }
 
       .mob-space {
-
         @include mobile {
           padding: 0 10px;
         }
@@ -271,7 +279,7 @@
 
   // Section Why Unberry
   .blog-unberry {
-    background-color: #F7F1E5;
+    background-color: #f7f1e5;
     min-height: auto;
     flex-direction: column;
 
@@ -284,7 +292,11 @@
 
     .header-section {
       padding: 0px 30px;
-      background: linear-gradient(262.63deg, rgba(255, 212, 159, 0.05) 8.02%, rgba(255, 130, 180, 0.05) 127.42%);
+      background: linear-gradient(
+        262.63deg,
+        rgba(255, 212, 159, 0.05) 8.02%,
+        rgba(255, 130, 180, 0.05) 127.42%
+      );
       min-height: 279px;
       display: flex;
       align-items: center;
@@ -328,12 +340,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-      background-size: cover;
+        background-size: cover;
       }
     }
 
     .blog-content-item {
-
       .title {
         font-size: 26px;
         line-height: 30px;
@@ -359,7 +370,7 @@
         max-width: 90%;
         display: -webkit-box;
         -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;  
+        -webkit-box-orient: vertical;
         overflow: hidden;
         margin-top: 15px;
 

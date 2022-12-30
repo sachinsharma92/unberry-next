@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive'
-
 import laptop1 from "../../../assets/automation-l1.png";
 import bestfitJson from "../../../assets/json/bestfit.json";
 import focusJson from "../../../assets/json/focus.json";
@@ -45,7 +44,7 @@ export default function AutomationSection() {
   useEffect(() => {
     let ImageSourceInterval;
     if (count < dataList.length) {
-      ImageSourceInterval = setInterval(() => setCount(count + 1), 2500);
+      ImageSourceInterval = setInterval(() => setCount(count + 1), 3000);
     }
     if (count >= dataList.length) {
       setCount(0);
@@ -78,31 +77,8 @@ export default function AutomationSection() {
       <div className='menu-section'>
         <Link href="">02 Why Unberry</Link>
       </div>
-      {!isBigScreen ?
-        <div className='content-section mobile-layout'>
-          <div className='header-section'>
-            <h2 className="title-lg text-gradient">End to end automation</h2>
-          </div>
-          <div className='horizontal-card'>
-            {dataList.map((data, index) => (
-              <div className='icon-box-sec' key={index}>
-                <div className="img-box">
-                  <Image
-                    src={laptop2}
-                    alt="Picture of the author"
-                    layout="fill"
-                  />
-                </div>
-                <div className='jsonIcon icon1' id={data.jsonID} />
-                <h4 className='title4'>{data.title}</h4>
-                <p className='description'>{data.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        :
-
+      <div className="show-on-desktop w-full">
         <div className='content-section'>
           <div className='boxes-style'>
             <Row>
@@ -149,7 +125,31 @@ export default function AutomationSection() {
             </Row>
           </div>
         </div>
-      }
+      </div>
+
+      <div className="show-on-mobile">
+        <div className='content-section mobile-layout'>
+          <div className='header-section'>
+            <h2 className="title-lg text-gradient">End to end automation</h2>
+          </div>
+          <div className='horizontal-card'>
+            {dataList.map((data, index) => (
+              <div className='icon-box-sec' key={index}>
+                <div className="img-box">
+                  <Image
+                    src={laptop2}
+                    alt="Picture of the author"
+                    layout="fill"
+                  />
+                </div>
+                <div className='jsonIcon icon1' id={data.jsonID} />
+                <h4 className='title4'>{data.title}</h4>
+                <p className='description'>{data.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

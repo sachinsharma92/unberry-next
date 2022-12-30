@@ -186,6 +186,7 @@ p {
 
   .ant-layout-footer {
     padding: 0;
+    background: $white;
 
     .footer {
       border-left: 1px solid #dcc797;
@@ -194,6 +195,7 @@ p {
       display: flex;
       justify-content: center;
       justify-content: space-between;
+      background: $white;
 
       @include mobile {
         margin-left: 29px;
@@ -241,7 +243,7 @@ p {
       .icon-link {
         width: 35px;
         height: 35px;
-        background: #f7f1e4;
+        background: $colorCream;
         border-radius: 8px;
         display: flex;
         align-items: center;
@@ -288,7 +290,7 @@ p {
     justify-content: center;
     text-transform: uppercase;
     background: #100c0b;
-    color: #f7f1e4;
+    color: $colorCream;
     font-weight: 600;
     font-size: 16px;
   }
@@ -832,5 +834,24 @@ p {
 
   span {
     top: 0;
+  }
+}
+
+// Hide Style
+.show-on-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.show-on-desktop {
+  @include mobile {
+    display: none;
+  }
+
+  &.w-full {
+    width: 100%;
   }
 }

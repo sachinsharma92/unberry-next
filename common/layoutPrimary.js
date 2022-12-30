@@ -23,11 +23,11 @@ export default function LayoutPrimary(props) {
             <p className='copyright'>© Copyright 2022. UNBERRY. All Rights Reserved.</p>
           </div>
 
-          <div className='social-sec'>
+          {/* <div className='social-sec'>
             <a href="https://www.linkedin.com/company/unberry/"  rel="noreferrer" className='icon-link' target="_blank"><Image className='icon' alt="social icons" src={linkedin} /></a>
             <a href="https://www.instagram.com/unberry_official/" rel="noreferrer" className='icon-link' target="_blank"><Image  className='icon' src={instagram}  alt="social icons" /></a>
             <a href="https://twitter.com/UnberryHQ" target="_blank" rel="noreferrer" className='icon-link'><Image  className='icon' src={twitter}  alt="social icons" /></a>
-          </div>
+          </div> */}
         </div>
       </Footer>}
     </Layout>

@@ -51,7 +51,7 @@ export default function HowWorkCard() {
   }, []);
   return (
     <div className='how-work-card'>
-      <div className='media-sectio'>
+      <div className='media-section'>
         {mediaboxData.map((item, index) => (
           <div className='media-box' key={index}>
             <ul className={`list-sec ${item.listStyle}`}>

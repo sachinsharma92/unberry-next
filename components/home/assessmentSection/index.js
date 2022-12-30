@@ -34,7 +34,8 @@ export default function AssessmentSection() {
     {
       imgUrl: productImage4,
       title: 'Instant AI Communication Check',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.',
+      focusCard: 'focus-active'
     },
     {
       imgUrl: productImage5,
@@ -93,7 +94,7 @@ export default function AssessmentSection() {
               <Link href="">
                 <a className="card-grid">
                   {producrCard.map((data, index) => (
-                    <div key={index} className="p-card">
+                    <div key={index} className={`${data.focusCard} p-card`}>
                       <div className="icon-sec">
                         <Image src={data.imgUrl} layout="fill" alt="" />
                       </div>
@@ -101,7 +102,7 @@ export default function AssessmentSection() {
                         <h4 className="title"> {data.title}</h4>
                         <div className='hover-action'>
                           <p className="description">{data.description}</p>
-                          <div className="explore">Explore</div>
+                          {data.focusCard && <div className="explore">Explore</div>}
                         </div>
                       </div>
                     </div>

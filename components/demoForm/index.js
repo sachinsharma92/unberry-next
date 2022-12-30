@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Button, Col, Row, Form, Input, notification } from 'antd';
+import { useMediaQuery } from 'react-responsive'
 import axios from "axios";
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
@@ -7,6 +8,7 @@ import demoGroup from "../../assets/demo-group.png";
 import Image from 'next/image';
 
 export default function DemoForm(props) {
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
   const [isThankModal, setThankModal] = useState(false);
   const thankToggleModal = () => {
     setThankModal(!isThankModal);
@@ -66,19 +68,32 @@ export default function DemoForm(props) {
     <section className='section-style contact-section' id={props.id} >
       <div className='menu-section'></div>
       <div className="contact-section">
+
+        <div className="show-on-mobile">
+          <div className='gradint-section'>
+            <Image src={demoGroup} className='img-full' alt="" />
+          </div>
+        </div>
         <div className='header-style'>
           <div className="heading-first">
-            <h4 className='title4'>Take the guesswork out…</h4>
+            {isBigScreen ?
+              <h4 className='title4'>Take the guesswork out…</h4>
+              :
+              <div>
+                <h4 className='title4'>Take the</h4>
+                <span className='border-style' />
+                <h4 className='title4'> guesswork out…</h4>
+              </div>
+            }
             <div className='border-style' />
           </div>
           <div className="heading-second">
             <div className='text-demo'>Book A Demo</div>
             <div className='border-style' />
           </div>
-
         </div>
         <Row className='w-100'>
-          <Col xs={12} sm={10}>
+          <Col xs={24} sm={10}>
             <div className='contact-form-section'>
               <div className='content'>
                 <p className='description'>Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
@@ -137,8 +152,10 @@ export default function DemoForm(props) {
             </div>
           </Col>
           <Col xs={12} sm={14}>
-            <div className='gradint-section'>
-              <Image src={demoGroup} className='img-full' alt="" />
+            <div className="show-on-desktop">
+              <div className='gradint-section'>
+                <Image src={demoGroup} className='img-full' alt="" />
+              </div>
             </div>
           </Col>
         </Row>
