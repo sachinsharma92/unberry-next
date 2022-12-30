@@ -85,7 +85,9 @@ export default function AssessmentSection() {
                     <source src="../../../static/video/unberry-mix.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  <Image src={videoImage1} className='img-full' alt="" />
+                  <div className="laptop-frame">
+                    <Image src={videoImage1} className='img-full' alt="" />
+                  </div>
                 </div>
               </div>
             </Col>

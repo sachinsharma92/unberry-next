@@ -16,6 +16,10 @@ export default function CompetencySection() {
       animationData: spiderGraph
     });
     lottie.loadAnimation({
+      container: document.querySelector("#jsonSpider2"),
+      animationData: spiderGraph
+    });
+    lottie.loadAnimation({
       container: document.querySelector("#cognitiveJson"),
       animationData: cognitiveJson
     });
@@ -108,11 +112,10 @@ export default function CompetencySection() {
             </div>
           </Col>
           <Col xs={24} sm={7}>
-            <div className='video-image'>
-              <div className='jsonSpider' id="jsonSpider" />
-            </div>
-            <div className='boxes-description hide-on-desktop'>
-              <p className='description'>We report performance on key workplace traits that predict job-fit and potential, backed by data and science.</p>
+            <div className='show-on-desktop'>
+              <div className='video-image'>
+                <div className='jsonSpider' id="jsonSpider" />
+              </div>
             </div>
           </Col>
         </Row>
@@ -140,6 +143,12 @@ export default function CompetencySection() {
               </div>
             </Col>
           </Row>
+        </div>
+
+        <div className='show-on-mobile'>
+          <div className='video-image'>
+            <div className='jsonSpider' id="jsonSpider2" />
+          </div>
         </div>
       </div>
     </section>
