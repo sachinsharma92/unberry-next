@@ -3,7 +3,6 @@ import lottie from "lottie-web";
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive'
 import laptop1 from "../../../assets/automation-l1.png";
 import bestfitJson from "../../../assets/json/bestfit.json";
 import focusJson from "../../../assets/json/focus.json";
@@ -12,7 +11,6 @@ import laptop2 from "../../../assets/automation-l2.png";
 
 
 export default function AutomationSection() {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
 
   const [count, setCount] = useState(5);
   const [activeTitle, setActiveTitle] = useState(1)

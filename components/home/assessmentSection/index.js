@@ -51,7 +51,6 @@ export default function AssessmentSection() {
 
   useEffect(() => {
     if (isBigScreen) {
-
       const leftController = new ScrollMagic.Controller();
       new ScrollMagic.Scene({
         duration: '53%',

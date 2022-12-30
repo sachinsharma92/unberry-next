@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Button, Col, Row, Form, Input, notification } from 'antd';
-import { useMediaQuery } from 'react-responsive'
 import axios from "axios";
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
@@ -8,7 +7,6 @@ import demoGroup from "../../assets/demo-group.png";
 import Image from 'next/image';
 
 export default function DemoForm(props) {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
   const [isThankModal, setThankModal] = useState(false);
   const thankToggleModal = () => {
     setThankModal(!isThankModal);
