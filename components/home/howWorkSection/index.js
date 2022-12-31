@@ -9,7 +9,7 @@ export default function HowWorkSection() {
         <Link href="">05 How it works</Link>
       </div>
 
-      <div className='content-section'>
+      <div className='content-section primary-width'>
         <div className='heading-section'>
           <h3 className='title1 text-gradient'>Applicability across a wide variety of roles</h3>
         </div>

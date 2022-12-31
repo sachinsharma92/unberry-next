@@ -65,7 +65,7 @@ export default function DemoForm(props) {
   return (
     <section className='section-style contact-section' id={props.id} >
       <div className='menu-section'></div>
-      <div className="contact-section">
+      <div className="primary-width">
 
         <div className="show-on-mobile">
           <div className='gradint-section'>

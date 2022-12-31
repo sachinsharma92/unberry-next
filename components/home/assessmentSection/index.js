@@ -68,7 +68,7 @@ export default function AssessmentSection() {
       <div className='menu-section'>
         <Link href="">03 The product</Link>
       </div>
-      <div className='content-section'>
+      <div className='content-section primary-width'>
         <div className='sec-first'>
           <Row className='h-100'>
             <Col xs={24} sm={12}>
@@ -77,7 +77,7 @@ export default function AssessmentSection() {
                   <h3 className='title1'>The Assessment Suite</h3>
                   <p className="description">A suite of multi-dimensional, psychometrically-rigorous, gamified assessments that demand exploration and hands-on problem solving from the players to progress.</p>
                   <div className="button-section">
-                    <Button type="primary" href="#bookDemo" className='btn-demo d-xs-none'>Book Demo</Button>
+                    <Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
                   </div>
                 </div>
                 <div className='video-image'>

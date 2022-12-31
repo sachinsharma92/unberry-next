@@ -9,7 +9,7 @@ export default function WhyUnberrySection() {
       <div className='menu-section'>
         <Link href="">06 Why Unberry</Link>
       </div>
-      <div className='content-section'>
+      <div className='content-section primary-width'>
         <Row>
           <Col xs={24} sm={9}>
             <div className='heading-section'>

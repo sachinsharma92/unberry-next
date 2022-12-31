@@ -101,7 +101,7 @@ export default function CompetencySection() {
       <div className='menu-section'>
         <Link href="">04 The Competency Traits</Link>
       </div>
-      <div className='content-section'>
+      <div className='content-section primary-width'>
         <Row>
           <Col xs={24} sm={17}>
             <div className='heading-section'>

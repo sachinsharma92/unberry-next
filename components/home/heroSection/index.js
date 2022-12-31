@@ -17,7 +17,7 @@ export default function HomeHeroSection() {
         <Link href="">01 Intro</Link>
         <a href="#bookDemo" className='link-btn-demo d-xs-none'>BOOK DEMO</a>
       </div>
-      <div className='content-section'>
+      <div className='content-section primary-width'>
         <div className="button-section">
           <Button type="primary" href="#bookDemo" className='btn-demo d-xs-none'>Book Demo</Button>
         </div>
@@ -53,7 +53,6 @@ export default function HomeHeroSection() {
                 <div className='border-style' />
               </h1>
             </div>
-            <div className='border-style' />
           </div>
         </div>
 

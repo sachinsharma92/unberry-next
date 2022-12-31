@@ -1,13 +1,14 @@
 import { Button, Col, Row } from 'antd';
 import lottie from "lottie-web";
 import Image from 'next/image';
-import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import laptop1 from "../../../assets/automation-l1.png";
 import bestfitJson from "../../../assets/json/bestfit.json";
 import focusJson from "../../../assets/json/focus.json";
 import hireJson from "../../../assets/json/hire.json";
 import laptop2 from "../../../assets/automation-l2.png";
+import fullLaptop from "../../../assets/video-img1.png";
+
 
 
 export default function AutomationSection() {
@@ -73,11 +74,11 @@ export default function AutomationSection() {
   return (
     <section className='section-style automation-section'>
       <div className='menu-section'>
-        <Link href="">02 Why Unberry</Link>
+        {/* <Link href="">02 Why Unberry</Link> */}
       </div>
 
       <div className="show-on-desktop w-full">
-        <div className='content-section'>
+        <div className='content-section primary-width'>
           <div className='boxes-style'>
             <Row>
               <Col sm={11}>
@@ -99,7 +100,6 @@ export default function AutomationSection() {
                     </li>
                   ))}
                 </ul>
-
                 <div className="button-section">
                   <Button type="primary" className='btn-demo btn-demo-lg'>Book Demo</Button>
                 </div>
@@ -126,7 +126,7 @@ export default function AutomationSection() {
       </div>
 
       <div className="show-on-mobile">
-        <div className='content-section mobile-layout'>
+        <div className='content-section mobile-layout primary-width'>
           <div className='header-section'>
             <h2 className="title-lg text-gradient">End to end automation</h2>
           </div>
@@ -135,7 +135,7 @@ export default function AutomationSection() {
               <div className='icon-box-sec' key={index}>
                 <div className="img-box">
                   <Image
-                    src={laptop2}
+                    src={fullLaptop}
                     alt="Picture of the author"
                     layout="fill"
                   />

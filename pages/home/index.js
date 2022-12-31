@@ -89,7 +89,7 @@ export default function HomeScreen() {
               <Link href="">07 Blogs</Link>
             </div>
 
-            <div className='content-section'>
+            <div className='content-section primary-width'>
               <div className='heading-section'>
                 <h3 className='title1'>Inside Unberry</h3>
                 <div className='view-all'><Link href="/blog">View All</Link></div>
