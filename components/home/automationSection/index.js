@@ -101,7 +101,7 @@ export default function AutomationSection() {
                   ))}
                 </ul>
                 <div className="button-section">
-                  <Button type="primary" className='btn-demo btn-demo-lg'>Book Demo</Button>
+                  <Button type="primary" href="#bookDemo" className='btn-demo btn-demo-lg'>Book Demo</Button>
                 </div>
               </Col>
               <Col sm={13}>

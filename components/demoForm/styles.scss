@@ -4,53 +4,83 @@
 
 // Section Contact
 .contact-section {
-  background-color: $theme-secondary;
-  min-height: auto;
+  background-color: #f7f1e5;
+  min-height: auto !important;
 
   .menu-section {
     min-height: auto;
 
     @include mobile {
-      background-image: linear-gradient(to bottom, #1c1c1c 280px, white 20%);
+      background-image: linear-gradient(to bottom, #1c1c1c 240px, #f7f1e5 20%);
     }
   }
 
   .gradint-section {
     height: 100%;
-    background: url("../../assets/bg/product2.png");
+    background: #1c1c1c url("../../assets/bg/product2.png");
     background-size: cover;
     background-position: bottom;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    position: relative;
 
     @include mobile {
-      height: 280px;
+      height: 240px;
+      background-size: cover;
+      background-position: center;
     }
 
     .img-full {
       width: 100%;
-      margin-bottom: -22px;
       margin-left: 0px;
-      transform: scale(1.2);
+      transform: scale(1);
+      transform: translate(0px, 20px);
+
+      @include mobile {
+        transform: translate(10px, 20px);
+        object-fit: contain;
+      }
     }
   }
 
   .contact-form-section {
-    background: $white;
     padding: 60px 50px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 47%;
 
     @include mobile {
-      padding: 30px;
+      padding: 34px 11px;
+    }
+  }
+
+  .border-style {
+    @include mobile {
+      top: -12px;
+      display: flex;
     }
   }
 
   .form-style {
     margin-top: 30px;
+    padding-right: 100px;
+
+    @include mobile {
+      padding-right: 20px;
+    }
+
+    .grid-form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
   }
 
   .description {
@@ -58,36 +88,94 @@
     line-height: 25px;
     color: $theme-primary-dark;
     font-weight: 400;
-  }
-
-  .title4 {
-    font-size: 28px;
-    line-height: 30px;
-    font-weight: 600;
+    max-width: 100%;
 
     @include mobile {
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: -0.01em;
+      opacity: 0.7;
+      max-width: 100%;
     }
   }
 
-  .text-sm {
-    margin: 0 0 10px;
-    font-size: 16px;
-    color: #ba4a17;
-    font-weight: 600;
-    text-transform: uppercase;
+  .header-style {
+    @include mobile {
+      width: 100vw;
+      padding-top: 50px;
+    }
+    .title4 {
+      font-size: 96px;
+      font-weight: 300;
+      line-height: 68px;
+      letter-spacing: -7px;
+      margin-top: 65px;
+      margin-left: 28px;
+      margin-bottom: 0px;
+      position: relative;
+      z-index: 1;
+
+      @include mobile {
+        font-size: 55px;
+        line-height: 1.2;
+        letter-spacing: -7px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 11px;
+      }
+    }
+
+    .heading-second {
+      margin-top: 50px;
+
+      @include mobile {
+        margin-top: 0px;
+      }
+    }
+
+    .text-demo {
+      display: flex;
+      font-size: 96px;
+      color: #ba4a17;
+      font-weight: 500;
+      line-height: 68px;
+      letter-spacing: -7px;
+      margin-left: 28px;
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(
+        200deg,
+        #2e1500 0%,
+        #1b0c07 34.63%,
+        #7b351f 83.87%,
+        #7b351f 100.87%
+      );
+      @include clip-text();
+      display: block;
+
+      @include mobile {
+        font-size: 55px;
+        line-height: 60px;
+        letter-spacing: -6 px;
+        margin-left: 11px;
+        display: block;
+      }
+    }
   }
 
   .ant-input {
     border: none;
+    background: none !important;
     border-bottom: 1px solid #c4c2da;
     padding: 0;
     border-radius: 0;
     padding-bottom: 5px;
     font-size: 18px;
-    font-weight: 500;
-    height: 40px;
+    font-weight: 400;
+    height: 24px;
+    letter-spacing: -0.02em;
+    color: #9c9ab9;
+    padding: 0;
 
     &:focus,
     &:hover {
@@ -97,7 +185,6 @@
   }
 
   .ant-btn {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,9 +192,30 @@
     margin-top: 20px;
     height: 50px;
     font-size: 20px;
+    width: 401.51px;
+    height: 50px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
   }
 
   .ant-form-item-explain-error {
     display: none;
+  }
+
+  .grid-style {
+    display: flex;
   }
 }

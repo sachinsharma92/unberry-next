@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Button, Col, Row, Form, Input, notification } from 'antd';
+import { Button, Form, Input, notification } from 'antd';
 import axios from "axios";
+import Image from 'next/image';
+import React, { useEffect, useRef, useState } from 'react';
+import demoGroup from "../../assets/demo-group.png";
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
-import demoGroup from "../../assets/demo-group.png";
-import Image from 'next/image';
 
 export default function DemoForm(props) {
   const [isThankModal, setThankModal] = useState(false);
@@ -13,7 +13,6 @@ export default function DemoForm(props) {
   };
 
   const formRef = useRef(null);
-
   const openNotificationWithIcon = type => {
     notification[type]({
       message: 'Error',
@@ -107,6 +106,7 @@ export default function DemoForm(props) {
               initialValues={{
                 name: '',
                 email: '',
+                phone: '',
                 designation: ''
               }}
             >
@@ -120,10 +120,10 @@ export default function DemoForm(props) {
                   />
                 </Form.Item>
                 <Form.Item
-                  name="name"
+                  name="phone"
                   rules={[{ required: true, }]}
                 >
-                  <Input placeholder='Enter Phone'
+                  <Input type="number" placeholder='Enter Phone'
                   />
                 </Form.Item>
 
