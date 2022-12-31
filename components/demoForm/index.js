@@ -89,73 +89,70 @@ export default function DemoForm(props) {
             <div className='border-style' />
           </div>
         </div>
-        <Row className='w-100'>
-          <Col xs={24} sm={10}>
-            <div className='contact-form-section'>
-              <div className='content'>
-                <p className='description'>Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
+
+        <div className="grid-style">
+          <div className='contact-form-section'>
+            <div className='content'>
+              <p className='description'>Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
+            </div>
+
+            <Form
+              name="basic"
+              autoComplete="off"
+              layout="vertical"
+              className='form-style'
+              onFinish={bookADemo}
+              preserve={false}
+              ref={formRef}
+              initialValues={{
+                name: '',
+                email: '',
+                designation: ''
+              }}
+            >
+
+              <div className="grid-form">
+                <Form.Item
+                  name="name"
+                  rules={[{ required: true, }]}
+                >
+                  <Input placeholder='Enter Name'
+                  />
+                </Form.Item>
+                <Form.Item
+                  name="name"
+                  rules={[{ required: true, }]}
+                >
+                  <Input placeholder='Enter Phone'
+                  />
+                </Form.Item>
+
+                <Form.Item
+                  name="email"
+                  rules={[{ type: 'email', required: true, }]}
+                >
+                  <Input placeholder='Enter Email' />
+                </Form.Item>
+
+                <Form.Item
+                  name="designation"
+                  rules={[{ required: true, }]}
+                >
+                  <Input placeholder='Role at company' />
+                </Form.Item>
               </div>
 
-              <Form
-                name="basic"
-                autoComplete="off"
-                layout="vertical"
-                className='form-style'
-                onFinish={bookADemo}
-                preserve={false}
-                ref={formRef}
-                initialValues={{
-                  name: '',
-                  email: '',
-                  designation: ''
-                }}
-              >
-
-                <div className="grid-form">
-                  <Form.Item
-                    name="name"
-                    rules={[{ required: true, }]}
-                  >
-                    <Input placeholder='Enter Name'
-                    />
-                  </Form.Item>
-                  <Form.Item
-                    name="name"
-                    rules={[{ required: true, }]}
-                  >
-                    <Input placeholder='Enter Phone'
-                    />
-                  </Form.Item>
-
-                  <Form.Item
-                    name="email"
-                    rules={[{ type: 'email', required: true, }]}
-                  >
-                    <Input placeholder='Enter Email' />
-                  </Form.Item>
-
-                  <Form.Item
-                    name="designation"
-                    rules={[{ required: true, }]}
-                  >
-                    <Input placeholder='Role at company' />
-                  </Form.Item>
-                </div>
-
-                <Button type="primary" htmlType="submit" >
-                  Get Started
-                </Button>
-              </Form>
+              <Button type="primary" htmlType="submit" >
+                Get Started
+              </Button>
+            </Form>
+          </div>
+          <div className="show-on-desktop">
+            <div className='gradint-section'>
+              <Image src={demoGroup} className='img-full' alt="" />
             </div>
-          </Col>
-          <Col xs={12} sm={14}>
-            <div className="show-on-desktop">
-              <div className='gradint-section'>
-                <Image src={demoGroup} className='img-full' alt="" />
-              </div>
-            </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
 
       <ThankModal visible={isThankModal} onCancel={thankToggleModal} />
