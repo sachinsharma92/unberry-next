@@ -123,6 +123,9 @@
         margin-left: 0px;
         padding-left: 11px;
       }
+      @include iphone5 {
+        font-size: 50px;
+      }
     }
 
     .heading-second {

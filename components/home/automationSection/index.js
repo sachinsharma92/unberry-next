@@ -9,12 +9,12 @@ import hireJson from "../../../assets/json/hire.json";
 import laptop2 from "../../../assets/automation-l2.png";
 import fullLaptop from "../../../assets/video-img1.png";
 
-
+import { useMediaQuery } from 'react-responsive'
 
 export default function AutomationSection() {
-
   const [count, setCount] = useState(5);
   const [activeTitle, setActiveTitle] = useState(1)
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
 
   const dataList = [
     {
@@ -93,7 +93,7 @@ export default function AutomationSection() {
                       id={`item${index + 1}`}
                     >
                       <div className='icon-box-sec'>
-                        <div className='jsonIcon icon1' id={data.jsonID} />
+                        {isBigScreen && <div className='jsonIcon icon1' id={data.jsonID} />}
                         <div className={`title4`}>{data.title}</div>
                         <p className="description">{data.description}</p>
                       </div>

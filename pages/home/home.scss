@@ -191,6 +191,10 @@
         }
       }
 
+      @include iphone5 {
+        font-size: 50px;
+      }
+
       &.bold {
         font-weight: 500;
         position: relative;
@@ -244,7 +248,7 @@
       bottom: -200px;
 
       @include mobile {
-        width: 390px;
+        width: 95vw;
         height: 500px;
         position: relative;
         right: -30px;
@@ -404,9 +408,11 @@
         display: none;
 
         @include mobile {
-          width: 100px;
+          width: 60px;
+          height: 60px;
           display: block;
-          margin-left: -10px;
+          margin-left: 0px;
+          margin-top: 50px;
         }
       }
     }
@@ -441,8 +447,13 @@
       @include mobile {
         font-weight: 600;
         font-size: 20px;
+        line-height: 28px;
         opacity: 1;
         letter-spacing: -0.02em;
+      }
+
+      @include iphone5 {
+        font-size: 18px;
       }
     }
 
@@ -680,6 +691,11 @@
         @include mobile {
           font-size: 20px;
           max-width: 100%;
+          max-width: 80%;
+        }
+
+        @include iphone5 {
+          max-width: 100%;
         }
       }
 
@@ -724,6 +740,8 @@
 
         @include mobile {
           font-weight: 500;
+          height: 36px;
+          width: 150px;
         }
       }
     }
@@ -821,7 +839,7 @@
       @include mobile {
         gap: 16px;
         padding: 0 20px;
-        margin-bottom: 48px;
+        margin-bottom: 38px;
       }
 
       .content {
@@ -855,6 +873,7 @@
         @include mobile {
           font-size: 12px;
           line-height: 16px;
+          margin-top: 8px;
         }
       }
 
@@ -883,8 +902,8 @@
         z-index: 1;
 
         @include mobile {
-          width: 45px;
-          height: 45px;
+          width: 48px;
+          height: 48px;
         }
 
         img {
@@ -921,11 +940,24 @@
           content: "";
           opacity: 0;
           transition: all 0.5s ease-in-out;
+
+          @include mobile {
+            width: 129.36px;
+            height: 129.36px;
+            left: 53.2px;
+            top: -64.4px;
+            background: linear-gradient(180deg, #776152 0%, #d87e96 100%);
+            filter: blur(37.52px);
+          }
         }
       }
 
       .focus-active {
         &::before {
+          opacity: 1;
+        }
+
+        .icon-sec {
           opacity: 1;
         }
       }
@@ -963,6 +995,9 @@
 
       a {
         color: $white;
+        @include mobile {
+          display: none;
+        }
       }
     }
 
@@ -988,6 +1023,7 @@
         @include mobile {
           font-size: 20px;
           line-height: 28px;
+          max-width: 90%;
         }
       }
 
@@ -1014,7 +1050,6 @@
 
       @include mobile {
         padding: 50px 20px;
-        border-top: 1px solid rgba($white, 0.3);
       }
     }
 
@@ -1069,6 +1104,17 @@
         );
         filter: blur(240px);
         transform: rotate(-180deg);
+
+        @include mobile {
+          left: auto;
+          right: -80px;
+          width: 30%;
+          height: 65%;
+          bottom: 0;
+          background: #9a676d;
+          filter: blur(95px);
+          transform: rotate(2deg);
+        }
       }
     }
 
@@ -1080,6 +1126,7 @@
 
       @include mobile {
         height: auto;
+        border-top: none;
         grid-template-columns: repeat(1, 1fr);
       }
 
@@ -1142,7 +1189,7 @@
           width: 80%;
 
           @include mobile {
-            width: 52%;
+            width: 64vw;
           }
         }
 
