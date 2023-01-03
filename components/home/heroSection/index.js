@@ -1,11 +1,19 @@
 import { Button } from 'antd'
+import Lottie from 'lottie-web'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import heroImage from "../../../assets/illustration/hero-img.svg"
 import logoTheme from "../../../assets/logo-brown.svg"
+import mainFoldJson from "../../../assets/json/thanks.json";
 
 export default function HomeHeroSection() {
+  // useEffect(() => {
+  //   Lottie.loadAnimation({
+  //     container: document.querySelector("#mainFold"),
+  //     animationData: mainFoldJson
+  //   });
+  // }, []);
   return (
     <section className='section-style section-bury'>
       <div className='menu-section'>
@@ -60,6 +68,7 @@ export default function HomeHeroSection() {
           <p className='description'>A unique gamified assessment suite, that can measure job relevant traits in just a few minutes.</p>
 
           <div className="img-hero">
+            {/* <div className='jsonIcon icon-style' id="mainFold" /> */}
             <Image layout="fill" src={heroImage} alt="hero image" />
           </div>
         </div>

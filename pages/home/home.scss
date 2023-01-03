@@ -691,15 +691,9 @@
         color: $white;
         margin: 0;
         font-size: 22px;
-        max-width: 80%;
 
         @include mobile {
           font-size: 20px;
-          max-width: 100%;
-          max-width: 90%;
-        }
-
-        @include iphone5 {
           max-width: 100%;
         }
       }
@@ -856,6 +850,15 @@
         height: 100%;
       }
 
+      .hover-action {
+        transform: translate(0px, 60px);
+        transition: all 0.5s ease-in-out;
+
+        @include mobile {
+          transform: translate(0px, 0px);
+        }
+      }
+
       .explore {
         font-weight: 600;
         font-size: 20px;
@@ -864,7 +867,9 @@
         margin-top: 26px;
 
         @include mobile {
-          display: none;
+          font-size: 11.2px;
+          line-height: 15px;
+          margin-top: 23px;
         }
       }
 
@@ -893,7 +898,6 @@
           font-size: 13px;
           line-height: 20px;
           margin-top: 40px;
-          max-width: 90%;
         }
       }
 
@@ -955,15 +959,19 @@
             filter: blur(37.52px);
           }
         }
-      }
 
-      .focus-active {
-        &::before {
-          opacity: 1;
-        }
+        &:hover {
+          .hover-action {
+            transform: translate(0px, 0px);
+          }
 
-        .icon-sec {
-          opacity: 1;
+          &::before {
+            opacity: 1;
+          }
+
+          .icon-sec {
+            opacity: 1;
+          }
         }
       }
 
@@ -1452,6 +1460,19 @@
       );
       height: 283px;
       overflow: hidden;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        bottom: -25vh;
+        right: -17vw;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: linear-gradient(129deg, #ffd49f 3.28%, #ff82b4 99.54%);
+        filter: blur(102.23px);
+        opacity: 0;
+      }
 
       @include mobile {
         border-bottom: none;
@@ -1489,20 +1510,12 @@
         }
       }
 
-      &.focusStyle {
+      &:hover {
         background: #1c1c1c;
-        position: relative;
         overflow: hidden;
 
         &::before {
-          position: absolute;
-          bottom: -25vh;
-          right: -17vw;
-          width: 100%;
-          height: 100%;
-          content: "";
-          background: linear-gradient(129deg, #ffd49f 3.28%, #ff82b4 99.54%);
-          filter: blur(102.23px);
+          opacity: 1;
         }
 
         li {

@@ -19,33 +19,32 @@ export default function AssessmentSection() {
     {
       imgUrl: productImage1,
       title: 'Cognitive & Skill-based Games',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+      description: 'Dynamic environments modulating multiple pathways, resulting in much more authentic responses'
     },
     {
       imgUrl: productImage2,
       title: 'Story-format Immersive Exercises',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+      description: 'Complex real life scenarios requiring application of critical thinking, empathy & decision making skills'
     },
     {
       imgUrl: productImage3,
       title: 'Interactive Workplace Simulations',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+      description: 'Generates exponentially more data than any test and builds a detailed, holistic soft skill map'
     },
     {
       imgUrl: productImage4,
       title: 'Instant AI Communication Check',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.',
-      focusCard: 'focus-active'
+      description: 'Unbiased, comprehensive, engaging assessment for comprehension, listening skills and spoken communication',
     },
     {
       imgUrl: productImage5,
       title: 'Automated Coding Assessments',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+      description: 'Real-time coding environments to test the coding & functional skills of candidates'
     },
     {
       imgUrl: productImage6,
       title: 'Functional Domain Knowledge',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.'
+      description: 'Testing domain knowledge or functional skills across IT, Marketing, Sales, CS, Basic Digital Skills and more'
     }
   ]
 
@@ -103,7 +102,7 @@ export default function AssessmentSection() {
                         <h4 className="title"> {data.title}</h4>
                         <div className='hover-action'>
                           <p className="description">{data.description}</p>
-                          {data.focusCard && <div className="explore">Explore</div>}
+                          <div className="explore">Explore</div>
                         </div>
                       </div>
                     </div>

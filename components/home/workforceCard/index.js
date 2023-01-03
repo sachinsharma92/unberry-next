@@ -1,10 +1,5 @@
 import React, { useEffect } from 'react';
-import { Carousel } from 'antd';
 import lottie from "lottie-web";
-import preciseSignalIcon from "../../../assets/json/small/precise-signal.gif";
-import fastEfficientIcon from "../../../assets/json/small/fast-efficient.gif";
-import hiddenPoolsIcon from "../../../assets/json/small/hidden-pools.gif";
-import longImpactIcon from "../../../assets/json/small/long-impact.gif";
 
 import preciseSignal from "../../../assets/json/small/precise-signal.json";
 import fastEfficient from "../../../assets/json/small/fast-efficient.json";
@@ -18,24 +13,24 @@ export default function WorkforceCard() {
   const textBoxData = [
     {
       lottieID: "preciseSignal",
-      mobileIcon: preciseSignalIcon,
+      mobileIcon: "/assets/icons/why-unberry/precise-signal.svg",
       description: <><span>Churn in human capital</span> has never been more. Skill sets are becoming obsolete very fast.</>,
     },
     {
       lottieID: "fastEfficient",
-      mobileIcon: fastEfficientIcon,
+      mobileIcon: "/assets/icons/why-unberry/fast-efficient.svg",
       description: <><span>Salaries have spiralled out</span> of control. Conventional hiring is becoming unsustainable.</>,
       imgStyle: 'icon-style',
       iconStyle: 'icon-scale'
     },
     {
       lottieID: "hiddenPools",
-      mobileIcon: hiddenPoolsIcon,
+      mobileIcon: "/assets/icons/why-unberry/hidden-pools.svg",
       description: <>Work 4.0 is going to be far more <span>diverse & distributed.</span> Remote hiring is the new normal.</>,
     },
     {
       lottieID: "longImpact",
-      mobileIcon: longImpactIcon,
+      mobileIcon: "/assets/icons/why-unberry/bad-hiring.svg",
       description: <>Most admit to <span>bad hiring decisions.</span> Reliable people insights are the key to hiring the best.</>,
     }
   ]
@@ -81,7 +76,7 @@ export default function WorkforceCard() {
           {textBoxData.map((item, index) => (
             <div className='box-style' key={index}>
               <div className='img-box'>
-                <Image src={item.mobileIcon} className={`icon-style ${item.iconStyle}`} alt="" />
+                <Image src={item.mobileIcon} layout="fill" className={`icon-style ${item.iconStyle}`} alt="" />
               </div>
               <div className='description'>
                 {item.description}
