@@ -5,21 +5,17 @@ import React, { useEffect, useState } from 'react';
 import bestfitJson from "../../../assets/json/bestfit.json";
 import focusJson from "../../../assets/json/focus.json";
 import hireJson from "../../../assets/json/hire.json";
-import fullLaptop from "../../../assets/video-img1.png";
-
-import { useMediaQuery } from 'react-responsive';
 
 export default function AutomationSection() {
   const [count, setCount] = useState(3);
   const [activeTitle, setActiveTitle] = useState(1)
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
 
   const dataList = [
     {
       jsonID: "focus1",
       title: "Real Time Reporting",
       description: "Evidence suggests that nearly 50% applicants embellish their CVs, reducing the utility of résumés as initial screening tools.",
-      imgUrl: isBigScreen ? "/assets/automation/real-time-reporting.png" : "/assets/automation/real-time-reporting-sm.png",
+      imgUrl: "/assets/automation/real-time-reporting.png",
       id: 1,
     },
     {
@@ -34,7 +30,7 @@ export default function AutomationSection() {
       title: "Proctoring",
       description: "In this phase, we get the tech work started and create the application in accordance with the earlier design outline and laid-out specifications.",
       id: 3,
-      imgUrl: isBigScreen ? "/assets/automation/proctoring.png" : "/assets/automation/proctoring-sm.png",
+      imgUrl: "/assets/automation/proctoring.png",
     },
   ];
 
@@ -68,6 +64,45 @@ export default function AutomationSection() {
     });
   }, [])
 
+  const dataListMobile = [
+    {
+      jsonMobileId: "focusM1",
+      title: "Real Time Reporting",
+      description: "Evidence suggests that nearly 50% applicants embellish their CVs, reducing the utility of résumés as initial screening tools.",
+      imgUrl: "/assets/automation/real-time-reporting-sm.png",
+      id: 1,
+    },
+    {
+      jsonMobileId: "hiresM2",
+      title: "Candidate Communication",
+      description: "With the help of our tech-savvy team, we produce/create outlines that are specifically tailored to your business's demands.",
+      id: 2,
+      imgUrl: "/assets/automation/candidate-communication.png",
+    },
+    {
+      jsonMobileId: "bestfitM3",
+      title: "Proctoring",
+      description: "In this phase, we get the tech work started and create the application in accordance with the earlier design outline and laid-out specifications.",
+      id: 3,
+      imgUrl: "/assets/automation/proctoring-sm.png",
+    },
+  ];
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: document.querySelector("#focusM1"),
+      animationData: focusJson
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#hiresM2"),
+      animationData: hireJson
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#bestfitM3"),
+      animationData: bestfitJson
+    });
+  }, [])
+
 
   return (
     <section className='section-style automation-section'>
@@ -91,7 +126,7 @@ export default function AutomationSection() {
                       id={`item${index + 1}`}
                     >
                       <div className='icon-box-sec'>
-                        {isBigScreen && <div className='jsonIcon icon1' id={data.jsonID} />}
+                        <div className='jsonIcon icon1' id={data.jsonID} />
                         <div className={`title4`}>{data.title}</div>
                         <p className="description">{data.description}</p>
                       </div>
@@ -128,7 +163,7 @@ export default function AutomationSection() {
             <h2 className="title-lg text-gradient">End to end automation</h2>
           </div>
           <div className='horizontal-card'>
-            {dataList.map((data, index) => (
+            {dataListMobile.map((data, index) => (
               <div className='icon-box-sec' key={index}>
                 <div className="img-box">
                   <Image
@@ -137,7 +172,7 @@ export default function AutomationSection() {
                     layout="fill"
                   />
                 </div>
-                <div className='jsonIcon icon1' id={data.jsonID} />
+                <div className='jsonIcon icon1' id={data.jsonMobileId} />
                 <h4 className='title4'>{data.title}</h4>
                 <p className='description'>{data.description}</p>
               </div>

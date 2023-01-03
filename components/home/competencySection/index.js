@@ -7,10 +7,10 @@ import spiderGraph from "../../../assets/json/spider-graph.json";
 
 export default function CompetencySection() {
   useEffect(() => {
-    //   lottie.loadAnimation({
-    //     container: document.querySelector("#jsonSpider"),
-    //     animationData: spiderGraph
-    //   });
+    Lottie.loadAnimation({
+      container: document.querySelector("#jsonSpider"),
+      animationData: spiderGraph
+    });
     Lottie.loadAnimation({
       container: document.querySelector("#jsonSpider2"),
       animationData: spiderGraph
