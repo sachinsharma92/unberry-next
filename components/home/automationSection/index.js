@@ -2,17 +2,15 @@ import { Button, Col, Row } from 'antd';
 import lottie from "lottie-web";
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import laptop1 from "../../../assets/automation-l1.png";
 import bestfitJson from "../../../assets/json/bestfit.json";
 import focusJson from "../../../assets/json/focus.json";
 import hireJson from "../../../assets/json/hire.json";
-import laptop2 from "../../../assets/automation-l2.png";
 import fullLaptop from "../../../assets/video-img1.png";
 
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 
 export default function AutomationSection() {
-  const [count, setCount] = useState(5);
+  const [count, setCount] = useState(3);
   const [activeTitle, setActiveTitle] = useState(1)
   const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
 
@@ -21,7 +19,7 @@ export default function AutomationSection() {
       jsonID: "focus1",
       title: "Real Time Reporting",
       description: "Evidence suggests that nearly 50% applicants embellish their CVs, reducing the utility of résumés as initial screening tools.",
-      imgUrl: laptop1,
+      imgUrl: isBigScreen ? "/assets/automation/real-time-reporting.png" : "/assets/automation/real-time-reporting-sm.png",
       id: 1,
     },
     {
@@ -29,14 +27,14 @@ export default function AutomationSection() {
       title: "Candidate Communication",
       description: "With the help of our tech-savvy team, we produce/create outlines that are specifically tailored to your business's demands.",
       id: 2,
-      imgUrl: laptop2,
+      imgUrl: "/assets/automation/candidate-communication.png",
     },
     {
       jsonID: "bestfit3",
       title: "Proctoring",
       description: "In this phase, we get the tech work started and create the application in accordance with the earlier design outline and laid-out specifications.",
       id: 3,
-      imgUrl: laptop1,
+      imgUrl: isBigScreen ? "/assets/automation/proctoring.png" : "/assets/automation/proctoring-sm.png",
     },
   ];
 
@@ -108,14 +106,13 @@ export default function AutomationSection() {
                 <div className="asset-section">
                   <div className='img-box' id="imageSection">
                     {imageSource && (
-                      <div>
-                        <Image
-                          key={imageSource}
-                          src={imageSource}
-                          alt="Picture of the author"
-                          layout="fill"
-                        />
-                      </div>
+                      <Image
+                        key={imageSource}
+                        src={imageSource}
+                        alt="Picture of the author"
+                        layout="fill"
+                        className={count === 1 ? "img-fit" : "img-fit-no"}
+                      />
                     )}
                   </div>
                 </div>
@@ -135,7 +132,7 @@ export default function AutomationSection() {
               <div className='icon-box-sec' key={index}>
                 <div className="img-box">
                   <Image
-                    src={fullLaptop}
+                    src={data.imgUrl}
                     alt="Picture of the author"
                     layout="fill"
                   />

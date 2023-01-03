@@ -1,53 +1,49 @@
-import React, { useEffect } from 'react'
-import { Col, Row } from 'antd'
-import lottie from "lottie-web";
-import Link from 'next/link'
+import { Col, Row } from 'antd';
+import Lottie from 'lottie-web';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useEffect } from 'react';
 import spiderGraph from "../../../assets/json/spider-graph.json";
-import cognitiveJson from "../../../assets/json/cognitive.json";
-import behaviouralJson from "../../../assets/json/behavioural.json";
-import intelligenceJson from "../../../assets/json/intelligence.json";
-import thinkingJson from "../../../assets/json/thinking.json";
-
 
 export default function CompetencySection() {
   useEffect(() => {
-    lottie.loadAnimation({
-      container: document.querySelector("#jsonSpider"),
-      animationData: spiderGraph
-    });
-    lottie.loadAnimation({
+    //   lottie.loadAnimation({
+    //     container: document.querySelector("#jsonSpider"),
+    //     animationData: spiderGraph
+    //   });
+    Lottie.loadAnimation({
       container: document.querySelector("#jsonSpider2"),
       animationData: spiderGraph
     });
-    lottie.loadAnimation({
-      container: document.querySelector("#cognitiveJson"),
-      animationData: cognitiveJson
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#thinkingJson"),
-      animationData: behaviouralJson
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#intelligenceJson"),
-      animationData: intelligenceJson
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#behaviouralJson"),
-      animationData: thinkingJson
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#communicationJson"),
-      animationData: intelligenceJson
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#functionalJson"),
-      animationData: thinkingJson
-    });
+    //   lottie.loadAnimation({
+    //     container: document.querySelector("#cognitiveJson"),
+    //     animationData: cognitiveJson
+    //   });
+    //   lottie.loadAnimation({
+    //     container: document.querySelector("#thinkingJson"),
+    //     animationData: behaviouralJson
+    //   });
+    //   lottie.loadAnimation({
+    //     container: document.querySelector("#intelligenceJson"),
+    //     animationData: intelligenceJson
+    //   });
+    //   lottie.loadAnimation({
+    //     container: document.querySelector("#behaviouralJson"),
+    //     animationData: thinkingJson
+    //   });
+    //   lottie.loadAnimation({
+    //     container: document.querySelector("#communicationJson"),
+    //     animationData: intelligenceJson
+    //   });
+    //   lottie.loadAnimation({
+    //     container: document.querySelector("#functionalJson"),
+    //     animationData: thinkingJson
+    //   });
   }, [])
 
   const profileBoxData = [
     {
-      jsonID: 'cognitiveJson',
+      imgUrl: "/assets/icons/traits/cognitive.svg",
       title: 'Cognitive Traits',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
@@ -55,7 +51,7 @@ export default function CompetencySection() {
       ]
     },
     {
-      jsonID: 'thinkingJson',
+      imgUrl: '/assets/icons/traits/intelligence.svg',
       title: 'Intelligence Traits',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
@@ -63,7 +59,7 @@ export default function CompetencySection() {
       ]
     },
     {
-      jsonID: 'intelligenceJson',
+      imgUrl: '/assets/icons/traits/behavioural.svg',
       title: 'Behavioural Traits',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
@@ -71,7 +67,7 @@ export default function CompetencySection() {
       ]
     },
     {
-      jsonID: 'behaviouralJson',
+      imgUrl: '/assets/icons/traits/social.svg',
       title: 'Social Traits',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
@@ -79,7 +75,7 @@ export default function CompetencySection() {
       ]
     },
     {
-      jsonID: 'communicationJson',
+      imgUrl: '/assets/icons/traits/communication.svg',
       title: 'Communication Skills',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
@@ -87,7 +83,7 @@ export default function CompetencySection() {
       ]
     },
     {
-      jsonID: 'functionalJson',
+      imgUrl: '/assets/icons/traits/functional.svg',
       title: 'Functional Skills',
       description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
       tagSection: [
@@ -127,7 +123,9 @@ export default function CompetencySection() {
                 {profileBoxData.map((item, index) => (
                   <div key={index} className='profile-box-style'>
                     <div className="flex-sec">
-                      <div className='competency-json' id={item.jsonID} />
+                      <div className="icon-style">
+                        <Image layout='fill' src={item.imgUrl} alt="" />
+                      </div>
                       <div className='text-sec'>
                         <h4 className='title4'> {item.title}</h4>
                         <p className='description'> {item.description}</p>
