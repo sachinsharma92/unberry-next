@@ -45,7 +45,7 @@ export default function CompetencySection() {
     {
       imgUrl: "/assets/icons/traits/cognitive.svg",
       title: 'Cognitive Traits',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
+      description: 'How people process information & knowledge mentally',
       tagSection: [
         "Sustained Attention", "Working Memory", "Processing Speed", "Multi-tasking"
       ]
@@ -53,7 +53,7 @@ export default function CompetencySection() {
     {
       imgUrl: '/assets/icons/traits/intelligence.svg',
       title: 'Intelligence Traits',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
+      description: 'How people isolate & navigate complex problems',
       tagSection: [
         "Fluid Intelligence", "Ambiguity", "Tolerance", "Learning Agility"
       ]
@@ -61,7 +61,7 @@ export default function CompetencySection() {
     {
       imgUrl: '/assets/icons/traits/behavioural.svg',
       title: 'Behavioural Traits',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
+      description: 'How people control and conduct themseleves',
       tagSection: [
         "Tactical Planning", "Patience", "Decision Making", "Emotional Intelligence"
       ]
@@ -69,7 +69,7 @@ export default function CompetencySection() {
     {
       imgUrl: '/assets/icons/traits/social.svg',
       title: 'Social Traits',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
+      description: 'How people work with others and react to social situations',
       tagSection: [
         "Cooperation", "Reciprocity", "Integrity", "People Management"
       ]
@@ -77,7 +77,7 @@ export default function CompetencySection() {
     {
       imgUrl: '/assets/icons/traits/communication.svg',
       title: 'Communication Skills',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
+      description: 'How people understand speech and express themselves',
       tagSection: [
         "Learning", "Listening", "Reading", "Writing", "Basic Comprehension"
       ]
@@ -85,9 +85,9 @@ export default function CompetencySection() {
     {
       imgUrl: '/assets/icons/traits/functional.svg',
       title: 'Functional Skills',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ',
+      description: 'How people demonstrate domain specific knowledge',
       tagSection: [
-        "Coding Assessments", "Patience", "Functional Skill Assessments"
+        "Tactical Planning", "Patience", "Decision Making", "Emotional Intelligence"
       ]
     }
   ]
