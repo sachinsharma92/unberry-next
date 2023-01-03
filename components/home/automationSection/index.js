@@ -21,14 +21,14 @@ export default function AutomationSection() {
     {
       jsonID: "hires2",
       title: "Candidate Communication",
-      description: "With the help of our tech-savvy team, we produce/create outlines that are specifically tailored to your business's demands.",
+      description: "Evidence suggests that nearly 50% applicants embellish their CVs, reducing the utility of résumés as initial screening tools.",
       id: 2,
       imgUrl: "/assets/automation/candidate-communication.png",
     },
     {
       jsonID: "bestfit3",
       title: "Proctoring",
-      description: "In this phase, we get the tech work started and create the application in accordance with the earlier design outline and laid-out specifications.",
+      description: "Evidence suggests that nearly 50% applicants embellish their CVs, reducing the utility of résumés as initial screening tools.",
       id: 3,
       imgUrl: "/assets/automation/proctoring.png",
     },
@@ -144,7 +144,7 @@ export default function AutomationSection() {
                       <Image
                         key={imageSource}
                         src={imageSource}
-                        alt="Picture of the author"
+                        alt={imageSource}
                         layout="fill"
                         className={count === 1 ? "img-fit" : "img-fit-no"}
                       />

@@ -1,34 +1,33 @@
-import React, { useEffect } from 'react';
-import { Button, Carousel } from 'antd';
+import { Button } from 'antd';
 import lottie from "lottie-web";
+import React, { useEffect } from 'react';
 
-import playRemotely from "../../../assets/json/play-remotely.json";
 import customBenchmarks from "../../../assets/json/custom-benchmarks.json";
 import detailedReports from "../../../assets/json/detailed-reports.json";
+import playRemotely from "../../../assets/json/play-remotely.json";
 
-import playRemotelyIcon from "../../../assets/json/play-remotely.gif";
 import customBenchmarksIcon from "../../../assets/json/custom-benchmarks.gif";
 import detailedReportsIcon from "../../../assets/json/detailed-reports.gif";
-import Image from 'next/image';
+import playRemotelyIcon from "../../../assets/json/play-remotely.gif";
 
 
 export default function HowWorkCard() {
   const mediaboxData = [
     {
       title: 'Tech Operations',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+      description: 'Identify and hire the smartest tech talent by assessing them on a combination of various key role relevant traits along with their technical skills through our automated coding solution ',
       lottieID: "playRemotely",
       mobileIcon: playRemotelyIcon,
     },
     {
       title: 'Sales & Operations',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+      description: 'Hire the best fit candidates while managing your huge churn through our highly customised assessment for each role, measuring across traits that really matter for high performing employees',
       lottieID: "customBenchmarks",
       mobileIcon: customBenchmarksIcon,
     },
     {
       title: 'Grey Collar Workforce',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+      description: 'Conduct specialised mass hiring drives for a variety of roles in the workforce, with localised context adaptations, low-end smartphone support and regional language support',
       lottieID: "detailedReports",
       mobileIcon: detailedReportsIcon,
     }
@@ -54,11 +53,12 @@ export default function HowWorkCard() {
         {mediaboxData.map((item, index) => (
           <div className='media-box' key={index}>
             <ul className={`list-sec ${item.listStyle}`}>
-              <li>Privacy Engineer</li>
-              <li>Research Scientist</li>
-              <li>On-ground Sales Forse</li>
-              <li>Privacy Engineer</li>
-              <li>Research Scientist</li>
+              <li>Warehouse Operator</li>
+              <li>Customer Service</li>
+              <li>Data Entry Operators</li>
+              <li>Fleet on Street</li>
+              <li>Team Leads</li>
+              <li>Delhivery Partners</li>
             </ul>
             <div className="content-box">
               <div className='title'>

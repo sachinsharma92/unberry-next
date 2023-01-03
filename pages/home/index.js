@@ -91,7 +91,7 @@ export default function HomeScreen() {
 
             <div className='content-section primary-width'>
               <div className='heading-section'>
-                <h3 className='title1'>Blog section title goes here</h3>
+                <h3 className='title1'>Inside Unberry</h3>
                 <div className='view-all'><Link href="/blog">View All</Link></div>
               </div>
               <BlogCard data={blogs} currentPath={asPath} />
