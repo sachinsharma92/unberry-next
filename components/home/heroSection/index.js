@@ -1,11 +1,9 @@
 import { Button } from 'antd'
-import Lottie from 'lottie-web'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React from 'react'
 import heroImage from "../../../assets/illustration/hero-img.svg"
 import logoTheme from "../../../assets/logo-brown.svg"
-import mainFoldJson from "../../../assets/json/thanks.json";
 
 export default function HomeHeroSection() {
   // useEffect(() => {

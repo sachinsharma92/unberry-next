@@ -5,7 +5,9 @@
 // auto-section
 
 .home-section-style {
-  overflow-x: scroll;
+  @include mobile {
+    overflow-x: scroll;
+  }
 
   .w-100 {
     width: 100%;
@@ -19,9 +21,9 @@
   .section-style {
     min-height: 100vh;
     display: flex;
-    overflow: hidden;
 
     @include mobile {
+      overflow: hidden;
       min-height: auto;
     }
   }
@@ -691,6 +693,7 @@
         color: $white;
         margin: 0;
         font-size: 22px;
+        max-width: 90%;
 
         @include mobile {
           font-size: 20px;
@@ -745,6 +748,16 @@
       }
     }
 
+    .sticky-style {
+      position: sticky;
+      top: 50px;
+
+      @include mobile {
+        position: relative;
+        top: 0px;
+      }
+    }
+
     .video-image {
       position: relative;
       width: 44vw;
@@ -791,6 +804,12 @@
         top: 12px;
         margin: 0 auto;
 
+        @include desktop-lg {
+          width: 98%;
+          height: 98%;
+          top: 9px;
+        }
+
         @include mobile {
           width: 272px;
           right: 0;
@@ -804,6 +823,10 @@
         width: 100%;
         position: relative;
         overflow: hidden;
+
+        @include desktop-lg {
+          height: 450px;
+        }
 
         @include mobile {
           height: auto;
@@ -833,7 +856,11 @@
       grid-template-columns: 1fr 1fr;
       gap: 47px;
       padding-right: 70px;
-      margin-bottom: 68px;
+      margin-bottom: 128px;
+
+      @include desktop-lg {
+        margin-bottom: 68px;
+      }
 
       @include mobile {
         gap: 16px;
@@ -880,6 +907,10 @@
         color: #fffbf1;
         max-width: 70%;
 
+        @include desktop-lg {
+          max-width: 60%;
+        }
+
         @include mobile {
           font-size: 15px;
           line-height: 21px;
@@ -893,6 +924,10 @@
         color: #fffbf1;
         opacity: 0.8;
         transition: all 0.5s ease-in-out;
+
+        @include desktop-lg {
+          max-width: 70%;
+        }
 
         @include mobile {
           font-size: 13px;

@@ -48,19 +48,19 @@ export default function AssessmentSection() {
     }
   ]
 
-  useEffect(() => {
-    if (isBigScreen) {
-      const leftController = new ScrollMagic.Controller();
-      new ScrollMagic.Scene({
-        duration: '53%',
-        triggerElement: ".sticky-style",
-        triggerHook: 0,
-        offset: -50
-      })
-        .setPin(".sticky-style")
-        .addTo(leftController)
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (isBigScreen) {
+  //     const leftController = new ScrollMagic.Controller();
+  //     new ScrollMagic.Scene({
+  //       duration: 1327,
+  //       triggerElement: ".sticky-style",
+  //       triggerHook: 0,
+  //       offset: -50
+  //     })
+  //       .setPin(".sticky-style")
+  //       .addTo(leftController)
+  //   }
+  // }, []);
 
   return (
     <section className='section-style assessment-section'>
