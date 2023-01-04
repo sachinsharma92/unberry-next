@@ -1,20 +1,18 @@
-import { Button, Col, Row } from 'antd'
-import Link from 'next/link'
-import React, { useEffect } from 'react'
-import { useMediaQuery } from 'react-responsive'
-import videoImageMobile from "../../../assets/video-img1.png";
+import { Button, Col, Row } from 'antd';
+import Link from 'next/link';
+import React from 'react';
 import videoImage1 from "../../../assets/blank-laptop.png";
+import videoImageMobile from "../../../assets/video-img1.png";
 
-import productImage1 from "../../../assets/icons/the-product/game.svg"
-import productImage2 from "../../../assets/icons/the-product/strategy.svg"
-import productImage3 from "../../../assets/icons/the-product/cube.svg"
-import productImage4 from "../../../assets/icons/the-product/chat.svg"
-import productImage5 from "../../../assets/icons/the-product/code.svg"
-import productImage6 from "../../../assets/icons/the-product/git.svg"
 import Image from 'next/image';
+import productImage4 from "../../../assets/icons/the-product/chat.svg";
+import productImage5 from "../../../assets/icons/the-product/code.svg";
+import productImage3 from "../../../assets/icons/the-product/cube.svg";
+import productImage1 from "../../../assets/icons/the-product/game.svg";
+import productImage6 from "../../../assets/icons/the-product/git.svg";
+import productImage2 from "../../../assets/icons/the-product/strategy.svg";
 
 export default function AssessmentSection() {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
 
   const producrCard = [
     {
@@ -49,20 +47,6 @@ export default function AssessmentSection() {
     }
   ]
 
-  // useEffect(() => {
-  //   if (isBigScreen) {
-  //     const leftController = new ScrollMagic.Controller();
-  //     new ScrollMagic.Scene({
-  //       duration: 1327,
-  //       triggerElement: ".sticky-style",
-  //       triggerHook: 0,
-  //       offset: -50
-  //     })
-  //       .setPin(".sticky-style")
-  //       .addTo(leftController)
-  //   }
-  // }, []);
-
   return (
     <section className='section-style assessment-section'>
       <div className='menu-section'>
@@ -82,7 +66,7 @@ export default function AssessmentSection() {
                 </div>
                 <div className='video-image'>
                   <video muted autoPlay loop playsInline width="100%" height="100%">
-                    <source src="../../../static/video/unberry-mix.mp4" type="video/mp4" />
+                    <source src="/video/unberry-mix.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <div className="laptop-frame">
