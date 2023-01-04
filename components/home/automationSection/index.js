@@ -145,9 +145,9 @@ export default function AutomationSection() {
                         key={imageSource}
                         src={imageSource}
                         alt={imageSource}
-                        blurDataURL={imageSource}
-                        placeholder="blur"
-                        quality={80}
+                        // blurDataURL={imageSource}
+                        // placeholder="blur"
+                        quality={70}
                         layout="fill"
                         width={500}
                         height={500}
