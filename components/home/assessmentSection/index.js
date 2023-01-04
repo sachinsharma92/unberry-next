@@ -70,13 +70,13 @@ export default function AssessmentSection() {
                     Your browser does not support the video tag.
                   </video>
                   <div className="laptop-frame">
-                    <Image src={videoImage1} className='img-full' alt="" />
+                    <Image src={videoImage1} quality={70} priority className='img-full' alt="" />
                   </div>
                 </div>
 
                 <div className="mobile-frame">
                   <div className="mobile-laptop">
-                    <Image src={videoImageMobile} className='img-full' alt="" />
+                    <Image src={videoImageMobile} quality={70} priority className='img-full' alt="" />
                   </div>
                 </div>
               </div>

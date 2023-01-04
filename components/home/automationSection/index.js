@@ -148,11 +148,11 @@ export default function AutomationSection() {
                         // blurDataURL={imageSource}
                         // placeholder="blur"
                         quality={70}
+                        priority
                         layout="fill"
                         width={500}
                         height={500}
                         className={count === 1 ? "img-fit" : "img-fit-no"}
-                        priority
                       />
                     )}
                   </div>

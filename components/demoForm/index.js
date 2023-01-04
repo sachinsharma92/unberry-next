@@ -149,7 +149,15 @@ export default function DemoForm(props) {
           </div>
           <div className="show-on-desktop">
             <div className='gradint-section'>
-              <Image src={demoGroup} className='img-full' alt="" />
+              <Image
+                src={demoGroup}
+                quality={70}
+                priority
+                // layout="fill"
+                className='img-full'
+                alt=""
+
+              />
             </div>
           </div>
         </div>
