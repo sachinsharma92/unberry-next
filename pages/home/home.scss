@@ -624,7 +624,7 @@
     }
 
     .content-section {
-      padding: 68px 0;
+      padding: 68px 0 0;
 
       @include mobile {
         padding: 0px 0 0px;
@@ -751,103 +751,69 @@
 
     .sticky-style {
       position: sticky;
-      top: 50px;
+      top: 30px;
+      margin-bottom: -50px;
 
       @include mobile {
         position: relative;
         top: 0px;
+        margin-bottom: 0px;
       }
     }
 
     .video-image {
       position: relative;
-      width: 44vw;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      margin-top: 80px;
-      padding: 0 50px;
+      margin-top: 60px;
+      scale: 0.9;
+      margin-left: -40px;
+      width: 740px;
 
       @include mobile {
-        width: 100vw;
-        height: 230px;
-        padding: 0 20px;
-        margin-top: -20px;
-        transform: scale(1.1);
-        margin-left: 40px;
-        margin-bottom: 50px;
+        display: none;
+      }
+
+      video {
+        position: absolute;
+        z-index: 1;
+        width: 585px;
+        left: 75px;
+        top: -30px;
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+
+    .mobile-frame {
+      display: none;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 40px;
+
+      @include mobile {
+        display: flex;
+      }
+
+      .mobile-laptop {
+        width: 90%;
+        position: relative;
+        overflow: hidden;
+        margin-right: -50px;
 
         &::before {
-          position: absolute;
           content: "";
-          top: 0;
-          left: 0;
+          position: absolute;
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          z-index: 1;
+          left: 0px;
+          top: 0;
           background: linear-gradient(
             170.48deg,
             #1c1c1c 17.61%,
             rgba(28, 28, 28, 0.849282) 68.62%,
             rgba(28, 28, 28, 0.32) 82.66%
           );
-        }
-      }
-
-      video {
-        width: 82%;
-        height: 82%;
-        position: absolute;
-        right: 0;
-        left: 0;
-        z-index: 1;
-        top: 12px;
-        margin: 0 auto;
-
-        @include desktop-lg {
-          width: 98%;
-          height: 98%;
-          top: 9px;
-        }
-
-        @include mobile {
-          width: 272px;
-          right: 0;
-          margin: 0 auto;
-          display: none;
-        }
-      }
-
-      .laptop-frame {
-        height: 400px;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-
-        @include desktop-lg {
-          height: 450px;
-        }
-
-        @include mobile {
-          height: auto;
-        }
-
-        .img-full {
-          position: absolute;
-          height: 500px;
-          width: 100%;
-          top: 0;
-          left: 0;
-          object-fit: cover;
-          object-position: 0 12px;
-          transform: scale(1.3);
-
-          @include mobile {
-            left: 0;
-            bottom: -14px;
-            transform: scale(1);
-          }
+          z-index: 1;
         }
       }
     }
@@ -1107,7 +1073,7 @@
       }
     }
 
-    .video-image {
+    .json-frame {
       display: flex;
       align-items: center;
       justify-content: center;

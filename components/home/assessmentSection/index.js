@@ -2,7 +2,8 @@ import { Button, Col, Row } from 'antd'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
-import videoImage1 from "../../../assets/video-img1.png";
+import videoImageMobile from "../../../assets/video-img1.png";
+import videoImage1 from "../../../assets/blank-laptop.png";
 
 import productImage1 from "../../../assets/icons/the-product/game.svg"
 import productImage2 from "../../../assets/icons/the-product/strategy.svg"
@@ -86,6 +87,12 @@ export default function AssessmentSection() {
                   </video>
                   <div className="laptop-frame">
                     <Image src={videoImage1} className='img-full' alt="" />
+                  </div>
+                </div>
+
+                <div className="mobile-frame">
+                  <div className="mobile-laptop">
+                    <Image src={videoImageMobile} className='img-full' alt="" />
                   </div>
                 </div>
               </div>

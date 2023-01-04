@@ -109,7 +109,7 @@ export default function CompetencySection() {
           </Col>
           <Col xs={24} sm={7}>
             <div className='show-on-desktop'>
-              <div className='video-image'>
+              <div className='json-frame'>
                 <div className='jsonSpider' id="jsonSpider" />
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function CompetencySection() {
         </div>
 
         <div className='show-on-mobile'>
-          <div className='video-image'>
+          <div className='json-frame'>
             <div className='jsonSpider' id="jsonSpider2" />
           </div>
         </div>
