@@ -145,8 +145,14 @@ export default function AutomationSection() {
                         key={imageSource}
                         src={imageSource}
                         alt={imageSource}
+                        blurDataURL={imageSource}
+                        placeholder="blur"
+                        quality={80}
                         layout="fill"
+                        width={500}
+                        height={500}
                         className={count === 1 ? "img-fit" : "img-fit-no"}
+                        priority
                       />
                     )}
                   </div>
