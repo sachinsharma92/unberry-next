@@ -1454,12 +1454,6 @@
     }
 
     .list-sec {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      // justify-content: center;
-      align-items: center;
-      gap: 20px;
       border-bottom: 1px solid $border-color;
       padding: 0;
       background: radial-gradient(
@@ -1487,14 +1481,38 @@
         border-bottom: none;
       }
 
-      li {
+      .list-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        animation-play-state: paused;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          animation: marquee 10s linear infinite;
+        }
+
+        /* Make it move! */
+        @keyframes marquee {
+          0% {
+            top: 0;
+          }
+          100% {
+            top: -100vh;
+          }
+        }
+      }
+
+      .list-item {
         background: rgba(#2e1500, 0.1);
-        width: 277px;
-        height: 65px;
+        width: 180px;
+        height: 40px;
         padding: 20px;
         border-radius: 50px;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 25px;
         display: flex;
         align-items: center;
@@ -1503,28 +1521,27 @@
         letter-spacing: -1px;
 
         &:nth-child(1) {
-          margin-top: -20px;
+          margin-top: 20px;
         }
 
-        &:nth-child(1),
-        &:nth-child(5),
-        &:last-child {
-          width: 180px;
-          font-size: 16px;
-          line-height: 20px;
-          height: 40px;
-          opacity: 0.4;
-        }
-        &:nth-child(2),
-        &:nth-child(6),
-        &:nth-child(4) {
-          width: 220px;
-          font-size: 16px;
-          line-height: 20px;
-          height: 45px;
-        }
+        // &:nth-child(1),
+        // &:nth-child(5),
+        // &:last-child {
+        //   width: 180px;
+        //   font-size: 16px;
+        //   line-height: 20px;
+        //   height: 40px;
+        //   opacity: 0.4;
+        // }
+        // &:nth-child(2),
+        // &:nth-child(6),
+        // &:nth-child(4) {
+        //   width: 220px;
+        //   font-size: 16px;
+        //   line-height: 20px;
+        //   height: 45px;
+        // }
       }
-
       &:hover {
         background: #1c1c1c;
         overflow: hidden;
@@ -1533,7 +1550,7 @@
           opacity: 1;
         }
 
-        li {
+        .list-item {
           background: rgba(255, 252, 246, 0.09);
         }
       }

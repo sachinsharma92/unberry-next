@@ -45,21 +45,44 @@ export default function HowWorkCard() {
       container: document.querySelector("#detailedReports"),
       animationData: detailedReports
     });
-
   }, []);
+
   return (
     <div className='how-work-card'>
       <div className='media-section'>
         {mediaboxData.map((item, index) => (
           <div className='media-box' key={index}>
-            <ul className={`list-sec ${item.listStyle}`}>
-              <li>Warehouse Operator</li>
-              <li>Customer Service</li>
-              <li>Data Entry Operators</li>
-              <li>Fleet on Street</li>
-              <li>Team Leads</li>
-              <li>Delhivery Partners</li>
-            </ul>
+            <div className={`list-sec ${item.listStyle}`}>
+              <div className='list-items' key={index}>
+                <div className='list-item'>Warehouse Operator</div>
+                <div className='list-item'>Customer Service</div>
+                <div className='list-item'>Data Entry Operators</div>
+                <div className='list-item'>Fleet on Street</div>
+                <div className='list-item'>Team Leads</div>
+                <div className='list-item'>Delhivery Partners</div>
+
+                <div className='list-item'>Warehouse Operator</div>
+                <div className='list-item'>Customer Service</div>
+                <div className='list-item'>Data Entry Operators</div>
+                <div className='list-item'>Fleet on Street</div>
+                <div className='list-item'>Team Leads</div>
+                <div className='list-item'>Delhivery Partners</div>
+
+                <div className='list-item'>Warehouse Operator</div>
+                <div className='list-item'>Customer Service</div>
+                <div className='list-item'>Data Entry Operators</div>
+                <div className='list-item'>Fleet on Street</div>
+                <div className='list-item'>Team Leads</div>
+                <div className='list-item'>Delhivery Partners</div>
+
+                <div className='list-item'>Warehouse Operator</div>
+                <div className='list-item'>Customer Service</div>
+                <div className='list-item'>Data Entry Operators</div>
+                <div className='list-item'>Fleet on Street</div>
+                <div className='list-item'>Team Leads</div>
+                <div className='list-item'>Delhivery Partners</div>
+              </div>
+            </div>
             <div className="content-box">
               <div className='title'>
                 {item.title}
