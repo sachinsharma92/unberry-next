@@ -846,12 +846,6 @@
 
       .hover-action {
         margin-top: 50px;
-        // transform: translate(0px, 60px);
-        // transition: all 0.5s ease-in-out;
-
-        // @include mobile {
-        //   transform: translate(0px, 0px);
-        // }
 
         @include mobile {
           margin-top: 0px;
@@ -966,20 +960,6 @@
             filter: blur(37.52px);
           }
         }
-
-        // &:hover {
-        //   .hover-action {
-        //     transform: translate(0px, 0px);
-        //   }
-
-        //   &::before {
-        //     opacity: 1;
-        //   }
-
-        //   .icon-sec {
-        //     opacity: 1;
-        //   }
-        // }
       }
 
       .p-card:nth-child(odd) {
@@ -1373,7 +1353,7 @@
     }
 
     .btn-demo-lg {
-      margin-top: 81px;
+      margin-top: 40px;
 
       @include mobile {
         margin-top: 35px;
@@ -1387,14 +1367,6 @@
       @include mobile {
         grid-template-columns: repeat(1, 1fr);
       }
-
-      .media-box {
-        &:nth-child(2) {
-          border-left: 1px solid $border-color;
-          border-right: 1px solid $border-color;
-        }
-      }
-
       .number {
         color: $theme-primary;
         font-size: 30px;
@@ -1414,7 +1386,7 @@
     }
 
     .content-box {
-      padding: 61px 34px;
+      padding: 50px 34px;
 
       @include mobile {
         padding: 34px 20px;
@@ -1422,8 +1394,8 @@
     }
 
     .title {
-      font-size: 30px;
-      line-height: 35px;
+      font-size: 28px;
+      line-height: 30px;
       margin-bottom: 10px;
       font-weight: 500;
       color: #313131;
@@ -1456,11 +1428,7 @@
     .list-sec {
       border-bottom: 1px solid $border-color;
       padding: 0;
-      background: radial-gradient(
-        142.7% 45.93% at 50% 50%,
-        rgba(255, 252, 246, 0) 68.24%,
-        #fffcf6 100%
-      );
+      background: #1c1c1c;
       height: 283px;
       overflow: hidden;
       position: relative;
@@ -1474,7 +1442,6 @@
         content: "";
         background: linear-gradient(129deg, #ffd49f 3.28%, #ff82b4 99.54%);
         filter: blur(102.23px);
-        opacity: 0;
       }
 
       @include mobile {
@@ -1489,12 +1456,8 @@
         animation-play-state: paused;
         position: relative;
         cursor: pointer;
+        animation: marquee 40s linear infinite;
 
-        &:hover {
-          animation: marquee 10s linear infinite;
-        }
-
-        /* Make it move! */
         @keyframes marquee {
           0% {
             top: 0;
@@ -1506,10 +1469,10 @@
       }
 
       .list-item {
-        background: rgba(#2e1500, 0.1);
-        width: 180px;
+        background: rgba(255, 252, 246, 0.09);
+        // width: 180px;
         height: 40px;
-        padding: 20px;
+        padding: 20px 30px;
         border-radius: 50px;
         font-weight: 400;
         font-size: 16px;
@@ -1522,36 +1485,6 @@
 
         &:nth-child(1) {
           margin-top: 20px;
-        }
-
-        // &:nth-child(1),
-        // &:nth-child(5),
-        // &:last-child {
-        //   width: 180px;
-        //   font-size: 16px;
-        //   line-height: 20px;
-        //   height: 40px;
-        //   opacity: 0.4;
-        // }
-        // &:nth-child(2),
-        // &:nth-child(6),
-        // &:nth-child(4) {
-        //   width: 220px;
-        //   font-size: 16px;
-        //   line-height: 20px;
-        //   height: 45px;
-        // }
-      }
-      &:hover {
-        background: #1c1c1c;
-        overflow: hidden;
-
-        &::before {
-          opacity: 1;
-        }
-
-        .list-item {
-          background: rgba(255, 252, 246, 0.09);
         }
       }
     }

@@ -93,7 +93,6 @@ export default function AssessmentSection() {
                         <h4 className="title"> {data.title}</h4>
                         <div className='hover-action'>
                           <p className="description">{data.description}</p>
-                          <div className="explore">Explore</div>
                         </div>
                       </div>
                     </div>
