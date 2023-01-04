@@ -74,11 +74,11 @@ export default function AssessmentSection() {
                   </div>
                 </div>
 
-                <div className="mobile-frame">
+                {/* <div className="mobile-frame">
                   <div className="mobile-laptop">
                     <Image src={videoImageMobile} quality={70} priority className='img-full' alt="" />
                   </div>
-                </div>
+                </div> */}
               </div>
             </Col>
             <Col xs={24} sm={12}>
