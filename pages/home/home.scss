@@ -1451,6 +1451,10 @@
         content: "";
         background: linear-gradient(129deg, #ffd49f 3.28%, #ff82b4 99.54%);
         filter: blur(102.23px);
+
+        @include mobile {
+          filter: blur(202.23px);
+        }
       }
 
       @include mobile {
