@@ -9,6 +9,7 @@ import playRemotely from "../../../assets/json/play-remotely.json";
 import customBenchmarksIcon from "../../../assets/json/custom-benchmarks.gif";
 import detailedReportsIcon from "../../../assets/json/detailed-reports.gif";
 import playRemotelyIcon from "../../../assets/json/play-remotely.gif";
+import gsap from 'gsap';
 
 
 export default function HowWorkCard() {
@@ -18,18 +19,94 @@ export default function HowWorkCard() {
       description: 'Identify and hire the smartest tech talent by assessing them on a combination of various key role relevant traits along with their technical skills through our automated coding solution ',
       lottieID: "playRemotely",
       mobileIcon: playRemotelyIcon,
+      listDataItems: [
+        "Software Developers",
+        "Campus Hiring",
+        "Project Managers",
+        "QA Engineers",
+        "Technical Lead",
+        "Product Managers",
+
+        // Repeat
+        "Software Developers",
+        "Campus Hiring",
+        "Project Managers",
+        "QA Engineers",
+        "Technical Lead",
+        "Product Managers",
+
+        // Repeat
+        "Software Developers",
+        "Campus Hiring",
+        "Project Managers",
+        "QA Engineers",
+        "Technical Lead",
+        "Product Managers",
+      ]
     },
     {
       title: 'Sales & Operations',
       description: 'Hire the best fit candidates while managing your huge churn through our highly customised assessment for each role, measuring across traits that really matter for high performing employees',
       lottieID: "customBenchmarks",
       mobileIcon: customBenchmarksIcon,
+      listDataItems: [
+        "Business Development",
+        "Inside Sales",
+        "Account Manager",
+        "Sales Manager",
+        "Customer Success",
+        "Account Executive",
+
+        // Repeat
+        "Business Development",
+        "Inside Sales",
+        "Account Manager",
+        "Sales Manager",
+        "Customer Success",
+        "Account Executive",
+
+        // Repeat
+        "Business Development",
+        "Inside Sales",
+        "Account Manager",
+        "Sales Manager",
+        "Customer Success",
+        "Account Executive"
+      ]
     },
     {
       title: 'Grey Collar Workforce',
       description: 'Conduct specialised mass hiring drives for a variety of roles in the workforce, with localised context adaptations, low-end smartphone support and regional language support',
       lottieID: "detailedReports",
       mobileIcon: detailedReportsIcon,
+      listDataItems: [
+        "Warehouse Operator",
+        "Customer Service",
+        "Fleet on Street",
+        "Team Leads",
+        "Delhivery Partners",
+
+        // Repeat
+        "Warehouse Operator",
+        "Customer Service",
+        "Fleet on Street",
+        "Team Leads",
+        "Delhivery Partners",
+
+        // Repeat
+        "Warehouse Operator",
+        "Customer Service",
+        "Fleet on Street",
+        "Team Leads",
+        "Delhivery Partners",
+
+        // Repeat
+        "Warehouse Operator",
+        "Customer Service",
+        "Fleet on Street",
+        "Team Leads",
+        "Delhivery Partners",
+      ]
     }
   ]
   useEffect(() => {
@@ -53,34 +130,10 @@ export default function HowWorkCard() {
         {mediaboxData.map((item, index) => (
           <div className='media-box' key={index}>
             <div className={`list-sec ${item.listStyle}`}>
-              <div className='list-items' key={index}>
-                <div className='list-item'>Warehouse Operator</div>
-                <div className='list-item'>Customer Service</div>
-                <div className='list-item'>Data Entry Operators</div>
-                <div className='list-item'>Fleet on Street</div>
-                <div className='list-item'>Team Leads</div>
-                <div className='list-item'>Delhivery Partners</div>
-
-                <div className='list-item'>Warehouse Operator</div>
-                <div className='list-item'>Customer Service</div>
-                <div className='list-item'>Data Entry Operators</div>
-                <div className='list-item'>Fleet on Street</div>
-                <div className='list-item'>Team Leads</div>
-                <div className='list-item'>Delhivery Partners</div>
-
-                <div className='list-item'>Warehouse Operator</div>
-                <div className='list-item'>Customer Service</div>
-                <div className='list-item'>Data Entry Operators</div>
-                <div className='list-item'>Fleet on Street</div>
-                <div className='list-item'>Team Leads</div>
-                <div className='list-item'>Delhivery Partners</div>
-
-                <div className='list-item'>Warehouse Operator</div>
-                <div className='list-item'>Customer Service</div>
-                <div className='list-item'>Data Entry Operators</div>
-                <div className='list-item'>Fleet on Street</div>
-                <div className='list-item'>Team Leads</div>
-                <div className='list-item'>Delhivery Partners</div>
+              <div className='list-items'>
+                {item.listDataItems.map((listData) => (
+                  <div key={index} className='list-item box'>{listData}</div>
+                ))}
               </div>
             </div>
             <div className="content-box">
