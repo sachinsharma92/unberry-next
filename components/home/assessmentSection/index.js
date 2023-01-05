@@ -1,8 +1,7 @@
 import { Button, Col, Row } from 'antd';
 import Link from 'next/link';
 import React from 'react';
-import videoImage1 from "../../../assets/blank-laptop.png";
-import videoImageMobile from "../../../assets/video-img1.png";
+import videoImage1 from "../../../assets/blank-laptop.svg";
 
 import Image from 'next/image';
 import productImage4 from "../../../assets/icons/the-product/chat.svg";

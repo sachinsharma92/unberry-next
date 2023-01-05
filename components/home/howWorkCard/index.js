@@ -84,28 +84,28 @@ export default function HowWorkCard() {
         "Customer Service",
         "Fleet on Street",
         "Team Leads",
-        "Delhivery Partners",
+        "Delivery Partners",
 
         // Repeat
         "Warehouse Operator",
         "Customer Service",
         "Fleet on Street",
         "Team Leads",
-        "Delhivery Partners",
+        "Delivery Partners",
 
         // Repeat
         "Warehouse Operator",
         "Customer Service",
         "Fleet on Street",
         "Team Leads",
-        "Delhivery Partners",
+        "Delivery Partners",
 
         // Repeat
         "Warehouse Operator",
         "Customer Service",
         "Fleet on Street",
         "Team Leads",
-        "Delhivery Partners",
+        "Delivery Partners",
       ]
     }
   ]

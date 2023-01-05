@@ -87,7 +87,7 @@ export default function CompetencySection() {
       title: 'Functional Skills',
       description: 'How people demonstrate domain specific knowledge',
       tagSection: [
-        "Tactical Planning", "Patience", "Decision Making", "Emotional Intelligence"
+        "Coding Assessments", "Skill Assessment", "Domain Knowledge"
       ]
     }
   ]

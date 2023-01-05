@@ -752,7 +752,7 @@
     .sticky-style {
       position: sticky;
       top: 30px;
-      margin-bottom: -50px;
+      margin-bottom: -40px;
 
       @include mobile {
         position: relative;
@@ -778,16 +778,16 @@
       video {
         position: absolute;
         z-index: 1;
-        width: 585px;
-        left: 75px;
-        top: -30px;
+        width: 540px;
+        left: 80px;
+        top: 0px;
 
         @include mobile {
           left: 0;
           right: 0;
           margin: 0 auto;
-          width: 71vw;
-          top: -14px;
+          width: 68vw;
+          top: -2px;
           border-radius: 33px 33px 0 0;
         }
       }
