@@ -58,10 +58,10 @@ const BlogDetail = ({ heading }) => {
 		<>
 			<Head>
 				<title>{heading}</title>
-				<meta property="og:image" content="https://grappus.com/static/ogImage.png" />
+				<meta property="og:image" content="https://unberry.com/static/ogImage.png" />
 				<meta
 					name="twitter:image"
-					content="https://grappus.com/static/ogImage.png"
+					content="https://unberry.com/static/ogImage.png"
 				/>
 			</Head>
 			<LayoutPrimary footer>
