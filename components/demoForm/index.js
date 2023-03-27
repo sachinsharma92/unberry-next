@@ -26,10 +26,30 @@ export default function DemoForm(props) {
   };
 
   const bookADemo = (values) => {
+    const {email, name, phone, message, employeesCount, hiringCount} = values;
+    let employeesCountArray = employeesCount?.split("-");
+    let hiringCountArray = hiringCount?.split("-");
+    let numberOfEmployees = {
+      min: +employeesCountArray[0],
+      max: +employeesCountArray[1]
+    };
+    let numberOfPlannedHiring = {
+      min: +hiringCountArray[0],
+      max: +hiringCountArray[1]
+    }
+
+    let payload = {
+      name,
+      email,
+      phone,
+      message,
+      numberOfPlannedHiring,
+      numberOfEmployees
+    }
     axios
       .post(
         "https://prod-api.unberry.com/api/query/v1/create-query",
-        values, // the data to post'
+        payload, // the data to post'
         {
           headers: {
             "Content-type": "application/json",
@@ -108,16 +128,18 @@ export default function DemoForm(props) {
               preserve={false}
               ref={formRef}
               initialValues={{
-                name: '',
                 email: '',
+                name: '',
                 phone: '',
-                designation: ''
+                employeesCount: '',
+                hiringCount: '',
+                message: '',
               }}
             >
 
               <Form.Item
-                name="name"
-                rules={[{ required: true, }]}
+                name="email"
+                rules={[{ type: "email",  required: true, }]}
               >
                 <Input placeholder='Company Email'
                 />
@@ -141,11 +163,11 @@ export default function DemoForm(props) {
 
 
               <Form.Item
-                name="email"
-                rules={[{ type: 'email', required: true, }]}
+                name="employeesCount"
+                rules={[{ required: true, }]}
               >
                 <Select
-                  defaultValue="1-10"
+                  placeholder="Number of employees *"
                   onChange={handleChange}
                   options={[
                     {
@@ -153,36 +175,64 @@ export default function DemoForm(props) {
                       label: '1-10',
                     },
                     {
-                      value: '10-20',
-                      label: '10-20',
+                      value: '11-50',
+                      label: '11-50',
                     },
                     {
-                      value: '20-30',
-                      label: '20-30',
+                      value: '51-200',
+                      label: '51-200',
+                    },
+                    {
+                      value: '201-500',
+                      label: '201-500',
+                    },
+                    {
+                      value: '501-1000',
+                      label: '501-1,000',
+                    },
+                    {
+                      value: '1001-5000',
+                      label: '1,001-5,000',
+                    },
+                    {
+                      value: '10000-Infinity',
+                      label: '10,000+',
                     },
                   ]}
                 />
               </Form.Item>
 
               <Form.Item
-                name="hire-you"
+                name="hiringCount"
                 rules={[{ required: true, }]}
-              >
+                >
                 <Select
-                  defaultValue="1-10"
+                  placeholder="How many hires are you planning to make in the next year? *"
                   onChange={handleChange}
                   options={[
                     {
-                      value: '1-10',
-                      label: '1-10',
+                      value: '1-200',
+                      label: '1-200',
                     },
                     {
-                      value: '10-20',
-                      label: '10-20',
+                      value: '201-500',
+                      label: '201-500',
                     },
                     {
-                      value: '20-30',
-                      label: '20-30',
+                      value: '501-1000',
+                      label: '501-1,000',
+                    },
+                    {
+                      value: '1001-5000',
+                      label: '1,001-5,000',
+                    },
+                    {
+                      value: '5001-10000',
+                      label: '5,001-10,000',
+                    },
+                    {
+                      value: '10000-Infinity',
+                      label: '10,000+',
                     },
                   ]}
                 />
@@ -190,7 +240,6 @@ export default function DemoForm(props) {
 
               <Form.Item
                 name="message"
-                rules={[{ required: true, }]}
               >
                 <Input placeholder='message (optional)' />
               </Form.Item>
