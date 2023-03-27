@@ -142,7 +142,7 @@ export default function DemoForm(props) {
 
               <Form.Item
                 name="email"
-                rules={[{ type: 'email', required: true, }]}
+              // rules={[{ type: 'email', required: true, }]}
               >
                 <Select
                   defaultValue="1-10"
