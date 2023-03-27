@@ -187,6 +187,27 @@
     }
   }
 
+  .ant-select-selector {
+    border: none !important;
+    background: none !important;
+    border-bottom: 1px solid #c4c2da !important;
+    padding: 0;
+    border-radius: 0;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    height: 24px;
+    letter-spacing: -0.02em;
+    color: #9c9ab9;
+    padding: 0;
+
+    &:focus,
+    &:hover {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
   .ant-btn {
     display: flex;
     align-items: center;

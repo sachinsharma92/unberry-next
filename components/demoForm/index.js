@@ -1,4 +1,4 @@
-import { Button, Form, Input, notification } from 'antd';
+import { Button, Form, Input, notification, Select } from 'antd';
 import axios from "axios";
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
@@ -19,6 +19,10 @@ export default function DemoForm(props) {
       description:
         'Oops! Something went wrong',
     });
+  };
+
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
   };
 
   const bookADemo = (values) => {
@@ -111,6 +115,13 @@ export default function DemoForm(props) {
               }}
             >
 
+              <Form.Item
+                name="name"
+                rules={[{ required: true, }]}
+              >
+                <Input placeholder='Company Email'
+                />
+              </Form.Item>
               <div className="grid-form">
                 <Form.Item
                   name="name"
@@ -123,24 +134,68 @@ export default function DemoForm(props) {
                   name="phone"
                   rules={[{ required: true, }]}
                 >
-                  <Input type="number" placeholder='Enter Phone'
+                  <Input type="number" placeholder='Phone'
                   />
                 </Form.Item>
-
-                <Form.Item
-                  name="email"
-                  rules={[{ type: 'email', required: true, }]}
-                >
-                  <Input placeholder='Enter Email' />
-                </Form.Item>
-
-                <Form.Item
-                  name="designation"
-                  rules={[{ required: true, }]}
-                >
-                  <Input placeholder='Role at company' />
-                </Form.Item>
               </div>
+
+
+              <Form.Item
+                name="email"
+                rules={[{ type: 'email', required: true, }]}
+              >
+                <Select
+                  defaultValue="1-10"
+                  onChange={handleChange}
+                  options={[
+                    {
+                      value: '1-10',
+                      label: '1-10',
+                    },
+                    {
+                      value: '10-20',
+                      label: '10-20',
+                    },
+                    {
+                      value: '20-30',
+                      label: '20-30',
+                    },
+                  ]}
+                />
+              </Form.Item>
+
+              <Form.Item
+                name="hire-you"
+                rules={[{ required: true, }]}
+              >
+                <Select
+                  defaultValue="1-10"
+                  onChange={handleChange}
+                  options={[
+                    {
+                      value: '1-10',
+                      label: '1-10',
+                    },
+                    {
+                      value: '10-20',
+                      label: '10-20',
+                    },
+                    {
+                      value: '20-30',
+                      label: '20-30',
+                    },
+                  ]}
+                />
+              </Form.Item>
+
+              <Form.Item
+                name="message"
+                rules={[{ required: true, }]}
+              >
+                <Input placeholder='message (optional)' />
+              </Form.Item>
+
+
 
               <Button type="primary" htmlType="submit" >
                 Get Started
