@@ -3,7 +3,7 @@
 @import "../../styles/variables/mixins";
 
 .blog-detail-section {
-  background: #FFFCF6;
+  background: white;
   min-height: 100vh;
 
   .title2 {
@@ -17,7 +17,7 @@
 
   .header-style {
     min-height: 300px;
-    padding-bottom: 20px;
+    padding-bottom: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -45,7 +45,7 @@
   // }
 
   .blog-layout {
-    width: 1000px;
+     max-width: 900px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -85,6 +85,27 @@
       display: flex;
     }
   }
+
+    // hero-banner-img
+    .hero-banner-img {
+      height: 350px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      max-width: 900px;
+      margin: -100px auto 0;
+      border-radius: 10px;
+  
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+    }
 }
 
 // markdown-style
@@ -94,7 +115,7 @@
 
 .markdown-style {
   padding: 50px 0px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 
   @include mobile {

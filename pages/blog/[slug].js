@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import ReactMarkdown from 'react-markdown'
@@ -89,6 +90,11 @@ const BlogDetail = ({ heading }) => {
 							</div>
 						</div>
 					</div>
+
+					<div className='hero-banner-img'>
+						<img className='img-blog' src={data?.bannerImage} alt={data?.heading} />
+					</div>
+
 					<div className='markdown-layout'>
 						<ReactMarkdown
 							className='markdown-style'
