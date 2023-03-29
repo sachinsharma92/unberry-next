@@ -6,6 +6,8 @@ import demoGroup from "../../assets/demo-group.png";
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
 
+const { Option } = Select;
+
 export default function DemoForm(props) {
   const [isThankModal, setThankModal] = useState(false);
   const thankToggleModal = () => {
@@ -26,7 +28,7 @@ export default function DemoForm(props) {
   };
 
   const bookADemo = (values) => {
-    const {email, name, phone, message, employeesCount, hiringCount} = values;
+    const { email, name, phone, message, employeesCount, hiringCount } = values;
     let employeesCountArray = employeesCount?.split("-");
     let hiringCountArray = hiringCount?.split("-");
     let numberOfEmployees = {
@@ -79,11 +81,6 @@ export default function DemoForm(props) {
     );
     head.appendChild(script);
   }, []);
-
-
-  // const handleClick = () => {
-  //   window.open('https://calendly.com/unberry/product-demo');
-  // }
 
   return (
     <section className='section-style contact-section' id={props.id} >
@@ -139,103 +136,64 @@ export default function DemoForm(props) {
 
               <Form.Item
                 name="email"
-                rules={[{ type: "email",  required: true, }]}
+                rules={[{ type: "email", required: true, }]}
               >
-                <Input placeholder='Company Email'
+                <Input placeholder='Company Email*'
                 />
               </Form.Item>
+
               <div className="grid-form">
                 <Form.Item
                   name="name"
                   rules={[{ required: true, }]}
                 >
-                  <Input placeholder='Enter Name'
+                  <Input placeholder='Enter Name*'
                   />
                 </Form.Item>
                 <Form.Item
                   name="phone"
                   rules={[{ required: true, }]}
                 >
-                  <Input type="number" placeholder='Phone'
+                  <Input type="number" placeholder='Phone*'
                   />
                 </Form.Item>
               </div>
 
-
               <Form.Item
-                name="employeesCount"
-                rules={[{ required: true, }]}
+                // name="employeesCount"
+                rules={[{ required: true }]}
               >
                 <Select
                   placeholder="Number of employees *"
                   onChange={handleChange}
-                  options={[
-                    {
-                      value: '1-10',
-                      label: '1-10',
-                    },
-                    {
-                      value: '11-50',
-                      label: '11-50',
-                    },
-                    {
-                      value: '51-200',
-                      label: '51-200',
-                    },
-                    {
-                      value: '201-500',
-                      label: '201-500',
-                    },
-                    {
-                      value: '501-1000',
-                      label: '501-1,000',
-                    },
-                    {
-                      value: '1001-5000',
-                      label: '1,001-5,000',
-                    },
-                    {
-                      value: '10000-Infinity',
-                      label: '10,000+',
-                    },
-                  ]}
-                />
+                >
+                  <Option value="1-10">1-10</Option>
+                  <Option value="11-50">11-50</Option>
+                  <Option value="51-200">51-200</Option>
+                  <Option value="201-500">201-500</Option>
+                  <Option value="501-1000">501-1000</Option>
+                  <Option value="1001-5000">1001-5000</Option>
+                  <Option value="10000-Infinity">10000-Infinity</Option>
+                </Select>
               </Form.Item>
 
               <Form.Item
-                name="hiringCount"
-                rules={[{ required: true, }]}
-                >
+                // name="hiringCount"
+                rules={[{ required: true }]}
+              >
+
                 <Select
-                  placeholder="How many hires are you planning to make in the next year? *"
+                  placeholder="How many hires are you planning to make in the next year?*"
                   onChange={handleChange}
-                  options={[
-                    {
-                      value: '1-200',
-                      label: '1-200',
-                    },
-                    {
-                      value: '201-500',
-                      label: '201-500',
-                    },
-                    {
-                      value: '501-1000',
-                      label: '501-1,000',
-                    },
-                    {
-                      value: '1001-5000',
-                      label: '1,001-5,000',
-                    },
-                    {
-                      value: '5001-10000',
-                      label: '5,001-10,000',
-                    },
-                    {
-                      value: '10000-Infinity',
-                      label: '10,000+',
-                    },
-                  ]}
-                />
+                >
+                  <Option value="1-200">1-200</Option>
+                  <Option value="201-500">201-500</Option>
+                  <Option value="501-1000">501-1000</Option>
+                  <Option value="1001-5000">1001-5000</Option>
+                  <Option value="5001-10000">5001-10000</Option>
+                  <Option value="1001-5000">1001-5000</Option>
+                  <Option value="10000-Infinity">10,000+</Option>
+                </Select>
               </Form.Item>
 
               <Form.Item
