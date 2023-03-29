@@ -95,6 +95,12 @@
       max-width: 900px;
       margin: -100px auto 0;
       border-radius: 10px;
+
+      @include mobile {
+        width: 90%;
+        height: 250px;
+        margin: -120px auto 0;
+      }
   
       img {
         position: absolute;
