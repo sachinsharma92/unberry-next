@@ -28,9 +28,9 @@ export default function DemoForm(props) {
   };
 
   const bookADemo = (values) => {
-    const { email, name, phone, message, employeesCount, hiringCount } = values;
-    let employeesCountArray = employeesCount?.split("-");
-    let hiringCountArray = hiringCount?.split("-");
+    const { email, name, phone, message, employeescount, hiringcount } = values;
+    let employeesCountArray = employeescount?.split("-");
+    let hiringCountArray = hiringcount?.split("-");
     let numberOfEmployees = {
       min: +employeesCountArray[0],
       max: +employeesCountArray[1]
@@ -160,7 +160,7 @@ export default function DemoForm(props) {
               </div>
 
               <Form.Item
-                // name="employeesCount"
+                name="employeescount"
                 rules={[{ required: true }]}
               >
                 <Select
@@ -178,7 +178,7 @@ export default function DemoForm(props) {
               </Form.Item>
 
               <Form.Item
-                // name="hiringCount"
+                name="hiringcount"
                 rules={[{ required: true }]}
               >
 
