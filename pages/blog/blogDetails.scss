@@ -23,7 +23,7 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    background: url('../../assets/bg/bg4.png');
+    background: #faf6f2 url('../../assets/bg/bg4.png');
     background-size: cover;
 
     @include mobile {
@@ -45,7 +45,7 @@
   // }
 
   .blog-layout {
-     max-width: 900px;
+    max-width: $blogContainerWidth;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -92,7 +92,7 @@
       width: 100%;
       overflow: hidden;
       position: relative;
-      max-width: 900px;
+      max-width: $blogContainerWidth;
       margin: -100px auto 0;
       border-radius: 10px;
 
@@ -121,7 +121,7 @@
 
 .markdown-style {
   padding: 50px 0px;
-  max-width: 900px;
+  max-width: $blogContainerWidth;
   margin: 0 auto;
 
   @include mobile {
