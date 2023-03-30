@@ -68,11 +68,11 @@ const BlogDetail = ({ heading }) => {
 			<LayoutPrimary footer>
 				<div className='blog-detail-section'>
 					<div className='header-style'>
+						<div className='info-section'>
+							<Link href="/"><a><Image src={logoTheme} className='logo-white' alt="logo" /></a></Link>
+							<Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
+						</div>
 						<div className='blog-layout'>
-							<div className='info-section'>
-								<Link href="/"><a><Image src={logoTheme} className='logo-white' alt="logo" /></a></Link>
-								<Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
-							</div>
 							<div>
 								<a className='btn-back'
 									onClick={() => {

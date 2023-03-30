@@ -173,7 +173,7 @@ export default function DemoForm(props) {
                   <Option value="201-500">201-500</Option>
                   <Option value="501-1000">501-1000</Option>
                   <Option value="1001-5000">1001-5000</Option>
-                  <Option value="10000-Infinity">10000-Infinity</Option>
+                  <Option value="10k">10k+</Option>
                 </Select>
               </Form.Item>
 
@@ -192,14 +192,14 @@ export default function DemoForm(props) {
                   <Option value="1001-5000">1001-5000</Option>
                   <Option value="5001-10000">5001-10000</Option>
                   <Option value="1001-5000">1001-5000</Option>
-                  <Option value="10000-Infinity">10,000+</Option>
+                  <Option value="10k">10k+</Option>
                 </Select>
               </Form.Item>
 
               <Form.Item
                 name="message"
               >
-                <Input placeholder='message (optional)' />
+                <Input placeholder='Message (optional)' />
               </Form.Item>
 
 
