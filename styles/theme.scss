@@ -232,44 +232,53 @@ p {
       font-size: 12px;
       margin-top: 5px;
     }
+  }
+}
 
-    .social-sec {
-      display: flex;
-      align-items: center;
+.social-icon-styles {
+  position: fixed;
+  right: 0;
+  top: 60vh;
 
-      @include mobile {
-        margin-top: 20px;
-        align-items: flex-start;
-      }
 
-      .icon-link {
-        width: 35px;
-        height: 35px;
-        background: $colorCream;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 10px;
-        padding: 8px;
-        box-shadow: 0 5px 32px rgba($black, 0.05);
-        transition: all 0.3s ease-in-out;
+.social-sec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px 0;
+  background: $colorCream;
+  border-radius: 10px 0px 0px 10px;
+  padding: 10px;
+  box-shadow: 0 5px 32px rgba($black, 0.1);
 
-        &:hover {
-          transform: scale(1.15);
-        }
+  @include mobile {
+    padding: 5px;
+  }
 
-        @include mobile {
-          margin-left: 0;
-          margin-right: 10px;
-        }
+  .icon-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
 
-        .icon {
-          width: 100%;
-        }
-      }
+    &:hover {
+      transform: scale(1.15);
+    }
+
+    @include mobile {
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .icon {
+      width: 100%;
     }
   }
+}
 }
 
 // Mobile Header
@@ -754,3 +763,5 @@ p {
 .primary-width {
   width: calc(100vw - 30px);
 }
+
+

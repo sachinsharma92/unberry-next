@@ -1,21 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import rehypeRaw from 'rehype-raw'
-import { Mixpanel } from '../../services/mixpanel'
-import { useRouter } from 'next/router';
 import { Button } from 'antd'
-import DemoForm from '../../components/demoForm'
-import LayoutPrimary from '../../common/layoutPrimary'
-import Link from 'next/link'
-import Image from 'next/image'
+import axios from 'axios'
 import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
+import remarkGfm from 'remark-gfm'
+import LayoutPrimary from '../../common/layoutPrimary'
+import SocialShareIcons from '../../common/socialShareIcons'
+import DemoForm from '../../components/demoForm'
+import { Mixpanel } from '../../services/mixpanel'
 
 // Images
-import logoTheme from "../../assets/logo-brown.svg"
 import arrowNext from "../../assets/icons/arrow-next.svg"
+import logoTheme from "../../assets/logo-brown.svg"
 
 const BlogDetail = ({ heading }) => {
 	const router = useRouter();
@@ -69,11 +70,8 @@ const BlogDetail = ({ heading }) => {
 				<div className='blog-detail-section'>
 					<div className='header-style'>
 						<div className='info-section'>
-							<Link href="/"><a><Image src={logoTheme} className='logo-white' alt="logo" /></a></Link>
-							<Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
-						</div>
-						<div className='blog-layout'>
 							<div>
+								<Link href="/"><a><Image src={logoTheme} className='logo-white' alt="logo" /></a></Link>
 								<a className='btn-back'
 									onClick={() => {
 										if (router?.query?.backTo) {
@@ -84,10 +82,13 @@ const BlogDetail = ({ heading }) => {
 										}
 									}}
 								>
-									<Image src={arrowNext} alt="" /><span>Back</span>
+									<Image src={arrowNext} alt="" />
 								</a>
-								<h2 className='title2'>{data?.heading}</h2>
 							</div>
+							<Button type="primary" href="#bookDemo" className='btn-demo'>Book Demo</Button>
+						</div>
+						<div className='blog-layout'>
+							<h2 className='title2'>{data?.heading}</h2>
 						</div>
 					</div>
 
@@ -103,6 +104,8 @@ const BlogDetail = ({ heading }) => {
 					</div>
 				</div>
 				<DemoForm id="bookDemo" />
+
+				<SocialShareIcons />
 			</LayoutPrimary>
 		</>
 	);

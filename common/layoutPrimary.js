@@ -1,10 +1,7 @@
-import React from 'react'
-import { Layout, } from 'antd';
+import { Layout } from 'antd';
 import Image from 'next/image';
+import React from 'react';
 import logoFooter from "../assets/logo-brown.svg";
-import linkedin from "../assets/icons/linkedin.svg";
-import instagram from "../assets/icons/instagram.svg";
-import twitter from "../assets/icons/twitter.svg";
 
 const { Content, Footer } = Layout;
 
@@ -20,7 +17,7 @@ export default function LayoutPrimary(props) {
         <div className='footer'>
           <div className='copyright-section'>
             <div><Image src={logoFooter} alt="logo-footer" /></div>
-            <p className='copyright'>© Copyright 2022. UNBERRY. All Rights Reserved.</p>
+            <p className='copyright'>© Copyright 2023. UNBERRY. All Rights Reserved.</p>
           </div>
 
           {/* <div className='social-sec'>
