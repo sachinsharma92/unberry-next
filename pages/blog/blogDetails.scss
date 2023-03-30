@@ -7,9 +7,10 @@
   min-height: 100vh;
 
   .title2 {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 1.2;
     letter-spacing: -1px;
+    text-align: center;
 
     @include mobile {
       font-size: 30px;
