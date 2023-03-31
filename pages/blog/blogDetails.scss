@@ -7,13 +7,13 @@
   min-height: 100vh;
 
   .title2 {
-    font-size: 45px;
+    font-size: 55px;
     line-height: 1.2;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     text-align: center;
 
     @include mobile {
-      font-size: 30px;
+      font-size: 40px;
     }
   }
 
@@ -140,5 +140,6 @@
 
   p {
     font-size: 16px;
+    text-align: justify;
   }
 }
