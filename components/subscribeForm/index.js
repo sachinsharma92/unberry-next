@@ -28,7 +28,7 @@ export default function SubscribeForm(props) {
         </Form.Item>
 
         <Button type="primary" htmlType="submit">
-          Submit
+          Subscribe
         </Button>
       </Form>
     </section>
