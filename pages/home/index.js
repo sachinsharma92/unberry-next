@@ -33,7 +33,7 @@ export default function HomeScreen() {
   const { asPath } = useRouter();
 
   useEffect(() => {
-    document.title = 'Unberry | Transforming the future of hiring and developing talent!!!'
+    document.title = 'Unberry - Transforming the future of hiring and developing talent.'
     Mixpanel.track('Unberry Home Page Opened, Path: /')
   }, []);
 
@@ -55,8 +55,8 @@ export default function HomeScreen() {
   return (
     <>
       <SeoHead
-        mainTitle="Unberry - Transforming the future of hiring and developing talent!!!"
-        title="Unberry - Transforming the future of hiring and developing talent!!!"
+        mainTitle="Unberry - Transforming the future of hiring and developing talent."
+        title="Unberry - Transforming the future of hiring and developing talent."
         description="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
       />
 
