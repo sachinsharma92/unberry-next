@@ -240,6 +240,7 @@ p {
   position: fixed;
   right: 0;
   top: 60vh;
+  z-index: 9;
 
 
 .social-sec {
@@ -807,6 +808,10 @@ p {
   .ant-form-horizontal {
     display: flex;
     gap: 0 20px;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   h4 {
