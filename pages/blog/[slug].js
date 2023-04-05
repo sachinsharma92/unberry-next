@@ -17,6 +17,8 @@ import { Mixpanel } from '../../services/mixpanel'
 // Images
 import arrowNext from "../../assets/icons/arrow-next.svg"
 import logoTheme from "../../assets/logo-brown.svg"
+import SubscribeForm from '../../components/subscribeForm'
+import ScrollToTopButton from '../../common/scrollToTopButton'
 
 const BlogDetail = ({ heading }) => {
 	const router = useRouter();
@@ -102,8 +104,14 @@ const BlogDetail = ({ heading }) => {
 							rehypePlugins={[rehypeRaw]}
 							remarkPlugins={[remarkGfm]}>{data?.articleContent}</ReactMarkdown>
 					</div>
+
+					{/* Subscribe Form */}
+					<SubscribeForm />
 				</div>
+
 				<DemoForm id="bookDemo" />
+
+				<ScrollToTopButton />
 
 				<SocialShareIcons />
 			</LayoutPrimary>

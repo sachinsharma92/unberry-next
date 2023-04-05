@@ -189,6 +189,7 @@ p {
   .ant-layout-footer {
     padding: 0;
     background: $white;
+    z-index: 1;
 
     .footer {
       border-left: 1px solid #dcc797;
@@ -765,3 +766,59 @@ p {
 }
 
 
+// subscribe
+.subscribe-form {
+  max-width: $blogContainerWidth;
+  margin: 0 auto;
+  bottom: 0;
+  background-color: $white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 32px rgba($black, 0.1);
+  border-radius: 10px;
+
+  .ant-input {
+    height: 50px;
+    border-radius: 50px;
+    width: 100%;
+
+    &:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+  }
+
+  .ant-btn {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    span {
+      width: 100%;
+      text-align: center;
+    }
+  } 
+
+  .ant-form-item {
+    width: 100%;
+  }
+
+  .ant-form-horizontal {
+    display: flex;
+    gap: 0 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin: 20px auto;
+  }
+}
+
+
+// fix-demo-button
+.fix-demo-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
