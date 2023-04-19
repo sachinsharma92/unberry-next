@@ -765,4 +765,14 @@ p {
   width: calc(100vw - 30px);
 }
 
+// privacy-link
+.privacy-link {
+  text-transform: uppercase;
+  color: $theme-primary-dark;
+  font-weight: 600;
+  font-size: 13px;
 
+  &:hover {
+    color: $textDarkColor;
+  }
+}
