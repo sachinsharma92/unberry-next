@@ -22,10 +22,7 @@ const BlogDetail = ({ heading }) => {
 	const router = useRouter();
 	let pathArr = router.asPath?.split('/')
 	let id = pathArr[pathArr?.length - 1]
-	// console.log("🚀 ~ file: [id].js ~ line 23 ~ BlogDetail ~ id", id)
-
 	const [data, setData] = useState({})
-
 	let params = { slug: id };
 
 	useEffect(() => {
@@ -61,11 +58,10 @@ const BlogDetail = ({ heading }) => {
 			<Head>
 				<title>{heading}</title>
 				<meta property="og:image" content={data?.bannerImage} />
-				<meta
-					name="twitter:image"
-					content={data?.bannerImage}
-				/>
+				<meta property="og:url" content={data?.bannerImage} />
+				<meta name="twitter:image" content={data?.bannerImage} />
 			</Head>
+
 			<LayoutPrimary footer>
 				<div className='blog-detail-section'>
 					<div className='header-style'>

@@ -33,6 +33,7 @@ export default function Home() {
           content="https://unberry.com/static/ogImage.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"></script>
         <script
           strategy="afterInteractive"
