@@ -60,10 +60,10 @@ const BlogDetail = ({ heading }) => {
 		<>
 			<Head>
 				<title>{heading}</title>
-				<meta property="og:image" content="https://unberry.com/static/ogImage.png" />
+				<meta property="og:image" content={data?.bannerImage} />
 				<meta
 					name="twitter:image"
-					content="https://unberry.com/static/ogImage.png"
+					content={data?.bannerImage}
 				/>
 			</Head>
 			<LayoutPrimary footer>
