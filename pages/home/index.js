@@ -56,7 +56,8 @@ export default function HomeScreen() {
     <>
       <Head>
         <title>Unberry - Transforming the future of hiring and developing talent.</title>
-        <meta property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
+        <meta name="title" property="og:title" content="Unberry - Transforming the future of hiring and developing talent."></meta>
+        <meta name="description" property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"></meta>
       </Head>
 
       <div className='home-section-style'>
