@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import Head from 'next/head'
-import HomeScreen from './home'
+import HomePageScreen from './homepage'
 
 export default function Home() {
   return (
@@ -131,7 +131,7 @@ export default function Home() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js" async />
       </Head>
       <main>
-        <HomeScreen />
+        <HomePageScreen />
       </main>
     </div>
   )
