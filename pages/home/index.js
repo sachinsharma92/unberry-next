@@ -18,7 +18,6 @@ import ThankModal from '../../components/thankModal';
 import { Mixpanel } from '../../services/mixpanel';
 
 // Images
-import Head from 'next/head';
 import logoTheme from "../../assets/logo-brown.svg";
 import CompetencySection from '../../components/home/competencySection';
 
@@ -54,11 +53,11 @@ export default function HomeScreen() {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Unberry - Transforming the future of hiring and developing talent.</title>
         <meta name="title" property="og:title" content="Unberry - Transforming the future of hiring and developing talent."></meta>
         <meta name="description" property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"></meta>
-      </Head>
+      </Head> */}
 
       <div className='home-section-style'>
         <LayoutPrimary footer>
