@@ -6,7 +6,9 @@ import HeroSection from '../../components/homepage/heroSection';
 import Head from 'next/head';
 
 // Styles here
-import styles from './style.module.scss';
+import styles from './styles.module.scss';
+import HeaderPrimary from '../../common/headerPrimary';
+import BetterTalent from '../../components/homepage/betterTalent';
 
 
 export default function HomePageScreen() {
@@ -39,7 +41,9 @@ export default function HomePageScreen() {
       </Head>
 
       <div className={styles.homepageStyle}>
+        <HeaderPrimary />
         <HeroSection />
+        <BetterTalent />
       </div>
     </>
   )

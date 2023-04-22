@@ -1,0 +1,29 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.betterTalentSectionStyle {
+  padding-bottom: 150px;
+  background: $black;
+  padding: 54px 60px;
+
+  .title1 {
+    color: $white;
+    font-size: 57.83px;
+    line-height: 62px;
+    letter-spacing: -2px;
+    font-weight: 400;
+    max-width: 90%;
+
+    span {
+      color: $theme-secondary-new;
+    }
+  }
+
+  .videoSection {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
