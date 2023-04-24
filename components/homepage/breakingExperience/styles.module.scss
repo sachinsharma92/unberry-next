@@ -1,0 +1,33 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.breakingExperienceStyle {
+  padding-bottom: 150px;
+  background: $white;
+  padding: 54px 60px;
+
+  .title1 {
+    color: $black;
+    font-weight: 400;
+    font-size: 61.04px;
+    line-height: 65px;
+    letter-spacing: -2px;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    opacity: 0.5;
+    text-align: left;
+    width: 70%;
+  }
+
+  .contentSection {
+    display: flex;
+    align-items: center;
+    gap: 0 112px;
+  }
+}

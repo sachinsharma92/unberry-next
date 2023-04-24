@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import HeroSection from '../../components/homepage/heroSection';
+import HeaderPrimary from '../../common/headerPrimary';
+import BetterTalent from '../../components/homepage/betterTalent';
+import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
 
 // Images
 import Head from 'next/head';
 
 // Styles here
 import styles from './styles.module.scss';
-import HeaderPrimary from '../../common/headerPrimary';
-import BetterTalent from '../../components/homepage/betterTalent';
+import BreakingExperience from '../../components/homepage/BreakingExperience';
+import ServiceSection from '../../components/homepage/serviceSection';
 
 
 export default function HomePageScreen() {
@@ -44,6 +47,9 @@ export default function HomePageScreen() {
         <HeaderPrimary />
         <HeroSection />
         <BetterTalent />
+        <CandidatesAbsolutely />
+        <BreakingExperience />
+        <ServiceSection />
       </div>
     </>
   )

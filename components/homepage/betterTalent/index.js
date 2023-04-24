@@ -1,14 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import ButtonPrimary from '../../../common/buttonPrimary';
-
-import icon4 from "../../../assets/new/behavioural-personality.svg";
-import icon2 from "../../../assets/new/cognition-Intelligence.svg";
-import icon3 from "../../../assets/new/communication-skills.svg";
-import icon1 from "../../../assets/new/job-knowledge.svg";
 
 // Styles here
-import Image from 'next/image';
 import styles from './styles.module.scss';
 
 export default function BetterTalent() {
