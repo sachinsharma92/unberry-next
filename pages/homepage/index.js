@@ -14,6 +14,8 @@ import BreakingExperience from '../../components/homepage/BreakingExperience';
 import ServiceSection from '../../components/homepage/serviceSection';
 import EndAutomation from '../../components/homepage/endAutomation';
 import BlogSection from '../../components/homepage/blogSection';
+import BookADemo from '../../components/homepage/bookADemo';
+import FooterPrimary from '../../common/footerPrimary';
 
 
 export default function HomePageScreen() {
@@ -54,6 +56,11 @@ export default function HomePageScreen() {
         <ServiceSection />
         <EndAutomation />
         <BlogSection />
+
+        <div className={styles.footerSection}>
+          <BookADemo />
+          <FooterPrimary />
+        </div>
       </div>
     </>
   )

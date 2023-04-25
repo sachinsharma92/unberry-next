@@ -1,0 +1,54 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.bookADemoStyle {
+  padding-bottom: 150px;
+  background: $black;
+  padding: 54px 60px;
+
+  .title1 {
+    color: $white;
+    font-weight: 400;
+    font-size: 99px;
+    line-height: 60px;
+  }
+
+  .title2 {
+    font-weight: 500;
+    font-size: 99px;
+    line-height: 60px;
+    color: #ac95cf;
+  }
+
+  .description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: $white;
+    max-width: 60%;
+    margin-bottom: 0;
+  }
+
+  .contentSection {
+    display: flex;
+    align-items: flex-end;
+    border-bottom:1px solid #444444;
+    padding-bottom: 60px;
+  }
+
+  .btnStyle {
+    background: $white;
+    color: $black;
+    font-weight: 600;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .videoSection {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
