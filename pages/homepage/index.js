@@ -12,6 +12,8 @@ import Head from 'next/head';
 import styles from './styles.module.scss';
 import BreakingExperience from '../../components/homepage/BreakingExperience';
 import ServiceSection from '../../components/homepage/serviceSection';
+import EndAutomation from '../../components/homepage/endAutomation';
+import BlogSection from '../../components/homepage/blogSection';
 
 
 export default function HomePageScreen() {
@@ -50,6 +52,8 @@ export default function HomePageScreen() {
         <CandidatesAbsolutely />
         <BreakingExperience />
         <ServiceSection />
+        <EndAutomation />
+        <BlogSection />
       </div>
     </>
   )
