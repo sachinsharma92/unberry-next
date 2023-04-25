@@ -62,7 +62,6 @@ export default function HomeScreen() {
           property="og:description"
           content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent."
         />
-
         <meta property="og:url" content="https://unberry.com/static/ogImage.png" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
