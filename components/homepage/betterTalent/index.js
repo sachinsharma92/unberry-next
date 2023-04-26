@@ -14,9 +14,11 @@ export default function BetterTalent() {
         </h1>
       </div>
 
-      <video className={styles.videoSection} playsinline autoPlay muted loop>
-        <source src="https://s3.ap-south-1.amazonaws.com/grappus-website/GrappusVideo-Feb17th+(online-video-cutter.com).mp4" type="video/mp4" />
-      </video>
+      <div className={styles.videoBox}>
+        <video className={styles.videoSection} playsinline autoPlay muted loop>
+          <source src="https://s3.ap-south-1.amazonaws.com/grappus-website/GrappusVideo-Feb17th+(online-video-cutter.com).mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
   )
 }

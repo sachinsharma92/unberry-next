@@ -1,21 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import HeroSection from '../../components/homepage/heroSection';
 import HeaderPrimary from '../../common/headerPrimary';
 import BetterTalent from '../../components/homepage/betterTalent';
 import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
+import HeroSection from '../../components/homepage/heroSection';
 
 // Images
 import Head from 'next/head';
 
 // Styles here
-import styles from './styles.module.scss';
-import BreakingExperience from '../../components/homepage/BreakingExperience';
-import ServiceSection from '../../components/homepage/serviceSection';
-import EndAutomation from '../../components/homepage/endAutomation';
+import FooterPrimary from '../../common/footerPrimary';
 import BlogSection from '../../components/homepage/blogSection';
 import BookADemo from '../../components/homepage/bookADemo';
-import FooterPrimary from '../../common/footerPrimary';
+import EndAutomation from '../../components/homepage/endAutomation';
+import ServiceSection from '../../components/homepage/serviceSection';
+import styles from './styles.module.scss';
 
 
 export default function HomePageScreen() {
@@ -52,7 +51,6 @@ export default function HomePageScreen() {
         <HeroSection />
         <BetterTalent />
         <CandidatesAbsolutely />
-        <BreakingExperience />
         <ServiceSection />
         <EndAutomation />
         <BlogSection />

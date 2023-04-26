@@ -5,6 +5,7 @@
 // auto-section
 .heroSectionStyle {
   padding-bottom: 150px;
+  position: relative;
 
   .btnSection {
     display: flex;
@@ -38,6 +39,16 @@
     min-height: 518px;
   }
 
+  .headingBottom {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    margin-top: -150px;
+  }
+
   // title3
   .title3 {
     font-size: 48.83px;
@@ -45,7 +56,7 @@
     letter-spacing: -1px;
     max-width: 471px;
     text-align: center;
-    margin: -140px auto 0;
+    margin: 0 auto;
     color: $black;
   }
 

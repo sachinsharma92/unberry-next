@@ -3,6 +3,35 @@
 @import "../../../styles/variables/mixins";
 
 // auto-section
+.breakingExperienceStyle {
+  background: $white;
+  padding: 54px 60px 30px;
+
+  .title1 {
+    color: $black;
+    font-weight: 400;
+    font-size: 61.04px;
+    line-height: 65px;
+    letter-spacing: -2px;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    opacity: 0.5;
+    text-align: left;
+    width: 70%;
+  }
+
+  .contentSection {
+    display: flex;
+    align-items: center;
+    gap: 0 112px;
+  }
+}
+
+
 .serviceSectionStyle {
   background: $black;
   padding: 70px 60px;

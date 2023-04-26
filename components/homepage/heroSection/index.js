@@ -1,17 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useEffect } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
+import { gsap } from 'gsap';
+import Image from 'next/image';
 
-import icon1 from "../../../assets/new/job-knowledge.svg"
-import icon2 from "../../../assets/new/cognition-Intelligence.svg"
-import icon3 from "../../../assets/new/communication-skills.svg"
-import icon4 from "../../../assets/new/behavioural-personality.svg"
+import icon4 from "../../../assets/new/behavioural-personality.svg";
+import icon2 from "../../../assets/new/cognition-Intelligence.svg";
+import icon3 from "../../../assets/new/communication-skills.svg";
+import icon1 from "../../../assets/new/job-knowledge.svg";
 
 // Styles here
 import styles from './styles.module.scss';
-import Image from 'next/image';
 
 export default function HeroSection() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".animation-block .animation-text", 1.8, {
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+      scrollTrigger: {
+        trigger: '#workplaceSection',
+        start: 'top center',
+        markers: false
+      },
+    })
+  }, [])
 
   return (
     <div className={styles.heroSectionStyle}>
@@ -29,7 +47,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className={styles.workplaceSection}>
+      <div className={styles.workplaceSection} id='workplaceSection'>
         <div className={styles.gridSection}>
           <div className={styles.imgBoxStyle}>
             <Image src={icon1} alt="" width="94" height="60" />
@@ -50,9 +68,13 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <h3 className={styles.title3}>
-        Mapping the holistic workplace footprint of a candidate
-      </h3>
+      <div className={`${styles.headingBottom} animation-block`}>
+        <div className='animation-text'>
+          <h3 className={`${styles.title3}`}>
+            Mapping the holistic workplace footprint of a candidate
+          </h3>
+        </div>
+      </div>
     </div>
   )
 }
