@@ -3,10 +3,9 @@ import Image from 'next/image';
 import React, { useEffect } from 'react';
 import image1 from "../../../assets/new/service-card1.jpg";
 import ButtonPrimary from '../../../common/buttonPrimary';
-import styles from './styles.module.scss';
-import { gsap } from 'gsap';
 
 // Styles here
+import styles from './styles.module.scss';
 
 export default function ServiceSection() {
 
@@ -18,33 +17,23 @@ export default function ServiceSection() {
 
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    var controller = new ScrollMagic.Controller();
+    var horizontalSlide = new TimelineMax()
+    new ScrollMagic.Scene({
+      triggerElement: "#js-wrapper",
+      triggerHook: "onLeave",
+      duration: "100%"
+    })
+      .setPin("#js-wrapper")
+      .setTween(horizontalSlide)
+      .addIndicators()
+      .addTo(controller);
 
-    let sections = gsap.utils.toArray(".container .panel");
-
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".side-scrolling-wrapper",
-        pin: true,
-        start: "top +=10px",
-        markers: true,
-        scrub: 1,
-        snap: {
-          snapTo: 1 / (sections.length - 1),
-          duration: { min: 0.2, max: 0.3 },
-          delay: 0
-        },
-        // Base vertical scrolling on how wide the container is so it feels more natural.
-        end: () => "+=" + (document.querySelector(".container"))
-      }
-    });
   }, [])
 
 
   return (
-    <div className='side-scrolling-wrapper'>
+    <div id='js-wrapper'>
       <div className={`${styles.breakingExperienceStyle}`}>
         <div className={styles.contentSection}>
           <h1 className={`${styles.title1}`}>
@@ -56,9 +45,9 @@ export default function ServiceSection() {
           <ButtonPrimary href="/" title="BOOK DEMO" />
         </div>
       </div>
-      <div className={`${styles.serviceSectionStyle} panel`}>
+      <div className={`${styles.serviceSectionStyle}`} id='js-slideContainer'>
         {serviceCardList.map((item, index) => (
-          <div key={index} className={styles.serviceCard}>
+          <section key={index} className={styles.serviceCard}>
             <div className={styles.contentLeft}>
               <h1 className={`${styles.title1}`}>
                 Mini-games & immersive exercises
@@ -76,7 +65,7 @@ export default function ServiceSection() {
             <div className={styles.contentRight}>
               <Image src={image1} alt='image services' className={styles.imgStyle} layout="fill" />
             </div>
-          </div>
+          </section>
         ))}
       </div>
     </div>

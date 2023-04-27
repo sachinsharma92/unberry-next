@@ -6,7 +6,8 @@
 .candidatesAbsolutelyStyle {
   padding-bottom: 150px;
   background: $white;
-  padding: 54px 60px;
+  padding: 150px 60px 50px;
+  position: relative;
 
   .title1 {
     color: $black;
@@ -17,4 +18,80 @@
     max-width: 50%;
   }
 
+  .contentSection {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .numbersCard {
+    background-color: #ac95cf;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    text-align: center;
+    right: 60px;
+    padding: 60px;
+    border-radius: 30px;
+    top: 9%;
+    min-width: 45%;
+    color: $white;
+
+    .divider {
+      width: 2px;
+      height: 70%;
+      background-color: $white;
+    }
+
+    .subtext {
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 31px;
+    }
+
+    .titleNumber {
+      font-weight: 500;
+      font-size: 76.29px;
+      line-height: 100px;
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+
+  .traditionalSection {
+    background-color: #f4f4f4;
+    border-radius: 40px;
+    padding: 60px;
+    margin-top: 100px;
+
+    .title3 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 60px;
+      letter-spacing: -2px;
+      color: $black;
+      margin-bottom: 100px;
+    }
+
+    .emojiSectionStyle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .emojiStyle {
+        text-align: center;
+      }
+
+      .title4 {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 94.5%;
+        text-align: center;
+        letter-spacing: -0.04em;
+        color: $black;
+        margin-top: 23px;
+      }
+    }
+  }
 }
