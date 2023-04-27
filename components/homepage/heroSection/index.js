@@ -18,7 +18,7 @@ export default function HeroSection() {
     gsap.from(".animation-block .animation-text", 1.8, {
       y: 100,
       ease: "power4.out",
-      delay: 1,
+      delay: 0.5,
       stagger: {
         amount: 0.3
       },
