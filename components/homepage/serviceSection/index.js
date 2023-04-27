@@ -26,7 +26,7 @@ export default function ServiceSection() {
     })
       .setPin("#js-wrapper")
       .setTween(horizontalSlide)
-      .addIndicators()
+      // .addIndicators()
       .addTo(controller);
 
   }, [])

@@ -26,7 +26,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    max-width: 60%;
+    max-width: 80%;
   }
 
   .accordianCardSection {
@@ -34,16 +34,16 @@
   }
 
   .accordianCard {
-    border-radius: 40px;
-    background: #F4F4F4;
-    max-width: 70%;
-    margin-top: 50px;
     overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
     .imageCard {
       position: relative;
       height: 300px;
       width: 100%;
+      bottom: -50px;
 
       img {
         object-fit: contain;
@@ -67,6 +67,10 @@
       display: flex;
       align-items: center;
       gap: 0 14px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: $black;
     }
   }
 
