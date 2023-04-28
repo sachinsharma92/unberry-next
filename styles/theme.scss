@@ -1114,3 +1114,26 @@ p {
     transition: opacity 0.3s ease-in 0.4s;
   }
 }
+
+
+// better-talent-modal
+.better-talent-modal {
+
+  .ant-modal {
+    width: 100% !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 94vh;
+    top: 20px;
+    overflow: hidden;
+  }
+
+  .ant-modal-close {
+    background: $white;
+  }
+
+  .ant-modal-body {
+    padding: 0px;
+  }
+}

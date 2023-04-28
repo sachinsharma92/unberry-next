@@ -24,7 +24,7 @@
   }
 
   .numbersCard {
-    background-color: #ac95cf;
+    background-color: #AA94CE;
     height: 260px;
     display: flex;
     align-items: center;
@@ -56,6 +56,16 @@
       line-height: 100px;
       color: $white;
       margin-bottom: 0;
+    }
+
+    .arcStyle {
+      position: absolute;
+      bottom: -82px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      height: 90px;
+      width: 77px;
     }
   }
 

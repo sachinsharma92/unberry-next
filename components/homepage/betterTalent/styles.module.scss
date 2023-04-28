@@ -42,14 +42,15 @@
     }
   }
 
-  .videoBox {
-    height: 669px;
-    border-radius: 350px;
-    overflow: hidden;
-    margin-top: 50px;
-  }
-
   .videoSection {
     width: 100%;
   }
+}
+
+
+.videoBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 94vh;
 }

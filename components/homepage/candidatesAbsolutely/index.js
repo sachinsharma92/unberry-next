@@ -9,6 +9,7 @@ import icon5 from "../../../assets/new/emoji/anxious.svg";
 import icon6 from "../../../assets/new/emoji/mindBlown.svg";
 import icon7 from "../../../assets/new/emoji/content.svg";
 import icon8 from "../../../assets/new/emoji/happy.svg";
+import arc from "../../../assets/new/design-arc.png";
 
 
 
@@ -69,6 +70,10 @@ export default function CandidatesAbsolutely() {
           <div className={styles.item}>
             <h2 className={styles.titleNumber}>91%</h2>
             <div className={styles.subtext}>Completion Rates</div>
+          </div>
+
+          <div className={styles.arcStyle}>
+            <Image src={arc} alt="" width="85" height="85" />
           </div>
         </div>
       </div>
