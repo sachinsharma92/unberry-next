@@ -19,6 +19,11 @@ export default function HeaderPrimary(props) {
         <Link href="/">Contact Us</Link>
         <Link href="/"><a className='btn-primary'>BOOK DEMO</a></Link>
       </nav>
+
+      <div className='mobile-section'>
+        <Link href="/"><a className='btn-primary'>BOOK DEMO</a></Link>
+        <button className='btn-toggle'>Menu</button>
+      </div>
     </div>
   )
 }

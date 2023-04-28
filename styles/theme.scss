@@ -74,6 +74,11 @@ p {
   line-height: 76px;
   letter-spacing: -0.03em;
   font-family: $fontCondensed;
+
+  @include mobile {
+font-size: 48.83px;
+line-height: 50px;
+  }
 }
 
 .d-flex {
@@ -827,11 +832,58 @@ p {
   justify-content: space-between;
   padding: 20px 60px;
 
+  @include mobile {
+    padding: 30px 20px;
+  }
+
+  .logo-black {
+
+    @include mobile {
+    img {
+      width: 99px !important;
+      height: 27px !important;
+    }
+  }
+  }
+
+  .btn-primary {
+    height: 38px;
+    min-width: 119px;
+    padding: 0 20px;
+    color: $white;
+    font-family: $fontCondensed;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   .menu-header {
     display: flex;
     gap: 0 38px;
     align-items: center;
     text-transform: uppercase;
+
+    @include mobile {
+      background-color: red;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 80%;
+      z-index: 999;
+      flex-direction: column;
+      gap: 40px 38px;
+      align-items: flex-start;
+      padding: 30px;
+      left: -100%;
+    }
+
+    .btn-primary {
+      @include mobile {
+        display: none;
+      }
+    }
 
     a {
       color: $black;
@@ -841,21 +893,27 @@ p {
       line-height: 36px;
       transition: all 0.5s ease-in-out;
 
+      @include mobile {
+        color: $white;
+        font-size: 24px;
+      }
+
       &:hover {
         opacity: 0.5;
       }
     }
+  }
 
-    .btn-primary {
+  .mobile-section {
+    display: flex;
+    gap: 0 4px;
+
+    .btn-toggle {
+      width: 60px;
       height: 38px;
-      min-width: 119px;
-      padding: 0 20px;
-      color: $white;
-      font-family: $fontCondensed;
-
-      &:hover {
-        opacity: 1;
-      }
+      background: #f4f4f4;
+      border-radius: 30px;
+      border: none;
     }
   }
 }
@@ -1044,11 +1102,10 @@ p {
 
     &.purple {
       background: #e4ddef;
-      
+
       .heading {
         transform: rotate(-90deg);
         margin-bottom: 130px;
-    
       }
     }
 
@@ -1099,13 +1156,16 @@ p {
     }
     .content-section {
       opacity: 1;
-      animation: fadeIn 0.5s; 
+      animation: fadeIn 0.5s;
 
       @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
-      
     }
   }
 
@@ -1115,10 +1175,8 @@ p {
   }
 }
 
-
 // better-talent-modal
 .better-talent-modal {
-
   .ant-modal {
     width: 100% !important;
     position: fixed;

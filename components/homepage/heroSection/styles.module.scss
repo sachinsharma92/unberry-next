@@ -7,6 +7,10 @@
   padding-bottom: 150px;
   position: relative;
 
+  @include mobile {
+    padding-bottom: 0;
+  }
+
   .btnSection {
     display: flex;
     align-items: center;
@@ -18,11 +22,19 @@
     margin: 0 auto 13px;
     max-width: 70%;
     color: $black;
+
+    @include mobile {
+      max-width: 90%;
+    }
   }
 
   .descriptionText {
     max-width: 48%;
     margin: 0 auto;
+
+    @include mobile {
+      max-width: 90%;
+    }
   }
 
   .contentSection {
@@ -30,6 +42,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mobile {
+      padding: 85px 0;
+    }
   }
 
   .workplaceSection {
@@ -37,9 +53,15 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 518px;
+
+    @include mobile {
+      background: none;
+      min-height: auto;
+      padding-bottom: 53px;
+    }
   }
 
-  .headingBottom {
+  .headingDesktop {
     height: 100%;
     width: 100%;
     position: relative;
@@ -47,6 +69,16 @@
     bottom: 0;
     z-index: 1;
     margin-top: -150px;
+
+    @include mobile {
+      margin-top: 0px;
+    }
+  }
+
+  .headingDesktop {
+    @include mobile {
+      display: none;
+    }
   }
 
   // title3
@@ -58,29 +90,11 @@
     text-align: center;
     margin: 0 auto;
     color: $black;
-  }
 
-  .imgBoxStyle {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px 0;
-
-    &:first-child {
-      margin-top: 280px;
-      margin-left: 50px;
-    }
-    &:nth-child(2) {
-      margin-top: 50px;
-      margin-left: -10px;
-    }
-    &:nth-child(3) {
-      margin-top: 50px;
-      margin-left: 50px;
-    }
-    &:nth-child(4) {
-      margin-top: 280px;
-      margin-right: 50px;
+    @include mobile {
+      font-size: 25px;
+      line-height: 30px;
+      max-width: 271px;
     }
   }
 
@@ -90,10 +104,54 @@
     line-height: 41px;
     letter-spacing: -1.28484px;
     text-align: center;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
 
   .gridSection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    
+    @include mobile {
+      padding: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 17px;
+      margin-top: 33px;
+    }
+
+    .imgBoxStyle {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px 0;
+
+      @include mobile {
+        background: #f4f4f4;
+        border-radius: 20px;
+        padding: 20px;
+      }
+
+      @include desktop {
+        &:first-child {
+          margin-top: 280px;
+          margin-left: 50px;
+        }
+        &:nth-child(2) {
+          margin-top: 50px;
+          margin-left: -10px;
+        }
+        &:nth-child(3) {
+          margin-top: 50px;
+          margin-left: 50px;
+        }
+        &:nth-child(4) {
+          margin-top: 280px;
+          margin-right: 50px;
+        }
+      }
+    }
   }
 }

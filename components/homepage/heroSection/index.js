@@ -47,6 +47,12 @@ export default function HeroSection() {
         </div>
       </div>
 
+      <div className={`${styles.headingMobile}`}>
+        <h3 className={`${styles.title3}`}>
+          Mapping the holistic workplace footprint of a candidate
+        </h3>
+      </div>
+
       <div className={styles.workplaceSection} id='workplaceSection'>
         <div className={styles.gridSection}>
           <div className={styles.imgBoxStyle}>
@@ -68,7 +74,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className={`${styles.headingBottom} animation-block`}>
+      <div className={`${styles.headingDesktop} animation-block`}>
         <div className='animation-text'>
           <h3 className={`${styles.title3}`}>
             Mapping the holistic workplace footprint of a candidate
