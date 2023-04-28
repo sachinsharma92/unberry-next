@@ -879,11 +879,6 @@ line-height: 50px;
       left: -100%;
     }
 
-    .btn-primary {
-      @include mobile {
-        display: none;
-      }
-    }
 
     a {
       color: $black;
@@ -902,11 +897,23 @@ line-height: 50px;
         opacity: 0.5;
       }
     }
+
+    .btn-primary {
+      color: $white;
+      
+      @include mobile {
+        display: none;
+      }
+    }
   }
 
   .mobile-section {
-    display: flex;
     gap: 0 4px;
+    display: none;
+
+    @include mobile {
+      display: flex;
+    }
 
     .btn-toggle {
       width: 60px;
