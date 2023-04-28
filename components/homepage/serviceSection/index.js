@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
-import React, { useEffect } from 'react';
+import React from 'react';
 import image1 from "../../../assets/new/service-card1.jpg";
+import image2 from "../../../assets/new/service-card2.jpg";
+import image3 from "../../../assets/new/service-card3.jpg";
 import ButtonPrimary from '../../../common/buttonPrimary';
 
 // Styles here
@@ -10,26 +12,23 @@ import styles from './styles.module.scss';
 export default function ServiceSection() {
 
   const serviceCardList = [
-    1, 2, 3
+    {
+      imageUrl: image1,
+      title: 'Mini-games & immersive exercises',
+      description: 'That measures the true potential of a candidate across modern workplace skills. '
+    },
+    {
+      imageUrl: image2,
+      title: 'Skill assessments & live coding simulations',
+      description: 'Helping evaluate the functional capabilities and proficiency across a wide repository of modern day skills and coding languages across different roles.'
+    },
+    {
+      imageUrl: image3,
+      title: 'AI based speech & writing tool',
+      description: 'That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.'
+    }
   ]
-
   const badgeList = ['Problem Solving', 'Tolerance To Ambiguity', 'Learning Agility', 'Attention Span', 'Processing Speed', 'Efficiency', 'Multitasking']
-
-
-  useEffect(() => {
-    var controller = new ScrollMagic.Controller();
-    var horizontalSlide = new TimelineMax()
-    new ScrollMagic.Scene({
-      triggerElement: "#js-wrapper",
-      triggerHook: "onLeave",
-      duration: "100%"
-    })
-      .setPin("#js-wrapper")
-      .setTween(horizontalSlide)
-      .addTo(controller);
-
-  }, [])
-
 
   return (
     <div id='js-wrapper'>
@@ -49,10 +48,10 @@ export default function ServiceSection() {
           <section key={index} className={styles.serviceCard}>
             <div className={styles.contentLeft}>
               <h1 className={`${styles.title1}`}>
-                Mini-games & immersive exercises
+                {item.title}
               </h1>
               <p className={styles.description}>
-                That measures the true potential of a candidate across modern workplace skills.
+                {item.description}
               </p>
 
               <div className={styles.tagSection}>
@@ -61,8 +60,9 @@ export default function ServiceSection() {
                 ))}
               </div>
             </div>
+
             <div className={styles.contentRight}>
-              <Image src={image1} alt='image services' className={styles.imgStyle} layout="fill" />
+              <Image src={item.imageUrl} alt='image services' className={styles.imgStyle} layout="fill" />
             </div>
           </section>
         ))}
