@@ -6,6 +6,10 @@
 
 .homepageStyle {
   overflow-x: hidden;
+
+  @include mobile {
+    padding-top: 50px;
+  }
   
   .footerSection {
     background: $black;
@@ -13,6 +17,12 @@
     overflow: hidden;
     padding-top: 50px;
     position: relative;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      border-radius:20px 20px 0 0;
+    }
 
     &::after {
       position: absolute;

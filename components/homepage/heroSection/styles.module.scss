@@ -61,6 +61,14 @@
     }
   }
 
+  .headingMobile {
+    display: none;
+    
+    @include mobile {
+      display: block;
+    }
+  }
+
   .headingDesktop {
     height: 100%;
     width: 100%;

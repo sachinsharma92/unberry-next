@@ -14,13 +14,11 @@ export default function EndAutomation() {
 
   useEffect(() => {
     const panels = document.querySelectorAll('.panel');
-
     const removeActiveClasses = () => {
       panels.forEach(panel => {
         panel.classList.remove('active')
       })
     }
-
     panels.forEach(panel => {
       panel.addEventListener('click', () => {
         removeActiveClasses()
@@ -60,7 +58,7 @@ export default function EndAutomation() {
                   </li>
                   <li className={styles.listItem}>
                     <Image src={icon2} alt='image services' width="20" height="20" />
-                    Video Proctoring
+                    Tabs Switching
                   </li>
                 </ul>
               </div>

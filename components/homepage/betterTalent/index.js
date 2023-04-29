@@ -26,7 +26,7 @@ export default function BetterTalent() {
         <Image src={image1} alt='image services' className={styles.imgStyle} layout="fill" />
 
         <button className={styles.buttonStyle} onClick={modalToggle}>
-          <Image src={buttonIcon} alt='image services' width="250" height="56" />
+          <Image src={buttonIcon} alt='image services' layout="fill" />
         </button>
       </div>
 
