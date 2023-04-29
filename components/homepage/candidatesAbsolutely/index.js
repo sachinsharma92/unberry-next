@@ -10,6 +10,9 @@ import icon6 from "../../../assets/new/emoji/mindBlown.svg";
 import icon7 from "../../../assets/new/emoji/content.svg";
 import icon8 from "../../../assets/new/emoji/happy.svg";
 import arc from "../../../assets/new/design-arc.png";
+import switchIcon from "../../../assets/new/switch.svg";
+
+
 
 
 
@@ -79,7 +82,10 @@ export default function CandidatesAbsolutely() {
       </div>
 
       <div className={styles.traditionalSection}>
-        <h3 className={styles.title3}>Traditional</h3>
+        <div className={styles.headerStyle}>
+          <h3 className={styles.title3}>Traditional</h3>
+          <h3 className={styles.title3}>Unberry</h3>
+        </div>
 
         <div className={styles.emojiSectionStyle}>
           {iconsData.map((item) => (
@@ -89,7 +95,14 @@ export default function CandidatesAbsolutely() {
             </div>
           ))}
         </div>
+
+        <div className={styles.actionStyle} style={{ width: '15%' }} >
+        </div>
+        <button>
+          <Image src={switchIcon} alt="" width="85" height="85" />
+        </button>
       </div>
+
     </div>
   )
 }
