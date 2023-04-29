@@ -1,24 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
+import arc from "../../../assets/new/design-arc.png";
+import icon5 from "../../../assets/new/emoji/anxious.svg";
+import icon4 from "../../../assets/new/emoji/bored.svg";
+import icon7 from "../../../assets/new/emoji/content.svg";
 import icon1 from "../../../assets/new/emoji/dull.svg";
+import icon8 from "../../../assets/new/emoji/happy.svg";
+import icon6 from "../../../assets/new/emoji/mindBlown.svg";
 import icon2 from "../../../assets/new/emoji/stressed.svg";
 import icon3 from "../../../assets/new/emoji/weary.svg";
-import icon4 from "../../../assets/new/emoji/bored.svg";
-import icon5 from "../../../assets/new/emoji/anxious.svg";
-import icon6 from "../../../assets/new/emoji/mindBlown.svg";
-import icon7 from "../../../assets/new/emoji/content.svg";
-import icon8 from "../../../assets/new/emoji/happy.svg";
-import arc from "../../../assets/new/design-arc.png";
-import switchIcon from "../../../assets/new/switch.svg";
-
-
-
-
 
 // Styles here
-import styles from './styles.module.scss';
 import Image from 'next/image';
+import ReactCompareImage from 'react-compare-image';
+import styles from './styles.module.scss';
 
 export default function CandidatesAbsolutely() {
   const iconsData = [
@@ -82,25 +78,17 @@ export default function CandidatesAbsolutely() {
       </div>
 
       <div className={styles.traditionalSection}>
-        <div className={styles.headerStyle}>
-          <h3 className={styles.title3}>Traditional</h3>
-          <h3 className={styles.title3}>Unberry</h3>
-        </div>
 
         <div className={styles.emojiSectionStyle}>
-          {iconsData.map((item) => (
-            <div key={item} className={styles.emojiStyle}>
-              <Image src={item.iconUrl} alt="" width="85" height="85" />
-              <h4 className={styles.title4}>{item.title}</h4>
-            </div>
-          ))}
+          <ReactCompareImage
+            leftImage="/assets/light.svg"
+            rightImage="/assets/dark.svg"
+            sliderLineWidth={0}
+            handle={<div className={styles.handleImage}><Image src="/assets/switch.svg" alt="" width="90" height="90" /></div>}
+            sliderPositionPercentage={0.85}
+            handleSize={70}
+          />
         </div>
-
-        <div className={styles.actionStyle} style={{ width: '15%' }} >
-        </div>
-        <button>
-          <Image src={switchIcon} alt="" width="85" height="85" />
-        </button>
       </div>
 
     </div>
