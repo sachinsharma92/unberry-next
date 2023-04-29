@@ -79,7 +79,7 @@ export default function CandidatesAbsolutely() {
 
       <div className={styles.traditionalSection}>
 
-        <div className={styles.emojiSectionStyle}>
+        <div className={styles.emojiDesktopStyle}>
           <ReactCompareImage
             leftImage="/assets/light.svg"
             rightImage="/assets/dark.svg"
@@ -87,6 +87,17 @@ export default function CandidatesAbsolutely() {
             handle={<div className={styles.handleImage}><Image src="/assets/switch.svg" alt="" width="90" height="90" /></div>}
             sliderPositionPercentage={0.85}
             handleSize={70}
+          />
+        </div>
+
+        <div className={styles.emojiMobileStyle}>
+          <ReactCompareImage
+            leftImage="/assets/mob-light.svg"
+            rightImage="/assets/mob-dark.svg"
+            sliderLineWidth={0}
+            handle={<div className={styles.handleImage}><Image src="/assets/switch.svg" alt="" width="90" height="90" /></div>}
+            sliderPositionPercentage={0.65}
+            handleSize={50}
           />
         </div>
       </div>

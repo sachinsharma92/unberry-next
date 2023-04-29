@@ -116,6 +116,7 @@
 
     @include mobile {
       margin-top: 70px;
+      border-radius: 20px;
     }
 
     .headerStyle {
@@ -150,12 +151,38 @@
     }
   }
 
-  .emojiSectionStyle {
+  .emojiDesktopStyle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 1;
+
+    @include mobile {
+      display: none;
+    }
+
+    .handleImage {
+      top: -50px;
+      position: relative;
+    }
+  }
+
+  .emojiMobileStyle {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    
+    @include mobile {
+      display: flex;
+    }
+
+    .handleImage {
+      top: -50px;
+      position: relative;
+    }
   }
 
   button {
@@ -167,10 +194,5 @@
     right: 150px;
     cursor: pointer;
     z-index: 9;
-  }
-
-  .handleImage {
-    top: -50px;
-    position: relative;
   }
 }
