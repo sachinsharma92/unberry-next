@@ -35,8 +35,7 @@ export default function HeroSection() {
     <div className={styles.heroSectionStyle}>
       <div className={styles.contentSection}>
         <h1 className={`${styles.title1} title1`}>
-          Building Talent Intelligence For
-          The Modern Workplace
+          Building Talent Intelligence For The Modern Workplace
         </h1>
         <p className={`${styles.descriptionText} description`}>
           Modern, next-gen talent assessment suite, that can measure job-relevant skills and proficiencies, to build and scale teams.
@@ -54,7 +53,7 @@ export default function HeroSection() {
       </div>
 
       <div className={styles.workplaceSection} id='workplaceSection'>
-        <div className={styles.gridSection}>
+        <div className={`${styles.gridDesktopSection}`}>
           <div className={styles.imgBoxStyle}>
             <Image src={icon1} alt="" width="94" height="60" />
             <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
@@ -70,6 +69,34 @@ export default function HeroSection() {
           <div className={styles.imgBoxStyle}>
             <Image src={icon4} alt="" width="94" height="60" />
             <h4 className={styles.title4}>Behavioural & Personality</h4>
+          </div>
+        </div>
+
+
+
+        {/* Mobile */}
+        <div className={styles.gridMobileSection}>
+          <div className={styles.boxSet}>
+            <div className={styles.imgBoxStyle}>
+              <Image src={icon1} alt="" width="94" height="60" />
+              <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
+            </div>
+            <div className={styles.mobileDivider}></div>
+            <div className={styles.imgBoxStyle}>
+              <Image src={icon2} alt="" width="94" height="60" />
+              <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
+            </div>
+          </div>
+          <div className={styles.boxSet}>
+            <div className={styles.imgBoxStyle}>
+              <Image src={icon3} alt="" width="94" height="60" />
+              <h4 className={styles.title4}>Communication <br /> Skills</h4>
+            </div>
+            <div className={`${styles.mobileDivider} ${styles.mobileDivider2}`}></div>
+            <div className={styles.imgBoxStyle}>
+              <Image src={icon4} alt="" width="94" height="60" />
+              <h4 className={styles.title4}>Behavioural & Personality</h4>
+            </div>
           </div>
         </div>
       </div>
