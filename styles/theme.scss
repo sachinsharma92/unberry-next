@@ -670,10 +670,15 @@ p {
   font-weight: 500;
   border-radius: 100px;
   transition: all 0.5s ease-in-out;
+  font-size: 18px;
+
+  @include mobile {
+    font-size: 14px;
+  }
 
   &:hover {
     color: $white;
-    background-color: darken($theme-primary-new, 10%);
+    background-color: darken($theme-primary-new, 15%);
   }
 }
 
@@ -1026,22 +1031,26 @@ HAMBURGER MENU
     height: 39px;
 
     @include mobile {
-      top: -4.8rem;
+      top: -4.2rem;
+      width: 42px;
+      height: 29px;
     }
 
     &.slick-prev {
       right: 130px;
       background: url("/assets/arrow-left.svg");
       background-repeat: no-repeat;
+      background-size: contain;
 
       @include mobile {
-        right: 70px;
+        right: 50px;
       }
     }
     &.slick-next {
       background: url("/assets/arrow-right.svg");
       background-repeat: no-repeat;
       right: 60px;
+      background-size: contain;
 
       @include mobile {
         right: 0px;

@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <meta charset="utf-8" />
-        <link rel="icon" href="../static/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
         <meta name="theme-color" content="#000000" />

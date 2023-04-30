@@ -1,9 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from 'react';
 import image1 from "../../../assets/new/automation1.png";
+import image2 from "../../../assets/new/automation2.png";
+import image3 from "../../../assets/new/automation3.png";
 import iconPlus from "../../../assets/new/plus.svg";
-import icon2 from "../../../assets/new/switching.svg";
-import icon1 from "../../../assets/new/video.svg";
+import icon1 from "../../../assets/new/icons/video.svg";
+import icon2 from "../../../assets/new/icons/switching.svg";
+import icon3 from "../../../assets/new/icons/reports.svg";
+import icon4 from "../../../assets/new/icons/job.svg";
+import icon5 from "../../../assets/new/icons/whtsp.svg";
+import icon6 from "../../../assets/new/icons/email.svg";
 import Image from 'next/image';
 
 
@@ -68,6 +74,7 @@ export default function EndAutomation() {
             </div>
           </div>
         </div>
+
         <div className="panel purple">
           <div className={styles.accordianCard}>
             <div className="head">
@@ -85,21 +92,22 @@ export default function EndAutomation() {
 
                 <ul className={styles.listStyle}>
                   <li className={styles.listItem}>
-                    <Image src={icon1} alt='image services' width="20" height="20" />
-                    Video Proctoring
+                    <Image src={icon3} alt='image services' width="20" height="20" />
+                    Detailed Reports
                   </li>
                   <li className={styles.listItem}>
-                    <Image src={icon2} alt='image services' width="20" height="20" />
-                    Video Proctoring
+                    <Image src={icon4} alt='image services' width="20" height="20" />
+                    Custom Job Profiles
                   </li>
                 </ul>
               </div>
-              <div className={styles.imageCard}>
-                <Image src={image1} alt='image services' className={styles.imgStyle} layout="fill" />
+              <div className={styles.imageCard2}>
+                <Image src={image2} alt='image services' className={styles.imgStyle} layout="fill" />
               </div>
             </div>
           </div>
         </div>
+
         <div className="panel orange">
           <div className={styles.accordianCard}>
             <div className="head">
@@ -117,17 +125,17 @@ export default function EndAutomation() {
 
                 <ul className={styles.listStyle}>
                   <li className={styles.listItem}>
-                    <Image src={icon1} alt='image services' width="20" height="20" />
-                    Video Proctoring
+                    <Image src={icon5} alt='image services' width="20" height="20" />
+                    Detailed Reports
                   </li>
                   <li className={styles.listItem}>
-                    <Image src={icon2} alt='image services' width="20" height="20" />
-                    Video Proctoring
+                    <Image src={icon6} alt='image services' width="20" height="20" />
+                    Custom Job Profiles
                   </li>
                 </ul>
               </div>
-              <div className={styles.imageCard}>
-                <Image src={image1} alt='image services' className={styles.imgStyle} layout="fill" />
+              <div className={styles.imageCard3}>
+                <Image src={image3} alt='image services' className={styles.imgStyle} layout="fill" />
               </div>
             </div>
           </div>
