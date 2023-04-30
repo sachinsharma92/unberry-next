@@ -26,7 +26,8 @@ const BlogCard = ({ data, currentPath }) => {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          centerPadding: '30px',
         }
       }
     ]

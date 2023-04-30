@@ -6,12 +6,6 @@ import heroImage from "../../../assets/illustration/hero-img.svg"
 import logoTheme from "../../../assets/logo-brown.svg"
 
 export default function HomeHeroSection() {
-  // useEffect(() => {
-  //   Lottie.loadAnimation({
-  //     container: document.querySelector("#mainFold"),
-  //     animationData: mainFoldJson
-  //   });
-  // }, []);
   return (
     <section className='section-style section-bury'>
       <div className='menu-section'>

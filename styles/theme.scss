@@ -1010,6 +1010,10 @@ HAMBURGER MENU
   .ant-carousel .slick-track {
     display: flex;
     margin-left: -30px !important;
+
+    @include mobile {
+      margin-left: 0px !important;
+    }
   }
 
 
@@ -1049,7 +1053,7 @@ HAMBURGER MENU
       background-size: contain;
 
       @include mobile {
-        right: 50px;
+        right: 70px;
       }
     }
     &.slick-next {
@@ -1059,7 +1063,7 @@ HAMBURGER MENU
       background-size: contain;
 
       @include mobile {
-        right: 0px;
+        right: 20px;
       }
     }
   }
