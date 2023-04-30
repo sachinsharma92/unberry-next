@@ -53,55 +53,56 @@ export default function CandidatesAbsolutely() {
   ]
   return (
     <div className={styles.candidatesAbsolutelyStyle}>
-      <div className={styles.contentSection}>
-        <h1 className={`${styles.title1}`}>
-          Candidates absolutely love the experience
-        </h1>
+      <div className='container-width'>
+        <div className={styles.contentSection}>
+          <h1 className={`${styles.title1}`}>
+            Candidates absolutely love the experience
+          </h1>
 
-        <div className={styles.numbersCard}>
-          <div className={styles.item}>
-            <h2 className={styles.titleNumber}>91%</h2>
-            <div className={styles.subtext}>Experience Score</div>
+          <div className={styles.numbersCard}>
+            <div className={styles.item}>
+              <h2 className={styles.titleNumber}>91%</h2>
+              <div className={styles.subtext}>Experience Score</div>
+            </div>
+
+            <div className={styles.divider}></div>
+
+            <div className={styles.item}>
+              <h2 className={styles.titleNumber}>91%</h2>
+              <div className={styles.subtext}>Completion Rates</div>
+            </div>
+
+            <div className={styles.arcStyle}>
+              <Image src={arc} alt="" width="85" height="85" />
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.traditionalSection}>
+
+          <div className={styles.emojiDesktopStyle}>
+            <ReactCompareImage
+              leftImage="/assets/light.svg"
+              rightImage="/assets/dark.svg"
+              sliderLineWidth={0}
+              handle={<div className={styles.handleImage}><Image src="/assets/switch.svg" alt="" width="90" height="90" /></div>}
+              sliderPositionPercentage={0.85}
+              handleSize={70}
+            />
           </div>
 
-          <div className={styles.divider}></div>
-
-          <div className={styles.item}>
-            <h2 className={styles.titleNumber}>91%</h2>
-            <div className={styles.subtext}>Completion Rates</div>
-          </div>
-
-          <div className={styles.arcStyle}>
-            <Image src={arc} alt="" width="85" height="85" />
+          <div className={styles.emojiMobileStyle}>
+            <ReactCompareImage
+              leftImage="/assets/mob-light.svg"
+              rightImage="/assets/mob-dark.svg"
+              sliderLineWidth={0}
+              handle={<div className={styles.handleImage}><Image src="/assets/switch.svg" alt="" width="90" height="90" /></div>}
+              sliderPositionPercentage={0.65}
+              handleSize={50}
+            />
           </div>
         </div>
       </div>
-
-      <div className={styles.traditionalSection}>
-
-        <div className={styles.emojiDesktopStyle}>
-          <ReactCompareImage
-            leftImage="/assets/light.svg"
-            rightImage="/assets/dark.svg"
-            sliderLineWidth={0}
-            handle={<div className={styles.handleImage}><Image src="/assets/switch.svg" alt="" width="90" height="90" /></div>}
-            sliderPositionPercentage={0.85}
-            handleSize={70}
-          />
-        </div>
-
-        <div className={styles.emojiMobileStyle}>
-          <ReactCompareImage
-            leftImage="/assets/mob-light.svg"
-            rightImage="/assets/mob-dark.svg"
-            sliderLineWidth={0}
-            handle={<div className={styles.handleImage}><Image src="/assets/switch.svg" alt="" width="90" height="90" /></div>}
-            sliderPositionPercentage={0.65}
-            handleSize={50}
-          />
-        </div>
-      </div>
-
     </div>
   )
 }

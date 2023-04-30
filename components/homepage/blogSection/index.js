@@ -27,22 +27,24 @@ export default function BlogSection() {
 
   return (
     <div className={`${styles.blogSectionStyle}`}>
-      <div className={styles.contentSection}>
-        <div className={styles.headingSection}>
-          <h1 className={`${styles.title1}`}>
-            The wandering words
-          </h1>
-          <Link href="/blog" passHref>
-            <a>
-              <h4 className={styles.title4}> View All Blogs</h4>
-            </a>
-          </Link>
+      <div className='container-width'>
+        <div className={styles.contentSection}>
+          <div className={styles.headingSection}>
+            <h1 className={`${styles.title1}`}>
+              The wandering words
+            </h1>
+            <Link href="/blog" passHref>
+              <a>
+                <h4 className={styles.title4}> View All Blogs</h4>
+              </a>
+            </Link>
+          </div>
+          <div className={styles.divider}></div>
         </div>
-        <div className={styles.divider}></div>
-      </div>
 
-      <div className={styles.blogCardSection}>
-        <BlogCard data={blogs} currentPath={asPath} />
+        <div className={styles.blogCardSection}>
+          <BlogCard data={blogs} currentPath={asPath} />
+        </div>
       </div>
     </div>
   )

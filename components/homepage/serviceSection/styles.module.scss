@@ -57,13 +57,16 @@
   background: $black;
   padding: 70px 60px;
   border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 90px 0;
 
   @include mobile {
     padding: 30px 20px;
     border-radius: 20px;
+  }
+
+  .serviceItemStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 90px 0;
   }
 
   .serviceCard {

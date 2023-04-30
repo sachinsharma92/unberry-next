@@ -31,41 +31,45 @@ export default function ServiceSection() {
   const badgeList = ['Problem Solving', 'Tolerance To Ambiguity', 'Learning Agility', 'Attention Span', 'Processing Speed', 'Efficiency', 'Multitasking']
 
   return (
-    <div id='js-wrapper'>
+    <div>
       <div className={`${styles.breakingExperienceStyle}`}>
-        <div className={styles.contentSection}>
-          <h1 className={`${styles.title1}`}>
-            Breaking down the experience
-          </h1>
-          <p className={styles.description}>
-            A suite of multi-dimensional, psychometrically-rigorous, gamified assessments that demand exploration and hands-on problem solving from the players to progress.
-          </p>
-          <ButtonPrimary href="/" title="BOOK DEMO" />
+        <div className='container-width'>
+          <div className={styles.contentSection}>
+            <h1 className={`${styles.title1}`}>
+              Breaking down the experience
+            </h1>
+            <p className={styles.description}>
+              A suite of multi-dimensional, psychometrically-rigorous, gamified assessments that demand exploration and hands-on problem solving from the players to progress.
+            </p>
+            <ButtonPrimary href="/" title="BOOK DEMO" />
+          </div>
         </div>
       </div>
-      <div className={`${styles.serviceSectionStyle}`} id='js-slideContainer'>
-        {serviceCardList.map((item, index) => (
-          <section key={index} className={styles.serviceCard}>
-            <div className={styles.contentLeft}>
-              <h1 className={`${styles.title1}`}>
-                {item.title}
-              </h1>
-              <p className={styles.description}>
-                {item.description}
-              </p>
+      <div className={`${styles.serviceSectionStyle}`}>
+        <div className={`container-width ${styles.serviceItemStyle}`}>
+          {serviceCardList.map((item, index) => (
+            <section key={index} className={styles.serviceCard}>
+              <div className={styles.contentLeft}>
+                <h1 className={`${styles.title1}`}>
+                  {item.title}
+                </h1>
+                <p className={styles.description}>
+                  {item.description}
+                </p>
 
-              <div className={styles.tagSection}>
-                {badgeList.map((item, index) => (
-                  <span key={index} className={styles.badge}>{item}</span>
-                ))}
+                <div className={styles.tagSection}>
+                  {badgeList.map((item, index) => (
+                    <span key={index} className={styles.badge}>{item}</span>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className={styles.contentRight}>
-              <Image src={item.imageUrl} alt='image services' className={styles.imgStyle} layout="fill" />
-            </div>
-          </section>
-        ))}
+              <div className={styles.contentRight}>
+                <Image src={item.imageUrl} alt='image services' className={styles.imgStyle} layout="fill" />
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
     </div>
   )

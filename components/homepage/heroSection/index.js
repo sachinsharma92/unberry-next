@@ -33,79 +33,80 @@ export default function HeroSection() {
 
   return (
     <div className={styles.heroSectionStyle}>
-      <div className={styles.contentSection}>
-        <h1 className={`${styles.title1} title1`}>
-          Building Talent Intelligence For The Modern Workplace
-        </h1>
-        <p className={`${styles.descriptionText} description`}>
-          Modern, next-gen talent assessment suite, that can measure job-relevant skills and proficiencies, to build and scale teams.
-        </p>
+      <div className='container-width'>
+        <div className={styles.contentSection}>
+          <h1 className={`${styles.title1} title1`}>
+            Building Talent Intelligence For The Modern Workplace
+          </h1>
+          <p className={`${styles.descriptionText} description`}>
+            Modern, next-gen talent assessment suite, that can measure job-relevant skills and proficiencies, to build and scale teams.
+          </p>
 
-        <div className={styles.btnSection}>
-          <ButtonPrimary href="/" title="BOOK DEMO" />
-        </div>
-      </div>
-
-      <div className={`${styles.headingMobile}`}>
-        <h3 className={`${styles.title3}`}>
-          Mapping the holistic workplace footprint of a candidate
-        </h3>
-      </div>
-
-      <div className={styles.workplaceSection} id='workplaceSection'>
-        <div className={`${styles.gridDesktopSection}`}>
-          <div className={styles.imgBoxStyle}>
-            <Image src={icon1} alt="" width="94" height="60" />
-            <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
-          </div>
-          <div className={styles.imgBoxStyle}>
-            <Image src={icon2} alt="" width="94" height="60" />
-            <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
-          </div>
-          <div className={styles.imgBoxStyle}>
-            <Image src={icon3} alt="" width="94" height="60" />
-            <h4 className={styles.title4}>Communication <br /> Skills</h4>
-          </div>
-          <div className={styles.imgBoxStyle}>
-            <Image src={icon4} alt="" width="94" height="60" />
-            <h4 className={styles.title4}>Behavioural & Personality</h4>
+          <div className={styles.btnSection}>
+            <ButtonPrimary href="/" title="BOOK DEMO" />
           </div>
         </div>
+        <div className={`${styles.headingMobile}`}>
+          <h3 className={`${styles.title3}`}>
+            Mapping the holistic workplace footprint of a candidate
+          </h3>
+        </div>
 
-
-
-        {/* Mobile */}
-        <div className={styles.gridMobileSection}>
-          <div className={styles.boxSet}>
+        <div className={styles.workplaceSection} id='workplaceSection'>
+          <div className={`${styles.gridDesktopSection}`}>
             <div className={styles.imgBoxStyle}>
               <Image src={icon1} alt="" width="94" height="60" />
               <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
             </div>
-            <div className={styles.mobileDivider}></div>
             <div className={styles.imgBoxStyle}>
               <Image src={icon2} alt="" width="94" height="60" />
               <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
             </div>
-          </div>
-          <div className={styles.boxSet}>
             <div className={styles.imgBoxStyle}>
               <Image src={icon3} alt="" width="94" height="60" />
               <h4 className={styles.title4}>Communication <br /> Skills</h4>
             </div>
-            <div className={`${styles.mobileDivider} ${styles.mobileDivider2}`}></div>
             <div className={styles.imgBoxStyle}>
               <Image src={icon4} alt="" width="94" height="60" />
               <h4 className={styles.title4}>Behavioural & Personality</h4>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className={`${styles.headingDesktop} animation-block`}>
-        <div className='animation-text'>
-          <h3 className={`${styles.title3}`}>
-            Mapping the holistic workplace footprint of a candidate
-          </h3>
+
+
+          {/* Mobile */}
+          <div className={styles.gridMobileSection}>
+            <div className={styles.boxSet}>
+              <div className={styles.imgBoxStyle}>
+                <Image src={icon1} alt="" width="94" height="60" />
+                <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
+              </div>
+              <div className={styles.mobileDivider}></div>
+              <div className={styles.imgBoxStyle}>
+                <Image src={icon2} alt="" width="94" height="60" />
+                <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
+              </div>
+            </div>
+            <div className={styles.boxSet}>
+              <div className={styles.imgBoxStyle}>
+                <Image src={icon3} alt="" width="94" height="60" />
+                <h4 className={styles.title4}>Communication <br /> Skills</h4>
+              </div>
+              <div className={`${styles.mobileDivider} ${styles.mobileDivider2}`}></div>
+              <div className={styles.imgBoxStyle}>
+                <Image src={icon4} alt="" width="94" height="60" />
+                <h4 className={styles.title4}>Behavioural & Personality</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.headingDesktop} animation-block`}>
+          <div className='animation-text'>
+            <h3 className={`${styles.title3}`}>
+              Mapping the holistic workplace footprint of a candidate
+            </h3>
+          </div>
         </div>
       </div>
     </div>
