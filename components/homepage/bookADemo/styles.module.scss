@@ -52,11 +52,8 @@
   }
 
   .contentSection {
-    display: flex;
-    align-items: flex-end;
     border-bottom: 1px solid #444444;
     padding-bottom: 60px;
-    justify-content: space-between;
 
     @include mobile {
       flex-direction: column;

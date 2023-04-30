@@ -871,13 +871,16 @@ HAMBURGER MENU
 
   @include mobile {
     padding: 20px;
-    flex-direction: column;
   }
 
   .container-width {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   .footer {
