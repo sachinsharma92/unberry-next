@@ -81,6 +81,7 @@
       letter-spacing: -0.655696px;
       color: $black;
       margin-bottom: 40px;
+      max-width: 80%;
 
       @include mobile {
         margin-bottom: 10px;

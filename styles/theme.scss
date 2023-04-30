@@ -1009,7 +1009,9 @@ HAMBURGER MENU
 .blog-carousel {
   .ant-carousel .slick-track {
     display: flex;
+    margin-left: -30px !important;
   }
+
 
   .slick-track .slick-slide {
     border-right: 1px solid #e0e0e0;
@@ -1020,6 +1022,10 @@ HAMBURGER MENU
       padding: 0 5px;
     }
   }
+
+  .slick-list {
+    padding-left: 0px!important;
+}
 
   .slick-slider .slick-arrow {
     background: #e0e0e0;

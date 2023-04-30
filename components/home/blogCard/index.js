@@ -10,8 +10,10 @@ const BlogCard = ({ data, currentPath }) => {
     arrows: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.4,
-    slidesToScroll: 2.4,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    centerMode: true,
+    centerPadding: '60px',
     responsive: [
       {
         breakpoint: 767,

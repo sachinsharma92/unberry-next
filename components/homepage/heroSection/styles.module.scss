@@ -23,6 +23,10 @@
     max-width: 70%;
     color: $black;
 
+    @include desktop-lg {
+      max-width: 50%;
+    }
+
     @include mobile {
       max-width: 90%;
     }
@@ -31,6 +35,10 @@
   .descriptionText {
     max-width: 48%;
     margin: 0 auto;
+
+    @include desktop-lg {
+      max-width: 30%;
+    }
 
     @include mobile {
       max-width: 90%;

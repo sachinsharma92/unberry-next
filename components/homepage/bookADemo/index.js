@@ -17,12 +17,14 @@ export default function BookADemo() {
           <h2 className={`${styles.title2}`}>
             Book A Demo
           </h2>
-          <p className={styles.description}>
-            Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.
-          </p>
+          <div className={styles.btnSection}>
+            <p className={styles.description}>
+              Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.
+            </p>
+            <ButtonPrimary className={styles.btnStyle} href="/" title="BOOK A DEMO" />
+          </div>
         </div>
 
-        <ButtonPrimary className={styles.btnStyle} href="/" title="BOOK A DEMO" />
       </div>
     </div>
   )
