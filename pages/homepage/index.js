@@ -52,7 +52,7 @@ export default function HomePageScreen() {
         <EndAutomation />
         <BlogSection />
 
-        <div className={styles.footerSection}>
+        <div className="footer-section">
           <BookADemo />
           <FooterPrimary />
         </div>

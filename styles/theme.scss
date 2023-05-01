@@ -271,50 +271,50 @@ p {
   }
 }
 
-.social-icon-styles {
-  position: fixed;
-  right: 0;
-  top: 60vh;
+// .social-icon-styles {
+//   position: fixed;
+//   right: 0;
+//   top: 60vh;
 
-  .social-sec {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px 0;
-    background: $colorCream;
-    border-radius: 10px 0px 0px 10px;
-    padding: 10px;
-    box-shadow: 0 5px 32px rgba($black, 0.1);
+//   .social-sec {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     gap: 5px 0;
+//     background: $colorCream;
+//     border-radius: 10px 0px 0px 10px;
+//     padding: 10px;
+//     box-shadow: 0 5px 32px rgba($black, 0.1);
 
-    @include mobile {
-      padding: 5px;
-    }
+//     @include mobile {
+//       padding: 5px;
+//     }
 
-    .icon-link {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px;
-      transition: all 0.3s ease-in-out;
+//     .icon-link {
+//       width: 40px;
+//       height: 40px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       padding: 8px;
+//       transition: all 0.3s ease-in-out;
 
-      &:hover {
-        transform: scale(1.15);
-      }
+//       &:hover {
+//         transform: scale(1.15);
+//       }
 
-      @include mobile {
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-      }
+//       @include mobile {
+//         padding: 5px;
+//         width: 30px;
+//         height: 30px;
+//       }
 
-      .icon {
-        width: 100%;
-      }
-    }
-  }
-}
+//       .icon {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
 
 // Mobile Header
 .mobile-header {
@@ -697,7 +697,7 @@ p {
   background: $white;
 
   @include mobile {
-    padding: 30px 20px;
+    padding: 20px;
     width: 100%;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.03);
   }
@@ -863,6 +863,7 @@ HAMBURGER MENU
   }
 }
 
+
 // footer-primary
 .footer-primary {
   padding: 190px 60px 60px;
@@ -891,27 +892,6 @@ HAMBURGER MENU
     }
   }
 
-  .social-sec {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 0 8px;
-
-    @include mobile {
-      justify-content: center;
-    }
-
-    a {
-      width: 42.45px;
-      height: 42.45px;
-      border-radius: 50px;
-      background: #3e3e3e;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
   .logo-white {
     margin: 10px 0;
 
@@ -936,85 +916,27 @@ HAMBURGER MENU
       color: #a8a8a8;
     }
   }
+}
 
-  .subscribe-card {
-    min-height: 185px;
-    background: rgba($white, 0.02);
-    padding: 30px;
-    border-radius: 40px;
-    position: relative;
-    z-index: 1;
 
-    @include mobile {
-      width: 100%;
-      background: rgba($white, 0.1);
-      border-radius: 20px;
-      margin: 30px 0 50px;
-    }
+.social-sec {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 8px;
 
-    .title4 {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 26px;
-      color: $white;
-    }
-
-    .description {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 21px;
-      color: rgba($white, 0.6);
-      min-width: 600px;
-      text-align: left;
-    }
+  @include mobile {
+    justify-content: center;
   }
 
-  // subscribe
-  .subscribe-form {
-    margin-top: 30px;
-
-    .ant-input {
-      height: 50px;
-      border-radius: 50px;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.14);
-      border: none;
-      padding: 0 20px;
-
-      &:focus {
-        box-shadow: none !important;
-        outline: none !important;
-      }
-    }
-
-    .ant-btn {
-      display: flex;
-      align-items: center;
-      background: none;
-      border: 1px solid #ffffff;
-      width: 250px;
-      height: 50px;
-      font-weight: 500;
-      padding-bottom: 10px;
-
-      span {
-        width: 100%;
-        text-align: center;
-      }
-    }
-
-    .ant-form-item {
-      width: 100%;
-    }
-
-    .ant-form-horizontal {
-      display: flex;
-      gap: 0 20px;
-
-      @include mobile {
-        flex-direction: column;
-      }
-    }
+  a {
+    width: 42.45px;
+    height: 42.45px;
+    border-radius: 50px;
+    background: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1253,5 +1175,182 @@ HAMBURGER MENU
     > div {
       display: none !important;
     }
+  }
+}
+
+.footer-section {
+  background: $black;
+  border-radius: 50px 50px 0 0;
+  overflow: hidden;
+  padding-top: 50px;
+  position: relative;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(257.89deg, $theme-primary-new 4.84%, #ac95cf 50.02%);
+    filter: blur(240px);
+    content: "";
+    height: 138px;
+  }
+}
+
+.subscribe-card {
+  min-height: 185px;
+  padding: 30px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+  background: rgba($white, 0.02);
+
+  @include mobile {
+    width: 100%;
+    background: rgba($white, 0.1);
+    border-radius: 20px;
+    margin: 30px 0 50px;
+  }
+
+  .title4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: $white;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba($white, 0.6);
+    min-width: 600px;
+    text-align: left;
+  }
+
+  // subscribe
+  .subscribe-form {
+    margin-top: 30px;
+
+    .ant-input {
+      height: 50px;
+      border-radius: 50px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.14);
+      border: none;
+      padding: 0 20px;
+
+      &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+      }
+    }
+
+    .ant-btn {
+      display: flex;
+      align-items: center;
+      background: none;
+      border: 1px solid #ffffff;
+      width: 250px;
+      height: 50px;
+      font-weight: 500;
+      padding-bottom: 10px;
+
+      span {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .ant-form-item {
+      width: 100%;
+    }
+
+    .ant-form-horizontal {
+      display: flex;
+      gap: 0 20px;
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.content-blog-layout {
+  .title4 {
+    color: $black;
+  }
+
+  .description {
+    color: $black;
+  }
+
+  .subscribe-form .ant-form {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      align-items: center;
+    }
+
+    .ant-input {
+      background: rgba($black, 0.07);
+
+      &::placeholder {
+        color: $black;
+        opacity: 1;
+      }
+      
+      &:-ms-input-placeholder {
+        color: $black;
+      }
+      
+      &::-ms-input-placeholder { 
+        color: $black;
+      }
+    }
+
+    .ant-btn {
+      background: $theme-primary-new;
+      width: 171px;
+    }
+  }
+
+  .subscribe-card {
+    margin-top: 30px;
+    background: none;
+
+    @include mobile {
+      text-align: center;
+      margin: 0px 0 30px;
+    }
+
+    .description {
+      @include mobile {
+        text-align: center;
+        min-width: auto;
+      }
+    }
+
+    .social-sec {
+      justify-content: flex-start;
+      margin-top: 30px;
+  
+      @include mobile {
+        justify-content: center;
+      }
+  
+      a {
+        background: #E4DDEF;
+      }
+    }
+
   }
 }
