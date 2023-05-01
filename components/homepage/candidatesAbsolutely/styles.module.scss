@@ -118,70 +118,19 @@
       margin-top: 70px;
       border-radius: 20px;
     }
+  }
 
-    .headerStyle {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      z-index: 1;
-      padding-right: 250px;
-    }
+  .headerStyle {
+    display: flex;
+    position: absolute;
+    top: 50px;
 
     .title3 {
       font-weight: 500;
       font-size: 32px;
       line-height: 60px;
       letter-spacing: -2px;
-      color: $black;
       margin-bottom: 100px;
-    }
-  }
-
-  .emojiStyle {
-    text-align: center;
-
-    .title4 {
-      font-weight: 300;
-      font-size: 25px;
-      line-height: 94.5%;
-      text-align: center;
-      letter-spacing: -0.04em;
-      color: $black;
-      margin-top: 23px;
-    }
-  }
-
-  .emojiDesktopStyle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-
-    @include mobile {
-      display: none;
-    }
-
-    .handleImage {
-      top: -50px;
-      position: relative;
-    }
-  }
-
-  .emojiMobileStyle {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    
-    @include mobile {
-      display: flex;
-    }
-
-    .handleImage {
-      top: -50px;
-      position: relative;
     }
   }
 
@@ -194,5 +143,63 @@
     right: 150px;
     cursor: pointer;
     z-index: 9;
+  }
+}
+
+// emoji Section Style
+.emojiSectionStyle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  height: 492px;
+  padding: 0 50px 80px;
+  overflow: hidden;
+
+  .emojiStyle {
+    text-align: center;
+  
+    .title4 {
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 94.5%;
+      text-align: center;
+      letter-spacing: -0.04em;
+      margin-top: 23px;
+    }
+  }
+  
+  &.emojiTraditionalStyle {
+    background-color: #f4f4f4;
+  
+    .title4 {
+      color: $black;
+    }
+  }
+  
+  &.emojiUnberryStyle {
+    background-color: $black;
+  
+    .title4, .title3 {
+      color: $white;
+    }
+
+    .headerStyle {
+      right: 320px;
+    }
+  }
+
+  .jsonItem {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .jsonItemBox {
+    height: 80px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
   }
 }

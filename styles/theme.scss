@@ -1229,3 +1229,29 @@ HAMBURGER MENU
     }
   }
 }
+
+// __rcs-handle-line
+
+.__rcs-handle-root {
+  .__rcs-handle-line {
+    width: 0 !important;
+  }
+
+  .__rcs-handle-button {
+    background: url("/assets/switch.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0% !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: initial !important;
+    width: 66px !important;
+    height: 66px !important;
+    position: relative;
+    top: -40px;
+
+    > div {
+      display: none !important;
+    }
+  }
+}
