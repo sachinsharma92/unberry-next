@@ -125,12 +125,23 @@
     position: absolute;
     top: 50px;
 
+    @include mobile {
+      text-align: center;
+      width: 100%;
+      top: 30px;
+    }
+
     .title3 {
       font-weight: 500;
       font-size: 32px;
       line-height: 60px;
       letter-spacing: -2px;
       margin-bottom: 100px;
+
+      @include mobile {
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 
@@ -158,9 +169,21 @@
   padding: 0 50px 80px;
   overflow: hidden;
 
+  @include mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 50px;
+    padding: 120px 50px 0px;
+    height: 550px;
+  }
+
   .emojiStyle {
     text-align: center;
-  
+
+    @include mobile {
+      position: relative;
+    }
+
     .title4 {
       font-weight: 300;
       font-size: 25px;
@@ -168,26 +191,123 @@
       text-align: center;
       letter-spacing: -0.04em;
       margin-top: 23px;
+
+      @include mobile {
+        font-size: 22px;
+        margin-top: 10px;
+      }
     }
   }
-  
+
   &.emojiTraditionalStyle {
     background-color: #f4f4f4;
+
+    .emojiStyle {
+
+      @include mobile {
   
+        &:nth-child(2) {
+          left: -20px;
+          top: 50px;
+        }
+  
+        &:nth-child(3) {
+          left: -60px;
+          top: -20px;
+        }
+  
+        &:nth-child(4) {
+          left: -20px;
+          top: 40px;
+        }
+  
+        &:nth-child(5) {
+          left: 40px;
+          top: -80px;
+        }
+  
+        &:nth-child(6) {
+          left: 80px;
+          top: -140px;
+        }
+  
+        &:nth-child(7) {
+          left: 50px;
+          top: -90px;
+        }
+  
+        &:nth-child(8) {
+          left: 80px;
+          top: -130px;
+        }
+  
+      }
+    }
+
     .title4 {
       color: $black;
     }
   }
-  
+
   &.emojiUnberryStyle {
     background-color: $black;
+    .emojiStyle {
+
+      @include mobile {
   
-    .title4, .title3 {
+        &:nth-child(2) {
+          left: -20px;
+          top: 50px;
+        }
+  
+        &:nth-child(3) {
+          left: -55px;
+          top: 0px;
+        }
+  
+        &:nth-child(4) {
+          left: -40px;
+          top: 40px;
+        }
+  
+        &:nth-child(5) {
+          left: 40px;
+          top: -80px;
+        }
+  
+        &:nth-child(6) {
+          left: 80px;
+          top: -140px;
+        }
+  
+        &:nth-child(7) {
+          left: 50px;
+          top: -140px;
+        }
+  
+        &:nth-child(8) {
+          left: 20px;
+          top: -160px;
+        }
+  
+        &:nth-child(9) {
+          left: 0px;
+          top: -160px;
+        }
+      }
+    }
+
+    .title4,
+    .title3 {
       color: $white;
     }
 
     .headerStyle {
       right: 320px;
+
+      @include mobile {
+        right: 0;
+      }
     }
   }
 
@@ -195,11 +315,24 @@
     width: 100%;
     height: 100%;
   }
-  
+
   .jsonItemBox {
     height: 80px;
     height: 80px;
     position: relative;
     overflow: hidden;
+
+    @include mobile {
+      height: 60px;
+      height: 60px;
+    }
+  }
+
+  .mindBlown {
+    height: 105px;
+
+    @include mobile {
+      height: 90px;
+    }
   }
 }

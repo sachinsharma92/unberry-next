@@ -8,6 +8,11 @@ import delighted from "../../../assets/json/emoticon/delighted.json";
 import eager from "../../../assets/json/emoticon/eager.json";
 import relieved from "../../../assets/json/emoticon/relieved.json";
 
+import mind from "../../../assets/json/emoticon/mind.json";
+import happy from "../../../assets/json/emoticon/happy.json";
+import excited from "../../../assets/json/emoticon/excited.json";
+import engaged from "../../../assets/json/emoticon/engaged.json";
+
 
 // Styles here
 import styles from './styles.module.scss';
@@ -31,20 +36,21 @@ export default function UnberryEmoticon() {
       title: 'Relieved'
     },
     {
-      lottieID: 'delighted1',
-      title: 'Mind Blown'
+      lottieID: 'mind',
+      title: 'Mind Blown',
+      jsonStyle: styles.mindBlown
     },
     {
-      lottieID: 'delighted2',
-      title: 'Delighted 1'
+      lottieID: 'happy',
+      title: 'Happy'
     },
     {
-      lottieID: 'delighted3',
-      title: 'Delighted 2'
+      lottieID: 'excited',
+      title: 'Excited'
     },
     {
-      lottieID: 'delighted4',
-      title: 'Delighted 3'
+      lottieID: 'engaged',
+      title: 'Engaged'
     },
   ]
 
@@ -65,23 +71,21 @@ export default function UnberryEmoticon() {
       container: document.querySelector("#relieved"),
       animationData: relieved
     });
-
-    // ====================
     lottie.loadAnimation({
-      container: document.querySelector("#delighted1"),
-      animationData: delighted
+      container: document.querySelector("#mind"),
+      animationData: mind
     });
     lottie.loadAnimation({
-      container: document.querySelector("#delighted2"),
-      animationData: eager
+      container: document.querySelector("#happy"),
+      animationData: happy
     });
     lottie.loadAnimation({
-      container: document.querySelector("#delighted3"),
-      animationData: relieved
+      container: document.querySelector("#excited"),
+      animationData: excited
     });
     lottie.loadAnimation({
-      container: document.querySelector("#delighted4"),
-      animationData: relieved
+      container: document.querySelector("#engaged"),
+      animationData: engaged
     });
   }, []);
 
@@ -92,7 +96,7 @@ export default function UnberryEmoticon() {
       </div>
       {iconsData.map((item) => (
         <div key={item} className={styles.emojiStyle}>
-          <div className={styles.jsonItemBox}>
+          <div className={`${styles.jsonItemBox} ${item.jsonStyle}`}>
             <div className={styles.jsonItem} id={item.lottieID} />
           </div>
           <h4 className={styles.title4}>{item.title}</h4>
