@@ -9,6 +9,8 @@ import { Mixpanel } from '../../services/mixpanel';
 
 // Images
 import HeaderPrimary from '../../common/headerPrimary';
+import BookADemo from '../../components/homepage/bookADemo';
+import FooterPrimary from '../../common/footerPrimary';
 
 export default function BlogScreen() {
   const [blogs, setBlogs] = useState([])
@@ -47,11 +49,8 @@ export default function BlogScreen() {
       <Head>
         <title>Blog | Unberry</title>
       </Head>
-
       <LayoutPrimary>
-
         <HeaderPrimary />
-
         {/* ======= Section Bury Biases ======= */}
         <section className='blog-list-page'>
           <h1 className='title1'>The wandering words</h1>
@@ -61,33 +60,31 @@ export default function BlogScreen() {
         <section className='blog-unberry'>
           {[...blogs].reverse().map((item, index) => (
             <div key={index} className='border-section'>
-              <div className='content-section'>
-                <Row gutter={28} align="middle">
-                  <Col xs={24} sm={9}>
-                    <div className='blog-thumb-image'>
-                      <div className='img-style' style={{ backgroundImage: `url(${item.bannerImage})` }} />
-                    </div>
-                  </Col>
-                  <Col xs={24} sm={15}>
-                    <div className='blog-content-item'>
-                      <div className='title'>{item.heading}</div>
-                      <div className='description'>{item.content}</div>
-                      <Link
-                        href={{
-                          pathname: `/blog/${item.slug}`,
-                          query: { backTo: asPath },
-                        }}
-                        as={`/blog/${item.slug}`}
-                      >
-                        <a>Read More</a>
-                      </Link>
-                    </div>
-                  </Col>
-                </Row>
+              <div className='blog-thumb-image'>
+                <div className='img-style' style={{ backgroundImage: `url(${item.bannerImage})` }} />
+              </div>
+              <div className='blog-content-item'>
+                <div className='title'>{item.heading}</div>
+                <div className='description'>{item.content}</div>
+                <Link
+                  href={{
+                    pathname: `/blog/${item.slug}`,
+                    query: { backTo: asPath },
+                  }}
+                  as={`/blog/${item.slug}`}
+                >
+                  <a>Read More</a>
+                </Link>
               </div>
             </div>
           ))}
         </section>
+
+
+        <div className="footer-section">
+          <BookADemo />
+          <FooterPrimary />
+        </div>
       </LayoutPrimary>
     </div>
   )
