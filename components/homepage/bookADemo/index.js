@@ -21,7 +21,7 @@ export default function BookADemo() {
             <p className={styles.description}>
               Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.
             </p>
-            <ButtonPrimary className={styles.btnStyle} href="/" title="BOOK A DEMO" />
+            <ButtonPrimary className={styles.btnStyle} href="/book-demo" title="BOOK A DEMO" />
           </div>
         </div>
       </div>

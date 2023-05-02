@@ -1,0 +1,80 @@
+// variables
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+// auto-section
+
+.bookDemoStyle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+  }
+
+  .title2 {
+    font-weight: 500;
+    font-size: 76.29px;
+    line-height: 71px;
+    letter-spacing: -0.03em;
+    color: $black;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    color: $black;
+    opacity: 0.5;
+    max-width: 80%;
+  }
+
+  .headSection {
+    margin: 75px 0;
+  }
+
+  .listStyle {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+
+    .listItem {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $black;
+      letter-spacing: -0.5px;
+
+      &::before {
+        display: block;
+        background: url("/assets/double-arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        content: "";
+      }
+    }
+  }
+
+  .formSection {
+    background-color: $black;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+}

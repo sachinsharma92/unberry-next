@@ -22,9 +22,9 @@ export default function HeaderPrimary(props) {
         <nav className={`menu-header ${menuShow && 'menu-active'}`}>
           <Link href="/">Sectors</Link>
           <Link href="/">Explore Suite</Link>
-          <Link href="/">Blogs</Link>
+          <Link href="/blog">Blogs</Link>
           <Link href="/">Contact Us</Link>
-          <Link href="/"><a className='btn-primary'>BOOK DEMO</a></Link>
+          <Link href="/book-demo"><a className='btn-primary'>BOOK DEMO</a></Link>
         </nav>
 
         <div className='mobile-section'>

@@ -4,45 +4,9 @@
 
 // Section Contact
 .contact-section {
-  background-color: #f7f1e5;
-  min-height: auto !important;
-
-  .menu-section {
-    min-height: auto;
-
-    @include mobile {
-      background-image: linear-gradient(to bottom, #1c1c1c 240px, #f7f1e5 20%);
-    }
-  }
-
-  .gradint-section {
-    height: 100%;
-    background: #1c1c1c url("../../assets/bg/product2.png");
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    align-items: flex-end;
-    overflow: hidden;
-    position: relative;
-
-    @include mobile {
-      height: 240px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .img-full {
-      width: 100%;
-      margin-left: 0px;
-      transform: scale(1);
-      transform: translate(0px, 20px);
-
-      @include mobile {
-        transform: translate(10px, 20px);
-        object-fit: contain;
-      }
-    }
-  }
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
 
   .contact-form-section {
     padding: 60px 50px;
@@ -57,11 +21,31 @@
     }
   }
 
+  .description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $white;
+    opacity: 0.5;
+    margin-top: 58px;
+  }
+
   .border-style {
     @include mobile {
       top: -12px;
       display: flex;
     }
+  }
+
+  .title3 {
+    color: $white;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    text-align: center;
   }
 
   .form-style {
@@ -83,101 +67,17 @@
     }
   }
 
-  .description {
-    font-size: 18px;
-    line-height: 25px;
-    color: $theme-primary-dark;
-    font-weight: 400;
-    max-width: 100%;
-
-    @include mobile {
-      font-size: 18px;
-      line-height: 28px;
-      letter-spacing: -0.01em;
-      opacity: 0.7;
-      max-width: 100%;
-    }
-  }
-
-  .header-style {
-    @include mobile {
-      width: 100vw;
-      padding-top: 50px;
-    }
-    .title4 {
-      font-size: 96px;
-      font-weight: 300;
-      line-height: 68px;
-      letter-spacing: -7px;
-      padding-top: 65px;
-      margin-left: 28px;
-      margin-bottom: 0px;
-      position: relative;
-      z-index: 1;
-
-      @include mobile {
-        font-size: 55px;
-        line-height: 1.2;
-        letter-spacing: -7px;
-        margin-top: 0px;
-        margin-left: 0px;
-        padding-left: 11px;
-      }
-      @include iphone5 {
-        font-size: 50px;
-      }
-    }
-
-    .heading-second {
-      margin-top: 50px;
-
-      @include mobile {
-        margin-top: 0px;
-      }
-    }
-
-    .text-demo {
-      display: flex;
-      font-size: 96px;
-      color: #ba4a17;
-      font-weight: 500;
-      line-height: 68px;
-      letter-spacing: -7px;
-      margin-left: 28px;
-      position: relative;
-      z-index: 1;
-      background: linear-gradient(
-        200deg,
-        #2e1500 0%,
-        #1b0c07 34.63%,
-        #7b351f 83.87%,
-        #7b351f 100.87%
-      );
-      @include clip-text();
-      display: block;
-
-      @include mobile {
-        font-size: 55px;
-        line-height: 60px;
-        letter-spacing: -6 px;
-        margin-left: 11px;
-        display: block;
-      }
-    }
-  }
-
   .ant-input {
     border: none;
-    background: none !important;
-    border-bottom: 1px solid #c4c2da;
-    border-radius: 0;
+    height: 53px;
+    background: rgba(244, 244, 244, 0.1);
+    border-radius: 70px;
     padding-bottom: 5px;
     font-size: 16px;
     font-weight: 500;
-    height: 24px;
     letter-spacing: -0.02em;
-    color: #9c9ab9;
-    padding: 0;
+    color: $white;
+    padding: 0 30px;
 
     &:focus,
     &:hover {
@@ -186,40 +86,68 @@
     }
   }
 
-  .ant-select-selector {
-    border: none !important;
-    background: none !important;
-    border-bottom: 1px solid #c4c2da !important;
-    border-radius: 0;
+  .ant-form-item-control-input .ant-select-selector {
+    height: 53px;
+    background: rgba(244, 244, 244, 0.1);
+    border: none;
+    border-radius: 70px;
     padding-bottom: 5px;
     font-size: 16px;
     font-weight: 500;
-    height: 24px;
     letter-spacing: -0.02em;
-    color: #9c9ab9;
-    padding: 0 !important;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: $white;
 
     &:focus,
     &:hover {
-      outline: none !important;
-      box-shadow: none !important;
+      outline: none;
+      box-shadow: none;
+      background: rgba(244, 244, 244, 0.1);
     }
+  }
+
+  .ant-select-selection-placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+
+  ::placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+  
+  :-ms-input-placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+  
+  ::-ms-input-placeholder {
+    color: $white;
+    opacity: 0.5;
   }
 
   .ant-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $theme-primary-dark;
+    background: #ac95cf;
+    border-radius: 57px;
     margin-top: 50px;
-    height: 50px;
-    font-size: 20px;
+    height: 57px;
+    font-size: 18px;
     width: 100%;
-    height: 50px;
+    font-weight: 500;
+    line-height: 23px;
 
     @include mobile {
       width: 100%;
     }
+  }
+
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
+    background: rgba(244, 244, 244, 0.1);
   }
 
   input::-webkit-outer-spin-button,
@@ -242,9 +170,10 @@
   }
 
   .ant-select-focused .ant-select-selector,
-.ant-select-selector:focus,
-.ant-select-selector:active,
-.ant-select-open .ant-select-selector {
-  box-shadow: none !important;
-}
+  .ant-select-selector:focus,
+  .ant-select-selector:active,
+  .ant-select-open .ant-select-selector {
+    box-shadow: none !important;
+    background: rgba(244, 244, 244, 0.1);
+  }
 }

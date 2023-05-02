@@ -44,7 +44,7 @@ export default function HeroSection() {
           </p>
 
           <div className={styles.btnSection}>
-            <ButtonPrimary href="/" title="BOOK DEMO" />
+            <ButtonPrimary href="/book-demo" title="BOOK DEMO" />
           </div>
         </div>
         <div className={`${styles.headingMobile}`}>
