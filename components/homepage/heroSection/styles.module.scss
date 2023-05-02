@@ -35,6 +35,7 @@
   .descriptionText {
     max-width: 48%;
     margin: 0 auto;
+    text-align: center;
 
     @include desktop-lg {
       max-width: 30%;

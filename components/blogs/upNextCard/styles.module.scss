@@ -1,0 +1,71 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.upNextCardStyle {
+  background: $white;
+  padding: 54px 60px;
+
+  @include mobile {
+    padding: 54px 20px;
+  }
+
+  .cardGrid {
+    display: flex;
+    gap: 41px;
+    overflow-x: scroll;
+  }
+
+  .heading {
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  .blogCards {
+    min-width: 31%;
+    
+    a {
+      color: $theme-primary-new;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 500;
+      display: block;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+    .title1 {
+      color: $black;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 29px;
+      letter-spacing: -0.655696px;
+
+      @include mobile {
+        font-size: 31.25px;
+        line-height: 35px;
+        max-width: 100%;
+      }
+    }
+
+    .imgbox {
+      height: 223px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 40px;
+      margin-bottom: 30px;
+
+      .imgStyle {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+      }
+    }
+  }
+}

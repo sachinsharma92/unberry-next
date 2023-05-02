@@ -1,26 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import { Button } from "antd";
 import axios from "axios";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import LayoutPrimary from "../../common/layoutPrimary";
-import SocialShareIcons from "../../common/socialShareIcons";
-import DemoForm from "../../components/demoForm";
 import { Mixpanel } from "../../services/mixpanel";
 
 // Images
-import arrowNext from "../../assets/icons/arrow-next.svg";
-import logoTheme from "../../assets/logo-brown.svg";
-import HeaderPrimary from "../../common/headerPrimary";
-import BookADemo from "../../components/homepage/bookADemo";
 import FooterPrimary from "../../common/footerPrimary";
+import HeaderPrimary from "../../common/headerPrimary";
 import SubscribeCard from "../../common/subscribe";
+import BookADemo from "../../components/homepage/bookADemo";
+import UpNextCard from "../../components/blogs/upNextCard";
 
 const BlogDetail = ({ heading }) => {
 	const router = useRouter();
@@ -105,14 +99,14 @@ const BlogDetail = ({ heading }) => {
 					</div>
 				</div>
 
+				<UpNextCard />
+
 				<div className="footer-section">
 					<BookADemo />
 					<FooterPrimary />
 				</div>
 
-				{/* <DemoForm id="bookDemo" /> */}
 
-				{/* <SocialShareIcons /> */}
 			</LayoutPrimary>
 		</>
 	);

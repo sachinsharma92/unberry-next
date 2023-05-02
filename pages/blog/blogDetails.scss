@@ -173,3 +173,14 @@
   }
 }
 
+
+.blog-list-page {
+  padding: 150px 0 50px;
+  text-align: center;
+  background-color: $white;
+
+  .description {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
