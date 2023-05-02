@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { ReactCompareSlider } from 'react-compare-slider';
-import UnberryEmoticon from './Unberry';
+import UnberryEmoticon from './unberry';
 import TraditionalEmoticon from './traditional';
 
 import Image from 'next/image';

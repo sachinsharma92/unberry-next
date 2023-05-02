@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import React from 'react';
-import FooterPrimary from '../../common/footerPrimary';
-import HeaderPrimary from '../../common/headerPrimary';
+import LayoutPrimary from '../../common/layoutPrimary';
 import BetterTalent from '../../components/homepage/betterTalent';
 import BlogSection from '../../components/homepage/blogSection';
-import BookADemo from '../../components/homepage/bookADemo';
 import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
 import EndAutomation from '../../components/homepage/endAutomation';
 import HeroSection from '../../components/homepage/heroSection';
@@ -13,7 +11,6 @@ import ServiceSection from '../../components/homepage/serviceSection';
 
 // Styles here
 import styles from './styles.module.scss';
-import LayoutPrimary from '../../common/layoutPrimary';
 
 
 export default function HomePageScreen() {
