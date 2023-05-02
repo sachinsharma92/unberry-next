@@ -8,13 +8,17 @@
   padding: 54px 100px 100px;
 
   @include mobile {
-    padding: 54px 20px;
+    padding: 4px 20px 50px;
   }
 
   .cardGrid {
     display: flex;
     gap: 41px;
     overflow-x: scroll;
+
+    @include mobile {
+
+    }
   }
 
   .heading {
@@ -22,10 +26,19 @@
     font-size: 31.25px;
     line-height: 24px;
     margin-bottom: 55px;
+
+    @include mobile {
+      font-size: 28.25px;
+      margin-bottom: 35px;
+    }
   }
 
   .blogCards {
     min-width: 31%;
+
+    @include mobile {
+      min-width: 100%;
+    }
     
     a {
       color: $theme-primary-new;
@@ -45,8 +58,8 @@
       letter-spacing: -0.655696px;
 
       @include mobile {
-        font-size: 31.25px;
-        line-height: 35px;
+        font-size: 22px;
+        line-height: 30px;
         max-width: 100%;
       }
     }

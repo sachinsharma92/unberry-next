@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { gsap } from 'gsap';
+
+import Image from 'next/image';
 import React, { useEffect } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
-import { gsap } from 'gsap';
-import Image from 'next/image';
 
 import icon4 from "../../../assets/new/behavioural-personality.svg";
 import icon2 from "../../../assets/new/cognition-Intelligence.svg";
