@@ -21,6 +21,7 @@ export default function BookDemoScreen() {
       />
 
       <div className={styles.bookDemoStyle}>
+
         <div className={styles.contentSection}>
           <Link href="/">
             <a className='logo-black'>

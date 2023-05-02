@@ -10,10 +10,7 @@ import LayoutPrimary from "../../common/layoutPrimary";
 import { Mixpanel } from "../../services/mixpanel";
 
 // Images
-import FooterPrimary from "../../common/footerPrimary";
-import HeaderPrimary from "../../common/headerPrimary";
 import SubscribeCard from "../../common/subscribe";
-import BookADemo from "../../components/homepage/bookADemo";
 import UpNextCard from "../../components/blogs/upNextCard";
 
 const BlogDetail = ({ heading }) => {
@@ -66,47 +63,36 @@ const BlogDetail = ({ heading }) => {
 					content="https://unberry.com/static/ogImage.png"
 				/>
 			</Head>
-			<LayoutPrimary>
-				<div className="blog-detail-section">
-					<HeaderPrimary />
-
-					<div className="blog-layout">
-						<div className="blog-header">
-							<h2 className="title2">{data?.heading}</h2>
-						</div>
+			<LayoutPrimary className="blog-detail-section">
+				<div className="blog-layout">
+					<div className="blog-header">
+						<h2 className="title2">{data?.heading}</h2>
 					</div>
+				</div>
 
-					<div className="hero-banner-img">
-						<img
-							className="img-blog"
-							src={data?.bannerImage}
-							alt={data?.heading}
-						/>
-					</div>
+				<div className="hero-banner-img">
+					<img
+						className="img-blog"
+						src={data?.bannerImage}
+						alt={data?.heading}
+					/>
+				</div>
 
-					<div className="content-blog-layout">
-						<ReactMarkdown
-							className="markdown-style"
-							rehypePlugins={[rehypeRaw]}
-							remarkPlugins={[remarkGfm]}
-						>
-							{data?.articleContent}
-						</ReactMarkdown>
+				<div className="content-blog-layout">
+					<ReactMarkdown
+						className="markdown-style"
+						rehypePlugins={[rehypeRaw]}
+						remarkPlugins={[remarkGfm]}
+					>
+						{data?.articleContent}
+					</ReactMarkdown>
 
-						<div className="sidebar">
-							<SubscribeCard socialShow />
-						</div>
+					<div className="sidebar">
+						<SubscribeCard socialShow />
 					</div>
 				</div>
 
 				<UpNextCard />
-
-				<div className="footer-section">
-					<BookADemo />
-					<FooterPrimary />
-				</div>
-
-
 			</LayoutPrimary>
 		</>
 	);

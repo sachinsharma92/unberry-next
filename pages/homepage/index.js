@@ -13,6 +13,7 @@ import ServiceSection from '../../components/homepage/serviceSection';
 
 // Styles here
 import styles from './styles.module.scss';
+import LayoutPrimary from '../../common/layoutPrimary';
 
 
 export default function HomePageScreen() {
@@ -43,20 +44,14 @@ export default function HomePageScreen() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <div className={styles.homepageStyle}>
-        <HeaderPrimary />
+      <LayoutPrimary className={styles.homepageStyle}>
         <HeroSection />
         <BetterTalent />
         <CandidatesAbsolutely />
         <ServiceSection />
         <EndAutomation />
         <BlogSection />
-
-        <div className="footer-section">
-          <BookADemo />
-          <FooterPrimary />
-        </div>
-      </div>
+      </LayoutPrimary>
     </>
   )
 }

@@ -50,8 +50,6 @@ export default function BlogScreen() {
         <title>Blog | Unberry</title>
       </Head>
       <LayoutPrimary>
-        <HeaderPrimary />
-        {/* ======= Section Bury Biases ======= */}
         <section className='blog-list-page'>
           <h1 className='title1'>The wandering words</h1>
           <p className='description'>Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent</p>
@@ -80,11 +78,6 @@ export default function BlogScreen() {
           ))}
         </section>
 
-
-        <div className="footer-section">
-          <BookADemo />
-          <FooterPrimary />
-        </div>
       </LayoutPrimary>
     </div>
   )

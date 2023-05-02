@@ -9,7 +9,7 @@ import ButtonPrimary from '../../../common/buttonPrimary';
 // Styles here
 import styles from './styles.module.scss';
 
-export default function ServiceSection() {
+export default function ServiceSection(props) {
 
   const serviceCardList = [
     {
@@ -20,12 +20,14 @@ export default function ServiceSection() {
     {
       imageUrl: image2,
       title: 'Skill assessments & live coding simulations',
-      description: 'Helping evaluate the functional capabilities and proficiency across a wide repository of modern day skills and coding languages across different roles.'
+      description: 'Helping evaluate the functional capabilities and proficiency across a wide repository of modern day skills and coding languages across different roles.',
+      isImage: true
     },
     {
       imageUrl: image3,
       title: 'AI based speech & writing tool',
-      description: 'That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.'
+      description: 'That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.',
+      isImage: true
     }
   ]
   const badgeList = ['Problem Solving', 'Tolerance To Ambiguity', 'Learning Agility', 'Attention Span', 'Processing Speed', 'Efficiency', 'Multitasking']
@@ -64,9 +66,17 @@ export default function ServiceSection() {
                 </div>
               </div>
 
-              <div className={styles.contentRight}>
+              {item.isImage ? <div className={styles.contentRight}>
                 <Image src={item.imageUrl} alt='image services' className={styles.imgStyle} layout="fill" />
               </div>
+                :
+                <div className={styles.videoCard}>
+                  <video muted autoPlay loop playsInline width="100%" height="100%">
+                    <source src="/video/service1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              }
             </section>
           ))}
         </div>
