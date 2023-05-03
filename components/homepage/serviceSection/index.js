@@ -55,7 +55,7 @@ export default function ServiceSection(props) {
                 <h1 className={`${styles.title1}`}>
                   {item.title}
                 </h1>
-                <p className={styles.description}>
+                <p className={`${styles.description} description`}>
                   {item.description}
                 </p>
 
