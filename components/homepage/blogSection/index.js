@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import axios from "axios";
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import BlogCard from '../../blogCard';
 
 // Styles here
-import Link from 'next/link';
-import BlogCard from '../../home/blogCard';
 import styles from './styles.module.scss';
 
 
