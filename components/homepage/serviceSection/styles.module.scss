@@ -26,10 +26,6 @@
   }
 
   .description {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 31px;
-    opacity: 0.5;
     text-align: left;
     width: 70%;
 
@@ -117,12 +113,9 @@
   }
 
   .description {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 31px;
-    opacity: 0.5;
     text-align: left;
-    color: $white;
+    color: rgba($white, 0.8);
+    font-size: 16px;
     max-width: 80%;
 
     @include mobile {
@@ -145,7 +138,6 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 100px;
-    max-width: 80%;
 
     @include mobile {
       max-width: 100%;

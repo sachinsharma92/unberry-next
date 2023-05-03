@@ -40,7 +40,7 @@ export default function ServiceSection(props) {
             <h1 className={`${styles.title1}`}>
               Breaking down the experience
             </h1>
-            <p className={styles.description}>
+            <p className={`${styles.description} description`}>
               A suite of multi-dimensional, psychometrically-rigorous, gamified assessments that demand exploration and hands-on problem solving from the players to progress.
             </p>
             <ButtonPrimary href="/book-demo" title="BOOK DEMO" />

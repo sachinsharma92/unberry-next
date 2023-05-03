@@ -14,13 +14,24 @@ import SubscribeCard from "../../common/subscribe";
 import UpNextCard from "../../components/blogs/upNextCard";
 
 const BlogDetail = ({ heading }) => {
+	const [headerColor, setHeaderColor] = useState("white")
 	const router = useRouter();
 	let pathArr = router.asPath?.split("/");
 	let id = pathArr[pathArr?.length - 1];
-
 	const [data, setData] = useState({});
-
 	let params = { slug: id };
+
+
+	// Menu Color change after scroll 360
+	const listenScrollEvent = () => {
+		window.scrollY > 360
+			? setHeaderColor("menu-white")
+			: setHeaderColor("")
+	}
+	useEffect(() => {
+		window.addEventListener("scroll", listenScrollEvent)
+	})
+
 
 	useEffect(() => {
 		axios
@@ -48,7 +59,6 @@ const BlogDetail = ({ heading }) => {
 			behavior: "smooth",
 		});
 	}, []);
-
 	return (
 		<>
 			<Head>
@@ -57,7 +67,7 @@ const BlogDetail = ({ heading }) => {
 				<meta name="twitter:image" content="https://www.unberry.com/ogImage.png" />
 			</Head>
 
-			<LayoutPrimary className="blog-detail-section">
+			<LayoutPrimary className={`blog-detail-section ${headerColor}`}>
 				<div className="blog-layout">
 					<div className="blog-header">
 						<h2 className="title2">{data?.heading}</h2>
