@@ -13,6 +13,7 @@ export default function FooterPrimary(props) {
     <div className="footer-primary">
       <div className='container-width'>
         <SubscribeCard />
+
         <div className='footer'>
           <div className='social-sec'>
             <a href="https://www.linkedin.com/company/unberry/" rel="noreferrer" className='icon-link' target="_blank"><Image className='icon' alt="social icons" src={linkedin} /></a>
