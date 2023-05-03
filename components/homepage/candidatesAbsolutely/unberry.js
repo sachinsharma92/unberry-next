@@ -91,9 +91,9 @@ export default function UnberryEmoticon() {
 
   return (
     <div className={`${styles.emojiSectionStyle} ${styles.emojiUnberryStyle}`}>
-      <div className={styles.headerStyle}>
+      {/* <div className={styles.headerStyle}>
         <h3 className={styles.title3}>Unberry</h3>
-      </div>
+      </div> */}
       {iconsData.map((item) => (
         <div key={item} className={styles.emojiStyle}>
           <div className={`${styles.jsonItemBox} ${item.jsonStyle}`}>

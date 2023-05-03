@@ -15,19 +15,19 @@ export default function ServiceSection(props) {
     {
       imageUrl: image1,
       title: 'Mini-games & immersive exercises',
-      description: 'That measures the true potential of a candidate across modern workplace skills. '
+      description: 'That measures the true potential of a candidate across modern workplace skills. ',
+      videoUrl: '/video/service1.mp4'
     },
     {
       imageUrl: image2,
       title: 'Skill assessments & live coding simulations',
       description: 'Helping evaluate the functional capabilities and proficiency across a wide repository of modern day skills and coding languages across different roles.',
-      isImage: true
     },
     {
       imageUrl: image3,
       title: 'AI based speech & writing tool',
       description: 'That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.',
-      isImage: true
+      videoUrl: '/video/service3.mp4'
     }
   ]
   const badgeList = ['Problem Solving', 'Tolerance To Ambiguity', 'Learning Agility', 'Attention Span', 'Processing Speed', 'Efficiency', 'Multitasking']
@@ -66,13 +66,13 @@ export default function ServiceSection(props) {
                 </div>
               </div>
 
-              {item.isImage ? <div className={styles.contentRight}>
+              {!item.videoUrl ? <div className={styles.contentRight}>
                 <Image src={item.imageUrl} alt='image services' className={styles.imgStyle} layout="fill" />
               </div>
                 :
                 <div className={styles.videoCard}>
                   <video muted autoPlay loop playsInline width="100%" height="100%">
-                    <source src="/video/service1.mp4" type="video/mp4" />
+                    <source src={item.videoUrl} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
