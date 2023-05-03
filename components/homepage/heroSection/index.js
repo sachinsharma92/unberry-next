@@ -32,18 +32,32 @@ export default function HeroSection() {
     })
   }, [])
 
+  const tl = gsap.timeline();
+  useEffect(() => {
+    tl.from(".animation-block .animation-heading", 1.8, {
+      y: 100,
+      ease: "power4.out",
+      delay: 0.5,
+      skewY: 0,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+    })
+  }, [tl])
+
   return (
     <div className={styles.heroSectionStyle}>
       <div className='container-width'>
-        <div className={styles.contentSection}>
-          <h1 className={`${styles.title1} title1`}>
+        <div className={`${styles.contentSection} animation-block`}>
+          <h1 className={`${styles.title1} title1 animation-heading`}>
             Building Talent Intelligence For The Modern Workplace
           </h1>
-          <p className={`${styles.descriptionText} description`}>
+          <p className={`${styles.descriptionText} description animation-heading`}>
             Modern, next-gen talent assessment suite, that can measure job-relevant skills and proficiencies, to build and scale teams.
           </p>
 
-          <div className={styles.btnSection}>
+          <div className={`${styles.btnSection} animation-heading`}>
             <ButtonPrimary href="/book-demo" title="BOOK DEMO" />
           </div>
         </div>

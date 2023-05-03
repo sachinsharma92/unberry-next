@@ -1,11 +1,9 @@
 import { Button, Form, Input, notification, Select } from 'antd';
 import axios from "axios";
-import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
-import demoGroup from "../../assets/demo-group.png";
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
-import Link from 'next/link';
 
 const { Option } = Select;
 
@@ -175,7 +173,7 @@ export default function DemoForm(props) {
         </Button>
       </Form>
 
-      <p className="description">Your privacy matters to us. We’ll only contact you about relevant content or services, and you can unsubscribe at any time. <Link href="/">Privacy Policy</Link></p>
+      <p className="description">Your privacy matters to us. We’ll only contact you about relevant content or services, and you can unsubscribe at any time. <Link href="/privacy-policy">Privacy Policy</Link></p>
 
       <ThankModal visible={isThankModal} onCancel={thankToggleModal} />
     </section>

@@ -5,18 +5,31 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import LayoutPrimary from '../../common/layoutPrimary';
 import { Mixpanel } from '../../services/mixpanel';
+import { gsap } from 'gsap';
 
 export default function BlogScreen() {
   const [blogs, setBlogs] = useState([])
   const [isLoading, setIsLoading] = useState(false)
   const { asPath } = useRouter();
 
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.from(".animation-block .heading-text", 1.8, {
+      y: 100,
+      ease: "power4.out",
+      delay: 0.1,
+      skewY: 0,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+    })
+  }, [])
 
   useEffect(() => {
     document.title = "Unberry | Blogs"
     Mixpanel.track('All Blogs Opened, Path: /blog')
   }, [])
-
 
   useEffect(() => {
     window.scrollTo({
@@ -38,15 +51,16 @@ export default function BlogScreen() {
   }, [])
 
 
+
   return (
     <div className='blog-page-style'>
       <Head>
         <title>Blog | Unberry</title>
       </Head>
       <LayoutPrimary>
-        <section className='blog-list-page'>
-          <h1 className='title1'>The wandering words</h1>
-          <p className='description'>Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent</p>
+        <section className='blog-list-page animation-block'>
+          <h1 className='title1 heading-text'>The wandering words</h1>
+          <p className='description heading-text'>Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent</p>
         </section>
 
         <section className='blog-unberry'>
