@@ -17,7 +17,6 @@ const BlogDetail = ({ heading }) => {
 	const router = useRouter();
 	let pathArr = router.asPath?.split("/");
 	let id = pathArr[pathArr?.length - 1];
-	// console.log("🚀 ~ file: [id].js ~ line 23 ~ BlogDetail ~ id", id)
 
 	const [data, setData] = useState({});
 
@@ -54,22 +53,16 @@ const BlogDetail = ({ heading }) => {
 		<>
 			<Head>
 				<title>{heading}</title>
-				<meta
-					property="og:image"
-					content="https://unberry.com/static/ogImage.png"
-				/>
-				<meta
-					name="twitter:image"
-					content="https://unberry.com/static/ogImage.png"
-				/>
+				<meta property="og:image" content="/ogImage.png" />
+				<meta name="twitter:image" content="/ogImage.png" />
 			</Head>
+
 			<LayoutPrimary className="blog-detail-section">
 				<div className="blog-layout">
 					<div className="blog-header">
 						<h2 className="title2">{data?.heading}</h2>
 					</div>
 				</div>
-
 				<div className="hero-banner-img">
 					<img
 						className="img-blog"

@@ -1,4 +1,3 @@
-import { Col, Row } from 'antd';
 import axios from 'axios';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -6,11 +5,6 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import LayoutPrimary from '../../common/layoutPrimary';
 import { Mixpanel } from '../../services/mixpanel';
-
-// Images
-import HeaderPrimary from '../../common/headerPrimary';
-import BookADemo from '../../components/homepage/bookADemo';
-import FooterPrimary from '../../common/footerPrimary';
 
 export default function BlogScreen() {
   const [blogs, setBlogs] = useState([])
