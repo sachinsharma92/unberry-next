@@ -28,7 +28,7 @@ export default function DemoForm(props) {
   };
 
   const bookADemo = (values) => {
-    const { email, name, phone, message, employeescount, hiringcount } = values;
+    const { email, name, phone, employeescount, hiringcount } = values;
     let employeesCountArray = employeescount?.split("-");
     let hiringCountArray = hiringcount?.split("-");
     let numberOfEmployees = {
@@ -44,7 +44,6 @@ export default function DemoForm(props) {
       name,
       email,
       phone,
-      message,
       numberOfPlannedHiring,
       numberOfEmployees
     }
@@ -130,7 +129,6 @@ export default function DemoForm(props) {
                 phone: '',
                 employeesCount: '',
                 hiringCount: '',
-                message: '',
               }}
             >
 
@@ -195,14 +193,6 @@ export default function DemoForm(props) {
                   <Option value="10k">10k+</Option>
                 </Select>
               </Form.Item>
-
-              <Form.Item
-                name="message"
-              >
-                <Input placeholder='Message (optional)' />
-              </Form.Item>
-
-
 
               <Button type="primary" htmlType="submit" >
                 Get Started
