@@ -24,17 +24,17 @@ export default function HomePageScreen() {
           property="og:description"
           content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent."
         />
-        <meta property="og:url" content="/ogImage.png" />
+        <meta property="og:url" content="https://www.unberry.com/ogImage.png" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
-        <meta property="og:image" content="/ogImage.png" />
+        <meta property="og:image" content="https://www.unberry.com/ogImage.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="author" content="Unberry" />
-        <meta property="og:image" content="/ogImage.png" />
+        <meta property="og:image" content="https://www.unberry.com/ogImage.png" />
 
         {/* Twitter OG Section  */}
-        <meta name="twitter:image" content="/ogImage.png" />
+        <meta name="twitter:image" content="https://www.unberry.com/ogImage.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

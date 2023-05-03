@@ -53,8 +53,8 @@ const BlogDetail = ({ heading }) => {
 		<>
 			<Head>
 				<title>{heading}</title>
-				<meta property="og:image" content="/ogImage.png" />
-				<meta name="twitter:image" content="/ogImage.png" />
+				<meta property="og:image" content="https://www.unberry.com/ogImage.png" />
+				<meta name="twitter:image" content="https://www.unberry.com/ogImage.png" />
 			</Head>
 
 			<LayoutPrimary className="blog-detail-section">

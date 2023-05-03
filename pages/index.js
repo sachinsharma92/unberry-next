@@ -17,16 +17,16 @@ export default function Home() {
         <meta property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent" />
 
         {/* OG Section  */}
-        <meta property="og:url" content="/ogImage.png" />
+        <meta property="og:url" content="https://www.unberry.com/ogImage.png" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
-        <meta property="og:image" content="/ogImage.png" />
+        <meta property="og:image" content="https://www.unberry.com/ogImage.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="author" content="Unberry" />
 
         {/* Twitter OG Section  */}
-        <meta name="twitter:image" content="/ogImage.png" />
+        <meta name="twitter:image" content="https://www.unberry.com/ogImage.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"></script>
         <script
