@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from 'react';
-import image1 from "../../../assets/new/automation1.png";
+import background1 from "../../../assets/new/automation1.png";
 import image2 from "../../../assets/new/automation2.png";
 import image3 from "../../../assets/new/automation3.png";
 import iconPlus from "../../../assets/new/plus.svg";
@@ -42,6 +42,7 @@ export default function EndAutomation() {
           End to end automation
         </h1>
         <div className="container-panel">
+
           <div className="panel gray active">
             <div className={styles.accordianCard}>
               <div className="head">
@@ -52,7 +53,7 @@ export default function EndAutomation() {
                   </div>
                 </div>
               </div>
-              <div className='content-section'>
+              <div className={`content-section ${styles.backgroundStyle}`} style={{ backgroundImage: `url("/assets/automation1.png")` }}>
                 <div className={styles.contentSec}>
                   <h4 className={styles.title4}>Proctoring</h4>
                   <p className={styles.description}>Prevent cheating and unethical practices with our advanced remote and live proctoring, flagging suspicious usage.</p>
@@ -68,9 +69,6 @@ export default function EndAutomation() {
                     </li>
                   </ul>
                 </div>
-                <div className={styles.imageCard}>
-                  <Image src={image1} alt='image services' className={styles.imgStyle} layout="fill" />
-                </div>
               </div>
             </div>
           </div>
@@ -85,11 +83,10 @@ export default function EndAutomation() {
                   <h2 className="heading">Real time reporting</h2>
                 </div>
               </div>
-              <div className='content-section'>
-                <div className={styles.contentSec}>
+              <div className={`content-section ${styles.backgroundStyle}`} style={{ backgroundImage: `url("/assets/automation2.png")` }}>
+                <div className={`${styles.contentSec}`}>
                   <h4 className={styles.title4}>Real time reporting</h4>
                   <p className={styles.description}>View detailed  reports in real time as soon as the candidate finishes, and have complete visibility and control of each step.</p>
-
                   <ul className={styles.listStyle}>
                     <li className={styles.listItem}>
                       <Image src={icon3} alt='image services' width="20" height="20" />
@@ -100,9 +97,6 @@ export default function EndAutomation() {
                       Custom Job Profiles
                     </li>
                   </ul>
-                </div>
-                <div className={styles.imageCard2}>
-                  <Image src={image2} alt='image services' className={styles.imgStyle} layout="fill" />
                 </div>
               </div>
             </div>
@@ -118,7 +112,7 @@ export default function EndAutomation() {
                   </div>
                 </div>
               </div>
-              <div className='content-section'>
+              <div className={`content-section ${styles.backgroundStyle}`} style={{ backgroundImage: `url("/assets/automation3.png")` }}>
                 <div className={styles.contentSec}>
                   <h4 className={styles.title4}>Candidate Communication</h4>
                   <p className={styles.description}>Automated communication with candidates to engage with your top talent with automated reminders and notifications.</p>
@@ -133,9 +127,6 @@ export default function EndAutomation() {
                       Custom Job Profiles
                     </li>
                   </ul>
-                </div>
-                <div className={styles.imageCard3}>
-                  <Image src={image3} alt='image services' className={styles.imgStyle} layout="fill" />
                 </div>
               </div>
             </div>

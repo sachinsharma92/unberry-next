@@ -157,6 +157,32 @@
   }
 }
 
+.jsonItem {
+  width: 100%;
+  height: 100%;
+}
+
+.jsonItemBox {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  @include mobile {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.mindBlown {
+  height: 105px;
+
+  @include mobile {
+    height: 80px;
+  }
+}
+
 // emoji Section Style
 .emojiSectionStyle {
   width: 100%;
@@ -171,8 +197,7 @@
 
   @include mobile {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 50px;
+    gap: 10px 50px;
     padding: 120px 50px 0px;
     height: 550px;
   }
@@ -193,7 +218,7 @@
       margin-top: 23px;
 
       @include mobile {
-        font-size: 22px;
+        font-size: 16px;
         margin-top: 10px;
       }
     }
@@ -201,6 +226,12 @@
 
   &.emojiTraditionalStyle {
     background-color: #f4f4f4;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 50px;
+    }
+  
 
     .emojiStyle {
 
@@ -251,48 +282,57 @@
 
   &.emojiUnberryStyle {
     background-color: $black;
+
+    @include mobile {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 130px 30px 70px;
+      gap: 10px 30px;
+    }
+
     .emojiStyle {
 
       @include mobile {
   
+        &:nth-child(1) {
+          top: 40px;
+          left: 0px;
+        }
+  
         &:nth-child(2) {
-          left: -20px;
-          top: 50px;
+          top: -30px;
+
+          .jsonItemBox {
+            width: 80px;
+            left: 4px;
+          }
         }
   
         &:nth-child(3) {
-          left: -55px;
-          top: 0px;
-        }
-  
-        &:nth-child(4) {
-          left: -40px;
           top: 40px;
         }
   
+        &:nth-child(4) {
+          left: 0;
+        }
+  
         &:nth-child(5) {
-          left: 40px;
-          top: -80px;
+          left: 0;
+          top: -40px;
+      
         }
   
         &:nth-child(6) {
-          left: 80px;
-          top: -140px;
+          left: 0;
         }
   
         &:nth-child(7) {
-          left: 50px;
-          top: -140px;
+          left: 40px;
+          top: -20px;
         }
   
         &:nth-child(8) {
-          left: 20px;
-          top: -160px;
-        }
-  
-        &:nth-child(9) {
-          left: 0px;
-          top: -160px;
+          left: 50px;
+          top: -20px;
         }
       }
     }
@@ -308,31 +348,6 @@
       @include mobile {
         right: 0;
       }
-    }
-  }
-
-  .jsonItem {
-    width: 100%;
-    height: 100%;
-  }
-
-  .jsonItemBox {
-    height: 80px;
-    height: 80px;
-    position: relative;
-    overflow: hidden;
-
-    @include mobile {
-      height: 60px;
-      height: 60px;
-    }
-  }
-
-  .mindBlown {
-    height: 105px;
-
-    @include mobile {
-      height: 90px;
     }
   }
 }

@@ -22,6 +22,7 @@ export default function ServiceSection(props) {
       imageUrl: image2,
       title: 'Skill assessments & live coding simulations',
       description: 'Helping evaluate the functional capabilities and proficiency across a wide repository of modern day skills and coding languages across different roles.',
+      videoUrl: '/video/service2.mp4'
     },
     {
       imageUrl: image3,
@@ -65,18 +66,12 @@ export default function ServiceSection(props) {
                   ))}
                 </div>
               </div>
-
-              {!item.videoUrl ? <div className={styles.contentRight}>
-                <Image src={item.imageUrl} alt='image services' className={styles.imgStyle} layout="fill" />
+              <div className={styles.videoCard}>
+                <video muted autoPlay loop playsInline width="100%" height="100%">
+                  <source src={item.videoUrl} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
-                :
-                <div className={styles.videoCard}>
-                  <video muted autoPlay loop playsInline width="100%" height="100%">
-                    <source src={item.videoUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              }
             </section>
           ))}
         </div>
