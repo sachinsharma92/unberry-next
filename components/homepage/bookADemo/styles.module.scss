@@ -19,9 +19,8 @@
     line-height: 60px;
 
     @include mobile {
-      font-size: 40px;
-      line-height: 40px;
-      font-weight: 500;
+      font-size: 48.83px;
+      line-height: 48px;
     }
   }
 
@@ -32,9 +31,8 @@
     color: #ac95cf;
 
     @include mobile {
-      font-size: 40px;
-      line-height: 50px;
-      font-weight: 500;
+      font-size: 48.83px;
+      line-height: 48px;
     }
   }
 
@@ -48,6 +46,7 @@
 
     @include mobile {
       max-width: 100%;
+      font-size: 16px;
     }
   }
 

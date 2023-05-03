@@ -34,8 +34,8 @@ export default function BlogSection() {
               The wandering words
             </h1>
             <Link href="/blog" passHref>
-              <a>
-                <h4 className={styles.title4}> View All Blogs</h4>
+              <a className={styles.title4}>
+                View All
               </a>
             </Link>
           </div>
