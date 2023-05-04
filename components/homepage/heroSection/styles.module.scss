@@ -130,6 +130,22 @@
     }
   }
 
+  .jsonItemBox {
+    width: 180px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    
+
+    .jsonItem {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .gridMobileSection {
     padding: 10px;
     grid-template-columns: repeat(1, 1fr);
@@ -141,6 +157,12 @@
       display: grid;
     }
 
+    .jsonItemBox {
+      position: relative;
+      width: 120px;
+      height: 100px;
+    }
+
     .imgBoxStyle {
       position: relative;
       background: #f4f4f4;
@@ -150,6 +172,7 @@
       text-align: center;
     }
   }
+
 
   .gridDesktopSection {
     display: grid;
@@ -172,19 +195,24 @@
       gap: 20px 0;
 
       &:first-child {
-        margin-top: 280px;
+        margin-top: 260px;
         margin-left: 50px;
+
+        .jsonItemBox {
+          height: 140px;
+          margin-bottom: -30px;
+        }
       }
       &:nth-child(2) {
-        margin-top: 50px;
-        margin-left: -10px;
+        margin-top: 40px;
+        margin-left: -20px;
       }
       &:nth-child(3) {
-        margin-top: 50px;
+        margin-top: 40px;
         margin-left: 50px;
       }
       &:nth-child(4) {
-        margin-top: 280px;
+        margin-top: 260px;
         margin-right: 50px;
       }
     }

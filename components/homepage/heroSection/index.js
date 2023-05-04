@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { gsap } from 'gsap';
+import lottie from "lottie-web";
 
 import Image from 'next/image';
 import React, { useEffect } from 'react';
@@ -10,10 +11,52 @@ import icon2 from "../../../assets/new/cognition-Intelligence.svg";
 import icon3 from "../../../assets/new/communication-skills.svg";
 import icon1 from "../../../assets/new/job-knowledge.svg";
 
+import behavior from "../../../assets/json/hero-section/behavior-personality.json";
+import cognition from "../../../assets/json/hero-section/cognition-intelligence.json";
+import communication from "../../../assets/json/hero-section/communication-skills.json";
+import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
+
 // Styles here
 import styles from './styles.module.scss';
 
 export default function HeroSection() {
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: document.querySelector("#behavior"),
+      animationData: behavior,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#cognition"),
+      animationData: cognition,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#communication"),
+      animationData: communication,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#jobKnowledge"),
+      animationData: jobKnowledge,
+    });
+
+    lottie.loadAnimation({
+      container: document.querySelector("#behavior1"),
+      animationData: behavior,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#cognition2"),
+      animationData: cognition,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#communication3"),
+      animationData: communication,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#jobKnowledge4"),
+      animationData: jobKnowledge,
+    });
+  }, []);
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.from(".animation-block .animation-text", 1.8, {
@@ -70,19 +113,27 @@ export default function HeroSection() {
         <div className={styles.workplaceSection} id='workplaceSection'>
           <div className={`${styles.gridDesktopSection}`}>
             <div className={styles.imgBoxStyle}>
-              <Image src={icon1} alt="" width="94" height="60" />
+              <div className={styles.jsonItemBox}>
+                <div className={styles.jsonItem} id="jobKnowledge" />
+              </div>
               <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
             </div>
             <div className={styles.imgBoxStyle}>
-              <Image src={icon2} alt="" width="94" height="60" />
+              <div className={styles.jsonItemBox}>
+                <div className={styles.jsonItem} id="cognition" />
+              </div>
               <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
             </div>
             <div className={styles.imgBoxStyle}>
-              <Image src={icon3} alt="" width="94" height="60" />
+              <div className={styles.jsonItemBox}>
+                <div className={styles.jsonItem} id="communication" />
+              </div>
               <h4 className={styles.title4}>Communication <br /> Skills</h4>
             </div>
             <div className={styles.imgBoxStyle}>
-              <Image src={icon4} alt="" width="94" height="60" />
+              <div className={styles.jsonItemBox}>
+                <div className={styles.jsonItem} id="behavior" />
+              </div>
               <h4 className={styles.title4}>Behavioural & Personality</h4>
             </div>
           </div>
@@ -93,23 +144,31 @@ export default function HeroSection() {
           <div className={styles.gridMobileSection}>
             <div className={styles.boxSet}>
               <div className={styles.imgBoxStyle}>
-                <Image src={icon1} alt="" width="94" height="60" />
+                <div className={styles.jsonItemBox}>
+                  <div className={styles.jsonItem} id="jobKnowledge4" />
+                </div>
                 <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
               </div>
               <div className={styles.mobileDivider}></div>
               <div className={styles.imgBoxStyle}>
-                <Image src={icon2} alt="" width="94" height="60" />
+                <div className={styles.jsonItemBox}>
+                  <div className={styles.jsonItem} id="cognition2" />
+                </div>
                 <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
               </div>
             </div>
             <div className={styles.boxSet}>
               <div className={styles.imgBoxStyle}>
-                <Image src={icon3} alt="" width="94" height="60" />
+                <div className={styles.jsonItemBox}>
+                  <div className={styles.jsonItem} id="communication3" />
+                </div>
                 <h4 className={styles.title4}>Communication <br /> Skills</h4>
               </div>
               <div className={`${styles.mobileDivider} ${styles.mobileDivider2}`}></div>
               <div className={styles.imgBoxStyle}>
-                <Image src={icon4} alt="" width="94" height="60" />
+                <div className={styles.jsonItemBox}>
+                  <div className={styles.jsonItem} id="behavior1" />
+                </div>
                 <h4 className={styles.title4}>Behavioural & Personality</h4>
               </div>
             </div>
