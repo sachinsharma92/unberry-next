@@ -5,7 +5,6 @@
 .blog-detail-section {
   background: white;
   min-height: 100vh;
-  overflow-x: hidden;
 
   .title2 {
     font-size: 55px;
@@ -95,6 +94,7 @@
       max-width: 90%;
       margin: -100px auto 0;
       border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 
       @include mobile {
         width: 90%;
@@ -163,5 +163,13 @@
 
   .sidebar {
     min-width: 350px;
+
+    .subscribe-card {
+
+      @include desktop {
+        position: sticky;
+        top: 80px;
+      }
+    }
   }
 }
