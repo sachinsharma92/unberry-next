@@ -79,7 +79,7 @@ export default function TraditionalEmoticon() {
   return (
     <div className={`${styles.emojiSectionStyle} ${styles.emojiTraditionalStyle}`}>
       <div className={styles.headerStyle}>
-        <h3 className={styles.title3}>Traditional</h3>
+        <h3 className={styles.title3}>Traditional Assessments</h3>
       </div>
       {iconsData.map((item) => (
         <div key={item} className={styles.emojiStyle}>

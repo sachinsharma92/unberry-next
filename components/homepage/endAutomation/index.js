@@ -39,7 +39,7 @@ export default function EndAutomation() {
     <div className={styles.endAutomationStyle}>
       <div className='container-width'>
         <h1 className={`${styles.title1}`}>
-          End to end automation
+          We use the most advanced technologies to provide a seamless experience
         </h1>
         <div className="container-panel">
 
@@ -55,17 +55,25 @@ export default function EndAutomation() {
               </div>
               <div className={`content-section ${styles.backgroundStyle}`} style={{ backgroundImage: `url("/assets/automation1.png")` }}>
                 <div className={styles.contentSec}>
-                  <h4 className={styles.title4}>Proctoring</h4>
+                  <h4 className={styles.title4}>Advanced Proctoring</h4>
                   <p className={styles.description}>Prevent cheating and unethical practices with our advanced remote and live proctoring, flagging suspicious usage.</p>
 
                   <ul className={styles.listStyle}>
                     <li className={styles.listItem}>
-                      <Image src={icon1} alt='image services' width="20" height="20" />
-                      Video Proctoring
+                      <Image src={icon1} alt='image services' width="30" height="30" />
+                      Candidate Snapshots
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon2} alt='image services' width="20" height="20" />
-                      Tabs Switching
+                      <Image src={icon2} alt='image services' width="30" height="30" />
+                      Disable Tab Switching
+                    </li>
+                    <li className={styles.listItem}>
+                      <Image src={icon2} alt='image services' width="30" height="30" />
+                      Disable Copy Paste
+                    </li>
+                    <li className={styles.listItem}>
+                      <Image src={icon2} alt='image services' width="30" height="30" />
+                      Curb Plagiarism
                     </li>
                   </ul>
                 </div>

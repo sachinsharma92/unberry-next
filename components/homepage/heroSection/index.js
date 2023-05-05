@@ -94,10 +94,10 @@ export default function HeroSection() {
       <div className='container-width'>
         <div className={`${styles.contentSection} animation-block`}>
           <h1 className={`${styles.title1} title1 animation-heading`}>
-            Building Talent Intelligence For The Modern Workplace
+            We help companies make better, smarter & faster talent decisions
           </h1>
           <p className={`${styles.descriptionText} description animation-heading`}>
-            Modern, next-gen talent assessment suite, that can measure job-relevant skills and proficiencies, to build and scale teams.
+            The most modern & experiential talent assessment suite, that can measure job-relevant skills and proficiencies in just a few minutes
           </p>
 
           <div className={`${styles.btnSection} animation-heading`}>

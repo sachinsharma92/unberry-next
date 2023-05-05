@@ -22,7 +22,7 @@ export default function BetterTalent() {
       <div className='container-width'>
         <div className={styles.contentSection}>
           <h1 className={`${styles.title1}`}>
-            We enable companies to <span> make better talent decisions </span> by seeing more in people.
+            We urge companies to make a real effort in how they can <span>see more in people.</span>
           </h1>
         </div>
 
