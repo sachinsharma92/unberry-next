@@ -13,7 +13,7 @@
     text-align: center;
 
     @include mobile {
-      font-size: 45px;
+      font-size: 48px;
     }
   }
 
@@ -99,7 +99,7 @@
       @include mobile {
         width: 90%;
         height: 250px;
-        margin: -120px auto 0;
+        margin: -100px auto 0;
       }
   
       img {
@@ -135,9 +135,10 @@
 .markdown-style {
   padding: 50px 0px;
   margin: 0 auto;
+  width: 70%;
 
   @include mobile {
-    width: 100vw;
+    width: 100%;
     padding: 50px 20px 10px;
   }
 
@@ -153,6 +154,7 @@
 
 .content-blog-layout {
   display: flex;
+  // grid-template-columns: repeat(2, 1fr);
   gap: 0 74px;
   max-width: 1200px;
   margin: 0 auto;
@@ -162,7 +164,11 @@
   }
 
   .sidebar {
-    min-width: 350px;
+    width: 30%;
+
+    @include mobile {
+      width: 100%;
+    }
 
     .subscribe-card {
 
