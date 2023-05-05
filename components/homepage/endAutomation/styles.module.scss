@@ -150,7 +150,8 @@
       max-width: 70%;
 
       @include mobile {
-        gap: 20px 10px;
+        gap: 10px 20px;
+        max-width: 100%;
       }
     }
 
@@ -168,6 +169,7 @@
         font-size: 11px;
         line-height: 14px;
         gap: 0 10px;
+        min-width: auto;
       }
     }
   }
