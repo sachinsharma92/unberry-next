@@ -21,6 +21,14 @@ export default function TraditionalEmoticon() {
       animationData: annoyed,
     });
     lottie.loadAnimation({
+      container: document.querySelector("#stressed"),
+      animationData: stressed,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#weary"),
+      animationData: weary,
+    });
+    lottie.loadAnimation({
       container: document.querySelector("#anxious"),
       animationData: anxious,
     });
@@ -33,32 +41,12 @@ export default function TraditionalEmoticon() {
       animationData: dull,
     });
     lottie.loadAnimation({
-      container: document.querySelector("#stressed"),
-      animationData: stressed,
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#weary"),
-      animationData: weary,
-    });
-    lottie.loadAnimation({
       container: document.querySelector("#glum"),
       animationData: glum,
     });
   }, []);
 
   const iconsData = [
-    {
-      lottieID: "annoyed",
-      title: "Annoyed",
-    },
-    {
-      lottieID: "anxious",
-      title: "Anxious",
-    },
-    {
-      lottieID: "bored",
-      title: "Bored",
-    },
     {
       lottieID: "dull",
       title: "Dull",
@@ -70,6 +58,18 @@ export default function TraditionalEmoticon() {
     {
       lottieID: "weary",
       title: "Weary",
+    },
+    {
+      lottieID: "bored",
+      title: "Bored",
+    },
+    {
+      lottieID: "annoyed",
+      title: "Annoyed",
+    },
+    {
+      lottieID: "anxious",
+      title: "Anxious",
     },
     {
       lottieID: "glum",
