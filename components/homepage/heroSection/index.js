@@ -81,7 +81,6 @@ export default function HeroSection() {
       y: 100,
       ease: "power4.out",
       delay: 0.5,
-      skewY: 0,
       stagger: {
         amount: 0.3
       },
@@ -91,10 +90,10 @@ export default function HeroSection() {
 
   return (
     <div className={styles.heroSectionStyle}>
-      <div className='container-width'>
+      <div className={`container-width ${styles.containerStyle}`}>
         <div className={`${styles.contentSection} animation-block`}>
           <h1 className={`${styles.title1} title1 animation-heading`}>
-            We help companies make better, smarter & faster talent decisions
+            We help companies make <span className={styles.color1}> better</span> <span className={styles.color2}>smarter</span> & <span className={styles.color3}>faster</span> talent decisions
           </h1>
           <p className={`${styles.descriptionText} description animation-heading`}>
             The most modern & experiential talent assessment suite, that can measure job-relevant skills and proficiencies in just a few minutes

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import LayoutPrimary from '../../common/layoutPrimary';
 import BetterTalent from '../../components/homepage/betterTalent';
 import BlogSection from '../../components/homepage/blogSection';
@@ -11,9 +11,21 @@ import ServiceSection from '../../components/homepage/serviceSection';
 
 // Styles here
 import styles from './styles.module.scss';
+import SubscribeCard from '../../common/subscribe';
 
 
 export default function HomePageScreen() {
+  const [headerColor, setHeaderColor] = useState("white")
+
+  // Menu Color change after scroll 360
+  const listenScrollEvent = () => {
+    window.scrollY > 360
+      ? setHeaderColor("home-menu-white")
+      : setHeaderColor("")
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent)
+  })
   return (
     <>
       <Head>
@@ -38,13 +50,14 @@ export default function HomePageScreen() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <LayoutPrimary className={styles.homepageStyle}>
+      <LayoutPrimary className={`${styles.homepageStyle} ${headerColor}`}>
         <HeroSection />
         <BetterTalent />
         <CandidatesAbsolutely />
         <ServiceSection />
         <EndAutomation />
         <BlogSection />
+        <SubscribeCard />
       </LayoutPrimary>
     </>
   )

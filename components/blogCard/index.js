@@ -13,7 +13,7 @@ const BlogCard = ({ data, currentPath }) => {
     slidesToShow: 2,
     slidesToScroll: 2,
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '160px',
     responsive: [
       {
         breakpoint: 767,
@@ -51,15 +51,14 @@ const BlogCard = ({ data, currentPath }) => {
             key={index}>
             <a className={styles.blogCard}>
               <div className={styles.boxItemstyle}>
+                <div className={styles.imageCard}>
+                  <div className={styles.imgStyle} style={{ backgroundImage: `url(${item.bannerImage})` }} />
+                </div>
                 <div>
                   <div className={styles.title3}>
                     {item.heading}
                   </div>
                   <div className={`${styles.linkStyle} font-condensed`}>Read More</div>
-                </div>
-
-                <div className={styles.imageCard}>
-                  <div className={styles.imgStyle} style={{ backgroundImage: `url(${item.bannerImage})` }} />
                 </div>
               </div>
             </a>

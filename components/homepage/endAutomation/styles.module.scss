@@ -180,10 +180,32 @@
     overflow: hidden;
   }
 
-  .backgroundStyle {
+  .backgroundStyle1 {
     height: 100%;
     background-position: bottom right;
-    background-size: 70%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+    @include desktop-lg {
+      background-size: 70%;
+    }
+  }
+
+  .backgroundStyle2 {
+    height: 100%;
+    background-position: bottom right;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+    @include desktop-lg {
+      background-size: 70%;
+    }
+  }
+
+  .backgroundStyle3 {
+    height: 100%;
+    background-position: bottom right;
+    background-size: 75%;
     background-repeat: no-repeat;
 
     @include desktop-lg {

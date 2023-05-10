@@ -4,8 +4,7 @@
 
 // auto-section
 .bookADemoStyle {
-  padding-bottom: 150px;
-  padding: 54px 60px;
+  padding: 54px 60px 28px;
   position: relative;
 
   @include mobile {
@@ -52,7 +51,7 @@
 
   .contentSection {
     border-bottom: 1px solid #444444;
-    padding-bottom: 60px;
+    padding-bottom: 130px;
 
     @include mobile {
       flex-direction: column;

@@ -3,14 +3,12 @@
 @import "../../styles/variables/mixins";
 
 .blogCardStyle {
-  margin-top: 80px;
+  margin-top: 62px;
   padding-left: 50px;
-  padding-bottom: 125px;
 
   @include mobile {
     padding:0 0 0 20px;
     margin-top: 30px;
-    margin-bottom: 80px;
   }
 
   .title1 {
@@ -39,12 +37,10 @@
   .imageCard {
     position: relative;
     height: 201px;
-    width: 70%;
+    width: 100%;
     border-radius: 40px;
     overflow: hidden;
-    margin-right: 0;
-    margin-left: auto;
-    margin-top: -30px;
+    margin-bottom: 25px;
 
     @include mobile {
       margin-top: 30px;
@@ -64,10 +60,6 @@
     .boxItemstyle {
       display: flex;
       flex-direction: column;
-
-      @include mobile {
-        flex-direction: column-reverse;
-      }
     }
 
     &:last-child {
@@ -80,7 +72,7 @@
       line-height: 31px;
       letter-spacing: -0.655696px;
       color: $black;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       max-width: 90%;
 
       @include mobile {

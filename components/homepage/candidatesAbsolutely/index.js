@@ -40,7 +40,7 @@ export default function CandidatesAbsolutely() {
         </div>
 
         <div className={styles.traditionalSection}>
-          <ReactCompareSlider position={85} itemOne={<TraditionalEmoticon />} itemTwo={<UnberryEmoticon />}
+          <ReactCompareSlider position={40} itemOne={<TraditionalEmoticon />} itemTwo={<UnberryEmoticon />}
           />
         </div>
       </div>

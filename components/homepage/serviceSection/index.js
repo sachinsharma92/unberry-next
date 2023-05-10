@@ -27,7 +27,7 @@ export default function ServiceSection(props) {
       description: 'Helping evaluate the functional capabilities, domain knowledge and proficiency across a wide repository of modern day skills and coding languages across different functions & roles.',
       videoUrl: '/video/service2.mp4',
       badgeList: [
-        'Technology', 'Sales', 'Learning Agility', 'Technology', 'Sales', 'Finance', 'Business Management'
+        'Technology', 'Sales', 'Finance', 'Marketing', 'Customer Success', 'Business Management'
       ]
     },
     {

@@ -120,18 +120,14 @@
   .description {
     text-align: left;
     color: rgba($white, 0.8);
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 26px;
     max-width: 80%;
 
     @include mobile {
       max-width: 100%;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 24px;
     }
   }
-
-
 
   .contentSection {
     display: flex;
@@ -141,10 +137,10 @@
 
   // tagSection
   .tagSection {
-    margin-top: 100px;
+    margin-top: 50px;
 
     @include mobile {
-      margin-top: 50px;
+      margin-top: 30px;
     }
 
     .title4 {
@@ -187,8 +183,8 @@
   }
 
   .videoCard {
-    height: 400px;
-    min-width: 45%;
+    height: 500px;
+    min-width: 55%;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
