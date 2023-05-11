@@ -51,37 +51,6 @@ export default function HeroSection() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   gsap.from(".animation-block .animation-text", 1.8, {
-  //     y: 100,
-  //     ease: "power4.out",
-  //     delay: 0.5,
-  //     stagger: {
-  //       amount: 0.3
-  //     },
-  //     autoAlpha: 0,
-  //     scrollTrigger: {
-  //       trigger: '#workplaceSection',
-  //       start: 'top center',
-  //       markers: false
-  //     },
-  //   })
-  // }, [])
-
-  // const tl = gsap.timeline();
-  // useEffect(() => {
-  //   tl.from(".animation-block .animation-heading", 1.8, {
-  //     y: 100,
-  //     ease: "power4.out",
-  //     delay: 0.5,
-  //     stagger: {
-  //       amount: 0.3
-  //     },
-  //     autoAlpha: 0,
-  //   })
-  // }, [tl])
-
   return (
     <div className={styles.heroSectionStyle}>
       <div className={`container-width ${styles.containerStyle}`}>

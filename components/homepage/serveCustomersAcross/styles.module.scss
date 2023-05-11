@@ -97,6 +97,15 @@
     @include mobile {
       justify-content: flex-start;
       overflow: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      & {
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
+      }
     }
 
     .badgeItem {

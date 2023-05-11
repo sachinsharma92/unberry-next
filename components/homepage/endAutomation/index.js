@@ -66,19 +66,19 @@ export default function EndAutomation() {
 
                   <ul className={styles.listStyle}>
                     <li className={styles.listItem}>
-                      <Image src={icon1} alt='image services' width="30" height="30" />
+                      <Image src={icon1} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Candidate Snapshots
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon2} alt='image services' width="30" height="30" />
+                      <Image src={icon2} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Disable Tab Switching
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon3} alt='image services' width="30" height="30" />
+                      <Image src={icon3} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Disable Copy Paste
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon4} alt='image services' width="30" height="30" />
+                      <Image src={icon4} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Curb Plagiarism
                     </li>
                   </ul>
@@ -103,19 +103,19 @@ export default function EndAutomation() {
                   <p className={styles.description}>View detailed  reports in real time as soon as the candidate finishes, and have complete visibility and control of each step.</p>
                   <ul className={styles.listStyle}>
                     <li className={styles.listItem}>
-                      <Image src={icon5} alt='image services' width="30" height="30" />
+                      <Image src={icon5} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       One click assessment launch
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon6} alt='image services' width="30" height="30" />
+                      <Image src={icon6} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Real-time Status
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon7} alt='image services' width="30" height="30" />
+                      <Image src={icon7} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Automated Instant Reports
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon8} alt='image services' width="30" height="30" />
+                      <Image src={icon8} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Unlimited Recruiter Desks
                     </li>
                   </ul>
@@ -141,19 +141,19 @@ export default function EndAutomation() {
 
                   <ul className={styles.listStyle}>
                     <li className={styles.listItem}>
-                      <Image src={icon9} alt='image services' width="30" height="30" />
+                      <Image src={icon9} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Email & Messages
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon10} alt='image services' width="30" height="30" />
+                      <Image src={icon10} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Automated Reminders
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon11} alt='image services' width="30" height="30" />
+                      <Image src={icon11} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Mobile-friendly
                     </li>
                     <li className={styles.listItem}>
-                      <Image src={icon12} alt='image services' width="30" height="30" />
+                      <Image src={icon12} alt='image services' width="30" height="30" className={styles.imgIcon} />
                       Dedicated Chat Support
                     </li>
                   </ul>

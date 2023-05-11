@@ -144,7 +144,6 @@ export default function WinningChoice() {
           {/* curve Line Section */}
           <div className={styles.curveLineSection}>
             <div className={styles.gridSection}>
-
               <div className={styles.box}>
                 <div className={styles.imgBox}>
                   <Image src={binoculars} alt='image services' layout="fill" />

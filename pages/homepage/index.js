@@ -21,7 +21,7 @@ export default function HomePageScreen() {
 
   // Menu Color change after scroll 360
   const listenScrollEvent = () => {
-    window.scrollY > 360
+    window.scrollY > 20
       ? setHeaderColor("home-menu-white")
       : setHeaderColor("")
   }
