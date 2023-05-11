@@ -165,12 +165,19 @@
 
   .hiringCard {
     min-height: 300px;
-    background: #ac95cf;
     border-radius: 40px;
     margin-top: 146px;
-    padding: 49px;
     position: relative;
     max-width: 95%;
+    padding-bottom: 180px;
+    background:#ac95cf url('/assets/dotted-curve-line.svg');
+    background-position: 0% 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .content {
+      padding: 49px;
+    }
 
     .title3 {
       font-weight: 500;
@@ -179,6 +186,72 @@
       letter-spacing: -0.04em;
       color: $white;
       max-width: 50%;
+    }
+
+    .curveLineSection {
+      width: 100%;
+      position: relative;
+
+      .gridSection {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .title4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.8px;
+        color: $white;
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        flex-direction:column;
+        gap: 12px 0;
+
+        &:nth-child(1) {
+          top: -0px;
+         left: 80px;
+        }
+
+        &:nth-child(2) {
+          top: 120px;
+         left: 60px;
+        }
+
+        &:nth-child(3) {
+          top: -60px;
+         left: 80px;
+        }
+
+        &:nth-child(4) {
+          top: -150px;
+         left: -60px;
+         flex-direction: row-reverse;
+         text-align: right;
+         align-items: flex-start;
+         gap: 12px 13px;
+        }
+
+        .imgBox {
+          min-width: 45px;
+          min-height: 45px;
+          background: #C9B6E6;
+          border-radius: 50%;
+          position: relative;
+
+          img {
+            scale: 0.6
+          }
+        }
+      }
+
     }
   }
 

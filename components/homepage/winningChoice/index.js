@@ -1,15 +1,21 @@
-import React, { useEffect } from "react";
 import lottie from "lottie-web";
+import React, { useEffect } from "react";
 
+import { Carousel } from "antd";
 import behavior from "../../../assets/json/hero-section/behavior-personality.json";
 import cognition from "../../../assets/json/hero-section/cognition-intelligence.json";
 import communication from "../../../assets/json/hero-section/communication-skills.json";
 import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
+import ButtonPrimary from "../../../common/buttonPrimary";
+
+import binoculars from "../../../assets/new/icons/binoculars.svg";
+import eyeClosed from "../../../assets/new/icons/eye-closed.svg";
+import trendUp from "../../../assets/new/icons/trend-up.svg";
+import magnet from "../../../assets/new/icons/magnet.svg";
 
 // Styles here
 import styles from "./styles.module.scss";
-import ButtonPrimary from "../../../common/buttonPrimary";
-import { Carousel } from "antd";
+import Image from "next/image";
 
 export default function WinningChoice() {
   useEffect(() => {
@@ -107,16 +113,62 @@ export default function WinningChoice() {
           </div>
         </div>
 
+        {/* Elevate your campus section */}
         <div className={styles.hiringCard}>
-          <h3 className={styles.title3}>
-            Elevate your campus hiring program with the most engaging & data
-            backed assessment solution
-          </h3>
-          <ButtonPrimary
-            className={styles.btnStyle}
-            href="/book-demo"
-            title="BOOK A DEMO"
-          />
+          <div className={styles.content}>
+            <h3 className={styles.title3}>
+              Elevate your campus hiring program with the most engaging & data
+              backed assessment solution
+            </h3>
+            <ButtonPrimary
+              className={styles.btnStyle}
+              href="/book-demo"
+              title="BOOK A DEMO"
+            />
+          </div>
+
+
+          {/* curve Line Section */}
+          <div className={styles.curveLineSection}>
+            <div className={styles.gridSection}>
+
+              <div className={styles.box}>
+                <div className={styles.imgBox}>
+                  <Image src={binoculars} alt='image services' layout="fill" />
+                </div>
+                <h4 className={styles.title4}>
+                  Find high potential candidates
+                </h4>
+              </div>
+
+              <div className={styles.box}>
+                <div className={styles.imgBox}>
+                  <Image src={eyeClosed} alt='image services' layout="fill" />
+                </div>
+                <h4 className={styles.title4}>
+                  Increase your employer branding
+                </h4>
+              </div>
+
+              <div className={styles.box}>
+                <div className={styles.imgBox}>
+                  <Image src={trendUp} alt='image services' layout="fill" />
+                </div>
+                <h4 className={styles.title4}>
+                  Reach untapped talent pools
+                </h4>
+              </div>
+
+              <div className={styles.box}>
+                <div className={styles.imgBox}>
+                  <Image src={magnet} alt='image services' layout="fill" />
+                </div>
+                <h4 className={styles.title4}>
+                  Attract & hire diverse talent
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className={`${styles.sliderCard} wining-slider`}>
