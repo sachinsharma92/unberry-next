@@ -1,0 +1,214 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.winningChoiceStyle {
+  padding-bottom: 150px;
+  background: $white;
+  padding: 80px 60px;
+  position: relative;
+
+  &::before {
+    background: url("/assets/winning-grid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mobile {
+    padding: 54px 20px;
+  }
+
+  .title1 {
+    color: $black;
+    font-size: 77px;
+    line-height: 76px;
+    letter-spacing: -0.06em;
+    font-weight: 500;
+    max-width: 80%;
+    margin-bottom: 160px;
+    margin-top: 100px;
+
+    @include mobile {
+      font-size: 31.25px;
+      line-height: 35px;
+      max-width: 100%;
+    }
+
+    span {
+      color: $theme-secondary-new;
+    }
+  }
+
+  .rowSection {
+    display: flex;
+    gap: 0 175px;
+    position: relative;
+  }
+
+  .box {
+    border-radius: 40px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 303px;
+    min-height: 126px;
+
+    .largeNumber {
+      font-weight: 500;
+      font-size: 48.83px;
+      letter-spacing: -1px;
+      color: #184444;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0;
+    }
+
+    &.violetBox {
+      background: #e4ddef;
+
+      .largeNumber {
+        color: #3d2f52;
+      }
+
+      .description {
+        color: #3d2f52;
+      }
+    }
+
+    &.greenBox {
+      background: #daeeee;
+      margin-bottom: 15px;
+
+      .largeNumber {
+        color: #184444;
+      }
+
+      .description {
+        color: #184444;
+      }
+    }
+  }
+
+  .grayBoxSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    .grayBox {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      max-height: 347px;
+
+      .title4 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.03em;
+      }
+
+      .description {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -0.03em;
+      }
+
+      &:nth-child(1) {
+        margin-top: 100px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 0px;
+
+        .title4 {
+          max-width: 80%;
+        }
+      }
+
+      &:nth-child(4) {
+        margin-top: -80px;
+      }
+    }
+  }
+
+  .jsonItemBox {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+
+    .jsonItem {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .hiringCard {
+    min-height: 300px;
+    background: #ac95cf;
+    border-radius: 40px;
+    margin-top: 146px;
+    padding: 49px;
+    position: relative;
+    max-width: 95%;
+
+    .title3 {
+      font-weight: 500;
+      font-size: 39.06px;
+      line-height: 46px;
+      letter-spacing: -0.04em;
+      color: $white;
+      max-width: 50%;
+    }
+  }
+
+  .btnStyle {
+    background: $white;
+    color: $black;
+    font-weight: 600;
+    height: 56px;
+    font-size: 20px;
+    padding: 0 30px;
+    max-width: 200px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @include mobile {
+      margin-top: 40px;
+    }
+  }
+
+  .sliderCard {
+    width: 422px;
+    height: 186px;
+    background: #fbefe6;
+    border-radius: 40px;
+    padding: 40px 30px;
+    position: absolute;
+    right: 60px;
+    margin-top: -100px;
+    font-style: italic;
+  }
+}

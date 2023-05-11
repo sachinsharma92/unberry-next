@@ -12,6 +12,8 @@ import ServiceSection from '../../components/homepage/serviceSection';
 // Styles here
 import styles from './styles.module.scss';
 import SubscribeCard from '../../common/subscribe';
+import ServeCustomersAcross from '../../components/homepage/serveCustomersAcross';
+import WinningChoice from '../../components/homepage/winningChoice';
 
 
 export default function HomePageScreen() {
@@ -56,6 +58,8 @@ export default function HomePageScreen() {
         <CandidatesAbsolutely />
         <ServiceSection />
         <EndAutomation />
+        <ServeCustomersAcross />
+        <WinningChoice />
         <BlogSection />
         <SubscribeCard />
       </LayoutPrimary>

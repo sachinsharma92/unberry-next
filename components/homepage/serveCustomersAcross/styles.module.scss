@@ -1,0 +1,90 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.customersAcrossSectionStyle {
+  padding-bottom: 100px;
+  background: $black;
+  position: relative;
+
+  .contentSection {
+    padding: 54px 60px;
+
+    @include mobile {
+      padding: 54px 20px;
+    }
+  }
+
+  .title1 {
+    color: $white;
+    font-size: 49px;
+    line-height: 57px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+
+    @include mobile {
+      font-size: 31.25px;
+      line-height: 35px;
+      max-width: 100%;
+    }
+
+    span {
+      color: $theme-secondary-new;
+    }
+  }
+
+  .gradientSection {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 48.44%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    border-radius: 0px 0px 170px 170px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 50px;
+
+    .title4 {
+      color: $white;
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 57px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .sectorsSection {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .needSection {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+
+    .badgeItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(224, 224, 224, 0.1);
+      border-radius: 40px;
+      height: 54px;
+      font-size: 20px;
+      padding: 0 20px;
+      text-align: center;
+      color: $white;
+    }
+  }
+}

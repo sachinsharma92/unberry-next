@@ -2,14 +2,8 @@
 import { gsap } from 'gsap';
 import lottie from "lottie-web";
 
-import Image from 'next/image';
 import React, { useEffect } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
-
-import icon4 from "../../../assets/new/behavioural-personality.svg";
-import icon2 from "../../../assets/new/cognition-Intelligence.svg";
-import icon3 from "../../../assets/new/communication-skills.svg";
-import icon1 from "../../../assets/new/job-knowledge.svg";
 
 import behavior from "../../../assets/json/hero-section/behavior-personality.json";
 import cognition from "../../../assets/json/hero-section/cognition-intelligence.json";
