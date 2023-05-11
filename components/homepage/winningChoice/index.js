@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import lottie from "lottie-web";
 
 import behavior from "../../../assets/json/hero-section/behavior-personality.json";
@@ -7,8 +7,9 @@ import communication from "../../../assets/json/hero-section/communication-skill
 import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
 
 // Styles here
-import styles from './styles.module.scss';
-import ButtonPrimary from '../../../common/buttonPrimary';
+import styles from "./styles.module.scss";
+import ButtonPrimary from "../../../common/buttonPrimary";
+import { Carousel } from "antd";
 
 export default function WinningChoice() {
   useEffect(() => {
@@ -29,6 +30,10 @@ export default function WinningChoice() {
       animationData: jobKnowledge,
     });
   }, []);
+
+  const onChange = (currentSlide) => {
+    console.log(currentSlide);
+  };
   return (
     <div className={styles.winningChoiceStyle}>
       <div className={`container-width`}>
@@ -54,8 +59,13 @@ export default function WinningChoice() {
                 <div className={styles.jsonItem} id="icon1" />
               </div>
               <div>
-                <h4 className={styles.title4}>Elevate the candidate experience</h4>
-                <p className={styles.description}>Offer a memorable candidate-driven experience, that people talk about</p>
+                <h4 className={styles.title4}>
+                  Elevate the candidate experience
+                </h4>
+                <p className={styles.description}>
+                  Offer a memorable candidate-driven experience, that people
+                  talk about
+                </p>
               </div>
             </div>
             <div className={styles.grayBox}>
@@ -64,7 +74,10 @@ export default function WinningChoice() {
               </div>
               <div>
                 <h4 className={styles.title4}>Improve the quality of hire</h4>
-                <p className={styles.description}>Offer a memorable candidate-driven experience, that people talk about</p>
+                <p className={styles.description}>
+                  Offer a memorable candidate-driven experience, that people
+                  talk about
+                </p>
               </div>
             </div>
             <div className={styles.grayBox}>
@@ -73,7 +86,10 @@ export default function WinningChoice() {
               </div>
               <div>
                 <h4 className={styles.title4}>Find the hidden gems</h4>
-                <p className={styles.description}>Offer a memorable candidate-driven experience, that people talk about</p>
+                <p className={styles.description}>
+                  Offer a memorable candidate-driven experience, that people
+                  talk about
+                </p>
               </div>
             </div>
             <div className={styles.grayBox}>
@@ -82,21 +98,50 @@ export default function WinningChoice() {
               </div>
               <div>
                 <h4 className={styles.title4}>Hire faster and efficiently</h4>
-                <p className={styles.description}>Offer a memorable candidate-driven experience, that people talk about</p>
+                <p className={styles.description}>
+                  Offer a memorable candidate-driven experience, that people
+                  talk about
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div className={styles.hiringCard}>
-          <h3 className={styles.title3}>Elevate your campus hiring program with the most engaging & data backed assessment solution</h3>
-          <ButtonPrimary className={styles.btnStyle} href="/book-demo" title="BOOK A DEMO" />
+          <h3 className={styles.title3}>
+            Elevate your campus hiring program with the most engaging & data
+            backed assessment solution
+          </h3>
+          <ButtonPrimary
+            className={styles.btnStyle}
+            href="/book-demo"
+            title="BOOK A DEMO"
+          />
         </div>
 
-        <div className={styles.sliderCard}>
-          <h3 className={styles.title3}>“I never had this much fun during any recruitment process for a sec I almost forgot that I’m giving an exam.”</h3>
+        <div className={`${styles.sliderCard} wining-slider`}>
+          <Carousel afterChange={onChange}>
+            <div>
+              <h3 className={styles.title3}>
+                “I never had this much fun during any recruitment process for a
+                sec I almost forgot that I’m giving an exam.”
+              </h3>
+            </div>
+            <div>
+              <h3 className={styles.title3}>
+                “I never had this much fun during any recruitment process for a
+                sec I almost forgot that I’m giving an exam.”
+              </h3>
+            </div>
+            <div>
+              <h3 className={styles.title3}>
+                “I never had this much fun during any recruitment process for a
+                sec I almost forgot that I’m giving an exam.”
+              </h3>
+            </div>
+          </Carousel>
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1346,7 +1346,7 @@ HAMBURGER MENU
           width: 50px;
           height: 50px;
         }
-  
+
         img {
           width: 100%;
         }
@@ -1384,7 +1384,6 @@ HAMBURGER MENU
 
     // subscribe
     .subscribe-form {
-
       .ant-input {
         height: 50px;
         border-radius: 50px;
@@ -1399,7 +1398,6 @@ HAMBURGER MENU
       }
 
       .ant-form-horizontal {
-
         @include mobile {
           gap: 20px 0 !important;
         }
@@ -1462,4 +1460,37 @@ HAMBURGER MENU
     background-color: $white;
     transition: all 0.5s ease-in-out;
   }
+}
+
+// wining-slider
+.wining-slider {
+
+  .slick-list {
+    padding-top: 30px;
+  }
+
+  .ant-carousel .slick-dots {
+    top: 0;
+    bottom: auto;
+    left: 0;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .ant-carousel .slick-dots li button {
+    background: #442712;
+    opacity: 0.2;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .ant-carousel .slick-dots li.slick-active {
+    width: 16px;
+
+    button {
+      background: #442712;
+      width: 16px;
+      opacity: 1;
+    }
+  }
+
 }
