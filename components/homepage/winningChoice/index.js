@@ -42,23 +42,30 @@ export default function WinningChoice() {
   };
   return (
     <div className={styles.winningChoiceStyle}>
-      <div className={`container-width`}>
+      <div className={`container-width ${styles.containerStyle}`}>
         <div className={styles.rowSection}>
           <div className={styles.contentSection}>
             <h1 className={`${styles.title1}`}>
               A winning choice for HR teams
             </h1>
-
-            <div className={`${styles.box} ${styles.greenBox}`}>
+            <div className={`${styles.boxDesktop} ${styles.greenBox}`}>
               <div className={styles.largeNumber}>60%</div>
-              <p className={styles.description}>Reduced Screening Time</p>
+              <p className={styles.boxDescription}>Reduced Screening Time</p>
             </div>
 
-            <div className={`${styles.box} ${styles.violetBox}`}>
+            <div className={`${styles.boxDesktop} ${styles.violetBox}`}>
               <div className={styles.largeNumber}>40%</div>
-              <p className={styles.description}>Reduce In Cost To Hire</p>
+              <p className={styles.boxDescription}>Reduce In Cost To Hire</p>
+            </div>
+
+
+            {/* For Mobile */}
+            <div className={`${styles.boxMobile} ${styles.greenBox}`}>
+              <div className={styles.largeNumber}>60%</div>
+              <p className={styles.boxDescription}>Reduced Screening Time</p>
             </div>
           </div>
+
           <div className={styles.grayBoxSection}>
             <div className={styles.grayBox}>
               <div className={styles.jsonItemBox}>
@@ -110,6 +117,12 @@ export default function WinningChoice() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* For Mobile */}
+          <div className={`${styles.boxMobile} ${styles.violetBox}`}>
+            <div className={styles.largeNumber}>40%</div>
+            <p className={styles.boxDescription}>Reduce In Cost To Hire</p>
           </div>
         </div>
 

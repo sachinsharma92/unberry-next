@@ -4,25 +4,24 @@
 
 // auto-section
 .winningChoiceStyle {
-  padding-bottom: 150px;
   background: $white;
-  padding: 80px 60px;
+  padding: 80px 60px 150px;
   position: relative;
+
+  @include mobile {
+    padding: 0;
+  }
 
   &::before {
     background: url("/assets/winning-grid.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
-
-  @include mobile {
-    padding: 54px 20px;
   }
 
   .title1 {
@@ -39,6 +38,7 @@
       font-size: 31.25px;
       line-height: 35px;
       max-width: 100%;
+      margin: 50px 20px 50px;
     }
 
     span {
@@ -50,9 +50,34 @@
     display: flex;
     gap: 0 175px;
     position: relative;
+
+    @include mobile {
+      gap: 0px;
+      flex-direction: column;
+    }
   }
 
-  .box {
+  .largeNumber {
+    font-weight: 500;
+    font-size: 48.83px;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1.3;
+
+    @include mobile {
+      font-weight: 500;
+      font-size: 31.25px;
+    }
+  }
+
+  .boxDescription {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .boxDesktop {
     border-radius: 40px;
     padding: 0px 40px;
     display: flex;
@@ -60,6 +85,10 @@
     flex-direction: column;
     max-width: 303px;
     min-height: 126px;
+
+    @include mobile {
+      display: none;
+    }
 
     .largeNumber {
       font-weight: 500;
@@ -103,10 +132,60 @@
     }
   }
 
+  .boxMobile {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+    padding: 0px 40px;
+    min-height: 126px;
+    max-width: 100%;
+
+    @include mobile {
+      display: flex;
+    }
+
+    &.greenBox {
+      background: #daeeee;
+      border-radius: 0px 20px 20px 0px;
+      max-width: 80%;
+
+      .largeNumber {
+        color: #184444;
+      }
+
+      .description {
+        color: #184444;
+      }
+    }
+
+    &.violetBox {
+      background: #e4ddef;
+      border-radius: 20px 0px 0px 20px;
+      max-width: 80%;
+      margin-right: 0;
+      margin-left: auto;
+
+      .largeNumber {
+        color: #3d2f52;
+      }
+
+      .description {
+        color: #3d2f52;
+      }
+    }
+  }
+
   .grayBoxSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
+    @include mobile {
+      display: flex;
+      margin: 34px 0;
+      padding: 20px;
+    }
 
     .grayBox {
       background: #f4f4f4;
@@ -117,11 +196,21 @@
       flex-direction: column;
       max-height: 347px;
 
+      @include mobile {
+        min-width: 70%;
+      }
+
       .title4 {
         font-weight: 500;
         font-size: 30px;
         line-height: 36px;
         letter-spacing: -0.03em;
+
+        @include mobile {
+          font-size: 18px;
+          line-height: 19px;
+          letter-spacing: -0.77px;
+        }
       }
 
       .description {
@@ -129,10 +218,21 @@
         font-size: 20px;
         line-height: 26px;
         letter-spacing: -0.03em;
+
+        @include mobile {
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: -0.03em;
+          opacity: 0.6;
+        }
       }
 
       &:nth-child(1) {
         margin-top: 100px;
+
+        @include mobile {
+          margin: 0;
+        }
       }
 
       &:nth-child(3) {
@@ -145,6 +245,10 @@
 
       &:nth-child(4) {
         margin-top: -80px;
+
+        @include mobile {
+          margin: 0;
+        }
       }
     }
   }
@@ -170,13 +274,22 @@
     position: relative;
     max-width: 95%;
     padding-bottom: 180px;
-    background:#ac95cf url('/assets/dotted-curve-line.svg');
+    background: #ac95cf url("/assets/dotted-curve-line.svg");
     background-position: 0% 20%;
     background-size: contain;
     background-repeat: no-repeat;
 
+    @include mobile {
+      margin: 53px 20px;
+      max-width: 100%;
+    }
+
     .content {
       padding: 49px;
+
+      @include mobile {
+        padding: 20px;
+      }
     }
 
     .title3 {
@@ -186,16 +299,34 @@
       letter-spacing: -0.04em;
       color: $white;
       max-width: 50%;
+
+      @include mobile {
+        max-width: 100%;
+        font-size: 31.25px;
+        line-height: 38px;
+        letter-spacing: -0.04em;
+      }
     }
 
     .curveLineSection {
       width: 100%;
       position: relative;
 
+      @include mobile {
+        padding: 0 20px;
+        margin-top: 43px;
+      }
+
       .gridSection {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+          gap: 15px 0;
+        }
       }
 
       .title4 {
@@ -204,6 +335,11 @@
         line-height: 28px;
         letter-spacing: -0.8px;
         color: $white;
+
+        @include mobile {
+          font-size: 16px;
+          line-height: 1.2;
+        }
       }
 
       .box {
@@ -212,46 +348,55 @@
         justify-content: center;
         position: relative;
         text-align: center;
-        flex-direction:column;
+        flex-direction: column;
         gap: 12px 0;
 
-        &:nth-child(1) {
-          top: -0px;
-         left: 80px;
+        @include mobile {
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row;
+          text-align: left;
+          gap: 0 20px;
         }
 
-        &:nth-child(2) {
-          top: 120px;
-         left: 60px;
-        }
+        @include desktop {
+          &:nth-child(1) {
+            top: -0px;
+            left: 80px;
+          }
 
-        &:nth-child(3) {
-          top: -60px;
-         left: 80px;
-        }
+          &:nth-child(2) {
+            top: 120px;
+            left: 60px;
+          }
 
-        &:nth-child(4) {
-          top: -150px;
-         left: -60px;
-         flex-direction: row-reverse;
-         text-align: right;
-         align-items: flex-start;
-         gap: 12px 13px;
+          &:nth-child(3) {
+            top: -60px;
+            left: 80px;
+          }
+
+          &:nth-child(4) {
+            top: -150px;
+            left: -60px;
+            flex-direction: row-reverse;
+            text-align: right;
+            align-items: flex-start;
+            gap: 12px 13px;
+          }
         }
 
         .imgBox {
           min-width: 45px;
           min-height: 45px;
-          background: #C9B6E6;
+          background: #c9b6e6;
           border-radius: 50%;
           position: relative;
 
           img {
-            scale: 0.6
+            scale: 0.6;
           }
         }
       }
-
     }
   }
 
@@ -270,6 +415,7 @@
 
     @include mobile {
       margin-top: 40px;
+      font-size: 18px;
     }
   }
 
@@ -283,5 +429,15 @@
     right: 60px;
     margin-top: -100px;
     font-style: italic;
+
+    @include mobile {
+      width: 80%;
+      position: relative;
+      border-radius: 20px;
+      right: 0;
+      height: auto;
+      margin: -180px auto 0;
+      padding: 30px 20px;
+    }
   }
 }

@@ -12,7 +12,7 @@
     padding: 54px 60px;
 
     @include mobile {
-      padding: 54px 20px;
+      padding: 54px 20px 0;
     }
   }
 
@@ -30,6 +30,7 @@
       font-size: 31.25px;
       line-height: 35px;
       max-width: 100%;
+      text-align: left;
     }
 
     span {
@@ -48,6 +49,11 @@
     flex-direction: column;
     padding: 50px 50px 50px;
 
+    @include mobile {
+      border-radius: 0px;
+      padding: 40px 0px;
+    }
+
     .title4 {
       color: $white;
       text-align: center;
@@ -55,17 +61,31 @@
       font-size: 20px;
       line-height: 57px;
       margin-bottom: 30px;
+
+      @include mobile {
+        text-align: left; 
+        margin-left: 20px;
+      }
     }
   }
 
   .sectorsSection {
     max-width: 90%;
     margin: 0 auto;
+
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   .needSection {
     max-width: 70%;
     margin: 0 auto;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   .badge {
@@ -73,6 +93,11 @@
     justify-content: center;
     align-items: center;
     gap: 0 10px;
+
+    @include mobile {
+      justify-content: flex-start;
+      overflow: scroll;
+    }
 
     .badgeItem {
       display: flex;
@@ -85,6 +110,10 @@
       padding: 0 20px;
       text-align: center;
       color: $white;
+
+      @include mobile {
+        white-space: nowrap;
+      }
     }
   }
 }

@@ -51,44 +51,56 @@ export default function HeroSection() {
     });
   }, []);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.from(".animation-block .animation-text", 1.8, {
-      y: 100,
-      ease: "power4.out",
-      delay: 0.5,
-      stagger: {
-        amount: 0.3
-      },
-      autoAlpha: 0,
-      scrollTrigger: {
-        trigger: '#workplaceSection',
-        start: 'top center',
-        markers: false
-      },
-    })
-  }, [])
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.from(".animation-block .animation-text", 1.8, {
+  //     y: 100,
+  //     ease: "power4.out",
+  //     delay: 0.5,
+  //     stagger: {
+  //       amount: 0.3
+  //     },
+  //     autoAlpha: 0,
+  //     scrollTrigger: {
+  //       trigger: '#workplaceSection',
+  //       start: 'top center',
+  //       markers: false
+  //     },
+  //   })
+  // }, [])
 
-  const tl = gsap.timeline();
-  useEffect(() => {
-    tl.from(".animation-block .animation-heading", 1.8, {
-      y: 100,
-      ease: "power4.out",
-      delay: 0.5,
-      stagger: {
-        amount: 0.3
-      },
-      autoAlpha: 0,
-    })
-  }, [tl])
+  // const tl = gsap.timeline();
+  // useEffect(() => {
+  //   tl.from(".animation-block .animation-heading", 1.8, {
+  //     y: 100,
+  //     ease: "power4.out",
+  //     delay: 0.5,
+  //     stagger: {
+  //       amount: 0.3
+  //     },
+  //     autoAlpha: 0,
+  //   })
+  // }, [tl])
 
   return (
     <div className={styles.heroSectionStyle}>
       <div className={`container-width ${styles.containerStyle}`}>
         <div className={`${styles.contentSection} animation-block`}>
-          <h1 className={`${styles.title1} title1 animation-heading`}>
+
+          <h1 className={`${styles.titleDesktop} title1 animation-heading`}>
             We help companies make <span className={styles.color1}> better</span> <span className={styles.color2}>smarter</span> & <span className={styles.color3}>faster</span> talent decisions
           </h1>
+
+          <h1 className={`${styles.titleMobile} title1 animation-heading`}>
+            We help companies make
+            <div className={styles.mobileStyle}>
+              <span className={styles.color1}> better</span>
+              <span className={styles.color2}>smarter</span>
+              <span className={styles.color3}>faster</span>
+            </div>
+            talent decisions
+          </h1>
+
           <p className={`${styles.descriptionText} description animation-heading`}>
             The most modern & experiential talent assessment suite, that can measure job-relevant skills and proficiencies in just a few minutes
           </p>

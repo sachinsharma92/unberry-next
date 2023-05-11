@@ -1183,12 +1183,17 @@ HAMBURGER MENU
 
     @include mobile {
       text-align: center;
+      flex-direction: column;
     }
   }
 
   .menu-footer {
     display: flex;
     gap: 0 35px;
+
+    @include mobile {
+      display: none;
+    }
 
     a {
       color: $white;
