@@ -2,11 +2,16 @@ import lottie from "lottie-web";
 import React, { useEffect } from "react";
 
 import { Carousel } from "antd";
-import behavior from "../../../assets/json/hero-section/behavior-personality.json";
-import cognition from "../../../assets/json/hero-section/cognition-intelligence.json";
-import communication from "../../../assets/json/hero-section/communication-skills.json";
-import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
+// import focus from "../../../assets/json/focus.json";
+// import bestfit from "../../../assets/json/bestfit.json";
+// import hire from "../../../assets/json/hire.json";
+// import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
 import ButtonPrimary from "../../../common/buttonPrimary";
+
+import icon1 from "../../../assets/icons/icon1.svg";
+import icon2 from "../../../assets/icons/icon2.svg";
+import icon3 from "../../../assets/icons/icon3.svg";
+import icon4 from "../../../assets/icons/icon4.svg";
 
 import binoculars from "../../../assets/new/icons/binoculars.svg";
 import eyeClosed from "../../../assets/new/icons/eye-closed.svg";
@@ -18,24 +23,24 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 
 export default function WinningChoice() {
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: document.querySelector("#icon1"),
-      animationData: behavior,
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#icon2"),
-      animationData: cognition,
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#icon3"),
-      animationData: communication,
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#icon4"),
-      animationData: jobKnowledge,
-    });
-  }, []);
+  // useEffect(() => {
+  //   lottie.loadAnimation({
+  //     container: document.querySelector("#icon1"),
+  //     animationData: focus,
+  //   });
+  //   lottie.loadAnimation({
+  //     container: document.querySelector("#icon2"),
+  //     animationData: bestfit,
+  //   });
+  //   lottie.loadAnimation({
+  //     container: document.querySelector("#icon3"),
+  //     animationData: iconhire,
+  //   });
+  //   lottie.loadAnimation({
+  //     container: document.querySelector("#icon4"),
+  //     animationData: jobKnowledge,
+  //   });
+  // }, []);
 
   const onChange = (currentSlide) => {
     console.log(currentSlide);
@@ -68,8 +73,11 @@ export default function WinningChoice() {
 
           <div className={styles.grayBoxSection}>
             <div className={styles.grayBox}>
-              <div className={styles.jsonItemBox}>
+              {/* <div className={styles.jsonItemBox}>
                 <div className={styles.jsonItem} id="icon1" />
+              </div> */}
+              <div className={styles.imgItemBox}>
+                <Image src={icon1} alt='image services' layout="fill" />
               </div>
               <div>
                 <h4 className={styles.title4}>
@@ -82,8 +90,11 @@ export default function WinningChoice() {
               </div>
             </div>
             <div className={styles.grayBox}>
-              <div className={styles.jsonItemBox}>
+              {/* <div className={styles.jsonItemBox}>
                 <div className={styles.jsonItem} id="icon2" />
+              </div> */}
+              <div className={styles.imgItemBox}>
+                <Image src={icon2} alt='image services' layout="fill" />
               </div>
               <div>
                 <h4 className={styles.title4}>Improve the quality of hire</h4>
@@ -94,8 +105,11 @@ export default function WinningChoice() {
               </div>
             </div>
             <div className={styles.grayBox}>
-              <div className={styles.jsonItemBox}>
+              {/* <div className={styles.jsonItemBox}>
                 <div className={styles.jsonItem} id="icon3" />
+              </div> */}
+              <div className={styles.imgItemBox}>
+                <Image src={icon3} alt='image services' layout="fill" />
               </div>
               <div>
                 <h4 className={styles.title4}>Find the hidden gems</h4>
@@ -106,8 +120,11 @@ export default function WinningChoice() {
               </div>
             </div>
             <div className={styles.grayBox}>
-              <div className={styles.jsonItemBox}>
+              {/* <div className={styles.jsonItemBox}>
                 <div className={styles.jsonItem} id="icon4" />
+              </div> */}
+              <div className={styles.imgItemBox}>
+                <Image src={icon4} alt='image services' layout="fill" />
               </div>
               <div>
                 <h4 className={styles.title4}>Hire faster and efficiently</h4>
