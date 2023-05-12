@@ -51,7 +51,7 @@ export default function ServiceSection(props) {
             <p className={`${styles.description} description`}>
               A suite of multi-dimensional, psychometrically-rigorous, gamified assessments that demand exploration and hands-on problem solving from the players to progress.
             </p>
-            <ButtonPrimary href="/book-demo" title="BOOK DEMO" />
+            <ButtonPrimary className={styles.btnStyle} href="/book-demo" title="BOOK DEMO" />
           </div>
         </div>
       </div>

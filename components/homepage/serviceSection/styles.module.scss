@@ -36,6 +36,13 @@
     }
   }
 
+  .btnStyle {
+
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
   .contentSection {
     display: flex;
     align-items: center;
