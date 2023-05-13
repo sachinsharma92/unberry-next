@@ -76,6 +76,7 @@ export default function ServiceSection(props) {
                   </div>
                 </div>
               </div>
+
               <div className={styles.videoCard}>
                 <video muted autoPlay loop playsInline width="100%" height="100%">
                   <source src={item.videoUrl} type="video/mp4" />

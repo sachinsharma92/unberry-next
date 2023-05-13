@@ -22,6 +22,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background-size: cover;
   }
 
   .title1 {
@@ -30,7 +31,7 @@
     line-height: 76px;
     letter-spacing: -0.06em;
     font-weight: 500;
-    max-width: 80%;
+    max-width: 70%;
     margin-bottom: 160px;
     margin-top: 100px;
 
@@ -48,7 +49,7 @@
 
   .rowSection {
     display: flex;
-    gap: 0 175px;
+    gap: 0 50px;
     position: relative;
 
     @include mobile {
@@ -183,21 +184,26 @@
 
     @include mobile {
       display: flex;
-      margin: 34px 0;
+      margin: 24px 0;
       padding: 20px;
+      overflow-x: scroll;
+      @include scrollHide();
+      gap: 10px;
     }
 
     .grayBox {
       background: #f4f4f4;
       padding: 20px;
-      border-radius: 20px;
+      border-radius: 40px;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
       max-height: 347px;
+      min-width: 357px;
 
       @include mobile {
         min-width: 70%;
+        border-radius: 20px;
       }
 
       .title4 {
@@ -289,13 +295,14 @@
     @include mobile {
       margin: 53px 20px;
       max-width: 100%;
+      border-radius: 20px;
     }
 
     .content {
       padding: 49px;
 
       @include mobile {
-        padding: 20px;
+        padding: 40px 20px;
       }
     }
 
@@ -309,9 +316,8 @@
 
       @include mobile {
         max-width: 100%;
-        font-size: 31.25px;
+        font-size: 30px;
         line-height: 38px;
-        letter-spacing: -0.04em;
       }
     }
 

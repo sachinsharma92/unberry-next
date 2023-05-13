@@ -47,7 +47,8 @@
     border-radius: 0px 0px 170px 170px;
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 50px;
+    padding: 30px 50px 50px;
+    border-bottom: 1px solid #323232;
 
     @include mobile {
       border-radius: 0px;

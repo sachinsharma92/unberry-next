@@ -1163,6 +1163,18 @@ HAMBURGER MENU
     flex-direction: column;
     border-radius: 20px 20px 0 0;
   }
+
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 84px;
+    width: 100%;
+    bottom: 0;
+    background: #AC95CF;
+filter: blur(240px);
+transform: matrix(1, 0, 0, -1, 0, 0);
+  }
 }
 
 // footer-primary
@@ -1311,6 +1323,7 @@ HAMBURGER MENU
 
   @include mobile {
     padding: 0 20px;
+    margin: 20px 0 50px;
   }
 
   .subscribe-card {
@@ -1326,6 +1339,7 @@ HAMBURGER MENU
       display: flex;
       flex-direction: column;
       border-radius: 20px;
+      padding: 23px 20px;
     }
 
     .content-sec {
@@ -1387,6 +1401,7 @@ HAMBURGER MENU
     // subscribe
     .subscribe-form {
       width: 100%;
+
       .ant-input {
         height: 50px;
         border-radius: 50px;
@@ -1408,6 +1423,13 @@ HAMBURGER MENU
 
       .ant-form-item {
         margin-bottom: 0;
+      }
+
+      input::placeholder {
+        color: $black;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 60px;
       }
 
       .ant-btn {

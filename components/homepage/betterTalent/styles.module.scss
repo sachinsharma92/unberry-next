@@ -10,7 +10,7 @@
   position: relative;
 
   @include mobile {
-    padding: 54px 20px;
+    padding: 54px 20px 1px;
   }
 
   .title1 {
@@ -47,8 +47,12 @@
     }
 
     @include mobile {
-      height: 180px;
+      height: 250px;
       border-radius: 20px;
+
+      img {
+       object-position: 20%;
+      }
     }
   }
 
