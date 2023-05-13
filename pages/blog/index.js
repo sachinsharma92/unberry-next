@@ -57,7 +57,7 @@ export default function BlogScreen() {
       <Head>
         <title>Blog | Unberry</title>
       </Head>
-      <LayoutPrimary>
+      <LayoutPrimary className="blog-list-container">
         <section className='blog-list-page animation-block'>
           <h1 className='title1 heading-text'>The wandering words</h1>
           <p className='description heading-text'>Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent</p>

@@ -6,6 +6,10 @@
   background: white;
   min-height: 100vh;
 
+  @include mobile {
+    overflow-x: hidden;
+  }
+
   .title2 {
     font-size: 55px;
     line-height: 1.2;
@@ -152,30 +156,3 @@
   }
 }
 
-.content-blog-layout {
-  display: flex;
-  // grid-template-columns: repeat(2, 1fr);
-  gap: 0 74px;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @include mobile {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 30%;
-
-    @include mobile {
-      width: 100%;
-    }
-
-    .subscribe-card {
-
-      @include desktop {
-        position: sticky;
-        top: 80px;
-      }
-    }
-  }
-}

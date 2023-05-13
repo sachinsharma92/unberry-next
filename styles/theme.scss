@@ -1164,16 +1164,15 @@ HAMBURGER MENU
     border-radius: 20px 20px 0 0;
   }
 
-
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     height: 84px;
     width: 100%;
     bottom: 0;
-    background: #AC95CF;
-filter: blur(240px);
-transform: matrix(1, 0, 0, -1, 0, 0);
+    background: #ac95cf;
+    filter: blur(240px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
   }
 }
 
@@ -1237,82 +1236,6 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 
     a {
       color: #a8a8a8;
-    }
-  }
-}
-
-.content-blog-layout {
-  .title4 {
-    color: $black;
-  }
-
-  .description {
-    color: $black;
-  }
-
-  .subscribe-form .ant-form {
-    display: flex;
-    flex-direction: column;
-
-    @include mobile {
-      align-items: center;
-    }
-
-    .ant-input {
-      background: rgba($black, 0.07);
-
-      &::placeholder {
-        color: $black;
-        opacity: 1;
-      }
-
-      &:-ms-input-placeholder {
-        color: $black;
-      }
-
-      &::-ms-input-placeholder {
-        color: $black;
-      }
-    }
-
-    .ant-btn {
-      background: $theme-primary-new;
-      width: 171px;
-    }
-  }
-
-  .subscribe-card {
-    margin-top: 30px;
-    background: none;
-
-    @include mobile {
-      text-align: center;
-      margin: 0px 0 30px;
-    }
-
-    .description {
-      @include mobile {
-        text-align: center;
-        min-width: auto;
-      }
-    }
-
-    .social-sec {
-      justify-content: flex-start;
-      margin-top: 30px;
-
-      @include mobile {
-        justify-content: center;
-      }
-
-      a {
-        background: #e4ddef;
-        transition: all 0.5s ease-in-out;
-
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
     }
   }
 }
@@ -1480,6 +1403,141 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   }
 }
 
+.content-blog-layout {
+  display: flex;
+  gap: 0 74px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 30%;
+
+    @include mobile {
+      width: 100%;
+    }
+    .subscribe-main-card {
+      padding: 0;
+      margin: 0;
+
+      @include desktop {
+        position: sticky;
+        top: 80px;
+      }
+    }
+
+    .subscribe-card {
+      background: none;
+      flex-direction: column;
+      padding-top: 20px;
+      margin-top: 30px;
+
+      .ant-btn-primary {
+        border: none;
+        color: $white;
+      }
+
+      @include mobile {
+        text-align: center;
+        margin: 0px 0 30px;
+      }
+
+      .title4 {
+        color: $black;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      .description {
+        color: rgba($black, 0.6);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+
+        @include mobile {
+          text-align: center;
+          min-width: auto;
+        }
+      }
+
+      .content-sec {
+
+        @include mobile {
+          margin-bottom: 0;
+        }
+      }
+
+      .icon-box {
+        display: none;
+      }
+
+      .ant-input {
+        width: 100%;
+        margin: 25px 0 10px;
+      }
+
+      .social-sec {
+        justify-content: flex-start;
+        margin-top: 30px;
+
+        @include mobile {
+          justify-content: center;
+        }
+
+        a {
+          background: #e4ddef;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe-form .ant-form {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      align-items: center;
+    }
+
+    &.ant-form-horizontal {
+      @include mobile {
+        gap:10px 0 !important;
+      }
+    }
+
+    .ant-input {
+      background: rgba($black, 0.07);
+
+      &::placeholder {
+        color: $black;
+        opacity: 1;
+      }
+
+      &:-ms-input-placeholder {
+        color: $black;
+      }
+
+      &::-ms-input-placeholder {
+        color: $black;
+      }
+    }
+
+    .ant-btn {
+      background: $theme-primary-new;
+      width: 171px;
+    }
+  }
+}
+
 .home-menu-white {
   .header-primary {
     background-color: $white;
@@ -1515,5 +1573,11 @@ transform: matrix(1, 0, 0, -1, 0, 0);
       width: 16px;
       opacity: 1;
     }
+  }
+}
+
+.blog-list-container {
+  .header-primary {
+    background-color: $white;
   }
 }
