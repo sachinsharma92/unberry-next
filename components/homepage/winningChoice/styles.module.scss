@@ -250,7 +250,11 @@
       }
 
       &:nth-child(4) {
-        margin-top: -80px;
+        margin-top: -65px;
+
+        @include desktop-lg {
+          margin-top: -60px;
+        }
 
         @include mobile {
           margin: 0;
