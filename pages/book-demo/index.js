@@ -22,7 +22,7 @@ export default function BookDemoScreen() {
       <SeoHead
         mainTitle="Unberry - Transforming the future of hiring and developing talent."
         title="Unberry - Transforming the future of hiring and developing talent."
-        description="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
+        description="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent"
       />
 
       <div className={styles.bookDemoStyle}>
