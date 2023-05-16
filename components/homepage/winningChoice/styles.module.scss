@@ -178,12 +178,14 @@
   }
 
   .grayBoxSection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 30px;
+    width: 100%;
 
     @include mobile {
       display: flex;
+      flex-wrap: nowrap;
       margin: 24px 0;
       padding: 20px;
       overflow-x: scroll;
@@ -193,13 +195,13 @@
 
     .grayBox {
       background: #f4f4f4;
-      padding: 20px;
+      padding: 30px;
       border-radius: 40px;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      max-height: 347px;
-      min-width: 357px;
+      height: 347px;
+      width: 46%;
 
       @include mobile {
         min-width: 70%;
@@ -234,7 +236,8 @@
       }
 
       &:nth-child(1) {
-        margin-top: 100px;
+      margin-top: 100px;
+      margin-bottom: 30px;
 
         @include mobile {
           margin: 0;
@@ -242,7 +245,6 @@
       }
 
       &:nth-child(3) {
-        margin-top: 0px;
 
         .title4 {
           max-width: 80%;
@@ -250,11 +252,7 @@
       }
 
       &:nth-child(4) {
-        margin-top: -65px;
-
-        @include desktop-lg {
-          margin-top: -60px;
-        }
+        margin-top: -100px;
 
         @include mobile {
           margin: 0;
@@ -300,6 +298,7 @@
       margin: 53px 20px;
       max-width: 100%;
       border-radius: 20px;
+      background: #ac95cf;
     }
 
     .content {
@@ -331,7 +330,7 @@
 
       @include mobile {
         padding: 0 20px;
-        margin-top: 43px;
+        margin-top: 10px;
       }
 
       .gridSection {

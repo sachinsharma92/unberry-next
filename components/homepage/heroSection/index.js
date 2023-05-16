@@ -12,6 +12,7 @@ import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
 
 // Styles here
 import styles from './styles.module.scss';
+import Marquee from 'react-fast-marquee';
 
 export default function HeroSection() {
 
@@ -55,23 +56,22 @@ export default function HeroSection() {
     <div className={styles.heroSectionStyle}>
       <div className={`container-width ${styles.containerStyle}`}>
         <div className={`${styles.contentSection} animation-block`}>
-
           <h1 className={`${styles.titleDesktop} title1 animation-heading`}>
             We help companies make <span className={styles.color1}> better</span> <span className={styles.color2}>smarter</span> & <span className={styles.color3}>faster</span> talent decisions
           </h1>
-
           <h1 className={`${styles.titleMobile} title1 animation-heading`}>
             We help companies make
-            <div className={styles.mobileStyle}>
-              <span className={styles.color1}> better</span>
-              <span className={styles.color2}>smarter</span>
-              <span className={styles.color3}>faster</span>
-            </div>
+            <Marquee speed={20} gradient={false} className='hero-marquee'>
+              <div className={styles.mobileStyle}>
+                <span className={styles.color1}> better</span>
+                <span className={styles.color2}>smarter</span>
+                <span className={styles.color3}>faster</span>
+              </div>
+            </Marquee>
             talent decisions
           </h1>
-
           <p className={`${styles.descriptionText} description animation-heading`}>
-            The most modern & experiential talent assessment suite, that can measure job-relevant skills and proficiencies in just a few minutes
+            The most modern & experiential talent assessment suite, that can measure job-relevant skills and <br /> proficiencies in just a few minutes
           </p>
 
           <div className={`${styles.btnSection} animation-heading`}>

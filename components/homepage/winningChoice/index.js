@@ -73,9 +73,6 @@ export default function WinningChoice() {
 
           <div className={styles.grayBoxSection}>
             <div className={styles.grayBox}>
-              {/* <div className={styles.jsonItemBox}>
-                <div className={styles.jsonItem} id="icon1" />
-              </div> */}
               <div className={styles.imgItemBox}>
                 <Image src={icon1} alt='image services' layout="fill" />
               </div>
@@ -90,9 +87,6 @@ export default function WinningChoice() {
               </div>
             </div>
             <div className={styles.grayBox}>
-              {/* <div className={styles.jsonItemBox}>
-                <div className={styles.jsonItem} id="icon2" />
-              </div> */}
               <div className={styles.imgItemBox}>
                 <Image src={icon2} alt='image services' layout="fill" />
               </div>
@@ -105,9 +99,6 @@ export default function WinningChoice() {
               </div>
             </div>
             <div className={styles.grayBox}>
-              {/* <div className={styles.jsonItemBox}>
-                <div className={styles.jsonItem} id="icon3" />
-              </div> */}
               <div className={styles.imgItemBox}>
                 <Image src={icon3} alt='image services' layout="fill" />
               </div>
@@ -120,9 +111,6 @@ export default function WinningChoice() {
               </div>
             </div>
             <div className={styles.grayBox}>
-              {/* <div className={styles.jsonItemBox}>
-                <div className={styles.jsonItem} id="icon4" />
-              </div> */}
               <div className={styles.imgItemBox}>
                 <Image src={icon4} alt='image services' layout="fill" />
               </div>
@@ -201,7 +189,7 @@ export default function WinningChoice() {
         </div>
 
         <div className={`${styles.sliderCard} wining-slider`}>
-          <Carousel afterChange={onChange}>
+          <Carousel afterChange={onChange} autoplay>
             <div>
               <h3 className={styles.title3}>
                 “I never had this much fun during any recruitment process for a

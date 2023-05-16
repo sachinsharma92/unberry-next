@@ -53,7 +53,7 @@ export default function EndAutomation() {
             <div className={styles.accordianCard}>
               <div className="head">
                 <div className='head-wrap'>
-                  <h2 className="heading">Proctoring</h2>
+                  <h2 className="heading">Advanced Proctoring</h2>
                   <div className="icon-plus">
                     <Image src={iconPlus} alt='image services' width="34" height="34" />
                   </div>
@@ -64,24 +64,36 @@ export default function EndAutomation() {
                   <h4 className={styles.title4}>Advanced Proctoring</h4>
                   <p className={styles.description}>Prevent cheating and unethical practices with our advanced remote and live proctoring, flagging suspicious usage.</p>
 
-                  <ul className={styles.listStyle}>
-                    <li className={styles.listItem}>
-                      <Image src={icon1} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Candidate Snapshots
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon2} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Disable Tab Switching
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon3} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Disable Copy Paste
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon4} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Curb Plagiarism
-                    </li>
-                  </ul>
+                  <table className={styles.listStyle}>
+                    <tr>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon1} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Candidate Snapshots
+                        </div>
+                      </td>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon2} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Disable Tab Switching
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon3} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Disable Copy Paste
+                        </div>
+                      </td>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon4} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Curb Plagiarism
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -101,24 +113,37 @@ export default function EndAutomation() {
                 <div className={`${styles.contentSec}`}>
                   <h4 className={styles.title4}>Real time dashboards</h4>
                   <p className={styles.description}>View detailed  reports in real time as soon as the candidate finishes, and have complete visibility and control of each step.</p>
-                  <ul className={styles.listStyle}>
-                    <li className={styles.listItem}>
-                      <Image src={icon5} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      One click assessment launch
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon6} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Real-time Status
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon7} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Automated Instant Reports
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon8} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Unlimited Recruiter Desks
-                    </li>
-                  </ul>
+
+                  <table className={styles.listStyle}>
+                    <tr>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon5} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          One click assessment launch
+                        </div>
+                      </td>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon6} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Real-time Status
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon7} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Automated Instant Reports
+                        </div>
+                      </td>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon8} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Unlimited Recruiter Desks
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -139,29 +164,40 @@ export default function EndAutomation() {
                   <h4 className={styles.title4}>Candidate Communication</h4>
                   <p className={styles.description}>Automated communication with candidates to engage with your top talent with automated reminders and notifications.</p>
 
-                  <ul className={styles.listStyle}>
-                    <li className={styles.listItem}>
-                      <Image src={icon9} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Email & Messages
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon10} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Automated Reminders
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon11} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Mobile-friendly
-                    </li>
-                    <li className={styles.listItem}>
-                      <Image src={icon12} alt='image services' width="30" height="30" className={styles.imgIcon} />
-                      Dedicated Chat Support
-                    </li>
-                  </ul>
+                  <table className={styles.listStyle}>
+                    <tr>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon9} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Email & Messages
+                        </div>
+                      </td>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon10} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Automated Reminders
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon11} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Mobile-friendly
+                        </div>
+                      </td>
+                      <td>
+                        <div className={styles.listItem}>
+                          <Image src={icon12} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Dedicated Chat Support
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

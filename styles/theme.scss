@@ -962,6 +962,7 @@ HAMBURGER MENU
     overflow-x: scroll;
     gap: 0 30px;
     justify-content: flex-start;
+    @include scrollHide();
   }
 
   .panel {
@@ -986,7 +987,7 @@ HAMBURGER MENU
 
       .heading {
         transform: rotate(270deg);
-        margin-top: 80px;
+        margin-top: 240px;
       }
     }
 
@@ -1579,5 +1580,17 @@ HAMBURGER MENU
 .blog-list-container {
   .header-primary {
     background-color: $white;
+  }
+}
+
+
+// hero-marquee
+.hero-marquee {
+
+  .marquee {
+
+    &:first-child {
+      margin-right: 10px;
+    }
   }
 }

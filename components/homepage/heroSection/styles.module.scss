@@ -18,6 +18,11 @@
     background-repeat: no-repeat;
     content: '';
     background-size: 100%;
+
+    @include mobile {
+      background-size: 100%;
+      background: url('/assets/hero-grid-mobile.svg');
+    }
   }
 
   .containerStyle {
@@ -82,7 +87,7 @@
     display: none;
 
     @include mobile {
-      max-width: 90%;
+      max-width: 100%;
       line-height: 60px;
       display: block;
     }
@@ -90,6 +95,7 @@
     .mobileStyle {
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 0 10px;
       margin: 10px 0;
     }
@@ -125,13 +131,8 @@
   }
 
   .descriptionText {
-    max-width: 58%;
     margin: 0 auto;
     text-align: center;
-
-    @include desktop-lg {
-      max-width: 30%;
-    }
 
     @include mobile {
       max-width: 95%;
