@@ -76,7 +76,7 @@ export default function BlogScreen() {
             </div>
 
             <div className='illustration-section'>
-              <p className='description'>Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent</p>
+              <p className='description'>Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent</p>
             </div>
           </div>
         </section>
@@ -99,10 +99,10 @@ export default function BlogScreen() {
                       <Link
                         href={{
                           pathname: `/blog/${item.slug}`,
-                          query: { backTo: asPath},
+                          query: { backTo: asPath },
                         }}
                         as={`/blog/${item.slug}`}
-                        >
+                      >
                         <a>Read More</a>
                       </Link>
                     </div>
