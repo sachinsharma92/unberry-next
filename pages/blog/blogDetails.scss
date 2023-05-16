@@ -17,7 +17,7 @@
     text-align: center;
 
     @include mobile {
-      font-size: 48px;
+      font-size: 30px;
     }
   }
 
@@ -151,8 +151,18 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
+    color: rgba($black, 0.7);
+  }
+
+  img {
+
+    @include mobile {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
   }
 }
 

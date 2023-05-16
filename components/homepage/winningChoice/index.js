@@ -17,31 +17,13 @@ import binoculars from "../../../assets/new/icons/binoculars.svg";
 import eyeClosed from "../../../assets/new/icons/eye-closed.svg";
 import trendUp from "../../../assets/new/icons/trend-up.svg";
 import magnet from "../../../assets/new/icons/magnet.svg";
+import dottedCurve from "../../../assets/new/dotted-curve-line.svg";
 
 // Styles here
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
 export default function WinningChoice() {
-  // useEffect(() => {
-  //   lottie.loadAnimation({
-  //     container: document.querySelector("#icon1"),
-  //     animationData: focus,
-  //   });
-  //   lottie.loadAnimation({
-  //     container: document.querySelector("#icon2"),
-  //     animationData: bestfit,
-  //   });
-  //   lottie.loadAnimation({
-  //     container: document.querySelector("#icon3"),
-  //     animationData: iconhire,
-  //   });
-  //   lottie.loadAnimation({
-  //     container: document.querySelector("#icon4"),
-  //     animationData: jobKnowledge,
-  //   });
-  // }, []);
-
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
@@ -76,7 +58,7 @@ export default function WinningChoice() {
               <div className={styles.imgItemBox}>
                 <Image src={icon1} alt='image services' layout="fill" />
               </div>
-              <div>
+              <div className={styles.grayContent}>
                 <h4 className={styles.title4}>
                   Elevate the candidate experience
                 </h4>
@@ -90,7 +72,7 @@ export default function WinningChoice() {
               <div className={styles.imgItemBox}>
                 <Image src={icon2} alt='image services' layout="fill" />
               </div>
-              <div>
+              <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Improve the quality of hire</h4>
                 <p className={styles.description}>
                   Offer a memorable candidate-driven experience, that people
@@ -102,7 +84,7 @@ export default function WinningChoice() {
               <div className={styles.imgItemBox}>
                 <Image src={icon3} alt='image services' layout="fill" />
               </div>
-              <div>
+              <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Find the hidden gems</h4>
                 <p className={styles.description}>
                   Offer a memorable candidate-driven experience, that people
@@ -114,7 +96,7 @@ export default function WinningChoice() {
               <div className={styles.imgItemBox}>
                 <Image src={icon4} alt='image services' layout="fill" />
               </div>
-              <div>
+              <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Hire faster and efficiently</h4>
                 <p className={styles.description}>
                   Offer a memorable candidate-driven experience, that people
@@ -148,6 +130,11 @@ export default function WinningChoice() {
 
           {/* curve Line Section */}
           <div className={styles.curveLineSection}>
+            <Image src={dottedCurve} alt='image services' layout="fill" />
+          </div>
+
+          {/* For Mobile */}
+          <div className={styles.iconBoxes}>
             <div className={styles.gridSection}>
               <div className={styles.box}>
                 <div className={styles.imgBox}>

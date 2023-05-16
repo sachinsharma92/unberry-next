@@ -4,6 +4,7 @@
 
 // auto-section
 .blogSectionStyle {
+  
   .title1 {
     font-weight: 500;
     font-size: 48.83px;
@@ -31,7 +32,7 @@
   }
 
   .contentSection {
-    padding: 54px 60px 0;
+    padding: 54px $p-padding-inline 0;
 
     @include mobile {
       padding: 54px 20px 0;

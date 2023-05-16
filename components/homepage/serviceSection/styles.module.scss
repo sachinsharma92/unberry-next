@@ -5,7 +5,7 @@
 // auto-section
 .breakingExperienceStyle {
   background: $white;
-  padding: 90px 60px 30px;
+  padding: 90px $p-padding-inline 30px;
 
   @include mobile {
     padding: 50px 20px;
@@ -58,7 +58,7 @@
 
 .serviceSectionStyle {
   background: $black;
-  padding: 70px 60px;
+  padding: 70px $p-padding-inline;
   border-radius: 40px;
 
   @include mobile {

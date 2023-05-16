@@ -45,7 +45,6 @@ export default function UpNextCard() {
     <div className={styles.upNextCardStyle}>
       <div className='container-width'>
         <h3 className={`${styles.heading}`}>Up next for you</h3>
-
         <div className={styles.cardGrid}>
           {[...blogs].reverse().map((item, index) => (
             <div key={index} className={styles.blogCards}>
