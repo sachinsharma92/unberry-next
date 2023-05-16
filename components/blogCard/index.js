@@ -29,8 +29,8 @@ const BlogCard = ({ data, currentPath }) => {
           slidesToScroll: 1,
           centerPadding: '30px',
         }
-      }
-    ]
+      },
+    ],
   };
 
   const onChange = (currentSlide) => {
