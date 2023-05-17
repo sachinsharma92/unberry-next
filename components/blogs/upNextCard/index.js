@@ -54,13 +54,10 @@ export default function UpNextCard() {
               <h4 className={`${styles.title1}`}>
                 {item.heading}
               </h4>
-              <Link href={{
-                pathname: `/blog/${item.slug}`,
-                query: { backTo: asPath },
-              }}
-                as={`/blog/${item.slug}`}>
+              <a
+                href={`/blog/${item.slug}`}>
                 <a>Read More</a>
-              </Link>
+              </a>
             </div>
           ))}
         </div>

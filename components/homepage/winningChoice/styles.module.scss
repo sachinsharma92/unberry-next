@@ -211,6 +211,73 @@
         padding: 10px 25px;
       }
 
+      &:nth-child(1) {
+        position: relative;
+
+        &::before {
+          height: 75px;
+          width: 100px;
+          content: '';
+          position: absolute;
+          background: url('/assets/white-shape.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          right: -98px;
+        }
+      }
+
+
+      &:nth-child(2) {
+        position: relative;
+
+        &::before {
+          height: 75px;
+          width: 100px;
+          content: '';
+          position: absolute;
+          background: url('/assets/white-shape.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          right: 32px;
+          bottom: -86px;
+          transform: rotate(90deg);
+        }
+      }
+
+      &:nth-child(3) {
+        position: relative;
+
+        &::before {
+          height: 75px;
+          width: 100px;
+          content: '';
+          position: absolute;
+          background: url('/assets/white-shape.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          left: 32px;
+          top: -19px;
+          transform: rotate(90deg);
+        }
+      }
+
+      &:nth-child(4) {
+        position: relative;
+
+        &::before {
+          height: 75px;
+          width: 100px;
+          content: '';
+          position: absolute;
+          background: url('/assets/white-shape.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          left: -30px;
+          bottom: 60px;
+        }
+      }
+
+
       .title4 {
         font-weight: 500;
         font-size: 28px;

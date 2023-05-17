@@ -5,7 +5,7 @@
 // auto-section
 .upNextCardStyle {
   background: $white;
-  padding: 54px 100px 100px;
+  padding: 54px 0 100px;
 
   @include mobile {
     padding: 4px 0px 50px;
@@ -16,18 +16,25 @@
     gap: 41px 20px;
     overflow-x: scroll;
     @include scrollHide();
+    padding-left: 100px;
+
+    @include mobile {
+      padding-left: 00px;
+    }
   }
 
   .heading {
     font-weight: 500;
     font-size: 31.25px;
     line-height: 24px;
-    margin-bottom: 55px;
+    margin:0 auto 55px;
+    max-width: 85%;
 
     @include mobile {
       font-size: 28.25px;
       margin-bottom: 35px;
       padding-left: 20px;
+      max-width: 100%;
     }
   }
 
