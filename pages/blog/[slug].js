@@ -6,10 +6,13 @@ import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import buttonIcon from "../../assets/new/icons/back.svg";
 import LayoutPrimary from "../../common/layoutPrimary";
 import { Mixpanel } from "../../services/mixpanel";
 
 // Images
+import Image from "next/image";
+import Link from "next/link";
 import SubscribeCard from "../../common/subscribe";
 import UpNextCard from "../../components/blogs/upNextCard";
 
@@ -69,6 +72,9 @@ const BlogDetail = ({ heading }) => {
 
 			<LayoutPrimary className={`blog-detail-section ${headerColor}`}>
 				<div className="blog-layout">
+					<button className="back-btn" onClick={() => router.back()}>
+						<Image src={buttonIcon} alt='image services' width="26" height="26" /> GO BACK
+					</button>
 					<div className="blog-header">
 						<h2 className="title2">{data?.heading}</h2>
 					</div>

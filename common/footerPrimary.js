@@ -14,12 +14,12 @@ export default function FooterPrimary(props) {
         <div className='footer'>
           <div className="logo-white"><Image src={logoFooter} alt="logo-footer" /></div>
 
-          <nav className={`menu-footer`}>
+          {/* <nav className={`menu-footer`}>
             <Link href="/">Sectors</Link>
             <Link href="/">Explore Suite</Link>
             <Link href="/blog">Blogs</Link>
             <Link href="/">Contact Us</Link>
-          </nav>
+          </nav> */}
 
           <div className='social-sec'>
             <a href="https://www.linkedin.com/company/unberry/" rel="noreferrer" className='icon-link' target="_blank"><Image className='icon' alt="social icons" src={linkedin} /></a>

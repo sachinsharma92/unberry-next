@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image';
 import React from 'react';
 import image1 from "../../../assets/new/service-card1.jpg";
 import image2 from "../../../assets/new/service-card2.jpg";
@@ -16,7 +15,7 @@ export default function ServiceSection(props) {
       imageUrl: image1,
       title: 'Games & Immersive Exercises',
       description: 'Dynamic environments modulating multiple pathways, generating exponentially more behavioural data, measuring the true potential of a candidate across modern workplace skills',
-      videoUrl: '/video/service1.mp4',
+      videoUrl: 'https://assets.unberry.com/media/service1.mp4',
       badgeList: [
         'Problem Solving', 'Tolerance To Ambiguity', 'Learning Agility', 'Attention Span', 'Processing Speed', 'Efficiency', 'Multitasking'
       ]
@@ -25,16 +24,16 @@ export default function ServiceSection(props) {
       imageUrl: image2,
       title: 'Skill assessments & live coding simulations',
       description: 'Helping evaluate the functional capabilities, domain knowledge and proficiency across a wide repository of modern day skills and coding languages across different functions & roles.',
-      videoUrl: '/video/service2.mp4',
+      videoUrl: 'https://assets.unberry.com/media/service2.mp4',
       badgeList: [
-        'Technology', 'Sales', 'Finance', 'Marketing', 'Customer Success', 'Business Management'
+        'Technology', 'Sales', 'Finance', 'Marketing', 'Customer Success', 'Business Management', "+500 Skills",
       ]
     },
     {
       imageUrl: image3,
       title: 'AI based speech & writing tool',
       description: 'That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.',
-      videoUrl: '/video/service3.mp4',
+      videoUrl: 'https://assets.unberry.com/media/service3.mp4',
       badgeList: [
         'Speaking', 'Listening', 'Writing', 'Reading', 'English Proficiency',
       ]

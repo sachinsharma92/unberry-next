@@ -48,7 +48,7 @@
     right: 60px;
     padding: 60px;
     border-radius: 30px;
-    top: 9%;
+    top: 12%;
     min-width: 45%;
     color: $white;
 
@@ -61,10 +61,15 @@
       margin-top: 45px;
     }
 
+    .item {
+      position: relative;
+    }
+
     .divider {
       width: 2px;
       height: 70%;
       background-color: $white;
+      position: relative;
     }
 
     .subtext {
@@ -97,18 +102,39 @@
       margin: 0 auto;
       left: 0;
       right: 0;
-      height: 90px;
+      height: 102px;
       width: 77px;
 
       @include mobile {
         left: auto;
         right: 50px;
+        height: 96px;
+        width: 57px;
       }
     }
   }
 
+  .videoCard {
+    display: none;
+
+    @include mobile {
+      display: block;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 28px;
+      position: relative;
+      height: 320px;
+    }
+
+    video {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+  }
+
   .traditionalSection {
-    // background-color: #f4f4f4;
     border-radius: 40px;
     margin-top: 100px;
     position: relative;
@@ -117,6 +143,7 @@
     @include mobile {
       margin-top: 70px;
       border-radius: 20px;
+      display: none;
     }
   }
 

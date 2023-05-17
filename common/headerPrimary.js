@@ -20,10 +20,10 @@ export default function HeaderPrimary(props) {
         </Link>
 
         <nav className={`menu-header ${menuShow && 'menu-active'}`}>
-          <Link href="/">Sectors</Link>
+          {/* <Link href="/">Sectors</Link>
           <Link href="/">Explore Suite</Link>
           <Link href="/blog">Blogs</Link>
-          <Link href="/">Contact Us</Link>
+          <Link href="/">Contact Us</Link> */}
           <Link href="/book-demo"><a className='btn-primary'>BOOK DEMO</a></Link>
         </nav>
 

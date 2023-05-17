@@ -180,7 +180,7 @@
 
     .listItem {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 0 14px;
       font-weight: 500;
       font-size: 18px;
@@ -190,7 +190,7 @@
 
       @include mobile {
         font-size: 16px;
-        line-height: 14px;
+        line-height: 24px;
         gap: 0 10px;
         min-width: auto;
       }

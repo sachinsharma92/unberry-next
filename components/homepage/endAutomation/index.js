@@ -8,7 +8,7 @@ import icon4 from "../../../assets/new/icons/prohibit.svg";
 
 import icon5 from "../../../assets/new/icons/cursor-click.svg";
 import icon6 from "../../../assets/new/icons/clock-countdown.svg";
-import icon7 from "../../../assets/new/icons/report.svg";
+import icon7 from "../../../assets/new/icons/chart.svg";
 import icon8 from "../../../assets/new/icons/repeat.svg";
 
 import icon9 from "../../../assets/new/icons/envelope.svg";

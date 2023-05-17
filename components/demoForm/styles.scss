@@ -183,5 +183,12 @@
   .ant-select-open .ant-select-selector {
     box-shadow: none !important;
     background: rgba(244, 244, 244, 0.1);
+    border-color: rgba(244, 244, 244, 0.1) !important;
+  }
+
+  .ant-select-arrow {
+    color: $white;
+    font-size: 17px;
+    right: 21px;
   }
 }

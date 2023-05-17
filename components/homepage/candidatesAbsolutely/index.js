@@ -5,7 +5,7 @@ import UnberryEmoticon from './unberry';
 import TraditionalEmoticon from './traditional';
 
 import Image from 'next/image';
-import arc from "../../../assets/new/design-arc.png";
+import arc from "../../../assets/new/design-arc.svg";
 
 // Json File
 
@@ -42,6 +42,13 @@ export default function CandidatesAbsolutely() {
         <div className={styles.traditionalSection}>
           <ReactCompareSlider position={40} itemOne={<TraditionalEmoticon />} itemTwo={<UnberryEmoticon />}
           />
+        </div>
+
+        <div className={styles.videoCard}>
+          <video muted autoPlay loop playsInline width="100%" height="100%">
+            <source src="https://assets.unberry.com/media/emoji-motions.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>

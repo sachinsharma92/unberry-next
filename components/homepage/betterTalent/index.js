@@ -50,7 +50,7 @@ export default function BetterTalent() {
               id='team-video'
             >
               <source
-                src="https://s3.ap-south-1.amazonaws.com/grappus-website/GrappusVideo-Feb17th+(online-video-cutter.com).mp4"
+                src="https://assets.unberry.com/media/Unberry-Video.mp4"
                 type="video/mp4"
               />
               Your browser does not support HTML5 video.

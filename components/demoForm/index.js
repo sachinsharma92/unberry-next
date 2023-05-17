@@ -162,11 +162,11 @@ export default function DemoForm(props) {
           </Select>
         </Form.Item>
 
-        <Form.Item
+        {/* <Form.Item
           name="message"
         >
           <Input placeholder='Message (optional)' />
-        </Form.Item>
+        </Form.Item> */}
 
         <Button type="primary" htmlType="submit" >
           BOOK DEMO
