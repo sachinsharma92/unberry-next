@@ -59,7 +59,7 @@ export default function EndAutomation() {
                   </div>
                 </div>
               </div>
-              <div className={`content-section ${styles.backgroundStyle1}`} style={{ backgroundImage: `url("/assets/automation1.png")` }}>
+              <div className={`content-section ${styles.backgroundStyle1}`}>
                 <div className={styles.contentSec}>
                   <h4 className={styles.title4}>Advanced Proctoring</h4>
                   <p className={styles.description}>Prevent cheating and unethical practices with our advanced remote and live proctoring, flagging suspicious usage.</p>
@@ -109,7 +109,7 @@ export default function EndAutomation() {
                   <h2 className="heading">Real Time Dashboards</h2>
                 </div>
               </div>
-              <div className={`content-section ${styles.backgroundStyle2}`} style={{ backgroundImage: `url("/assets/automation2.png")` }}>
+              <div className={`content-section ${styles.backgroundStyle2}`}>
                 <div className={`${styles.contentSec}`}>
                   <h4 className={styles.title4}>Real Time Dashboards</h4>
                   <p className={styles.description}>View detailed  reports in real time as soon as the candidate finishes, and have complete visibility and control of each step.</p>
@@ -159,7 +159,7 @@ export default function EndAutomation() {
                   </div>
                 </div>
               </div>
-              <div className={`content-section ${styles.backgroundStyle3}`} style={{ backgroundImage: `url("/assets/automation3.png")` }}>
+              <div className={`content-section ${styles.backgroundStyle3}`}>
                 <div className={styles.contentSec}>
                   <h4 className={styles.title4}>Candidate Communication</h4>
                   <p className={styles.description}>Automated communication with candidates to engage with your top talent with automated reminders and notifications.</p>

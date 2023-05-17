@@ -138,7 +138,7 @@
       padding: 50px;
 
       @include mobile {
-        padding: 20px 20px 150px;
+        padding: 20px 20px 200px;
       }
     }
 
@@ -204,6 +204,7 @@
   }
 
   .backgroundStyle1 {
+    background: url('/assets/automation1.png');
     height: 100%;
     background-position: bottom right;
     background-size: 90%;
@@ -212,9 +213,17 @@
     @include desktop-lg {
       background-size: 70%;
     }
+
+    @include mobile {
+      background: url('/assets/m-automation1.png');
+      background-size: 95%;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+    }
   }
 
   .backgroundStyle2 {
+    background: url('/assets/automation2.png');
     height: 100%;
     background-position: bottom right;
     background-size: 80%;
@@ -223,9 +232,17 @@
     @include desktop-lg {
       background-size: 70%;
     }
+
+    @include mobile {
+      background: url('/assets/m-automation2.png');
+      background-size: 95%;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+    }
   }
 
   .backgroundStyle3 {
+    background: url('/assets/automation3.png');
     height: 100%;
     background-position: bottom right;
     background-size: 75%;
@@ -233,6 +250,14 @@
 
     @include desktop-lg {
       background-size: 70%;
+      background-repeat: no-repeat;
+    }
+
+    @include mobile {
+      background: url('/assets/m-automation3.png');
+      background-size: 95%;
+      background-repeat: no-repeat;
+      background-position: bottom right;
     }
   }
 }
