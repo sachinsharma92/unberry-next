@@ -138,7 +138,11 @@
       padding: 50px;
 
       @include mobile {
-        padding: 20px 20px 200px;
+        padding: 20px 20px 150px;
+        
+        @supports (-webkit-backdrop-filter: blur(1px)) {
+          padding: 20px 20px 200px;
+        }
       }
     }
 
@@ -218,7 +222,7 @@
       background: url('/assets/m-automation1.png');
       background-size: 95%;
       background-repeat: no-repeat;
-      background-position: bottom right;
+      background-position: 100% 110%;
     }
   }
 
@@ -237,7 +241,7 @@
       background: url('/assets/m-automation2.png');
       background-size: 95%;
       background-repeat: no-repeat;
-      background-position: bottom right;
+      background-position: 100% 110%;
     }
   }
 
@@ -257,7 +261,7 @@
       background: url('/assets/m-automation3.png');
       background-size: 95%;
       background-repeat: no-repeat;
-      background-position: bottom right;
+      background-position: 100% 110%;
     }
   }
 }
