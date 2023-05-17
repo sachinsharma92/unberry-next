@@ -1090,22 +1090,31 @@ HAMBURGER MENU
   backdrop-filter: blur(5px);
 }
 
-.react-responsive-modal-root .better-talent-modal {
-  max-width: 100%;
-  padding: 0;
+.react-responsive-modal-root {
 
-  .react-responsive-modal-closeButton {
-    background: $white;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    right: 0;
-
-    svg {
-      width: 20px;
+  .better-talent-modal {
+    max-width: 100%;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    
+    @include mobile {
+      margin: 0;
+    }
+  
+    .react-responsive-modal-closeButton {
+      background: $white;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      right: 0;
+  
+      svg {
+        width: 20px;
+      }
     }
   }
 }
@@ -1596,5 +1605,18 @@ HAMBURGER MENU
     &:first-child {
       margin-right: 10px;
     }
+  }
+}
+
+
+
+// For Video Autoplay
+.safari_only {
+  display: none;
+}
+
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .safari_only {
+    display: block;
   }
 }
