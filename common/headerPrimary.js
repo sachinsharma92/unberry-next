@@ -30,9 +30,9 @@ export default function HeaderPrimary(props) {
         <div className='mobile-section'>
           <Link href="/"><a className='btn-primary'>BOOK DEMO</a></Link>
 
-          <button className='btn-toggle' onClick={menuToggle}>
+          {/* <button className='btn-toggle' onClick={menuToggle}>
             <div className={`bar ${menuShow && 'animate'}`}></div>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

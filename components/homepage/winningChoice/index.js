@@ -27,6 +27,15 @@ export default function WinningChoice() {
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
+
+  const testimonialsData = [
+    "I was really excited for such an entertaining placement and this is for the first time I have been doing this kind of an amazing round.",
+    "It was so nice. I didn’t know that recruitment can be this much fun.",
+    "I am very happy after playing this game. It was a tremendous experience. Totally loved it. Thank you for giving this opportunity.",
+    "Very innovative way of analyzing the caliber of the candidate. Thoroughly enjoyed it.",
+    "I never had this much fun during any recruitment process for a sec I almost forgot that I’m giving an exam.",
+    "Overall, I found this assessment was challenging and thought-provoking and very engaging. The graphics were great.",
+  ]
   return (
     <div className={styles.winningChoiceStyle}>
       <div className={`container-width ${styles.containerStyle}`}>
@@ -177,24 +186,13 @@ export default function WinningChoice() {
 
         <div className={`${styles.sliderCard} wining-slider`}>
           <Carousel afterChange={onChange} autoplay>
-            <div>
-              <h3 className={styles.title3}>
-                “I never had this much fun during any recruitment process for a
-                sec I almost forgot that I’m giving an exam.”
-              </h3>
-            </div>
-            <div>
-              <h3 className={styles.title3}>
-                “I never had this much fun during any recruitment process for a
-                sec I almost forgot that I’m giving an exam.”
-              </h3>
-            </div>
-            <div>
-              <h3 className={styles.title3}>
-                “I never had this much fun during any recruitment process for a
-                sec I almost forgot that I’m giving an exam.”
-              </h3>
-            </div>
+            {testimonialsData.map((item, index) => (
+              <div key={index}>
+                <h3 className={styles.title3}>
+                  {item}
+                </h3>
+              </div>
+            ))}
           </Carousel>
         </div>
       </div>

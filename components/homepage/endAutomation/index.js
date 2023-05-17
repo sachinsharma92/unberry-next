@@ -106,12 +106,12 @@ export default function EndAutomation() {
                   <div className="icon-plus">
                     <Image src={iconPlus} alt='image services' width="34" height="34" />
                   </div>
-                  <h2 className="heading">Real time dashboards</h2>
+                  <h2 className="heading">Real Time Dashboards</h2>
                 </div>
               </div>
               <div className={`content-section ${styles.backgroundStyle2}`} style={{ backgroundImage: `url("/assets/automation2.png")` }}>
                 <div className={`${styles.contentSec}`}>
-                  <h4 className={styles.title4}>Real time dashboards</h4>
+                  <h4 className={styles.title4}>Real Time Dashboards</h4>
                   <p className={styles.description}>View detailed  reports in real time as soon as the candidate finishes, and have complete visibility and control of each step.</p>
 
                   <table className={styles.listStyle}>

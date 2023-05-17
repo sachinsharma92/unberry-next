@@ -14,8 +14,9 @@
   .title1 {
     color: $white;
     font-weight: 400;
-    font-size: 99px;
+    font-size: 90px;
     line-height: 60px;
+    letter-spacing: -3px;
 
     @include mobile {
       font-size: 48.83px;
@@ -25,9 +26,10 @@
 
   .title2 {
     font-weight: 500;
-    font-size: 99px;
+    font-size: 90px;
     line-height: 60px;
     color: #ac95cf;
+    letter-spacing: -3px;
 
     @include mobile {
       font-size: 48.83px;

@@ -39,17 +39,17 @@
 
   .numbersCard {
     background-color: #aa94ce;
-    height: 260px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
     text-align: center;
-    right: 60px;
+    right: 190px;
     padding: 60px;
     border-radius: 30px;
-    top: 12%;
-    min-width: 45%;
+    top: 153px;
+    width: 600px;
     color: $white;
 
     @include mobile {

@@ -29,7 +29,7 @@ export default function CandidatesAbsolutely() {
             </div>
             <div className={styles.divider}></div>
             <div className={styles.item}>
-              <h2 className={styles.titleNumber}>91%</h2>
+              <h2 className={styles.titleNumber}>95%</h2>
               <div className={styles.subtext}>Completion Rate</div>
             </div>
 
