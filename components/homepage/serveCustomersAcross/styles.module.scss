@@ -31,7 +31,7 @@
     margin: 0 auto;
 
     @include mobile {
-      font-size: 31.25px;
+      font-size: 30px;
       line-height: 35px;
       max-width: 100%;
     }
@@ -51,7 +51,7 @@
 
     @include mobile {
       border-radius: 0px;
-      padding: 40px 0px;
+      padding: 20px 0px;
     }
 
     .title4 {
@@ -100,7 +100,7 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 10px;
-      padding: 15px;
+      padding: 10px;
     }
 
     .badgeItem {

@@ -47,7 +47,7 @@ export default function EndAutomation() {
         <h1 className={`${styles.title1}`}>
           We use the most advanced technologies to provide a seamless experience
         </h1>
-        <div className="container-panel">
+        <div className={`container-panel ${styles.containerPanel}`}>
 
           <div className="panel gray active">
             <div className={styles.accordianCard}>

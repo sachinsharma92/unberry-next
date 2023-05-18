@@ -58,7 +58,8 @@
 
     @include mobile {
       max-width: 100%;
-      font-size: 16px;
+      font-size: 15px;
+      line-height: 22px;
     }
   }
 
@@ -263,5 +264,9 @@
       background-repeat: no-repeat;
       background-position: 100% 110%;
     }
+  }
+
+  .containerPanel {
+    align-items: normal;
   }
 }

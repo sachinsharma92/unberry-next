@@ -137,7 +137,6 @@
     display: none;
     justify-content: center;
     flex-direction: column;
-    text-align: right;
     padding: 0px 40px;
     min-height: 126px;
     max-width: 100%;
@@ -150,6 +149,7 @@
       background: #daeeee;
       border-radius: 0px 20px 20px 0px;
       max-width: 80%;
+      text-align: right;
 
       .largeNumber {
         color: #184444;
@@ -166,6 +166,7 @@
       max-width: 80%;
       margin-right: 0;
       margin-left: auto;
+      text-align: left;
 
       .largeNumber {
         color: #3d2f52;
@@ -368,6 +369,8 @@
 
     .content {
       padding: 49px;
+      position: relative;
+      z-index: 1;
 
       @include mobile {
         padding: 40px 20px;

@@ -151,6 +151,7 @@
   padding: 50px 0px;
   margin: 0 auto;
   width: 70%;
+  
 
   @include mobile {
     width: 100%;
@@ -159,12 +160,17 @@
 
   h3 {
     font-size: 22px;
+    line-height: 1.2;
   }
 
   p {
     font-size: 18px;
-    text-align: justify;
+    text-align: left;
     color: rgba($black, 0.7);
+
+    span {
+      font-size: 18px !important;
+    }
   }
 
   a, a span {

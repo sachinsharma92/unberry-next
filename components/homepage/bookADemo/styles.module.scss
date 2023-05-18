@@ -19,8 +19,9 @@
     letter-spacing: -3px;
 
     @include mobile {
-      font-size: 48.83px;
+      font-size: 48px;
       line-height: 48px;
+      margin-bottom: 15px;
     }
   }
 
@@ -48,6 +49,7 @@
     @include mobile {
       max-width: 100%;
       font-size: 16px;
+      line-height: 25px;
     }
   }
 

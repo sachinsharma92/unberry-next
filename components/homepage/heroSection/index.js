@@ -60,8 +60,8 @@ export default function HeroSection() {
             We help companies make <span className={styles.color1}> better</span> <span className={styles.color2}>smarter</span> & <span className={styles.color3}>faster</span> talent decisions
           </h1>
           <h1 className={`${styles.titleMobile} title1 animation-heading`}>
-            We help companies make
-            <Marquee speed={20} gradient={false} className='hero-marquee'>
+            We help <br /> companies make
+            <Marquee speed={40} gradient={false} className='hero-marquee'>
               <div className={styles.mobileStyle}>
                 <span className={styles.color1}> better</span>
                 <span className={styles.color2}>smarter</span>
