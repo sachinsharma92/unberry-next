@@ -213,6 +213,9 @@ export default function EndAutomation() {
               </div>
             </div>
           </div>
+
+          {/* FOr Right SPace */}
+          <div className={styles.accordianCardLast} />
         </div>
       </div>
     </div>

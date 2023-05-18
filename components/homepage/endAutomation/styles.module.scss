@@ -8,7 +8,7 @@
   padding: 94px $p-padding-inline;
 
   @include mobile {
-    padding: 50px 20px;
+    padding: 50px 0px;
   }
 
   .title1 {
@@ -28,7 +28,7 @@
       font-size: 30px;
       line-height: 31px;
       text-align: left;
-      max-width: 100%;
+      max-width: 90%;
     }
   }
 
@@ -65,6 +65,14 @@
 
   .accordianCardSection {
     display: flex;
+  }
+
+  .accordianCardLast {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   .accordianCard {
@@ -258,6 +266,7 @@
 
   .containerPanel {
     align-items: normal;
+    padding-left: 20px;
   }
 
 

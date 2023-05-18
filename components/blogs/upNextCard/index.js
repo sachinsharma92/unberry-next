@@ -4,6 +4,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import 'react-responsive-modal/styles.css';
 import { Mixpanel } from '../../../services/mixpanel';
 
@@ -12,6 +13,7 @@ import styles from './styles.module.scss';
 
 
 export default function UpNextCard() {
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1600px)' })
   const [blogs, setBlogs] = useState([])
   const [isLoading, setIsLoading] = useState(false)
   const { asPath } = useRouter();
@@ -42,17 +44,14 @@ export default function UpNextCard() {
     })
   }, [])
 
-
-
   const settings = {
     dots: false,
     arrows: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    centerMode: true,
-    centerPadding: '260px',
+    slidesToShow: isBigScreen ? 3 : 3.2,
+    slidesToScroll: 3,
+
     responsive: [
       {
         breakpoint: 767,

@@ -27,15 +27,17 @@ export default function BookDemoScreen() {
 
       <div className={styles.bookDemoStyle}>
         <div className={styles.contentSection}>
-          <Link href="/">
-            <a className={`logo-black ${styles.logoBlack}`}>
-              <Image src={logoTheme} width="124" height="34" alt="logo" />
-            </a>
-          </Link>
+          <div>
+            <Link href="/">
+              <a className={`logo-black ${styles.logoBlack}`}>
+                <Image src={logoTheme} width="124" height="34" alt="logo" />
+              </a>
+            </Link>
 
-          <div className={styles.headSection}>
-            <h2 className={styles.title2}>Make better talent decisions with unberry</h2>
-            <p className={styles.description}>Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
+            <div className={styles.headSection}>
+              <h2 className={styles.title2}>Make better talent decisions with unberry</h2>
+              <p className={styles.description}>Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
+            </div>
           </div>
 
           <ul className={styles.listStyle}>

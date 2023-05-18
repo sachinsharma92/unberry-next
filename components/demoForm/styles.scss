@@ -27,6 +27,11 @@
 
   .logo-black {
     margin-bottom: 50px;
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
 
     img {
       filter: contrast(0) brightness(100);
@@ -43,6 +48,10 @@
     opacity: 0.5;
     max-width: 90%;
     margin: 58px auto 0;
+
+    @include desktop-lg {
+      max-width: 60%;
+    }
 
     a {
       opacity: 1;
