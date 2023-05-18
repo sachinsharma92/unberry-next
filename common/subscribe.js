@@ -1,14 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-
 import { Button, Form, Input } from 'antd';
-import React from 'react';
+import React, { useState } from 'react';
 import dribbble from "../assets/new/social/dribbble-purple.svg";
 import instagram from "../assets/new/social/instagram-purple.svg";
 import linkedin from "../assets/new/social/linkedin-purple.svg";
+import ThankModal from '../components/thankModal';
 
 import Image from 'next/image';
 
 export default function SubscribeCard(props) {
+  const [isThankModal, setThankModal] = useState(false);
+  const thankToggleModal = () => {
+    setThankModal(!isThankModal);
+  };
+
   const onFinish = (values) => {
     console.log('Success:', values);
   };
@@ -41,7 +46,7 @@ export default function SubscribeCard(props) {
               <Input placeholder='Enter your email!' />
             </Form.Item>
 
-            <Button type="primary" htmlType="submit">
+            <Button type="primary" htmlType="submit" onClick={thankToggleModal}>
               Submit
             </Button>
           </Form>
@@ -53,6 +58,9 @@ export default function SubscribeCard(props) {
           <a href="https://www.instagram.com/unberry_official/" rel="noreferrer" className='icon-link' target="_blank"><Image className='icon' src={instagram} alt="social icons" /></a>
         </div>}
       </div>
+
+
+      <ThankModal visible={isThankModal} onCancel={thankToggleModal} />
     </div>
   )
 }
