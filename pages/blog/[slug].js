@@ -62,6 +62,11 @@ const BlogDetail = ({ heading }) => {
 			behavior: "smooth",
 		});
 	}, []);
+
+	useEffect(() => {
+		document.body.className = 'blog-detaul-mode';
+	});
+
 	return (
 		<>
 			<Head>

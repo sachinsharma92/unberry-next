@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
 
+  @include mobile {
+    padding: 20px 20px 36px;
+  }
+
   .contact-form-section {
     padding: 60px 50px;
     height: 100%;
@@ -18,6 +22,14 @@
 
     @include mobile {
       padding: 34px 11px;
+    }
+  }
+
+  .logo-black {
+    margin-bottom: 50px;
+
+    img {
+      filter: contrast(0) brightness(100);
     }
   }
 
@@ -52,6 +64,13 @@
     line-height: 41px;
     letter-spacing: -0.03em;
     text-align: center;
+
+    @include mobile {
+      font-size: 42px;
+      line-height: 35px;
+      letter-spacing: -0.03em;
+      text-align: left;
+    }
   }
 
   .form-style {
@@ -59,7 +78,8 @@
     padding-right: 50px;
 
     @include mobile {
-      padding-right: 20px;
+      padding-right: 0px;
+      margin-top: 10px;
     }
 
     .grid-form {
@@ -125,12 +145,12 @@
     color: $white;
     opacity: 0.5;
   }
-  
+
   :-ms-input-placeholder {
     color: $white;
     opacity: 0.5;
   }
-  
+
   ::-ms-input-placeholder {
     color: $white;
     opacity: 0.5;
@@ -154,10 +174,15 @@
     }
   }
 
-  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input, .ant-select-status-error.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
+  .ant-input-status-error:not(.ant-input-disabled):not(
+      .ant-input-borderless
+    ).ant-input,
+  .ant-select-status-error.ant-select:not(.ant-select-disabled):not(
+      .ant-select-customize-input
+    )
+    .ant-select-selector {
     background: rgba(244, 244, 244, 0.1);
   }
-
 
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
@@ -190,5 +215,17 @@
     color: $white;
     font-size: 17px;
     right: 21px;
+
+    .anticon {
+      background: url("/assets/arrow-down.svg");
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      svg {
+        display: none;
+      }
+    }
   }
 }

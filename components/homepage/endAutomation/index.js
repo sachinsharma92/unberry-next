@@ -15,8 +15,11 @@ import icon9 from "../../../assets/new/icons/envelope.svg";
 import icon10 from "../../../assets/new/icons/note.svg";
 import icon11 from "../../../assets/new/icons/device.svg";
 import icon12 from "../../../assets/new/icons/chats.svg";
-
 import iconPlus from "../../../assets/new/plus.svg";
+
+import backgroundStyle1 from "../../../assets/new/m-automation1.png";
+import backgroundStyle2 from "../../../assets/new/m-automation2.png";
+import backgroundStyle3 from "../../../assets/new/m-automation3.png";
 
 
 // Styles here
@@ -94,6 +97,10 @@ export default function EndAutomation() {
                       </td>
                     </tr>
                   </table>
+
+                  <div className={styles.bgMobileBoxStyle1}>
+                    <Image src={backgroundStyle1} alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                  </div>
                 </div>
               </div>
             </div>
@@ -144,6 +151,10 @@ export default function EndAutomation() {
                       </td>
                     </tr>
                   </table>
+
+                  <div className={styles.bgMobileBoxStyle2}>
+                    <Image src={backgroundStyle2} alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                  </div>
                 </div>
               </div>
             </div>
@@ -194,6 +205,10 @@ export default function EndAutomation() {
                       </td>
                     </tr>
                   </table>
+
+                  <div className={styles.bgMobileBoxStyle3}>
+                    <Image src={backgroundStyle3} alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                  </div>
                 </div>
               </div>
             </div>

@@ -139,7 +139,7 @@
       padding: 50px;
 
       @include mobile {
-        padding: 20px 20px 150px;
+        padding: 20px 20px 0px;
         
         @supports (-webkit-backdrop-filter: blur(1px)) {
           padding: 20px 20px 200px;
@@ -154,9 +154,8 @@
       margin-left: -20px;
 
       @include mobile {
-        max-width: 100%;
+        width: 100%;
         margin-top: 20px;
-        margin-bottom: 50px;
         margin-left: -10px;
       }
 
@@ -220,11 +219,8 @@
     }
 
     @include mobile {
-      background: url('/assets/m-automation1.png');
-      background-size: 95%;
-      background-repeat: no-repeat;
-      background-position: 100% 110%;
-    }
+      background: none;
+     }
   }
 
   .backgroundStyle2 {
@@ -239,11 +235,8 @@
     }
 
     @include mobile {
-      background: url('/assets/m-automation2.png');
-      background-size: 95%;
-      background-repeat: no-repeat;
-      background-position: 100% 110%;
-    }
+      background: none;
+     }
   }
 
   .backgroundStyle3 {
@@ -259,14 +252,67 @@
     }
 
     @include mobile {
-      background: url('/assets/m-automation3.png');
-      background-size: 95%;
-      background-repeat: no-repeat;
-      background-position: 100% 110%;
-    }
+      background: none;
+     }
   }
 
   .containerPanel {
     align-items: normal;
+  }
+
+
+
+  .bgMobileBoxStyle1 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 25px;
+    top: 60px;
+
+    @include mobile {
+      display: block;
+    }
+
+    .bgMobileStyle {
+      object-fit: contain;
+      object-position: left bottom;
+    }
+  }
+
+  .bgMobileBoxStyle2 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 25px;
+    top: 40px;
+
+    @include mobile {
+      display: block;
+    }
+
+    .bgMobileStyle {
+      object-fit: contain;
+      object-position: right;
+    }
+  }
+
+  .bgMobileBoxStyle3 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 25px;
+    top: 30px;
+
+    @include mobile {
+      display: block;
+    }
+
+    .bgMobileStyle {
+      object-fit: contain;
+      object-position: right top;
+    }
   }
 }

@@ -888,6 +888,7 @@ HAMBURGER MENU
 }
 
 // blog-carousel
+
 .blog-carousel {
   .ant-carousel .slick-track {
     display: flex;
@@ -955,6 +956,21 @@ HAMBURGER MENU
     }
   }
 }
+.upNext-blog-carousel {
+
+  .slick-slider .slick-arrow {
+    top: -100px;
+  }
+
+  .slick-track .slick-slide {
+    border: none;
+    padding: 0 20px;
+
+    @include mobile {
+      padding: 0 5px;
+    }
+  }
+}
 
 .container-panel {
   display: flex;
@@ -983,6 +999,7 @@ HAMBURGER MENU
       width: 100%;
       min-width: 90%;
       border-radius: 24px;
+      height: auto;
     }
 
     &.gray {
@@ -1468,6 +1485,7 @@ HAMBURGER MENU
       @include mobile {
         text-align: center;
         margin: 0px 0 30px;
+        padding: 30px 20px;
       }
 
       .title4 {
@@ -1624,4 +1642,10 @@ HAMBURGER MENU
   .safari_only {
     display: block;
   }
+}
+
+
+// blog-detaul-mode
+.blog-detaul-mode {
+  overflow-x: hidden;
 }

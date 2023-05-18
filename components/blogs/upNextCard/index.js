@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { Carousel } from 'antd';
 import axios from 'axios';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -41,25 +42,71 @@ export default function UpNextCard() {
     })
   }, [])
 
+
+
+  const settings = {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    centerMode: true,
+    centerPadding: '260px',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '20px',
+        }
+      },
+    ],
+  };
+
+  const onChange = (currentSlide) => {
+    console.log(currentSlide);
+  };
+
   return (
     <div className={styles.upNextCardStyle}>
       <div className='container-width'>
-        <h3 className={`${styles.heading}`}>Up next for you</h3>
-        <div className={styles.cardGrid}>
-          {[...blogs].reverse().map((item, index) => (
-            <div key={index} className={styles.blogCards}>
-              <div className={styles.imgbox}>
-                <div className={styles.imgStyle} style={{ backgroundImage: `url(${item.bannerImage})` }} />
-              </div>
-              <h4 className={`${styles.title1}`}>
-                {item.heading}
-              </h4>
-              <a
-                href={`/blog/${item.slug}`}>
+
+        <div className={styles.contentSection}>
+          <div className={styles.headingSection}>
+            <h3 className={`${styles.heading}`}>Up next for you</h3>
+            <Link href="/blog" passHref>
+              <a className={styles.title4}>
+                View All
+              </a>
+            </Link>
+          </div>
+          <div className={styles.divider}></div>
+        </div>
+
+        <div className={`${styles.cardGrid} blog-carousel upNext-blog-carousel`}>
+          <Carousel afterChange={onChange} {...settings}>
+            {[...blogs].reverse().map((item, index) => (
+              <a href={`/blog/${item.slug}`} key={index} className={styles.blogCards}>
+                <div className={styles.imgbox}>
+                  <div className={styles.imgStyle} style={{ backgroundImage: `url(${item.bannerImage})` }} />
+                </div>
+                <h4 className={`${styles.title1}`}>
+                  {item.heading}
+                </h4>
+
                 <a>Read More</a>
               </a>
-            </div>
-          ))}
+            ))}
+          </Carousel>
         </div>
       </div>
     </div>

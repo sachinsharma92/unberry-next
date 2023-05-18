@@ -3,15 +3,15 @@ import React from 'react';
 import logoTheme from "../../assets/logo-black.svg";
 import SeoHead from '../../components/seoHead';
 
+import Image from 'next/image';
+import Link from 'next/link';
 import icon1 from "../../assets/icons/icon1.svg";
 import icon2 from "../../assets/icons/icon2.svg";
 import icon3 from "../../assets/icons/icon3.svg";
 import icon4 from "../../assets/icons/icon4.svg";
+import DemoForm from '../../components/demoForm';
 
 // Styles here
-import Image from 'next/image';
-import Link from 'next/link';
-import DemoForm from '../../components/demoForm';
 import styles from './styles.module.scss';
 
 
@@ -26,10 +26,9 @@ export default function BookDemoScreen() {
       />
 
       <div className={styles.bookDemoStyle}>
-
         <div className={styles.contentSection}>
           <Link href="/">
-            <a className='logo-black'>
+            <a className={`logo-black ${styles.logoBlack}`}>
               <Image src={logoTheme} width="124" height="34" alt="logo" />
             </a>
           </Link>

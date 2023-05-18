@@ -27,7 +27,7 @@ const BlogCard = ({ data, currentPath }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: '30px',
+          centerPadding: '20px',
         }
       },
     ],

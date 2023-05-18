@@ -4,6 +4,8 @@ import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
+import Image from 'next/image';
+import logoTheme from "../../assets/logo-black.svg";
 
 const { Option } = Select;
 
@@ -83,6 +85,11 @@ export default function DemoForm(props) {
 
   return (
     <section className='contact-section' id={props.id}>
+      <Link href="/">
+        <a className={`logo-black`}>
+          <Image src={logoTheme} width="124" height="34" alt="logo" />
+        </a>
+      </Link>
       <h3 className="title3">Take the guesswork out...</h3>
       <Form
         name="basic"
