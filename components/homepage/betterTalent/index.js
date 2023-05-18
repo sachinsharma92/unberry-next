@@ -27,12 +27,19 @@ export default function BetterTalent() {
         </div>
 
         <div className={styles.imgbox}>
-          <Image
-            src={image1}
-            alt="image services"
-            className={styles.imgStyle}
-            layout="fill"
-          />
+          <video
+            className={`${styles.videoSection}`}
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source
+              src="/video/bg.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support HTML5 video.
+          </video>
           <button className={styles.buttonStyle} onClick={modalToggle}>
             <Image src={buttonIcon} alt="image services" layout="fill" />
           </button>

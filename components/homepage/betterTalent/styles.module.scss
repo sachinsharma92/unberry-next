@@ -42,8 +42,26 @@
     border-radius: 350px;
     overflow: hidden;
 
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.5);
+      content: '';
+    }
+
     img {
       object-fit: cover;
+    }
+
+    .videoSection {
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      border-radius: 20px;
     }
 
     @include mobile {
@@ -54,6 +72,7 @@
        object-position: 20%;
       }
     }
+    
   }
 
   .buttonStyle {
@@ -63,7 +82,7 @@
     cursor: pointer;
     width: 250px;
     height: 56px;
-    position: relative;
+    position: absolute;
 
     @include mobile {
       width: 180px;
@@ -77,10 +96,6 @@
     &:hover {
       scale: 1.1;
     }
-  }
-
-  .videoSection {
-    width: 100%;
   }
 }
 
