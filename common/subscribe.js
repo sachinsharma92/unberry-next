@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button, Form, Input } from 'antd';
 import React, { useState } from 'react';
-import dribbble from "../assets/new/social/dribbble-purple.svg";
+import twitter from "../assets/new/social/twitter.svg";
 import instagram from "../assets/new/social/instagram-purple.svg";
 import linkedin from "../assets/new/social/linkedin-purple.svg";
 import ThankModal from '../components/thankModal';
@@ -54,7 +54,7 @@ export default function SubscribeCard(props) {
 
         {props.socialShow && <div className='social-sec'>
           <a href="https://www.linkedin.com/company/unberry/" rel="noreferrer" className='icon-link' target="_blank"><Image className='icon' alt="social icons" src={linkedin} /></a>
-          <a href="https://twitter.com/UnberryHQ" target="_blank" rel="noreferrer" className='icon-link'><Image className='icon' src={dribbble} alt="social icons" /></a>
+          <a href="https://twitter.com/UnberryHQ" target="_blank" rel="noreferrer" className='icon-link'><Image className='icon' src={twitter} alt="social icons" /></a>
           <a href="https://www.instagram.com/unberry_official/" rel="noreferrer" className='icon-link' target="_blank"><Image className='icon' src={instagram} alt="social icons" /></a>
         </div>}
       </div>
