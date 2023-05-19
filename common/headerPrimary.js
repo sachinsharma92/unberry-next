@@ -28,7 +28,7 @@ export default function HeaderPrimary(props) {
         </nav>
 
         <div className='mobile-section'>
-          <Link href="/"><a className='btn-primary'>BOOK DEMO</a></Link>
+          <Link href="/book-demo"><a className='btn-primary'>BOOK DEMO</a></Link>
 
           {/* <button className='btn-toggle' onClick={menuToggle}>
             <div className={`bar ${menuShow && 'animate'}`}></div>
