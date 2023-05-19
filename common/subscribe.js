@@ -1,12 +1,38 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button, Form, Input } from 'antd';
-import React, { useState } from 'react';
-import twitter from "../assets/new/social/twitter.svg";
+import React, { useEffect, useRef, useState } from 'react';
 import instagram from "../assets/new/social/instagram-purple.svg";
 import linkedin from "../assets/new/social/linkedin-purple.svg";
+import twitter from "../assets/new/social/twitter.svg";
 import ThankModal from '../components/thankModal';
 
 import Image from 'next/image';
+
+const SubmitButton = ({ form }) => {
+  const [submittable, setSubmittable] = React.useState(false);
+
+  // Watch all values
+  const values = Form.useWatch([], form);
+  React.useEffect(() => {
+    form
+      .validateFields({
+        validateOnly: true,
+      })
+      .then(
+        () => {
+          setSubmittable(true);
+        },
+        () => {
+          setSubmittable(false);
+        },
+      );
+  }, [values]);
+  return (
+    <Button type="primary" htmlType="submit" disabled={!submittable}>
+      Submit
+    </Button>
+  );
+};
 
 export default function SubscribeCard(props) {
   const [isThankModal, setThankModal] = useState(false);
@@ -14,12 +40,23 @@ export default function SubscribeCard(props) {
     setThankModal(!isThankModal);
   };
 
-  const onFinish = (values) => {
-    console.log('Success:', values);
+  const onFinish = () => {
+    setThankModal(!isThankModal);
+    setSubmittable(true)
   };
   const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
   };
+
+  const [form] = Form.useForm();
+  const [, forceUpdate] = useState({});
+
+  // To disable submit button at the beginning.
+  useEffect(() => {
+    forceUpdate({});
+  }, []);
+
+
   return (
     <div className="subscribe-main-card">
       <div className='subscribe-card'>
@@ -35,9 +72,13 @@ export default function SubscribeCard(props) {
 
         <div className="subscribe-form">
           <Form
+            form={form}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
             autoComplete="off"
+            initialValues={{
+              email: ''
+            }}
           >
             <Form.Item
               name="email"
@@ -46,9 +87,20 @@ export default function SubscribeCard(props) {
               <Input placeholder='Enter your email!' />
             </Form.Item>
 
-            <Button type="primary" htmlType="submit" onClick={thankToggleModal}>
-              Submit
-            </Button>
+            <Form.Item shouldUpdate>
+              {() => (
+                <Button
+                  type="primary"
+                  htmlType="submit"
+                  disabled={
+                    !form.isFieldsTouched(true) ||
+                    !!form.getFieldsError().filter(({ errors }) => errors.length).length
+                  }
+                >
+                  Log in
+                </Button>
+              )}
+            </Form.Item>
           </Form>
         </div>
 
