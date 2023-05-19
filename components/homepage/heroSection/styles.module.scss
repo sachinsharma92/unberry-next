@@ -156,7 +156,6 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 518px;
-    max-width: 1440px;
 
     @include mobile {
       background: none;
@@ -271,11 +270,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     position: relative;
-
-    @include desktop-lg {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
+    max-width: 1400px;
+    margin: 0 auto;
 
     @include mobile {
       display: none;
