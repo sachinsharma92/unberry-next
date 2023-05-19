@@ -57,7 +57,7 @@ export default function HeroSection() {
       <div className={`container-width ${styles.containerStyle}`}>
         <div className={`${styles.contentSection} animation-block`}>
           <h1 className={`${styles.titleDesktop} title1 animation-heading`}>
-            We help companies make <span className={styles.color1}> better</span> <span className={styles.color2}>smarter</span> & <span className={styles.color3}>faster</span> talent decisions
+            We help companies make <span className={styles.color1}> better</span> <br /> <span className={styles.color2}>smarter</span> & <span className={styles.color3}>faster</span> talent decisions
           </h1>
           <h1 className={`${styles.titleMobile} title1 animation-heading`}>
             We help <br /> companies make
