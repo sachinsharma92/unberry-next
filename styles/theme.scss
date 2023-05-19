@@ -1625,6 +1625,7 @@ HAMBURGER MENU
   .subscribe-form .ant-form {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
 
     @include mobile {
       align-items: center;
@@ -1639,14 +1640,24 @@ HAMBURGER MENU
     .ant-btn-primary[disabled] {
       color: rgba($black, 0.4);
       opacity: 1;
+
+      @include mobile {
+        background-color: $white !important;
+        opacity: 0.7;
+        color: rgba($black, 0.7);
+      }
     }
 
     .ant-form-item {
-      margin: 10px 0 10px;
+      margin: 0px 0 10px;
     }
 
     .ant-input {
       background: rgba($black, 0.07);
+
+      @include mobile {
+        border-color: rgba(black, 0.07);;
+      }
 
       &::placeholder {
         color: $black;
@@ -1664,7 +1675,7 @@ HAMBURGER MENU
 
     .ant-btn {
       background: $theme-primary-new;
-      width: 171px;
+      width: 100%
     }
   }
 }
