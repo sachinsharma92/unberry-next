@@ -156,6 +156,7 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 518px;
+    max-width: 1440px;
 
     @include mobile {
       background: none;

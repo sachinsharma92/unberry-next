@@ -54,7 +54,7 @@ export default function EndAutomation() {
 
           <div className="panel gray active">
             <div className={styles.accordianCard}>
-              <div className="head">
+              <div className="head head1">
                 <div className='head-wrap'>
                   <h2 className="heading">Advanced Proctoring</h2>
                   <div className="icon-plus">
@@ -62,7 +62,7 @@ export default function EndAutomation() {
                   </div>
                 </div>
               </div>
-              <div className={`content-section ${styles.backgroundStyle1}`}>
+              <div className={`content-section`}>
                 <div className={styles.contentSec}>
                   <h4 className={styles.title4}>Advanced Proctoring</h4>
                   <p className={styles.description}>Prevent cheating and unethical practices with our advanced remote and live proctoring, flagging suspicious usage.</p>
@@ -108,7 +108,7 @@ export default function EndAutomation() {
 
           <div className="panel purple">
             <div className={styles.accordianCard}>
-              <div className="head">
+              <div className="head head2">
                 <div className='head-wrap'>
                   <div className="icon-plus">
                     <Image src={iconPlus} alt='image services' width="34" height="34" />
@@ -116,7 +116,7 @@ export default function EndAutomation() {
                   <h2 className="heading">Real Time Dashboards</h2>
                 </div>
               </div>
-              <div className={`content-section ${styles.backgroundStyle2}`}>
+              <div className={`content-section`}>
                 <div className={`${styles.contentSec}`}>
                   <h4 className={styles.title4}>Real Time Dashboards</h4>
                   <p className={styles.description}>View detailed  reports in real time as soon as the candidate finishes, and have complete visibility and control of each step.</p>
@@ -162,7 +162,7 @@ export default function EndAutomation() {
 
           <div className="panel orange">
             <div className={styles.accordianCard}>
-              <div className="head">
+              <div className="head head3">
                 <div className='head-wrap'>
                   <h2 className="heading">Candidate Communication</h2>
                   <div className="icon-plus">
@@ -170,7 +170,7 @@ export default function EndAutomation() {
                   </div>
                 </div>
               </div>
-              <div className={`content-section ${styles.backgroundStyle3}`}>
+              <div className={`content-section`}>
                 <div className={styles.contentSec}>
                   <h4 className={styles.title4}>Candidate Communication</h4>
                   <p className={styles.description}>Automated communication with candidates to engage with your top talent with automated reminders and notifications.</p>

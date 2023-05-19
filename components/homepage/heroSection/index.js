@@ -90,7 +90,7 @@ export default function HeroSection() {
               <div className={styles.jsonItemBox}>
                 <div className={styles.jsonItem} id="jobKnowledge" />
               </div>
-              <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
+              <h4 className={styles.title4}>Job Knowledge &  <br /> Functional Skills</h4>
             </div>
             <div className={styles.imgBoxStyle}>
               <div className={styles.jsonItemBox}>
@@ -108,7 +108,7 @@ export default function HeroSection() {
               <div className={styles.jsonItemBox}>
                 <div className={styles.jsonItem} id="behavior" />
               </div>
-              <h4 className={styles.title4}>Behavioural & Personality</h4>
+              <h4 className={styles.title4}>Behavioural &  <br /> Personality</h4>
             </div>
           </div>
 
@@ -121,7 +121,7 @@ export default function HeroSection() {
                 <div className={styles.jsonItemBox}>
                   <div className={styles.jsonItem} id="jobKnowledge4" />
                 </div>
-                <h4 className={styles.title4}>Job Knowledge & Functional Skills</h4>
+                <h4 className={styles.title4}>Job Knowledge & <br /> Functional Skills</h4>
               </div>
               <div className={styles.mobileDivider}></div>
               <div className={styles.imgBoxStyle}>

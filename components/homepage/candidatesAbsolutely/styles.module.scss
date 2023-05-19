@@ -331,6 +331,17 @@
 
     .emojiStyle {
 
+      &:nth-child(2) {
+
+        .jsonItemBox {
+          width: 105px;
+          height: 105px;
+          position: relative;
+          top: 10px;
+          left: 10px;
+        }
+      }
+
       @include mobile {
   
         &:nth-child(1) {

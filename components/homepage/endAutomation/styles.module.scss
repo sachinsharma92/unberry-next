@@ -215,41 +215,6 @@
     overflow: hidden;
   }
 
-  .backgroundStyle1 {
-    background: url('/assets/automation1.png');
-    height: 100%;
-    background-position: bottom right;
-    background-size: 96%;
-    background-repeat: no-repeat;
-
-    @include mobile {
-      background: none;
-     }
-  }
-
-  .backgroundStyle2 {
-    background: url('/assets/automation2.png');
-    height: 100%;
-    background-position: bottom right;
-    background-size: 90%;
-    background-repeat: no-repeat;
-
-    @include mobile {
-      background: none;
-     }
-  }
-
-  .backgroundStyle3 {
-    background: url('/assets/automation3.png');
-    height: 100%;
-    background-position: bottom right;
-    background-size: 72%;
-    background-repeat: no-repeat;
-
-    @include mobile {
-      background: none;
-     }
-  }
 
   .containerPanel {
     align-items: normal;
@@ -281,8 +246,8 @@
     width: 100%;
     position: relative;
     display: none;
-    margin-left: 25px;
-    top: 40px;
+    margin-left: 35px;
+    top: 60px;
 
     @include mobile {
       display: block;
