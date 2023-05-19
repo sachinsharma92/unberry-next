@@ -51,6 +51,7 @@
       height: 100%;
       background-color: rgba($black, 0.5);
       content: '';
+      z-index: 1;
     }
 
     img {
@@ -83,6 +84,7 @@
     width: 250px;
     height: 56px;
     position: absolute;
+    z-index: 1;
 
     @include mobile {
       width: 180px;

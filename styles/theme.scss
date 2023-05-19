@@ -510,21 +510,26 @@ p {
 // Section Contact
 .thanls-modal-style {
   .title3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: -30px;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 41px;    
     text-align: center;
+    letter-spacing: -1px;
+    color: $black;
+    margin-top: 30px;
   }
 
   .ant-modal {
-    max-width: 420px;
+    max-width: 440px;
   }
 
   .description {
+    font-weight: 400;
     font-size: 20px;
+    line-height: 26px;
     text-align: center;
-    font-weight: 500;
-    opacity: 0.7;
+    letter-spacing: -0.5px;
+    color: rgba($black, 0.7);
   }
 
   .modal-body-style {
@@ -535,7 +540,7 @@ p {
   }
 
   .ant-modal-content {
-    border-radius: 2px;
+    border-radius: 20px;
   }
 
   .ant-modal-close-x {
@@ -554,6 +559,7 @@ p {
 
   .animation-frame {
     position: relative;
+    margin-top: 50px;
 
     &::after {
       position: absolute;

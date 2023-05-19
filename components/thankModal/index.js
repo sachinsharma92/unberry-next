@@ -1,9 +1,9 @@
-import React from 'react';
 import { Modal } from 'antd';
+import React from 'react';
 
-import closeButtonIcon from "../../assets/icons/close-button.svg";
-import animationImage from "../../assets/json/thanks.gif";
 import Image from 'next/image';
+import closeButtonIcon from "../../assets/icons/close-button.svg";
+import animationImage from "../../assets/new/confetti.svg";
 
 
 export default function ThankModal(props) {
