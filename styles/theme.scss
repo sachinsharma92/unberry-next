@@ -1050,6 +1050,7 @@ HAMBURGER MENU
       justify-content: space-between;
       height: 100%;
       width: 212px;
+      cursor: pointer;
     }
   }
 
@@ -1062,7 +1063,7 @@ HAMBURGER MENU
 
   .content-section {
     opacity: 0;
-    width: 63vw;
+    width: 64vw;
 
     @include desktop-lg {
       width: 72vw;
