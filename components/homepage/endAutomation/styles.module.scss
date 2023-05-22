@@ -72,6 +72,8 @@
 
     @include mobile {
       display: block;
+      min-width: 1px;
+      background-color: transparent;
     }
   }
 
