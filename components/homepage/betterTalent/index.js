@@ -40,6 +40,9 @@ export default function BetterTalent() {
             />
             Your browser does not support HTML5 video.
           </video>
+        </div>
+
+        <div className={styles.buttonSection}>
           <button className={styles.buttonStyle} onClick={modalToggle}>
             <Image src={buttonIcon} alt="image services" layout="fill" />
           </button>
