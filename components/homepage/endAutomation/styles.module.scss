@@ -233,6 +233,7 @@
 
     @include mobile {
       display: block;
+      scale: 1.4;
     }
 
     .bgMobileStyle {
@@ -251,6 +252,7 @@
 
     @include mobile {
       display: block;
+      scale: 1.6;
     }
 
     .bgMobileStyle {
@@ -269,6 +271,8 @@
 
     @include mobile {
       display: block;
+      scale: 1.4;
+      margin-left: 0px;
     }
 
     .bgMobileStyle {

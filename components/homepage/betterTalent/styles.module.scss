@@ -85,10 +85,12 @@
     height: 56px;
     position: absolute;
     z-index: 1;
+    bottom: 70px;
 
     @include mobile {
       width: 180px;
       height: 40px;
+      bottom: 20px;
     }
 
     img {

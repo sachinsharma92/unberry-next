@@ -60,6 +60,8 @@
       display: inline-block;
       line-height:70px;
       font-size: 60px;
+      position: relative;
+      top: -5px;
 
       &.color1 {
         background-color: #E4DDEF;
