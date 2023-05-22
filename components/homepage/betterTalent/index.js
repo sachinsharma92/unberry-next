@@ -35,7 +35,7 @@ export default function BetterTalent() {
             playsInline
           >
             <source
-              src="/video/bg.mp4"
+              src="https://assets.unberry.com/media/bg.mp4"
               type="video/mp4"
             />
             Your browser does not support HTML5 video.
