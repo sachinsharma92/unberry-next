@@ -161,12 +161,17 @@
 
   h3 {
     font-size: 22px;
-    line-height: 1.2;
+    line-height: 1.2 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2 !important;
+    text-align: left !important;
   }
 
   p {
     font-size: 18px;
-    text-align: left;
+    text-align: left !important;
     color: rgba($black, 0.7);
 
     span {

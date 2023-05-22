@@ -44,7 +44,6 @@
 
     &::before {
       position: absolute;
-      top: 0;
       left: 0;
       top: 0;
       width: 100%;
@@ -52,6 +51,10 @@
       background-color: rgba($black, 0.5);
       content: '';
       z-index: 1;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     img {
@@ -63,11 +66,19 @@
       object-fit: cover;
       position: absolute;
       border-radius: 20px;
+
+      @include mobile {
+        opacity: 0.5;
+      }
     }
 
     @include mobile {
-      height: 250px;
+      height: 180px;
       border-radius: 20px;
+      overflow: visible;
+      margin: 70px 0;
+      flex-direction: column-reverse;
+      justify-content: space-between;
 
       img {
        object-position: 20%;
@@ -90,7 +101,9 @@
     @include mobile {
       width: 180px;
       height: 40px;
-      bottom: 20px;
+      bottom: 0;
+      position: relative;
+      margin-bottom: -15px;
     }
 
     img {

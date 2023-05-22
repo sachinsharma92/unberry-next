@@ -75,10 +75,11 @@
     text-align: center;
 
     @include mobile {
-      font-size: 42px;
+      font-size: 35px;
       line-height: 35px;
       letter-spacing: -0.03em;
       text-align: left;
+      max-width: 80%;
     }
   }
 
@@ -180,6 +181,7 @@
 
     @include mobile {
       width: 100%;
+      margin-top: 30px;
     }
   }
 
@@ -218,6 +220,13 @@
     box-shadow: none !important;
     background: rgba(244, 244, 244, 0.1);
     border-color: rgba(244, 244, 244, 0.1) !important;
+  }
+
+  .ant-form-item {
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
   }
 
   .ant-select-arrow {
