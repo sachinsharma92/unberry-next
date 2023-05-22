@@ -1,15 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import logoTheme from "../../assets/logo-black.svg";
-import SeoHead from '../../components/seoHead';
-
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 import icon1 from "../../assets/icons/icon1.svg";
 import icon2 from "../../assets/icons/icon2.svg";
 import icon3 from "../../assets/icons/icon3.svg";
 import icon4 from "../../assets/icons/icon4.svg";
+import logoTheme from "../../assets/logo-black.svg";
 import DemoForm from '../../components/demoForm';
+import SeoHead from '../../components/seoHead';
 
 // Styles here
 import styles from './styles.module.scss';

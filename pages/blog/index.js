@@ -1,11 +1,11 @@
 import axios from 'axios';
+import { gsap } from 'gsap';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import LayoutPrimary from '../../common/layoutPrimary';
 import { Mixpanel } from '../../services/mixpanel';
-import { gsap } from 'gsap';
 
 export default function BlogScreen() {
   const [blogs, setBlogs] = useState([])

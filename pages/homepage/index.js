@@ -2,18 +2,18 @@
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import LayoutPrimary from '../../common/layoutPrimary';
+import SubscribeCard from '../../common/subscribe';
 import BetterTalent from '../../components/homepage/betterTalent';
 import BlogSection from '../../components/homepage/blogSection';
 import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
 import EndAutomation from '../../components/homepage/endAutomation';
 import HeroSection from '../../components/homepage/heroSection';
+import ServeCustomersAcross from '../../components/homepage/serveCustomersAcross';
 import ServiceSection from '../../components/homepage/serviceSection';
+import WinningChoice from '../../components/homepage/winningChoice';
 
 // Styles here
 import styles from './styles.module.scss';
-import SubscribeCard from '../../common/subscribe';
-import ServeCustomersAcross from '../../components/homepage/serveCustomersAcross';
-import WinningChoice from '../../components/homepage/winningChoice';
 
 
 export default function HomePageScreen() {

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import axios from "axios";
 import Head from "next/head";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
@@ -8,13 +9,11 @@ import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import buttonIcon from "../../assets/new/icons/back.svg";
 import LayoutPrimary from "../../common/layoutPrimary";
+import SubscribeCard from "../../common/subscribe";
+import UpNextCard from "../../components/blogs/upNextCard";
 import { Mixpanel } from "../../services/mixpanel";
 
 // Images
-import Image from "next/image";
-import Link from "next/link";
-import SubscribeCard from "../../common/subscribe";
-import UpNextCard from "../../components/blogs/upNextCard";
 
 const BlogDetail = ({ heading }) => {
 	const [headerColor, setHeaderColor] = useState("white")

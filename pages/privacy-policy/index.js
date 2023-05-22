@@ -1,10 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-
 import SeoHead from '../../components/seoHead';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import logoTheme from "../../assets/logo-brown.svg";
 import { Footer } from 'antd/lib/layout/layout';
 import logoFooter from "../../assets/logo-brown.svg";
