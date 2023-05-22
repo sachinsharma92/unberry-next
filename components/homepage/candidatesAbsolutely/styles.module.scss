@@ -75,6 +75,7 @@
       height: 100px;
       background-color: $white;
       position: relative;
+      opacity: 0.5;
 
       @include mobile {
         height: 70px;
