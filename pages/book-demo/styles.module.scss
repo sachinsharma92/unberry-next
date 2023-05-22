@@ -1,0 +1,140 @@
+// variables
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+// auto-section
+
+.bookDemoStyle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .contentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    justify-content: space-between;
+
+    @include mobile {
+      padding: 20px;
+    }
+  }
+
+  .title2 {
+    font-weight: 500;
+    font-size: 76.29px;
+    line-height: 71px;
+    letter-spacing: -0.03em;
+    color: $black;
+
+    @include mobile {
+      font-size: 45px;
+      line-height: 48px;
+      letter-spacing: -0.03em;
+    }
+  }
+
+  @include mobile {
+    .logoBlack {
+      display: none;
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    color: $black;
+    opacity: 0.5;
+    max-width: 80%;
+
+    @include mobile {
+      max-width: 100%;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.004em;
+    }
+  }
+
+  .headSection {
+    margin: 75px 0;
+
+    @include mobile {
+      margin: 20px 0 50px;
+    }
+  }
+
+  .listStyle {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+
+    .listItem {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $black;
+      letter-spacing: -0.5px;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -0.5px;
+      }
+    }
+
+    .imgBox {
+      min-width: 45px;
+      min-height: 45px;
+      position: relative;
+
+      @include mobile {
+        min-width: 40px;
+        min-height: 40px;
+      }
+
+      img {
+        scale: 0.8;
+      }
+    }
+  }
+
+  .formSection {
+    background-color: $black;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+
+    @include mobile {
+      display: block;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: url("/assets/bg-book-demo.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      content: "";
+      height: 100%;
+    }
+  }
+}

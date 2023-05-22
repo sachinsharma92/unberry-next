@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import Head from 'next/head'
-import HomeScreen from './home'
+import HomePageScreen from './homepage'
 
 export default function Home() {
   return (
@@ -13,14 +13,10 @@ export default function Home() {
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
+        <meta property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
+        <meta property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" />
 
-        <title>Unberry - Transforming the future of hiring and developing talent.</title>
-        <meta name='title' property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" key="desc" />
-        <meta
-          property="og:description"
-          content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent."
-        />
+        {/* OG Section  */}
         <meta property="og:url" content="https://www.unberry.com/ogImage.png" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
@@ -34,10 +30,7 @@ export default function Home() {
         />
 
         {/* Twitter OG Section  */}
-        <meta
-          name="twitter:image"
-          content="https://www.unberry.com/ogImage.png"
-        />
+        <meta name="twitter:image" content="https://www.unberry.com/ogImage.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"></script>
@@ -132,13 +125,12 @@ export default function Home() {
         {/* Animations JS */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" async />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js" async />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" async />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" async />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" async />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js" async />
       </Head>
       <main>
-        <HomeScreen />
+        <HomePageScreen />
       </main>
     </div>
   )

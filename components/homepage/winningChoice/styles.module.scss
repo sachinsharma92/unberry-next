@@ -1,0 +1,514 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.winningChoiceStyle {
+  background: $white;
+  padding: 80px $p-padding-inline 150px;
+  position: relative;
+
+  @include mobile {
+    padding: 0;
+  }
+
+  &::before {
+    background: url("/assets/winning-grid.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .title1 {
+    color: $black;
+    font-size: 77px;
+    line-height: 76px;
+    letter-spacing: -0.06em;
+    font-weight: 500;
+    max-width: 70%;
+    margin-bottom: 160px;
+    margin-top: 100px;
+
+    @include mobile {
+      font-size: 31.25px;
+      line-height: 35px;
+      max-width: 100%;
+      margin: 50px 20px 50px;
+    }
+
+    span {
+      color: $theme-secondary-new;
+    }
+  }
+
+  .rowSection {
+    display: flex;
+    gap: 0 50px;
+    position: relative;
+
+    @include mobile {
+      gap: 0px;
+      flex-direction: column;
+    }
+  }
+
+  .largeNumber {
+    font-weight: 500;
+    font-size: 48.83px;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1.3;
+
+    @include mobile {
+      font-weight: 500;
+      font-size: 31.25px;
+    }
+  }
+
+  .boxDescription {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .boxDesktop {
+    border-radius: 40px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 303px;
+    min-height: 126px;
+
+    @include mobile {
+      display: none;
+    }
+
+    .largeNumber {
+      font-weight: 500;
+      font-size: 48.83px;
+      letter-spacing: -1px;
+      color: #184444;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0;
+    }
+
+    &.violetBox {
+      background: #e4ddef;
+
+      .largeNumber {
+        color: #3d2f52;
+      }
+
+      .description {
+        color: #3d2f52;
+      }
+    }
+
+    &.greenBox {
+      background: #daeeee;
+      margin-bottom: 15px;
+
+      .largeNumber {
+        color: #184444;
+      }
+
+      .description {
+        color: #184444;
+      }
+    }
+  }
+
+  .boxMobile {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    min-height: 126px;
+    max-width: 100%;
+
+    @include mobile {
+      display: flex;
+    }
+
+    &.greenBox {
+      background: #daeeee;
+      border-radius: 0px 20px 20px 0px;
+      max-width: 80%;
+      text-align: right;
+
+      .largeNumber {
+        color: #184444;
+      }
+
+      .description {
+        color: #184444;
+      }
+    }
+
+    &.violetBox {
+      background: #e4ddef;
+      border-radius: 20px 0px 0px 20px;
+      max-width: 80%;
+      margin-right: 0;
+      margin-left: auto;
+      text-align: left;
+
+      .largeNumber {
+        color: #3d2f52;
+      }
+
+      .description {
+        color: #3d2f52;
+      }
+    }
+  }
+
+  .grayBoxSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 30px;
+    width: 100%;
+
+    @include mobile {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 24px 0;
+      padding: 20px;
+      overflow-x: scroll;
+      @include scrollHide();
+      gap: 10px;
+    }
+
+    .grayBox {
+      background: #f4f4f4;
+      padding: 30px;
+      border-radius: 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 347px;
+      width: 46%;
+
+      @include mobile {
+        min-width: 70%;
+        border-radius: 20px;
+        height: auto;
+        gap: 20px 0;
+        padding: 10px 25px;
+      }
+
+      @include desktop {
+        &:nth-child(1) {
+          position: relative;
+
+          &::before {
+            height: 75px;
+            width: 100px;
+            content: "";
+            position: absolute;
+            background: url("/assets/white-shape.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: -98px;
+          }
+        }
+
+        &:nth-child(2) {
+          position: relative;
+
+          &::before {
+            height: 75px;
+            width: 100px;
+            content: "";
+            position: absolute;
+            background: url("/assets/white-shape.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: 32px;
+            bottom: -86px;
+            transform: rotate(90deg);
+          }
+        }
+
+        &:nth-child(3) {
+          position: relative;
+
+          &::before {
+            height: 75px;
+            width: 100px;
+            content: "";
+            position: absolute;
+            background: url("/assets/white-shape.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 32px;
+            top: -19px;
+            transform: rotate(90deg);
+          }
+        }
+
+        &:nth-child(4) {
+          position: relative;
+
+          &::before {
+            height: 75px;
+            width: 100px;
+            content: "";
+            position: absolute;
+            background: url("/assets/white-shape.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: -30px;
+            bottom: 60px;
+          }
+        }
+      }
+      .title4 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.03em;
+
+        @include mobile {
+          font-size: 18px;
+          line-height: 19px;
+          letter-spacing: -0.77px;
+        }
+      }
+
+      .description {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -0.03em;
+
+        @include mobile {
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: -0.03em;
+          opacity: 0.6;
+        }
+      }
+
+      &:nth-child(1) {
+        margin-top: 100px;
+        margin-bottom: 30px;
+
+        @include mobile {
+          margin: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        .title4 {
+          max-width: 80%;
+        }
+      }
+
+      &:nth-child(4) {
+        margin-top: -100px;
+
+        @include mobile {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .imgItemBox {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .jsonItemBox {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+
+    .jsonItem {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .hiringCard {
+    background: #ac95cf;
+    min-height: 300px;
+    border-radius: 40px;
+    margin-top: 146px;
+    position: relative;
+    max-width: 95%;
+
+    @include mobile {
+      margin: 53px 20px;
+      max-width: 100%;
+      border-radius: 20px;
+      background: #ac95cf;
+      padding-bottom: 170px;
+    }
+
+    .content {
+      padding: 49px;
+      position: relative;
+      z-index: 1;
+
+      @include mobile {
+        padding: 40px 20px;
+      }
+    }
+
+    .title3 {
+      font-weight: 500;
+      font-size: 39.06px;
+      line-height: 46px;
+      letter-spacing: -0.04em;
+      color: $white;
+      max-width: 50%;
+
+      @include mobile {
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+
+    .curveLineSection {
+      height: 250px;
+      width: 100%;
+
+      @include desktop-l {
+        height: 300px;
+      }
+
+      @include desktop-lg {
+        height: 300px;
+      }
+
+      img {
+        scale: 1.3;
+        object-position: 0px 20px;
+
+        @include desktop-l {
+          object-position: 0px -20px;
+        }
+
+        @include desktop-lg {
+          object-position: 0px -50px;
+        }
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .iconBoxes {
+      width: 100%;
+      position: relative;
+      padding: 0 20px;
+      margin-top: 10px;
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+
+      .gridSection {
+        display: flex;
+        flex-direction: column;
+        gap: 15px 0;
+      }
+
+      .title4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: -0.8px;
+        color: $white;
+        max-width: 100%;
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        text-align: left;
+        gap: 0 20px;
+
+        .imgBox {
+          min-width: 45px;
+          min-height: 45px;
+          background: #c9b6e6;
+          border-radius: 50%;
+          position: relative;
+
+          img {
+            scale: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  .btnStyle {
+    background: $white;
+    color: $black;
+    font-weight: 600;
+    height: 56px;
+    font-size: 20px;
+    padding: 0 30px;
+    max-width: 200px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @include mobile {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+  }
+
+  .sliderCard {
+    width: 422px;
+    height: 186px;
+    background: #fbefe6;
+    border-radius: 40px;
+    padding: 40px 30px;
+    position: absolute;
+    right: 80px;
+    margin-top: -100px;
+    font-style: italic;
+
+    @include mobile {
+      width: 80%;
+      position: relative;
+      border-radius: 20px;
+      right: 0;
+      height: auto;
+      margin: -180px auto 0;
+      padding: 30px 20px;
+    }
+  }
+}

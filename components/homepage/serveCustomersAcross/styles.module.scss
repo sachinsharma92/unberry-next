@@ -1,0 +1,124 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.customersAcrossSectionStyle {
+  padding-bottom: 100px;
+  background: $black;
+  position: relative;
+
+  @include mobile {
+    padding-bottom: 0px;
+  }
+
+  .contentSection {
+    padding: 54px $p-padding-inline;
+
+    @include mobile {
+      padding: 54px 20px 0;
+    }
+  }
+
+  .title1 {
+    color: $white;
+    font-size: 49px;
+    line-height: 57px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+
+    @include mobile {
+      font-size: 30px;
+      line-height: 35px;
+      max-width: 100%;
+    }
+
+    span {
+      color: $theme-secondary-new;
+    }
+  }
+
+  .gradientSection {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 48.44%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 0px 0px 170px 170px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 40px;
+    border-bottom: 1px solid #323232;
+
+    @include mobile {
+      border-radius: 0px;
+      padding: 20px 0px;
+    }
+
+    .title4 {
+      color: $white;
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 57px;
+      margin-bottom: 30px;
+      margin-top: 10px;
+
+      @include mobile {
+        text-align: center; 
+        margin-bottom: 10px;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .sectorsSection {
+    max-width: 90%;
+    margin: 0 auto;
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  .needSection {
+    max-width: 70%;
+    margin: 0 auto;
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  .badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+
+    @include mobile {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 10px;
+    }
+
+    .badgeItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(224, 224, 224, 0.1);
+      border-radius: 40px;
+      height: 54px;
+      font-size: 20px;
+      padding: 0 20px;
+      text-align: center;
+      color: $white;
+
+      @include mobile {
+        white-space: nowrap;
+        font-size: 16px;
+        height: 45px;
+      }
+    }
+  }
+}

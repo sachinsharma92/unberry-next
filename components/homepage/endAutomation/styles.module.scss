@@ -1,0 +1,283 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.endAutomationStyle {
+  background: $white;
+  padding: 94px $p-padding-inline;
+
+  @include mobile {
+    padding: 50px 0px;
+  }
+
+  .title1 {
+    color: $black;
+    font-weight: 500;
+    font-size: 48.83px;
+    line-height: 54px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+
+    @include desktop-lg {
+      max-width: 60%;
+    }
+
+    @include mobile {
+      font-size: 30px;
+      line-height: 31px;
+      text-align: left;
+      max-width: 90%;
+    }
+  }
+
+  .title4 {
+    font-weight: 400;
+    font-size: 39.06px;
+    line-height: 60px;
+    letter-spacing: -2px;
+
+    @include mobile {
+      color: $black;
+      font-size: 25px;
+      line-height: 36px;
+      letter-spacing: -1.2px;
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 80%;
+
+    @include desktop-lg {
+      max-width: 60%;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .accordianCardSection {
+    display: flex;
+  }
+
+  .accordianCardLast {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .accordianCard {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    @include mobile {
+      position: relative;
+    }
+
+    .imageCard {
+      position: absolute;
+      height: 43vh;
+      width: 100%;
+      bottom: 0px;
+
+      @include desktop-lg {
+        height: 51vh;
+      }
+
+      @include mobile {
+        height: 140px;
+        bottom: 0px;
+        position: absolute;
+      }
+
+      img {
+        object-fit: contain;
+        object-position: right;
+      }
+    }
+
+    .imageCard2 {
+      position: relative;
+      height: 350px;
+      width: 100%;
+      bottom: 0;
+
+      @include mobile {
+        height: 140px;
+        bottom: 0px;
+        position: absolute;
+      }
+
+      img {
+        object-fit: contain;
+        object-position: right;
+      }
+    }
+
+    .imageCard3 {
+      position: relative;
+      height: 450px;
+      width: 100%;
+      bottom: 106px;
+
+      @include mobile {
+        height: 180px;
+        bottom: 0px;
+        position: absolute;
+      }
+
+      img {
+        object-fit: contain;
+        object-position: right;
+      }
+    }
+
+    .contentSec {
+      padding: 50px;
+
+      @include mobile {
+        padding: 20px 20px 0px;
+        
+        @supports (-webkit-backdrop-filter: blur(1px)) {
+          padding: 20px 20px 200px;
+        }
+      }
+    }
+
+    .listStyle {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      margin-left: -20px;
+
+      @include mobile {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: -10px;
+      }
+
+      tr {
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .listItem {
+        width: 100%;
+        padding: 10px 20px;
+
+        @include mobile {
+          padding: 5px 5px;
+        }
+      }
+
+      .imgIcon {
+        @include mobile {
+          scale: 0.7;
+        }
+      }
+    }
+
+    .listItem {
+      display: flex;
+      align-items: flex-start;
+      gap: 0 14px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: $black;
+      min-width: 220px;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+        gap: 0 10px;
+        min-width: auto;
+      }
+    }
+  }
+
+  .videoSection {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+
+  .containerPanel {
+    align-items: normal;
+    padding-left: 20px;
+  }
+
+
+
+  .bgMobileBoxStyle1 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 25px;
+    top: 60px;
+
+    @include mobile {
+      display: block;
+      scale: 1.4;
+    }
+
+    .bgMobileStyle {
+      object-fit: contain;
+      object-position: left bottom;
+    }
+  }
+
+  .bgMobileBoxStyle2 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 35px;
+    top: 60px;
+
+    @include mobile {
+      display: block;
+      scale: 1.6;
+    }
+
+    .bgMobileStyle {
+      object-fit: contain;
+      object-position: right;
+    }
+  }
+
+  .bgMobileBoxStyle3 {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    display: none;
+    margin-left: 25px;
+    top: 30px;
+
+    @include mobile {
+      display: block;
+      scale: 1.4;
+      margin-left: 0px;
+    }
+
+    .bgMobileStyle {
+      object-fit: contain;
+      object-position: right top;
+    }
+  }
+}

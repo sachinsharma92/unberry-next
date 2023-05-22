@@ -31,6 +31,7 @@ $iphone6-width: 375px;
 $tablet-width: 768px;
 $tablet-p-width: 991px;
 $desktop-width: 1024px;
+$desktop-width-xl: 1900px;
 $desktop-width-lg: 1500px;
 
 // iPhone5 Mixin
@@ -112,6 +113,12 @@ $desktop-width-lg: 1500px;
 
 // Large Desktops
 @mixin desktop-lg {
+  @media (min-width: #{$desktop-width-xl}) {
+    @content;
+  }
+}
+
+@mixin desktop-l {
   @media (min-width: #{$desktop-width-lg}) {
     @content;
   }
@@ -137,18 +144,6 @@ $desktop-width-lg: 1500px;
   -ms-transition: $transition-property $transition-time $method;
   -o-transition: $transition-property $transition-time $method;
   transition: $transition-property $transition-time $method;
-}
-
-// ----------------------------------
-// Brandon Grotesque Font Family
-// ----------------------------------
-@mixin ff-primary() {
-  font-family: "Gilroy", sans-serif !important;
-  line-height: 1.5;
-
-  strong {
-    font-weight: bold;
-  }
 }
 
 // ----------------------------------
@@ -276,3 +271,7 @@ $shadowSecondary: 0px 0px 1px rgba(12, 26, 75, 0.1),
 $theme-gradient: linear-gradient(360deg, #ff77a0 -5.06%, #ffba88 100%);
 
 $theme-light-gradient: linear-gradient(180deg, #fadecf 0%, #f7f0e2 100%);
+
+$fontCondensed: 'IBM Plex Sans Condensed', sans-serif;
+
+$p-padding-inline: 80px;

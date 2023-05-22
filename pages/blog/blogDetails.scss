@@ -6,6 +6,10 @@
   background: white;
   min-height: 100vh;
 
+  @include mobile {
+    overflow-x: hidden;
+  }
+
   .title2 {
     font-size: 55px;
     line-height: 1.2;
@@ -13,23 +17,7 @@
     text-align: center;
 
     @include mobile {
-      font-size: 40px;
-    }
-  }
-
-  .header-style {
-    min-height: 300px;
-    padding-bottom: 150px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    background: #faf6f2 url('../../assets/bg/bg4.png');
-    background-size: cover;
-
-    @include mobile {
-      height: auto;
+      font-size: 30px;
     }
   }
 
@@ -42,33 +30,44 @@
     padding: 20px 50px;
 
     @include mobile {
-      padding: 20px
+      padding: 20px;
     }
   }
-
-  // .logo-white {
-  //   filter: contrast(0) brightness(100);
-  // }
 
   .blog-layout {
-    max-width: $blogContainerWidth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    padding: 130px 0 110px;
+    background-color: #fbefe6;
 
     @include mobile {
-      padding: 0 20px;
+      padding: 130px 20px 120px;
+      flex-direction: column;
       width: auto;
     }
-  }
 
-  .description {
-    padding: 80px 0px;
-    font-size: 16px;
-    margin: 0;
+    .blog-header {
+      display: flex;
+      align-items: center;
+      max-width: 70%;
 
-    @include mobile {
-      font-size: 20px;
+      @include mobile {
+        max-width: 100%;
+      }
+    }
+
+    .description {
+      padding: 80px 0px;
+      font-size: 16px;
+      margin: 0;
+
+      @include mobile {
+        font-size: 20px;
+      }
     }
   }
 
@@ -91,55 +90,104 @@
     }
   }
 
-    // hero-banner-img
-    .hero-banner-img {
-      height: 350px;
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-      max-width: 900px;
-      margin: -100px auto 0;
-      border-radius: 10px;
+  // hero-banner-img
+  .hero-banner-img {
+    height: 646px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 90%;
+    margin: -100px auto 0;
+    border-radius: 40px;
+    box-shadow: rgba($black, 0.1) 0px 1px 2px 0px;
 
-      @include mobile {
-        width: 90%;
-        height: 250px;
-        margin: -120px auto 0;
-      }
-  
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      
+    @include mobile {
+      width: 90%;
+      height: 250px;
+      margin: -100px auto 0;
+      border-radius: 20px;
     }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .header-primary {
+    background-color: #fbefe6;
+
+    @include mobile {
+      background-color: $white;
+    }
+  }
+
+  &.menu-white {
+    .header-primary {
+      background-color: $white;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: $black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    border: 0;
+    background: none;
+  }
 }
 
 // markdown-style
-.markdown-layout {
-  display: flex;
-}
-
 .markdown-style {
   padding: 50px 0px;
-  max-width: $blogContainerWidth;
   margin: 0 auto;
+  width: 70%;
+  
 
   @include mobile {
-    width: 100vw;
-    padding: 50px 20px;
+    width: 100%;
+    padding: 50px 20px 10px;
   }
 
   h3 {
     font-size: 22px;
+    line-height: 1.2 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2 !important;
+    text-align: left !important;
   }
 
   p {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 18px;
+    text-align: left !important;
+    color: rgba($black, 0.7);
+
+    span {
+      font-size: 18px !important;
+    }
+  }
+
+  a, a span {
+    color: $theme-primary-new !important;
+  }
+
+  img {
+    @include mobile {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
   }
 }

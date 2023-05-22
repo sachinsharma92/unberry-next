@@ -1,10 +1,11 @@
 import { Button, Form, Input, notification, Select } from 'antd';
 import axios from "axios";
-import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
-import demoGroup from "../../assets/demo-group.png";
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
+import Image from 'next/image';
+import logoTheme from "../../assets/logo-black.svg";
 
 const { Option } = Select;
 
@@ -82,138 +83,103 @@ export default function DemoForm(props) {
   }, []);
 
   return (
-    <section className='section-style contact-section' id={props.id} >
-      <div className='menu-section'></div>
-      <div className="primary-width">
+    <section className='contact-section' id={props.id}>
+      <Link href="/">
+        <a className={`logo-black`}>
+          <Image src={logoTheme} width="124" height="34" alt="logo" />
+        </a>
+      </Link>
+      <h3 className="title3">Take the guesswork out...</h3>
+      <Form
+        name="basic"
+        autoComplete="off"
+        layout="vertical"
+        className='form-style'
+        onFinish={bookADemo}
+        preserve={false}
+        ref={formRef}
+        initialValues={{
+          email: '',
+          name: '',
+          phone: '',
+          employeesCount: '',
+          hiringCount: '',
+          message: '',
+        }}
+      >
 
-        <div className="show-on-mobile">
-          <div className='gradint-section'>
-            <Image src={demoGroup} className='img-full' alt="" />
-          </div>
-        </div>
-        <div className='header-style'>
-          <div className="heading-first">
-            <div className="show-on-desktop">
-              <h4 className='title4'>Take the guesswork out…</h4>
-            </div>
-            <div className="show-on-mobile">
-              <h4 className='title4'>Take the</h4>
-              <span className='border-style' />
-              <h4 className='title4'> guesswork out…</h4>
-            </div>
-            <div className='border-style' />
-          </div>
-          <div className="heading-second">
-            <div className='text-demo'>Book A Demo</div>
-            <div className='border-style' />
-          </div>
-        </div>
+        <Form.Item
+          name="email"
+          rules={[{ type: "email", required: true, }]}
+        >
+          <Input placeholder='Company Email*'
+          />
+        </Form.Item>
 
-        <div className="grid-style">
-          <div className='contact-form-section'>
-            <div className='content'>
-              <p className='description'>Transform the way you hire - by taking out inefficiencies and biases. By switching to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
-            </div>
+        <Form.Item
+          name="name"
+          rules={[{ required: true, }]}
+        >
+          <Input placeholder='Enter Name*'
+          />
+        </Form.Item>
+        <Form.Item
+          name="phone"
+          rules={[{ required: true, }]}
+        >
+          <Input type="number" placeholder='Phone*'
+          />
+        </Form.Item>
 
-            <Form
-              name="basic"
-              autoComplete="off"
-              layout="vertical"
-              className='form-style'
-              onFinish={bookADemo}
-              preserve={false}
-              ref={formRef}
-              initialValues={{
-                email: '',
-                name: '',
-                phone: '',
-                employeesCount: '',
-                hiringCount: '',
-              }}
-            >
+        <Form.Item
+          name="employeescount"
+          rules={[{ required: true }]}
+        >
+          <Select
+            placeholder="Number of employees *"
+            onChange={handleChange}
+          >
+            <Option value="1-10">1-10</Option>
+            <Option value="11-50">11-50</Option>
+            <Option value="51-200">51-200</Option>
+            <Option value="201-500">201-500</Option>
+            <Option value="501-1000">501-1000</Option>
+            <Option value="1001-5000">1001-5000</Option>
+            <Option value="10k">10k+</Option>
+          </Select>
+        </Form.Item>
 
-              <Form.Item
-                name="email"
-                rules={[{ type: "email", required: true, }]}
-              >
-                <Input placeholder='Company Email*'
-                />
-              </Form.Item>
+        <Form.Item
+          name="hiringcount"
+          rules={[{ required: true }]}
+        >
 
-              <div className="grid-form">
-                <Form.Item
-                  name="name"
-                  rules={[{ required: true, }]}
-                >
-                  <Input placeholder='Enter Name*'
-                  />
-                </Form.Item>
-                <Form.Item
-                  name="phone"
-                  rules={[{ required: true, }]}
-                >
-                  <Input type="number" placeholder='Phone*'
-                  />
-                </Form.Item>
-              </div>
+          <Select
+            placeholder="How many hires are you planning to make in the next year?*"
+            onChange={handleChange}
+          >
+            <Option value="1-200">1-200</Option>
+            <Option value="201-500">201-500</Option>
+            <Option value="501-1000">501-1000</Option>
+            <Option value="1001-5000">1001-5000</Option>
+            <Option value="5001-10000">5001-10000</Option>
+            <Option value="1001-5000">1001-5000</Option>
+            <Option value="10k">10k+</Option>
+          </Select>
+        </Form.Item>
 
-              <Form.Item
-                name="employeescount"
-                rules={[{ required: true }]}
-              >
-                <Select
-                  placeholder="Number of employees *"
-                  onChange={handleChange}
-                >
-                  <Option value="1-10">1-10</Option>
-                  <Option value="11-50">11-50</Option>
-                  <Option value="51-200">51-200</Option>
-                  <Option value="201-500">201-500</Option>
-                  <Option value="501-1000">501-1000</Option>
-                  <Option value="1001-5000">1001-5000</Option>
-                  <Option value="10k">10k+</Option>
-                </Select>
-              </Form.Item>
+        {/* <Form.Item
+          name="message"
+        >
+          <Input placeholder='Message (optional)' />
+        </Form.Item> */}
 
-              <Form.Item
-                name="hiringcount"
-                rules={[{ required: true }]}
-              >
+        <Button type="primary" htmlType="submit" >
+          BOOK DEMO
+        </Button>
+      </Form>
 
-                <Select
-                  placeholder="How many hires are you planning to make in the next year?*"
-                  onChange={handleChange}
-                >
-                  <Option value="1-200">1-200</Option>
-                  <Option value="201-500">201-500</Option>
-                  <Option value="501-1000">501-1000</Option>
-                  <Option value="1001-5000">1001-5000</Option>
-                  <Option value="5001-10000">5001-10000</Option>
-                  <Option value="1001-5000">1001-5000</Option>
-                  <Option value="10k">10k+</Option>
-                </Select>
-              </Form.Item>
-
-              <Button type="primary" htmlType="submit" >
-                Get Started
-              </Button>
-            </Form>
-          </div>
-          <div className="show-on-desktop">
-            <div className='gradint-section'>
-              <Image
-                src={demoGroup}
-                quality={70}
-                priority
-                // layout="fill"
-                className='img-full'
-                alt=""
-
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <p className="description">Your privacy matters to us. We’ll only contact you about relevant content or services, and you can unsubscribe at any time. <Link href="/privacy-policy">Privacy Policy</Link></p>
 
       <ThankModal visible={isThankModal} onCancel={thankToggleModal} />
     </section>
