@@ -34,7 +34,7 @@
 
   .imgbox {
     position: relative;
-    height: 575px;
+    height: 77vh;
     margin: 48px 0 0;
     display: flex;
     align-items: center;
@@ -66,6 +66,7 @@
       width: 100%;
       object-fit: cover;
       position: absolute;
+      height: 100%;
 
       @include mobile {
         opacity: 0.5;
