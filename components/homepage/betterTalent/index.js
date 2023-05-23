@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React, { useState } from "react";
@@ -74,21 +75,11 @@ export default function BetterTalent() {
               Your browser does not support HTML5 video.
             </video>
 
-            <video
-              muted
-              autoPlay
-              loop
-              playsInline
-              className={`${styles.videoMobile}`}
-              id="team-video"
-              poster="https://assets.unberry.com/media/images/poster.png"
-            >
-              <source
-                src="https://assets.unberry.com/media/intro.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support HTML5 video.
-            </video>
+            <iframe src="https://player.vimeo.com/video/829402047?h=4737ae2397&autoplay=1&loop=1&title=0&byline=0&portrait=0"
+              width="100%" height="100%"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen>
+            </iframe>
           </div>
         </Modal>
       </div>
