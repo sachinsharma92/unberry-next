@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
-import image1 from "../../../assets/new/across.png";
 import buttonIcon from "../../../assets/new/button.svg";
 
 // Styles here
@@ -29,13 +28,10 @@ export default function BetterTalent() {
         <div className={styles.imgbox}>
           <video
             className={`${styles.videoSection}`}
-            autoPlay
-            loop
-            muted
-            playsInline
+            muted autoPlay loop playsInline width="100%" height="100%"
           >
             <source
-              src="https://assets.unberry.com/media/bg.mp4"
+              src="https://assets.unberry.com/media/service1.mp4"
               type="video/mp4"
             />
             Your browser does not support HTML5 video.
@@ -59,15 +55,18 @@ export default function BetterTalent() {
         >
           <div className={styles.videoBox}>
             <video
-              className={`${styles.videoSection}`}
+              muted
               autoPlay
               loop
               playsInline
+              className={`${styles.videoSection}`}
+
+
               id="team-video"
-              muted
+              poster="/assets/poster.jpg"
             >
               <source
-                src="https://assets.unberry.com/media/Unberry-Video.mp4"
+                src="https://assets.unberry.com/media/service1.mp4"
                 type="video/mp4"
               />
               Your browser does not support HTML5 video.
