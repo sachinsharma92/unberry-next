@@ -58,21 +58,13 @@ export default function BetterTalent() {
           }}
         >
           <div className={styles.videoBox}>
-            <div
-              className="safari_only"
-              dangerouslySetInnerHTML={{
-                __html: `
-              <video className={styles.videoSection} playsinline autoplay loop muted>
-                  <source src="https://assets.unberry.com/media/Unberry-Video.mp4" type="video/mp4"/>
-              </video>`,
-              }}
-            />
-
             <video
               className={`${styles.videoSection}`}
               autoPlay
               loop
+              playsInline
               id="team-video"
+              muted
             >
               <source
                 src="https://assets.unberry.com/media/Unberry-Video.mp4"

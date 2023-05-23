@@ -1193,6 +1193,11 @@ HAMBURGER MENU
       top: 0;
       right: 0;
 
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+
       svg {
         width: 20px;
       }
