@@ -32,7 +32,9 @@ export default function HomePageScreen() {
     <>
       <Head>
         <title>Unberry - Transforming the future of hiring and developing talent.</title>
+        <meta name="title" property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
         <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" key="desc" />
+
         <meta property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
         <meta
           property="og:description"
