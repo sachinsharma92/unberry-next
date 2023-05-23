@@ -12,7 +12,7 @@ export default function BookADemo() {
       <div className='container-width'>
         <div className={styles.contentSection}>
           <h1 className={`${styles.title1}`}>
-            Take the guesswork out...
+            Take the <br className={styles.brStyle} /> guesswork out...
           </h1>
           <h2 className={`${styles.title2}`}>
             Book A Demo

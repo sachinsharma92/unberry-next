@@ -53,6 +53,14 @@
     }
   }
 
+  .brStyle {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
   .contentSection {
     border-bottom: 1px solid #444444;
     padding-bottom: 130px;
