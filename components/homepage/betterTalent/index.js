@@ -78,7 +78,7 @@ export default function BetterTalent() {
             <iframe src="https://player.vimeo.com/video/829402047?h=4737ae2397&autoplay=1&loop=1&title=0&byline=0&portrait=0"
               width="100%" height="100%"
               frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen>
+              allowfullscreen className={styles.videoMobile}>
             </iframe>
           </div>
         </Modal>
