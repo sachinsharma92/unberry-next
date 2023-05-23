@@ -61,11 +61,25 @@ export default function BetterTalent() {
         >
           <div className={styles.videoBox}>
             <video
+              autoPlay
+              playsInline
+              className={`${styles.videoDesktop}`}
+              id="team-video"
+              poster="https://assets.unberry.com/media/images/poster.png"
+            >
+              <source
+                src="https://assets.unberry.com/media/intro.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+
+            <video
               muted
               autoPlay
               loop
               playsInline
-              className={`${styles.videoSection}`}
+              className={`${styles.videoMobile}`}
               id="team-video"
               poster="https://assets.unberry.com/media/images/poster.png"
             >
