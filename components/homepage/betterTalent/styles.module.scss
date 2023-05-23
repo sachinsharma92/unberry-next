@@ -138,19 +138,4 @@
   video {
     width: 100%;
   }
-
-  .videoDesktop {
-
-    @include mobile {
-      display: none;
-    }
-  }
-
-  .videoMobile {
-    display: none;
-
-    @include mobile {
-      display: block;
-    }
-  }
 }

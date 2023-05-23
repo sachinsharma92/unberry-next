@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import buttonIcon from "../../../assets/new/button.svg";
@@ -10,6 +11,7 @@ import buttonIcon from "../../../assets/new/button.svg";
 import styles from "./styles.module.scss";
 
 export default function BetterTalent() {
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1023px)' })
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const modalToggle = () => {
@@ -61,25 +63,27 @@ export default function BetterTalent() {
           }}
         >
           <div className={styles.videoBox}>
-            <video
-              autoPlay
-              playsInline
-              className={`${styles.videoDesktop}`}
-              id="team-video"
-              poster="https://assets.unberry.com/media/images/poster.png"
-            >
-              <source
-                src="https://assets.unberry.com/media/intro.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support HTML5 video.
-            </video>
 
-            <iframe src="https://player.vimeo.com/video/829402047?h=4737ae2397&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-              width="100%" height="100%"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen className={styles.videoMobile}>
-            </iframe>
+            {isBigScreen ?
+              <video
+                autoPlay
+                playsInline
+                id="team-video"
+                poster="https://assets.unberry.com/media/images/poster.png"
+              >
+                <source
+                  src="https://assets.unberry.com/media/intro.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support HTML5 video.
+              </video>
+              :
+              <iframe src="https://player.vimeo.com/video/829402047?h=4737ae2397&autoplay=1&loop=1&title=0&byline=0&portrait=0"
+                width="100%" height="100%"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            }
           </div>
         </Modal>
       </div>
