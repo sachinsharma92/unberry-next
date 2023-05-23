@@ -28,10 +28,16 @@ export default function BetterTalent() {
         <div className={styles.imgbox}>
           <video
             className={`${styles.videoSection}`}
-            muted autoPlay loop playsInline width="100%" height="100%"
+            muted
+            autoPlay
+            loop
+            playsInline
+            width="100%"
+            height="100%"
+            poster="https://assets.unberry.com/media/images/poster.png"
           >
             <source
-              src="https://assets.unberry.com/media/service1.mp4"
+              src="https://assets.unberry.com/media/bg.mp4"
               type="video/mp4"
             />
             Your browser does not support HTML5 video.
@@ -60,13 +66,11 @@ export default function BetterTalent() {
               loop
               playsInline
               className={`${styles.videoSection}`}
-
-
               id="team-video"
-              poster="/assets/poster.jpg"
+              poster="https://assets.unberry.com/media/images/poster.png"
             >
               <source
-                src="https://assets.unberry.com/media/service1.mp4"
+                src="https://assets.unberry.com/media/intro.mp4"
                 type="video/mp4"
               />
               Your browser does not support HTML5 video.

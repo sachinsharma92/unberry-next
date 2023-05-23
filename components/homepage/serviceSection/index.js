@@ -31,7 +31,7 @@ export default function ServiceSection(props) {
     },
     {
       imageUrl: image3,
-      title: 'AI based speech & writing tool',
+      title: 'AI Speech & Writing Communication Tools',
       description: 'That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.',
       videoUrl: 'https://assets.unberry.com/media/service3.mp4',
       badgeList: [
