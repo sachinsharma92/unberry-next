@@ -32,22 +32,22 @@ export default function HomePageScreen() {
     <>
       <Head>
         <title>Unberry - Transforming the future of hiring and developing talent.</title>
+
+        {/* Main Title */}
         <meta name="title" content="Unberry - Transforming the future of hiring and developing talent." />
         <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" key="desc" />
 
-        <meta property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta
-          property="og:description"
-          content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent."
-        />
-        <meta property="og:url" content="https://www.unberry.com/ogImage.png" />
-        <meta property="og:type" content="website" />
+        {/* OG Section  */}
+        <meta prefix="og: http://ogp.me/ns#" name="title" property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
+        <meta prefix="og: http://ogp.me/ns#" name="description" property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://www.unberry.com/ogImage.png" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://www.unberry.com/ogImage.png" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
         <meta property="og:image" content="https://www.unberry.com/ogImage.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="author" content="Unberry" />
-        <meta property="og:image" content="https://www.unberry.com/ogImage.png" />
 
         {/* Twitter OG Section  */}
         <meta name="twitter:image" content="https://www.unberry.com/ogImage.png" />
