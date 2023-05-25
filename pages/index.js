@@ -13,6 +13,8 @@ export default function Home() {
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
+        <meta name="title" content="Unberry - Transforming the future of hiring and developing talent." />
+        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" key="desc" />
         <meta property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
         <meta property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" />
 
