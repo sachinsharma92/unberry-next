@@ -1168,8 +1168,8 @@ HAMBURGER MENU
   }
 }
 
-.customOverlay {
-  backdrop-filter: blur(5px);
+.better-custom-overlay {
+  background-color: $black !important;
 }
 
 .react-responsive-modal-root {
@@ -1178,20 +1178,37 @@ HAMBURGER MENU
     padding: 0;
     background: none;
     box-shadow: none;
+    margin: 0;
+    overflow-y: visible;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include mobile {
       margin: 0;
+      overflow-y: hidden;
     }
 
     .react-responsive-modal-closeButton {
-      background: $white;
+      background: transparent;
       width: 32px;
       height: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
-      top: 0;
-      right: 0;
+      top: 40px;
+      right: 1.5vw;
+
+      @include desktop-lg {
+        right: 3vw;
+      }
+
+      @include mobile {
+        right: 20px;
+        top: 20px;
+      }
 
       &:focus {
         box-shadow: none;
@@ -1199,7 +1216,9 @@ HAMBURGER MENU
       }
 
       svg {
-        width: 20px;
+        width: 40px;
+        height: 40px;
+        fill: $white;
       }
     }
   }

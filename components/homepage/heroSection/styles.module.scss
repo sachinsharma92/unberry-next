@@ -164,6 +164,12 @@
       background: none;
       min-height: auto;
       padding-bottom: 53px;
+      max-width: 100%;
+    }
+
+
+    @include iphone5 {
+      scale:0.95
     }
   }
 
