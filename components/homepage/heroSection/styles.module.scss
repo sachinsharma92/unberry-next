@@ -14,14 +14,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/assets/hero-grid.svg');
+    background: url("/assets/hero-grid.svg");
     background-repeat: no-repeat;
-    content: '';
+    content: "";
     background-size: 100%;
 
     @include mobile {
       background-size: 100%;
-      background: url('/assets/hero-grid-mobile.svg');
+      background: url("/assets/hero-grid-mobile.svg");
     }
   }
 
@@ -50,7 +50,7 @@
     }
 
     @include mobile {
-     display: none;
+      display: none;
     }
 
     span {
@@ -58,22 +58,21 @@
       padding: 0 38px;
       height: 79px;
       display: inline-block;
-      line-height:70px;
+      line-height: 70px;
       font-size: 60px;
       position: relative;
       top: -5px;
 
       &.color1 {
-        background-color: #E4DDEF;
-        color: #3D2F52;
+        background-color: #e4ddef;
+        color: #3d2f52;
       }
       &.color2 {
-        background-color: #DAEEEE;
+        background-color: #daeeee;
         color: #184443;
-        
       }
       &.color3 {
-        background-color: #FBEFE6;
+        background-color: #fbefe6;
         color: #442811;
       }
     }
@@ -106,26 +105,25 @@
       padding: 0 20px;
       height: 79px;
       display: inline-block;
-      line-height:70px;
+      line-height: 70px;
       font-size: 60px;
 
       @include mobile {
-        line-height:55px;
+        line-height: 55px;
         font-size: 39px;
         height: 60px;
       }
 
       &.color1 {
-        background-color: #E4DDEF;
-        color: #3D2F52;
+        background-color: #e4ddef;
+        color: #3d2f52;
       }
       &.color2 {
-        background-color: #DAEEEE;
+        background-color: #daeeee;
         color: #184443;
-        
       }
       &.color3 {
-        background-color: #FBEFE6;
+        background-color: #fbefe6;
         color: #442811;
       }
     }
@@ -158,6 +156,9 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 518px;
+    max-width: 89%;
+    background-size: contain;
+    margin: 0 auto;
 
     @include mobile {
       background: none;
@@ -213,8 +214,8 @@
 
   .title4 {
     font-weight: 500;
-    font-size: 31.25px;
-    line-height: 41px;
+    font-size: 30px;
+    line-height: 38px;
     letter-spacing: -1.28484px;
     text-align: center;
 
@@ -230,7 +231,6 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    
 
     .jsonItem {
       position: absolute;
@@ -267,7 +267,6 @@
     }
   }
 
-
   .gridDesktopSection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -286,8 +285,8 @@
       gap: 20px 0;
 
       &:first-child {
-        margin-top: 260px;
-        margin-left: 50px;
+        margin-top: 240px;
+        margin-left: 20px;
 
         .jsonItemBox {
           height: 140px;
@@ -295,16 +294,16 @@
         }
       }
       &:nth-child(2) {
-        margin-top: 40px;
-        margin-left: -20px;
+        margin-top: 53px;
+        margin-left: -25px;
       }
       &:nth-child(3) {
-        margin-top: 40px;
+        margin-top: 50px;
         margin-left: 50px;
       }
       &:nth-child(4) {
         margin-top: 260px;
-        margin-right: 50px;
+        margin-right: 0px;
       }
     }
   }
