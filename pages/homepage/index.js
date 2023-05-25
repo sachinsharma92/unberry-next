@@ -15,7 +15,6 @@ import WinningChoice from '../../components/homepage/winningChoice';
 // Styles here
 import styles from './styles.module.scss';
 
-
 export default function HomePageScreen() {
   const [headerColor, setHeaderColor] = useState("white")
 
@@ -31,14 +30,14 @@ export default function HomePageScreen() {
   return (
     <>
       <Head>
-        <title>Unberry - Transforming the future of hiring and developing talent.</title>
+        <title>Transforming the future of hiring and developing talent.</title>
 
         {/* Main Title */}
-        <meta name="title" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" key="desc" />
+        <meta name="title" content="Transforming the future of hiring and developing talent." />
+        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" key="description" />
 
         {/* OG Section  */}
-        <meta prefix="og: http://ogp.me/ns#" name="title" property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
+        <meta prefix="og: http://ogp.me/ns#" name="title" property="og:title" content="Transforming the future of hiring and developing talent." />
         <meta prefix="og: http://ogp.me/ns#" name="description" property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" />
         <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://www.unberry.com/ogImage.png" />
         <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://www.unberry.com/ogImage.png" />
