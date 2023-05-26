@@ -7,6 +7,9 @@
   background: $white;
   padding: 94px $p-padding-inline;
 
+  @include tablet {
+    padding: 50px 0px;
+  }
   @include mobile {
     padding: 50px 0px;
   }
@@ -24,6 +27,12 @@
       max-width: 60%;
     }
 
+    @include tablet {
+      font-size: 30px;
+      line-height: 31px;
+      text-align: left;
+      max-width: 90%;
+    }
     @include mobile {
       font-size: 30px;
       line-height: 31px;
@@ -37,6 +46,13 @@
     font-size: 39.06px;
     line-height: 60px;
     letter-spacing: -2px;
+
+    @include tablet {
+      color: $black;
+      font-size: 25px;
+      line-height: 36px;
+      letter-spacing: -1.2px;
+    }
 
     @include mobile {
       color: $black;
@@ -56,6 +72,12 @@
       max-width: 60%;
     }
 
+    @include tablet {
+      max-width: 100%;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
     @include mobile {
       max-width: 100%;
       font-size: 15px;
@@ -70,6 +92,12 @@
   .accordianCardLast {
     display: none;
 
+    @include tablet {
+      display: block;
+      min-width: 1px;
+      background-color: transparent;
+    }
+
     @include mobile {
       display: block;
       min-width: 1px;
@@ -83,6 +111,10 @@
     width: 100%;
     height: 100%;
 
+    @include tablet {
+      position: relative;
+    }
+
     @include mobile {
       position: relative;
     }
@@ -95,6 +127,12 @@
 
       @include desktop-lg {
         height: 51vh;
+      }
+
+      @include tablet {
+        height: 140px;
+        bottom: 0px;
+        position: absolute;
       }
 
       @include mobile {
@@ -115,6 +153,12 @@
       width: 100%;
       bottom: 0;
 
+      @include tablet {
+        height: 140px;
+        bottom: 0px;
+        position: absolute;
+      }
+
       @include mobile {
         height: 140px;
         bottom: 0px;
@@ -133,6 +177,12 @@
       width: 100%;
       bottom: 106px;
 
+      @include tablet {
+        height: 180px;
+        bottom: 0px;
+        position: absolute;
+      }
+
       @include mobile {
         height: 180px;
         bottom: 0px;
@@ -150,7 +200,15 @@
 
       @include mobile {
         padding: 20px 20px 0px;
-        
+
+        @supports (-webkit-backdrop-filter: blur(1px)) {
+          padding: 20px 20px 200px;
+        }
+      }
+
+      @include tablet {
+        padding: 20px 20px 0px;
+
         @supports (-webkit-backdrop-filter: blur(1px)) {
           padding: 20px 20px 200px;
         }
@@ -163,6 +221,12 @@
       margin-top: 30px;
       margin-left: -20px;
 
+      @include tablet {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: -10px;
+      }
+
       @include mobile {
         width: 100%;
         margin-top: 20px;
@@ -174,11 +238,20 @@
           display: flex;
           flex-direction: column;
         }
+
+        @include tablet {
+          display: flex;
+          flex-direction: column;
+        }
       }
 
       .listItem {
         width: 100%;
         padding: 10px 20px;
+
+        @include tablet {
+          padding: 5px 5px;
+        }
 
         @include mobile {
           padding: 5px 5px;
@@ -202,6 +275,13 @@
       color: $black;
       min-width: 220px;
 
+      @include tablet {
+        font-size: 16px;
+        line-height: 24px;
+        gap: 0 10px;
+        min-width: auto;
+      }
+
       @include mobile {
         font-size: 16px;
         line-height: 24px;
@@ -217,13 +297,10 @@
     overflow: hidden;
   }
 
-
   .containerPanel {
     align-items: normal;
     padding-left: 20px;
   }
-
-
 
   .bgMobileBoxStyle1 {
     height: 200px;
@@ -232,6 +309,11 @@
     display: none;
     margin-left: 25px;
     top: 60px;
+
+    @include tablet {
+      display: block;
+      scale: 1.4;
+    }
 
     @include mobile {
       display: block;
@@ -252,6 +334,11 @@
     margin-left: 35px;
     top: 60px;
 
+    @include tablet {
+      display: block;
+      scale: 1.6;
+    }
+
     @include mobile {
       display: block;
       scale: 1.6;
@@ -270,6 +357,12 @@
     display: none;
     margin-left: 25px;
     top: 30px;
+
+    @include tablet {
+      display: block;
+      scale: 1.4;
+      margin-left: 0px;
+    }
 
     @include mobile {
       display: block;

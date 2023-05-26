@@ -63,7 +63,7 @@ export default function HeroSection() {
             We help <br /> companies make
             <Marquee speed={40} gradient={false} className='hero-marquee'>
               <div className={styles.mobileStyle}>
-                <span className={styles.color1}> better</span>
+                <span className={styles.color1}>better</span>
                 <span className={styles.color2}>smarter</span>
                 <span className={styles.color3}>faster</span>
               </div>

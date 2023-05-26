@@ -8,12 +8,20 @@
   background: $black;
   position: relative;
 
+  @include tablet {
+    padding-bottom: 0px;
+  }
+
   @include mobile {
     padding-bottom: 0px;
   }
 
   .contentSection {
     padding: 60px $p-padding-inline 0;
+
+    @include tablet {
+      padding: 54px 20px 0;
+    }
 
     @include mobile {
       padding: 54px 20px 0;
@@ -29,6 +37,13 @@
     max-width: 70%;
     text-align: center;
     margin: 0 auto;
+
+
+    @include tablet {
+      font-size: 30px;
+      line-height: 40px;
+      max-width: 80%;
+    }
 
     @include mobile {
       font-size: 30px;
@@ -54,6 +69,11 @@
       padding: 20px 0px;
     }
 
+    @include tablet {
+      border-radius: 0px;
+      padding: 20px 0px;
+    }
+
     .title4 {
       color: $white;
       text-align: center;
@@ -68,6 +88,12 @@
         margin-bottom: 10px;
         margin-top: 0px;
       }
+
+      @include tablet {
+        text-align: center; 
+        margin-bottom: 10px;
+        margin-top: 0px;
+      }
     }
   }
 
@@ -78,11 +104,19 @@
     @include mobile {
       max-width: 100%;
     }
+
+    @include tablet {
+      max-width: 100%;
+    }
   }
 
   .needSection {
     max-width: 70%;
     margin: 0 auto;
+
+    @include tablet {
+      max-width: 100%;
+    }
 
     @include mobile {
       max-width: 100%;
@@ -94,6 +128,13 @@
     justify-content: center;
     align-items: center;
     gap: 0 10px;
+
+    @include tablet {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 10px;
+    }
 
     @include mobile {
       justify-content: center;
@@ -113,6 +154,12 @@
       padding: 0 20px;
       text-align: center;
       color: $white;
+
+      @include tablet {
+        white-space: nowrap;
+        font-size: 16px;
+        height: 45px;
+      }
 
       @include mobile {
         white-space: nowrap;

@@ -12,6 +12,12 @@
     letter-spacing: -1px;
     margin: 0;
 
+    @include tablet {
+      font-size: 30px;
+      line-height: 35px;
+      max-width: 70%;
+    }
+
     @include mobile {
       font-size: 30px;
       line-height: 35px;
@@ -27,6 +33,9 @@
     color: $theme-primary-new;
     margin-right: 160px;
 
+    @include tablet {
+      margin-right: 0px;
+    }
     @include mobile {
       margin-right: 0px;
     }
@@ -45,6 +54,9 @@
       justify-content: space-between;
       padding: 20px 0;
 
+      @include tablet {
+        align-items: flex-end;
+      }
       @include mobile {
         align-items: flex-end;
       }

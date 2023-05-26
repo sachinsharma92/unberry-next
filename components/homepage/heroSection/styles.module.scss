@@ -19,6 +19,11 @@
     content: "";
     background-size: 100%;
 
+    @include tablet {
+      background-size: 100%;
+      background: url("/assets/hero-grid-mobile.svg");
+    }
+
     @include mobile {
       background-size: 100%;
       background: url("/assets/hero-grid-mobile.svg");
@@ -27,6 +32,10 @@
 
   .containerStyle {
     position: relative;
+  }
+
+  @include tablet {
+    padding-bottom: 0;
   }
 
   @include mobile {
@@ -49,9 +58,14 @@
       max-width: 60%;
     }
 
+    @include tablet {
+      display: none;
+    }
+
     @include mobile {
       display: none;
     }
+
 
     span {
       border-radius: 50px;
@@ -86,6 +100,12 @@
     line-height: 80px;
     display: none;
 
+    @include tablet {
+      max-width: 100%;
+      line-height: 70px;
+      display: block;
+    }
+
     @include mobile {
       max-width: 100%;
       line-height: 60px;
@@ -107,6 +127,13 @@
       display: inline-block;
       line-height: 70px;
       font-size: 60px;
+
+
+      @include tablet {
+        line-height: 55px;
+        font-size: 39px;
+        height: 60px;
+      }
 
       @include mobile {
         line-height: 55px;
@@ -133,6 +160,12 @@
     margin: 0 auto;
     text-align: center;
 
+    @include tablet {
+      max-width: 60%;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
     @include mobile {
       max-width: 95%;
       font-size: 16px;
@@ -146,9 +179,14 @@
     flex-direction: column;
     align-items: center;
 
+    @include tablet {
+      padding: 85px 0;
+    }
+
     @include mobile {
       padding: 85px 0;
     }
+
   }
 
   .workplaceSection {
@@ -160,13 +198,19 @@
     background-size: contain;
     margin: 0 auto;
 
+    @include tablet {
+      background: none;
+      min-height: auto;
+      padding-bottom: 53px;
+      max-width: 90%;
+    }
+
     @include mobile {
       background: none;
       min-height: auto;
       padding-bottom: 53px;
       max-width: 100%;
     }
-
 
     @include iphone5 {
       scale:0.95
@@ -175,6 +219,10 @@
 
   .headingMobile {
     display: none;
+
+    @include tablet {
+      display: block;
+    }
 
     @include mobile {
       display: block;
@@ -189,6 +237,9 @@
     bottom: 0;
     z-index: 1;
     margin-top: -150px;
+    @include tablet {
+      margin-top: 0px;
+    }
 
     @include mobile {
       margin-top: 0px;
@@ -196,6 +247,10 @@
   }
 
   .headingDesktop {
+    @include tablet {
+      display: none;
+    }
+
     @include mobile {
       display: none;
     }
@@ -211,6 +266,12 @@
     margin: 0 auto;
     color: $black;
 
+    @include tablet {
+      font-size: 35px;
+      line-height: 40px;
+      max-width: 70%;
+    }
+
     @include mobile {
       font-size: 25px;
       line-height: 30px;
@@ -224,6 +285,11 @@
     line-height: 38px;
     letter-spacing: -1.28484px;
     text-align: center;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 30px;
+    }
 
     @include mobile {
       font-size: 17px;
@@ -257,6 +323,10 @@
       display: grid;
     }
 
+    @include tablet {
+      display: grid;
+    }
+
     .jsonItemBox {
       position: relative;
       width: 120px;
@@ -281,6 +351,10 @@
     margin: 0 auto;
 
     @include mobile {
+      display: none;
+    }
+
+    @include tablet {
       display: none;
     }
 
