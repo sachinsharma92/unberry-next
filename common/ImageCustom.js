@@ -10,6 +10,7 @@ export default function ImageCustom(props) {
       height={props.height}
       width={props.width}
       className={props.className}
+      quality={80}
     />
   )
 }
