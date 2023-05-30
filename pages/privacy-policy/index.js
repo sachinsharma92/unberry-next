@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import SeoHead from '../../components/seoHead';
-import Image from 'next/image';
-import Link from 'next/link';
-import logoTheme from "../../assets/logo-brown.svg";
 import { Footer } from 'antd/lib/layout/layout';
-import logoFooter from "../../assets/logo-brown.svg";
+import Link from 'next/link';
+import React from 'react';
+import ImageCustom from '../../common/ImageCustom';
+import SeoHead from '../../components/seoHead';
 
 export default function PrivacyPolicyScreen() {
 
@@ -22,7 +20,7 @@ export default function PrivacyPolicyScreen() {
           <div className='max-wrap'>
             <Link href="/">
               <a className='logo-white'>
-                <Image src={logoTheme} alt="logo" width="200" />
+                <ImageCustom src="logo-brown.svg" alt="logo" width="200" height="22" />
               </a>
             </Link>
 
@@ -78,7 +76,7 @@ export default function PrivacyPolicyScreen() {
       <Footer>
         <div className='footer'>
           <div className='copyright-section'>
-            <div><Image src={logoFooter} alt="logo-footer" /></div>
+            <div><ImageCustom src="logo-brown.svg" alt="logo-footer" width="84" height="22" /></div>
             <p className='copyright'>© Copyright 2023. UNBERRY. All Rights Reserved. | <Link href="/privacy-policy"><a className="privacy-link">Privacy Policy</a></Link> </p>
           </div>
         </div>

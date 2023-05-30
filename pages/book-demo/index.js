@@ -1,14 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import icon1 from "../../assets/icons/icon1.svg";
-import icon2 from "../../assets/icons/icon2.svg";
-import icon3 from "../../assets/icons/icon3.svg";
-import icon4 from "../../assets/icons/icon4.svg";
-import logoTheme from "../../assets/logo-black.svg";
 import DemoForm from '../../components/demoForm';
 import SeoHead from '../../components/seoHead';
+import ImageCustom from '../../common/ImageCustom';
 
 // Styles here
 import styles from './styles.module.scss';
@@ -29,7 +24,7 @@ export default function BookDemoScreen() {
           <div>
             <Link href="/">
               <a className={`logo-black ${styles.logoBlack}`}>
-                <Image src={logoTheme} width="124" height="34" alt="logo" />
+                <ImageCustom src="logo-black.svg" width="124" height="34" alt="logo" />
               </a>
             </Link>
 
@@ -42,25 +37,25 @@ export default function BookDemoScreen() {
           <ul className={styles.listStyle}>
             <li className={styles.listItem}>
               <div className={styles.imgBox}>
-                <Image src={icon1} alt='image services' layout="fill" />
+                <ImageCustom src="icon1.svg" alt='image services' layout="fill" />
               </div>
               Elevate the candidate experience
             </li>
             <li className={styles.listItem}>
               <div className={styles.imgBox}>
-                <Image src={icon2} alt='image services' layout="fill" />
+                <ImageCustom src="icon2.svg" alt='image services' layout="fill" />
               </div>
               Improve the quality of hire
             </li>
             <li className={styles.listItem}>
               <div className={styles.imgBox}>
-                <Image src={icon3} alt='image services' layout="fill" />
+                <ImageCustom src="icon3.svg" alt='image services' layout="fill" />
               </div>
               Find the hidden gems
             </li>
             <li className={styles.listItem}>
               <div className={styles.imgBox}>
-                <Image src={icon4} alt='image services' layout="fill" />
+                <ImageCustom src="icon4.svg" alt='image services' layout="fill" />
               </div>
               Hire faster and efficiently
             </li>

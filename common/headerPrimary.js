@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import logoTheme from "../assets/logo-black.svg";
+import ImageCustom from './ImageCustom';
 
 export default function HeaderPrimary(props) {
   const [menuShow, setMenuShow] = useState(false);
@@ -15,7 +14,7 @@ export default function HeaderPrimary(props) {
       <div className='container-width'>
         <Link href="/">
           <a className='logo-black'>
-            <Image src={logoTheme} width="124" height="34" alt="logo" />
+            <ImageCustom src="logo-black.svg" width="124" height="34" alt="logo" />
           </a>
         </Link>
 

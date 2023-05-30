@@ -1,8 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import image1 from "../../../assets/new/service-card1.jpg";
-import image2 from "../../../assets/new/service-card2.jpg";
-import image3 from "../../../assets/new/service-card3.jpg";
 import ButtonPrimary from '../../../common/buttonPrimary';
 
 // Styles here
@@ -12,7 +9,6 @@ export default function ServiceSection(props) {
 
   const serviceCardList = [
     {
-      imageUrl: image1,
       title: 'Games & Immersive Exercises',
       description: 'Dynamic environments modulating multiple pathways, generating exponentially more behavioural data, measuring the true potential of a candidate across modern workplace skills',
       videoUrl: 'https://assets.unberry.com/media/service1.mp4',
@@ -21,7 +17,6 @@ export default function ServiceSection(props) {
       ]
     },
     {
-      imageUrl: image2,
       title: 'Skill assessments & live coding simulations',
       description: 'Helping evaluate the functional capabilities, domain knowledge and proficiency across a wide repository of modern day skills and coding languages across different functions & roles.',
       videoUrl: 'https://assets.unberry.com/media/service2.mp4',
@@ -30,7 +25,6 @@ export default function ServiceSection(props) {
       ]
     },
     {
-      imageUrl: image3,
       title: 'AI Speech & Writing Communication Tools',
       description: 'That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.',
       videoUrl: 'https://assets.unberry.com/media/service3.mp4',

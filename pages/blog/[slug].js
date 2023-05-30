@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import axios from "axios";
 import Head from "next/head";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
-import buttonIcon from "../../assets/new/icons/back.svg";
+import ImageCustom from "../../common/ImageCustom";
 import LayoutPrimary from "../../common/layoutPrimary";
 import SubscribeCard from "../../common/subscribe";
 import UpNextCard from "../../components/blogs/upNextCard";
@@ -77,7 +76,7 @@ const BlogDetail = ({ heading }) => {
 			<LayoutPrimary className={`blog-detail-section ${headerColor}`}>
 				<div className="blog-layout">
 					<button className="back-btn" onClick={() => router.back()}>
-						<Image src={buttonIcon} alt='image services' width="26" height="26" /> GO BACK
+						<ImageCustom src="back.svg" alt='image services' width="26" height="26" /> GO BACK
 					</button>
 					<div className="blog-header">
 						<h2 className="title2">{data?.heading}</h2>

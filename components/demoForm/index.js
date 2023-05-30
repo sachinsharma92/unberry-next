@@ -2,10 +2,9 @@ import { Button, Form, Input, notification, Select } from 'antd';
 import axios from "axios";
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
+import ImageCustom from '../../common/ImageCustom';
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
-import Image from 'next/image';
-import logoTheme from "../../assets/logo-black.svg";
 
 const { Option } = Select;
 
@@ -86,7 +85,7 @@ export default function DemoForm(props) {
     <section className='contact-section' id={props.id}>
       <Link href="/">
         <a className={`logo-black`}>
-          <Image src={logoTheme} width="124" height="34" alt="logo" />
+          <ImageCustom src="logo-black.svg" width="124" height="34" alt="logo" />
         </a>
       </Link>
       <h3 className="title3">Take the guesswork out...</h3>

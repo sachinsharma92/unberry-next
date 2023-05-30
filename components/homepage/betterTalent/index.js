@@ -1,13 +1,12 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
-import buttonIcon from "../../../assets/new/button.svg";
 
 // Styles here
+import ImageCustom from "../../../common/ImageCustom";
 import styles from "./styles.module.scss";
 
 export default function BetterTalent() {
@@ -49,7 +48,7 @@ export default function BetterTalent() {
 
         <div className={styles.buttonSection}>
           <button className={styles.buttonStyle} onClick={modalToggle}>
-            <Image src={buttonIcon} alt="image services" layout="fill" />
+            <ImageCustom src="button.svg" alt="image services" layout="fill" />
           </button>
         </div>
 

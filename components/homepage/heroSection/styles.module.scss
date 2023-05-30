@@ -14,19 +14,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("/assets/hero-grid.svg");
+    background: url("https://assets.unberry.com/media/images/hero-grid.svg");
     background-repeat: no-repeat;
     content: "";
     background-size: 100%;
 
     @include tablet {
       background-size: 100%;
-      background: url("/assets/hero-grid-mobile.svg");
+      background: url("https://assets.unberry.com/media/images/hero-grid-mobile.svg");
     }
 
     @include mobile {
       background-size: 100%;
-      background: url("/assets/hero-grid-mobile.svg");
+      background: url("https://assets.unberry.com/media/images/hero-grid-mobile.svg");
     }
   }
 

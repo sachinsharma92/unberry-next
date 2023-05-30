@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import ButtonPrimary from '../../../common/buttonPrimary';
 
 // Styles here
 import styles from './styles.module.scss';
-import ButtonPrimary from '../../../common/buttonPrimary';
 
 export default function BookADemo() {
 

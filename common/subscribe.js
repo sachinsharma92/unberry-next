@@ -1,38 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button, Form, Input } from 'antd';
-import React, { useEffect, useRef, useState } from 'react';
-import instagram from "../assets/new/social/instagram-purple.svg";
-import linkedin from "../assets/new/social/linkedin-purple.svg";
-import twitter from "../assets/new/social/twitter.svg";
+import React, { useEffect, useState } from 'react';
 import ThankModal from '../components/thankModal';
-
-import Image from 'next/image';
-
-const SubmitButton = ({ form }) => {
-  const [submittable, setSubmittable] = React.useState(false);
-
-  // Watch all values
-  const values = Form.useWatch([], form);
-  React.useEffect(() => {
-    form
-      .validateFields({
-        validateOnly: true,
-      })
-      .then(
-        () => {
-          setSubmittable(true);
-        },
-        () => {
-          setSubmittable(false);
-        },
-      );
-  }, [values]);
-  return (
-    <Button type="primary" htmlType="submit" disabled={!submittable}>
-      Submit
-    </Button>
-  );
-};
+import ImageCustom from './ImageCustom';
 
 export default function SubscribeCard(props) {
   const [isThankModal, setThankModal] = useState(false);
@@ -62,7 +32,7 @@ export default function SubscribeCard(props) {
       <div className='subscribe-card'>
         <div className='content-sec'>
           <div className='icon-box'>
-            <img className='icon-img' alt="social icons" src="/assets/envelope-color.svg" />
+            <ImageCustom className='icon-img' alt="social icons" src="envelope-color.svg" width="60" height="60" />
           </div>
           <div>
             <h4 className="title4">Subscribe to our newsletter</h4>
@@ -105,9 +75,9 @@ export default function SubscribeCard(props) {
         </div>
 
         {props.socialShow && <div className='social-sec'>
-          <a href="https://www.linkedin.com/company/unberry/" rel="noreferrer" className='icon-link' target="_blank"><Image className='icon' alt="social icons" src={linkedin} /></a>
-          <a href="https://twitter.com/UnberryHQ" target="_blank" rel="noreferrer" className='icon-link'><Image className='icon' src={twitter} alt="social icons" /></a>
-          <a href="https://www.instagram.com/unberry_official/" rel="noreferrer" className='icon-link' target="_blank"><Image className='icon' src={instagram} alt="social icons" /></a>
+          <a href="https://www.linkedin.com/company/unberry/" rel="noreferrer" className='icon-link' target="_blank"><ImageCustom className='icon' alt="social icons" src="linkedin-purple.svg" width="18" height="17" /></a>
+          <a href="https://twitter.com/UnberryHQ" target="_blank" rel="noreferrer" className='icon-link'><ImageCustom className='icon' src="twitter.svg" alt="social icons" width="12" height="16" /></a>
+          <a href="https://www.instagram.com/unberry_official/" rel="noreferrer" className='icon-link' target="_blank"><ImageCustom className='icon' src="instagram-purple.svg" alt="social icons" width="19" height="19" /></a>
         </div>}
       </div>
 

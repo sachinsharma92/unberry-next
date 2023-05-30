@@ -1,16 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { ReactCompareSlider } from 'react-compare-slider';
-import UnberryEmoticon from './unberry';
 import TraditionalEmoticon from './traditional';
-
-import Image from 'next/image';
-import arc from "../../../assets/new/design-arc.svg";
-
-// Json File
-
+import UnberryEmoticon from './unberry';
 
 // Styles here
+import ImageCustom from '../../../common/ImageCustom';
 import styles from './styles.module.scss';
 
 export default function CandidatesAbsolutely() {
@@ -34,7 +29,7 @@ export default function CandidatesAbsolutely() {
             </div>
 
             <div className={styles.arcStyle}>
-              <Image src={arc} alt="" width="85" height="85" />
+              <ImageCustom src="design-arc.svg" alt="" width="85" height="85" />
             </div>
           </div>
         </div>

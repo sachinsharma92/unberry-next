@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { gsap } from 'gsap';
 import lottie from "lottie-web";
-
 import React, { useEffect } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
 
@@ -11,8 +9,8 @@ import communication from "../../../assets/json/hero-section/communication-skill
 import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
 
 // Styles here
-import styles from './styles.module.scss';
 import Marquee from 'react-fast-marquee';
+import styles from './styles.module.scss';
 
 export default function HeroSection() {
 

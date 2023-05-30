@@ -1,27 +1,10 @@
-import lottie from "lottie-web";
-import React, { useEffect } from "react";
-
+import React from "react";
 import { Carousel } from "antd";
-// import focus from "../../../assets/json/focus.json";
-// import bestfit from "../../../assets/json/bestfit.json";
-// import hire from "../../../assets/json/hire.json";
-// import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
+import ImageCustom from "../../../common/ImageCustom";
 import ButtonPrimary from "../../../common/buttonPrimary";
-
-import icon1 from "../../../assets/icons/icon1.svg";
-import icon2 from "../../../assets/icons/icon2.svg";
-import icon3 from "../../../assets/icons/icon3.svg";
-import icon4 from "../../../assets/icons/icon4.svg";
-
-import binoculars from "../../../assets/new/icons/binoculars.svg";
-import eyeClosed from "../../../assets/new/icons/eye-closed.svg";
-import trendUp from "../../../assets/new/icons/trend-up.svg";
-import magnet from "../../../assets/new/icons/magnet.svg";
-import dottedCurve from "../../../assets/new/dotted-curve-line.svg";
 
 // Styles here
 import styles from "./styles.module.scss";
-import Image from "next/image";
 
 export default function WinningChoice() {
   const onChange = (currentSlide) => {
@@ -65,7 +48,7 @@ export default function WinningChoice() {
           <div className={styles.grayBoxSection}>
             <div className={styles.grayBox}>
               <div className={styles.imgItemBox}>
-                <Image src={icon1} alt='image services' layout="fill" />
+                <ImageCustom src="icon1.svg" alt='image services' layout="fill" />
               </div>
               <div className={styles.grayContent}>
                 <h4 className={styles.title4}>
@@ -79,7 +62,7 @@ export default function WinningChoice() {
             </div>
             <div className={styles.grayBox}>
               <div className={styles.imgItemBox}>
-                <Image src={icon2} alt='image services' layout="fill" />
+                <ImageCustom src="icon2.svg" alt='image services' layout="fill" />
               </div>
               <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Improve the quality of hire</h4>
@@ -91,7 +74,7 @@ export default function WinningChoice() {
             </div>
             <div className={styles.grayBox}>
               <div className={styles.imgItemBox}>
-                <Image src={icon3} alt='image services' layout="fill" />
+                <ImageCustom src="icon3.svg" alt='image services' layout="fill" />
               </div>
               <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Find the hidden gems</h4>
@@ -103,7 +86,7 @@ export default function WinningChoice() {
             </div>
             <div className={styles.grayBox}>
               <div className={styles.imgItemBox}>
-                <Image src={icon4} alt='image services' layout="fill" />
+                <ImageCustom src="icon4.svg" alt='image services' layout="fill" />
               </div>
               <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Hire faster and efficiently</h4>
@@ -139,7 +122,7 @@ export default function WinningChoice() {
 
           {/* curve Line Section */}
           <div className={styles.curveLineSection}>
-            <Image src={dottedCurve} alt='image services' layout="fill" />
+            <ImageCustom src="dotted-curve-line.svg" alt='image services' layout="fill" />
           </div>
 
           {/* For Mobile */}
@@ -147,7 +130,7 @@ export default function WinningChoice() {
             <div className={styles.gridSection}>
               <div className={styles.box}>
                 <div className={styles.imgBox}>
-                  <Image src={binoculars} alt='image services' layout="fill" />
+                  <ImageCustom src="binoculars.svg" alt='image services' layout="fill" />
                 </div>
                 <h4 className={styles.title4}>
                   Find high potential candidates
@@ -156,7 +139,7 @@ export default function WinningChoice() {
 
               <div className={styles.box}>
                 <div className={styles.imgBox}>
-                  <Image src={eyeClosed} alt='image services' layout="fill" />
+                  <ImageCustom src="eye-closed.svg" alt='image services' layout="fill" />
                 </div>
                 <h4 className={styles.title4}>
                   Increase your employer branding
@@ -165,7 +148,7 @@ export default function WinningChoice() {
 
               <div className={styles.box}>
                 <div className={styles.imgBox}>
-                  <Image src={trendUp} alt='image services' layout="fill" />
+                  <ImageCustom src="trend-up.svg" alt='image services' layout="fill" />
                 </div>
                 <h4 className={styles.title4}>
                   Reach untapped talent pools
@@ -174,7 +157,7 @@ export default function WinningChoice() {
 
               <div className={styles.box}>
                 <div className={styles.imgBox}>
-                  <Image src={magnet} alt='image services' layout="fill" />
+                  <ImageCustom src="magnet.svg" alt='image services' layout="fill" />
                 </div>
                 <h4 className={styles.title4}>
                   Attract & hire diverse talent

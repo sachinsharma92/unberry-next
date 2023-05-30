@@ -1,21 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image';
 import React, { useEffect } from 'react';
-import icon1 from "../../../assets/new/icons/snapshots.svg";
-import icon2 from "../../../assets/new/icons/switching.svg";
-import icon3 from "../../../assets/new/icons/copy-paste.svg";
-import icon4 from "../../../assets/new/icons/prohibit.svg";
-
-import icon5 from "../../../assets/new/icons/cursor-click.svg";
-import icon6 from "../../../assets/new/icons/clock-countdown.svg";
-import icon7 from "../../../assets/new/icons/chart.svg";
-import icon8 from "../../../assets/new/icons/repeat.svg";
-
-import icon9 from "../../../assets/new/icons/envelope.svg";
-import icon10 from "../../../assets/new/icons/note.svg";
-import icon11 from "../../../assets/new/icons/device.svg";
-import icon12 from "../../../assets/new/icons/chats.svg";
-import iconPlus from "../../../assets/new/plus.svg";
 
 import backgroundStyle1 from "../../../assets/new/m-automation1.png";
 import backgroundStyle2 from "../../../assets/new/m-automation2.png";
@@ -23,6 +7,7 @@ import backgroundStyle3 from "../../../assets/new/m-automation3.png";
 
 
 // Styles here
+import ImageCustom from '../../../common/ImageCustom';
 import styles from './styles.module.scss';
 
 export default function EndAutomation() {
@@ -58,7 +43,7 @@ export default function EndAutomation() {
                 <div className='head-wrap'>
                   <h2 className="heading">Advanced Proctoring</h2>
                   <div className="icon-plus">
-                    <Image src={iconPlus} alt='image services' width="34" height="34" />
+                    <ImageCustom src="plus.svg" alt='image services' width="34" height="34" />
                   </div>
                 </div>
               </div>
@@ -71,13 +56,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon1} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="snapshots.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Candidate Snapshots
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon2} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="switching.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Disable Tab Switching
                         </div>
                       </td>
@@ -85,13 +70,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon3} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="copy-paste.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Disable Copy Paste
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon4} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="prohibit.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Curb Plagiarism
                         </div>
                       </td>
@@ -99,7 +84,7 @@ export default function EndAutomation() {
                   </table>
 
                   <div className={styles.bgMobileBoxStyle1}>
-                    <Image src={backgroundStyle1} alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                    <ImageCustom src="m-automation1.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
                   </div>
                 </div>
               </div>
@@ -111,7 +96,7 @@ export default function EndAutomation() {
               <div className="head head2">
                 <div className='head-wrap'>
                   <div className="icon-plus">
-                    <Image src={iconPlus} alt='image services' width="34" height="34" />
+                    <ImageCustom src="plus.svg" alt='image services' width="34" height="34" />
                   </div>
                   <h2 className="heading">Real Time Dashboards</h2>
                 </div>
@@ -125,13 +110,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon5} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="cursor-click.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           One click assessment launch
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon6} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="clock-countdown.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Real-time Status
                         </div>
                       </td>
@@ -139,13 +124,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon7} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="chart.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Automated Instant Reports
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon8} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="repeat.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Unlimited Recruiter Desks
                         </div>
                       </td>
@@ -153,7 +138,7 @@ export default function EndAutomation() {
                   </table>
 
                   <div className={styles.bgMobileBoxStyle2}>
-                    <Image src={backgroundStyle2} alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                    <ImageCustom src="m-automation2.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
                   </div>
                 </div>
               </div>
@@ -166,7 +151,7 @@ export default function EndAutomation() {
                 <div className='head-wrap'>
                   <h2 className="heading">Candidate Communication</h2>
                   <div className="icon-plus">
-                    <Image src={iconPlus} alt='image services' width="34" height="34" />
+                    <ImageCustom src="plus.svg" alt='image services' width="34" height="34" />
                   </div>
                 </div>
               </div>
@@ -179,13 +164,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon9} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="envelope.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Email & Messages
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon10} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="note.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Automated Reminders
                         </div>
                       </td>
@@ -193,13 +178,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon11} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="device.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Mobile-friendly
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <Image src={icon12} alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="chats.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
                           Dedicated Chat Support
                         </div>
                       </td>
@@ -207,7 +192,7 @@ export default function EndAutomation() {
                   </table>
 
                   <div className={styles.bgMobileBoxStyle3}>
-                    <Image src={backgroundStyle3} alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                    <ImageCustom src="m-automation3.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
                   </div>
                 </div>
               </div>
