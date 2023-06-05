@@ -54,7 +54,7 @@ export default function SubscribeCard(props) {
               name="email"
               rules={[{ required: true, message: 'Enter your email!' }]}
             >
-              <Input placeholder='Enter your email!' />
+              <Input placeholder='Enter your email' />
             </Form.Item>
 
             <Form.Item shouldUpdate>
@@ -67,7 +67,7 @@ export default function SubscribeCard(props) {
                     !!form.getFieldsError().filter(({ errors }) => errors.length).length
                   }
                 >
-                  Log in
+                  Subscribe
                 </Button>
               )}
             </Form.Item>

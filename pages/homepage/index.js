@@ -15,7 +15,7 @@ import WinningChoice from '../../components/homepage/winningChoice';
 // Styles here
 import styles from './styles.module.scss';
 
-export default function HomePageScreen() {
+export default function HomePageScreen(props) {
   const [headerColor, setHeaderColor] = useState("white")
 
   // Menu Color change after scroll 360

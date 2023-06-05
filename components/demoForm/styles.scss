@@ -85,7 +85,7 @@
 
   .form-style {
     margin-top: 30px;
-    padding-right: 50px;
+    position: relative;
 
     @include mobile {
       padding-right: 0px;
@@ -106,7 +106,7 @@
   .ant-input {
     border: none;
     height: 53px;
-    background: rgba(244, 244, 244, 0.1);
+    background: rgb(25 25 25);
     border-radius: 70px;
     padding-bottom: 5px;
     font-size: 16px;
@@ -125,7 +125,7 @@
 
   .ant-form-item-control-input .ant-select-selector {
     height: 53px;
-    background: rgba(244, 244, 244, 0.1);
+    background: rgb(25 25 25);
     border: none;
     border-radius: 70px;
     padding-bottom: 5px;
@@ -223,7 +223,6 @@
   }
 
   .ant-form-item {
-
     @include mobile {
       margin-bottom: 10px;
     }
@@ -243,6 +242,34 @@
 
       svg {
         display: none;
+      }
+    }
+  }
+
+  .checkbox-style {
+    .ant-form-item-control-input-content {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .ant-checkbox {
+      position: relative;
+      top: 6px;
+    }
+
+    .checkbox-text {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: $white;
+      opacity: 0.5;
+
+      a {
+        color: $white;
+        opacity: 1;
+        font-weight: 500;
+        text-decoration: underline;
       }
     }
   }

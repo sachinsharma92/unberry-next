@@ -1,4 +1,4 @@
-import { Button, Form, Input, notification, Select } from 'antd';
+import { Button, Checkbox, Form, Input, notification, Select } from 'antd';
 import axios from "axios";
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
@@ -9,11 +9,12 @@ import ThankModal from '../thankModal';
 const { Option } = Select;
 
 export default function DemoForm(props) {
+  const [disabledSave, setDisabledSave] = useState(true);
   const [isThankModal, setThankModal] = useState(false);
+  const [form] = Form.useForm();
   const thankToggleModal = () => {
     setThankModal(!isThankModal);
   };
-
   const formRef = useRef(null);
   const openNotificationWithIcon = type => {
     notification[type]({
@@ -45,7 +46,7 @@ export default function DemoForm(props) {
       email,
       phone,
       numberOfPlannedHiring,
-      numberOfEmployees
+      numberOfEmployees,
     }
     axios
       .post(
@@ -81,6 +82,12 @@ export default function DemoForm(props) {
     head.appendChild(script);
   }, []);
 
+  const handleFormChange = () => {
+    const { name, email, phone, employeescount, hiringcount, remember } = form.getFieldsValue();
+    const hasErrors = !(name && email && phone && employeescount && hiringcount && remember)
+    setDisabledSave(hasErrors);
+  }
+
   return (
     <section className='contact-section' id={props.id}>
       <Link href="/">
@@ -90,6 +97,7 @@ export default function DemoForm(props) {
       </Link>
       <h3 className="title3">Take the guesswork out...</h3>
       <Form
+        form={form}
         name="basic"
         autoComplete="off"
         layout="vertical"
@@ -97,13 +105,13 @@ export default function DemoForm(props) {
         onFinish={bookADemo}
         preserve={false}
         ref={formRef}
+        onFieldsChange={handleFormChange}
         initialValues={{
           email: '',
           name: '',
           phone: '',
           employeesCount: '',
           hiringCount: '',
-          message: '',
         }}
       >
 
@@ -167,18 +175,21 @@ export default function DemoForm(props) {
           </Select>
         </Form.Item>
 
-        {/* <Form.Item
-          name="message"
-        >
-          <Input placeholder='Message (optional)' />
-        </Form.Item> */}
+        <Form.Item name="remember" valuePropName="checked" rules={[{ required: true }]} className='checkbox-style'>
+          <Checkbox>
+            <p className="checkbox-text">Your privacy matters to us. We’ll only contact you about relevant content or services, and you can unsubscribe at any time. <Link href="/privacy-policy">Privacy Policy</Link></p>
+          </Checkbox>
+        </Form.Item>
 
-        <Button type="primary" htmlType="submit" >
+        <Button
+          type="primary"
+          htmlType="submit"
+          disabled={disabledSave}
+        >
           BOOK DEMO
         </Button>
       </Form>
 
-      <p className="description">Your privacy matters to us. We’ll only contact you about relevant content or services, and you can unsubscribe at any time. <Link href="/privacy-policy">Privacy Policy</Link></p>
 
       <ThankModal visible={isThankModal} onCancel={thankToggleModal} />
     </section>

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import lottie from "lottie-web";
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
 
 import behavior from "../../../assets/json/hero-section/behavior-personality.json";
@@ -11,8 +11,21 @@ import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
 // Styles here
 import Marquee from 'react-fast-marquee';
 import styles from './styles.module.scss';
+import Link from "next/link";
 
-export default function HeroSection() {
+export default function HeroSection(props) {
+  const [showCookies, setShowCookies] = useState(true)
+
+  const onClickCookies = () => {
+    localStorage.setItem('cookiesPopup', true);
+    setShowCookies(true)
+  };
+
+  useEffect(() => {
+    const storage = localStorage.getItem('cookiesPopup');
+    setShowCookies(storage)
+  }, [])
+
 
   useEffect(() => {
     lottie.loadAnimation({
@@ -49,6 +62,12 @@ export default function HeroSection() {
       animationData: jobKnowledge,
     });
   }, []);
+
+
+  const cookieFnc = () => {
+    document.cookie = `referral_key=hello;max-age=604800;domain=https://unberry.com/`
+  }
+
 
   return (
     <div className={styles.heroSectionStyle}>
@@ -155,6 +174,12 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {!showCookies && <div className={styles.cookiePopup}>
+        <p className={styles.text}> <span>🍪</span> This website uses cookies to personalise your experience. <Link href="/cookie-policy">Learn More</Link></p>
+        <button className={styles.btnAccept} onClick={onClickCookies}>ACCEPT</button>
+      </div>
+      }
     </div>
   )
 }
