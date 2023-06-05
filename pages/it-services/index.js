@@ -3,7 +3,6 @@ import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import LayoutPrimary from '../../common/layoutPrimary';
 import SubscribeCard from '../../common/subscribe';
-import BetterTalent from '../../components/homepage/betterTalent';
 import BlogSection from '../../components/homepage/blogSection';
 import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
 import EndAutomation from '../../components/homepage/endAutomation';
