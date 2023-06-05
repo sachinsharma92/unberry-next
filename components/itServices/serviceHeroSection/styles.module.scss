@@ -5,7 +5,7 @@
 // auto-section
 .itServiceHeroStyle {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   position: relative;
 
   &::before {
@@ -187,14 +187,24 @@
     }
   }
 
+  .titleMedium {
+    font-weight: 400;
+    font-size: 57.83px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -2px;
+    max-width: 80%;
+    margin: 0 auto 70px;
+  }
+
   .workplaceSection {
-    background: url("/assets/images/hero-section.svg");
+    background: url("/assets/images/it-service-hero.svg");
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 518px;
     max-width: 89%;
     background-size: contain;
     margin: 0 auto;
+    min-height: 478px;
 
     @include tablet {
       background: none;
@@ -282,7 +292,7 @@
     font-size: 30px;
     line-height: 38px;
     letter-spacing: -1.28484px;
-    text-align: center;
+    margin-bottom: 10px;
 
     @include tablet {
       font-size: 24px;
@@ -295,12 +305,24 @@
     }
   }
 
+  .jsonDes {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.03em;
+    color: $black;
+    opacity: 0.6;
+  }
+
   .jsonItemBox {
     width: 180px;
     height: 100px;
-    margin: 0 auto;
     position: relative;
     overflow: hidden;
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
 
     .jsonItem {
       position: absolute;
@@ -343,9 +365,9 @@
 
   .gridDesktopSection {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     position: relative;
-    max-width: 1400px;
+    max-width: 1180px;
     margin: 0 auto;
 
     @include mobile {
@@ -358,30 +380,28 @@
 
     .imgBoxStyle {
       display: flex;
-      align-items: center;
       flex-direction: column;
       gap: 20px 0;
+      max-width: 70%;
+      margin: 0 auto;
 
       &:first-child {
-        margin-top: 240px;
-        margin-left: 20px;
+        margin-top: 140px;
 
         .jsonItemBox {
-          height: 140px;
-          margin-bottom: -30px;
+          scale: 1.4;
+          margin-left: -40px;
         }
       }
       &:nth-child(2) {
-        margin-top: 53px;
-        margin-left: -25px;
+        margin-top: 33px;
       }
       &:nth-child(3) {
-        margin-top: 50px;
-        margin-left: 50px;
-      }
-      &:nth-child(4) {
-        margin-top: 260px;
-        margin-right: 0px;
+        margin-top: 165px;
+
+        .jsonItemBox {
+          margin-left: -50px;
+        }
       }
     }
   }
@@ -410,46 +430,51 @@
   }
 }
 
-// cookiePopup
-.cookiePopup {
-  position: fixed;
-  max-width: 60vw;
-  height: 79px;
-  right: 0;
-  left: 0;
-  bottom: 22px;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(27px);
+// We Urg Section
+.weUrgSection {
+  height: 481px;
+  background: #fbefe6;
   border-radius: 40px;
-  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0 20px;
-  z-index: 99;
+  justify-content: space-between;
+  padding: 0 80px;
 
-  .text {
-    font-size: 20px;
-    color: $white;
-    margin: 0;
-
-    a {
-      color: $white;
-      text-decoration: underline;
-    }
-
-    span {
-      margin-right: 10px;
-    }
+  .urgGridStyle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 60px 0;
+    margin-left: 50px;
   }
 
-  .btnAccept {
-    background: $white;
-    border: 1px solid $white;
-    border-radius: 40px;
-    min-width: 110px;
-    height: 49px;
+  .title {
     font-weight: 500;
-    cursor: pointer;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .desc {
+    font-size: 20px;
+    line-height: 26px;
+    color: $black;
+    opacity: 0.6;
+  }
+
+  .urgGridItem {
+    max-width: 90%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0 40px;
+  }
+
+  .urgTitle {
+    font-weight: 400;
+    font-size: 61.04px;
+    line-height: 59px;
+    letter-spacing: -3px;
+    min-width: 330px;
   }
 }

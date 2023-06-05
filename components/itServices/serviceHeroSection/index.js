@@ -8,8 +8,14 @@ import cognition from "../../../assets/json/hero-section/cognition-intelligence.
 import communication from "../../../assets/json/hero-section/communication-skills.json";
 import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
 
+import icon1 from "../../../assets/urge1.svg"
+import icon2 from "../../../assets/urge2.svg"
+import icon3 from "../../../assets/urge3.svg"
+import icon4 from "../../../assets/urge4.svg"
+
 // Styles here
 import styles from './styles.module.scss';
+import Image from "next/image";
 
 export default function ServiceHeroSection(props) {
 
@@ -72,81 +78,116 @@ export default function ServiceHeroSection(props) {
             <ButtonPrimary href="/book-demo" title="BOOK DEMO" />
           </div>
         </div>
-        <div className={`${styles.headingMobile}`}>
-          <h3 className={`${styles.title3}`}>
-            Mapping the holistic workplace footprint of a candidate
-          </h3>
-        </div>
 
-        <div className={styles.workplaceSection} id='workplaceSection'>
-          <div className={`${styles.gridDesktopSection}`}>
-            <div className={styles.imgBoxStyle}>
-              <div className={styles.jsonItemBox}>
-                <div className={styles.jsonItem} id="jobKnowledge" />
+        <div className={styles.weUrgSection}>
+          <div className={styles.urgTitle}>
+            We urge to <br /> companies <br /> to see more <br /> in people
+          </div>
+
+          <div className={styles.urgGridStyle}>
+            <div className={styles.urgGridItem}>
+              <Image src={icon1} alt="" height={80} width={80} />
+              <div>
+                <h4 className={styles.title}>Roles & workplaces have evolved </h4>
+                <p className={styles.desc}>Skill sets are becoming obsolete in as little as 18-24 months</p>
               </div>
-              <h4 className={styles.title4}>Coding Skills</h4>
-              <p>Offer a memorable candidate-driven experience, that people talk about</p>
             </div>
-            <div className={styles.imgBoxStyle}>
-              <div className={styles.jsonItemBox}>
-                <div className={styles.jsonItem} id="cognition" />
+            <div className={styles.urgGridItem}>
+              <Image src={icon2} alt="" height={80} width={80} />
+              <div>
+                <h4 className={styles.title}>Decision making today is highly subjective</h4>
+                <p className={styles.desc}>Leading to bad talent decisions, inefficiencies & high churn</p>
               </div>
-              <h4 className={styles.title4}>Cognitive Skills</h4>
-              <p>Get much more precise signal with clear actionable people insights</p>
             </div>
-            <div className={styles.imgBoxStyle}>
-              <div className={styles.jsonItemBox}>
-                <div className={styles.jsonItem} id="communication" />
+            <div className={styles.urgGridItem}>
+              <Image src={icon3} alt="" height={80} width={80} />
+              <div>
+                <h4 className={styles.title}>We are all competing for the same talent pools</h4>
+                <p className={styles.desc}>Restricted sourcing, highly competitive, spiralling salaries</p>
               </div>
-              <h4 className={styles.title4}>Communication <br /> Skills</h4>
-              <p>Offer a memorable candidate-driven experience, that people talk about</p>
+            </div>
+            <div className={styles.urgGridItem}>
+              <Image src={icon4} alt="" height={80} width={80} />
+              <div>
+                <h4 className={styles.title}>We’re dealing with a new generation of employees </h4>
+                <p className={styles.desc}>Much more diverse - seeking personalisation & experience</p>
+              </div>
             </div>
           </div>
 
+        </div>
 
-
-          {/* Mobile */}
-          <div className={styles.gridMobileSection}>
-            <div className={styles.boxSet}>
+        <div>
+          <h4 className={styles.titleMedium}>Measure what matters to be a great coder, <br /> all in one experience</h4>
+          <div className={styles.workplaceSection} id='workplaceSection'>
+            <div className={`${styles.gridDesktopSection}`}>
               <div className={styles.imgBoxStyle}>
                 <div className={styles.jsonItemBox}>
-                  <div className={styles.jsonItem} id="jobKnowledge4" />
+                  <div className={styles.jsonItem} id="jobKnowledge" />
                 </div>
-                <h4 className={styles.title4}>Job Knowledge & <br /> Functional Skills</h4>
+                <div>
+                  <h4 className={styles.title4}>Coding Skills</h4>
+                  <p className={styles.jsonDes}>Offer a memorable candidate-driven experience, that people talk about</p>
+                </div>
               </div>
-              <div className={styles.mobileDivider}></div>
               <div className={styles.imgBoxStyle}>
                 <div className={styles.jsonItemBox}>
-                  <div className={styles.jsonItem} id="cognition2" />
+                  <div className={styles.jsonItem} id="cognition" />
                 </div>
-                <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
+                <div>
+                  <h4 className={styles.title4}>Cognitive Skills</h4>
+                  <p className={styles.jsonDes}>Get much more precise signal with clear actionable people insights</p>
+                </div>
+              </div>
+              <div className={styles.imgBoxStyle}>
+                <div className={styles.jsonItemBox}>
+                  <div className={styles.jsonItem} id="communication" />
+                </div>
+                <div>
+                  <h4 className={styles.title4}>Communication Skills</h4>
+                  <p className={styles.jsonDes}>Offer a memorable candidate-driven experience, that people talk about</p>
+                </div>
               </div>
             </div>
-            <div className={styles.boxSet}>
-              <div className={styles.imgBoxStyle}>
-                <div className={styles.jsonItemBox}>
-                  <div className={styles.jsonItem} id="communication3" />
+
+            {/* Mobile */}
+            <div className={styles.gridMobileSection}>
+              <div className={styles.boxSet}>
+                <div className={styles.imgBoxStyle}>
+                  <div className={styles.jsonItemBox}>
+                    <div className={styles.jsonItem} id="jobKnowledge4" />
+                  </div>
+                  <h4 className={styles.title4}>Job Knowledge & <br /> Functional Skills</h4>
                 </div>
-                <h4 className={styles.title4}>Communication <br /> Skills</h4>
+                <div className={styles.mobileDivider}></div>
+                <div className={styles.imgBoxStyle}>
+                  <div className={styles.jsonItemBox}>
+                    <div className={styles.jsonItem} id="cognition2" />
+                  </div>
+                  <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
+                </div>
               </div>
-              <div className={`${styles.mobileDivider} ${styles.mobileDivider2}`}></div>
-              <div className={styles.imgBoxStyle}>
-                <div className={styles.jsonItemBox}>
-                  <div className={styles.jsonItem} id="behavior1" />
+              <div className={styles.boxSet}>
+                <div className={styles.imgBoxStyle}>
+                  <div className={styles.jsonItemBox}>
+                    <div className={styles.jsonItem} id="communication3" />
+                  </div>
+                  <h4 className={styles.title4}>Communication <br /> Skills</h4>
                 </div>
-                <h4 className={styles.title4}>Behavioural & Personality</h4>
+                <div className={`${styles.mobileDivider} ${styles.mobileDivider2}`}></div>
+                <div className={styles.imgBoxStyle}>
+                  <div className={styles.jsonItemBox}>
+                    <div className={styles.jsonItem} id="behavior1" />
+                  </div>
+                  <h4 className={styles.title4}>Behavioural & Personality</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className={`${styles.headingDesktop} animation-block`}>
-          <div className='animation-text'>
-            <h3 className={`${styles.title3}`}>
-              Mapping the holistic workplace footprint of a candidate
-            </h3>
-          </div>
-        </div>
+
+
       </div>
     </div>
   )
