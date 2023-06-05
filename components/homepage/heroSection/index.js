@@ -63,12 +63,6 @@ export default function HeroSection(props) {
     });
   }, []);
 
-
-  const cookieFnc = () => {
-    document.cookie = `referral_key=hello;max-age=604800;domain=https://unberry.com/`
-  }
-
-
   return (
     <div className={styles.heroSectionStyle}>
       <div className={`container-width ${styles.containerStyle}`}>

@@ -427,6 +427,10 @@
   gap: 0 20px;
   z-index: 99;
 
+  @include mobile {
+    display: none;
+  }
+
   .text {
     font-size: 20px;
     color: $white;

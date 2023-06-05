@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import logoFooter from "../assets/logo-black.svg";
 import ImageCustom from './ImageCustom';
 
 export default function FooterPrimary(props) {
@@ -8,7 +7,9 @@ export default function FooterPrimary(props) {
     <div className="footer-primary">
       <div className='container-width'>
         <div className='footer'>
-          <div className="logo-white"><Image src={logoFooter} alt="logo-footer" /></div>
+          <div className="logo-white">
+            <Image src="https://assets.unberry.com/media/images/logo-black.svg" width={150} height={50} alt="logo-footer" />
+          </div>
 
           {/* <nav className={`menu-footer`}>
             <Link href="/">Sectors</Link>

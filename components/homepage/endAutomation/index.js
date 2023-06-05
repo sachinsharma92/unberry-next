@@ -1,13 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from 'react';
-
-import backgroundStyle1 from "../../../assets/new/m-automation1.png";
-import backgroundStyle2 from "../../../assets/new/m-automation2.png";
-import backgroundStyle3 from "../../../assets/new/m-automation3.png";
-
+import ImageCustom from '../../../common/ImageCustom';
 
 // Styles here
-import ImageCustom from '../../../common/ImageCustom';
 import styles from './styles.module.scss';
 
 export default function EndAutomation() {
