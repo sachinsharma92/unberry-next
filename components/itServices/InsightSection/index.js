@@ -6,7 +6,7 @@ import ButtonPrimary from "../../../common/buttonPrimary";
 // Styles here
 import styles from "./styles.module.scss";
 
-export default function WinningChoice(props) {
+export default function InsightSection(props) {
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
@@ -20,13 +20,18 @@ export default function WinningChoice(props) {
     "Overall, I found this assessment was challenging and thought-provoking and very engaging. The graphics were great.",
   ]
   return (
-    <div className={styles.winningChoiceStyle}>
+    <div className={styles.insightSectionStyle}>
       <div className={`container-width ${styles.containerStyle}`}>
         <div className={styles.rowSection}>
           <div className={styles.contentSection}>
             <h1 className={styles.title1}>
-              A winning choice for HR teams
+              Insights that empower you to take the best hiring decisions
             </h1>
+
+            <div className={`${styles.boxDesktop} ${styles.orangeBox}`}>
+              <div className={styles.largeNumber}>6x</div>
+              <p className={styles.boxDescription}>increase in recruiter efficiency</p>
+            </div>
 
             <div className={`${styles.boxDesktop} ${styles.greenBox}`}>
               <div className={styles.largeNumber}>60%</div>

@@ -1,0 +1,56 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.techSkillsStyle {
+  padding: 50px 0;
+  position: relative;
+  background: #ac95cf;
+
+  .containerStyle {
+    position: relative;
+  }
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .titleMain {
+    font-weight: 500;
+    font-size: 29.03px;
+    line-height: 57px;
+    letter-spacing: -1px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+
+  .tagStyle {
+    display: flex;
+    align-content: center;
+    gap: 0 17px;
+    margin-top: 20px;
+
+    .tagItem {
+      min-width: 115px;
+      height: 54px;
+      background: rgba(228, 221, 239, 0.1);
+      border: 1px solid $white;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 57px;
+      letter-spacing: -1px;
+      margin: 0 8.5px;
+    }
+  }
+}

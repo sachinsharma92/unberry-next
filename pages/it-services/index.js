@@ -14,6 +14,8 @@ import WinningChoice from '../../components/homepage/winningChoice';
 import ServiceHeroSection from '../../components/itServices/serviceHeroSection';
 import styles from './styles.module.scss';
 import AdvancedTechnologieSection from '../../components/itServices/advancedTechnologies';
+import TechSkillsSection from '../../components/itServices/techSkills';
+import InsightSection from '../../components/itServices/InsightSection';
 
 export default function ItServicesScreen(props) {
   const [headerColor, setHeaderColor] = useState("white")
@@ -61,11 +63,8 @@ export default function ItServicesScreen(props) {
         <ServiceSection />
         <CandidatesAbsolutely />
         <EndAutomation />
-        <ServeCustomersAcross />
-        <WinningChoice
-          orangeBox
-          title="Insights that empower you to take the best hiring decisions"
-        />
+        <TechSkillsSection />
+        <InsightSection />
         <AdvancedTechnologieSection />
         <BlogSection />
         <SubscribeCard />

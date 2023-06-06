@@ -8,6 +8,19 @@
   padding-bottom: 50px;
   position: relative;
 
+  &::before {
+    background: url("https://assets.unberry.com/media/images/winning-grid.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
   .containerStyle {
     position: relative;
   }
@@ -50,12 +63,12 @@
 
     .tdFirst {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       width: 100%;
       gap: 0 20px;
       font-weight: 400;
       font-size: 18px;
-      line-height: 30px;
+      line-height: 24px;
 
       img {
         width: 30px !important;
