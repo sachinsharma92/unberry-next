@@ -1,0 +1,82 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.advancedTechnologieStyle {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+
+  .containerStyle {
+    position: relative;
+  }
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .titleMain {
+    font-weight: 500;
+    font-size: 48.83px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -1px;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .tableSection {
+    background: #f4f4f4;
+    border-radius: 40px;
+    max-width: 1127px;
+    margin: 66px auto 0;
+
+    .header {
+      border-bottom: 1px solid $white;
+
+      th {
+        height: 130px;
+      }
+    }
+
+    .unberrySec {
+      background-color: #E4DDEF;
+    }
+
+    .tdFirst {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 0 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+
+      img {
+        width: 30px !important;
+        height: 30px;
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid $white;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    td {
+      padding: 25px 25px;
+    }
+
+    .textCenter {
+      text-align: center;
+    }
+  }
+}

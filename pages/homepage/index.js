@@ -63,7 +63,7 @@ export default function HomePageScreen(props) {
         <ServiceSection />
         <EndAutomation />
         <ServeCustomersAcross />
-        <WinningChoice />
+        <WinningChoice titleStyle1 title="A winning choice for HR teams" />
         <BlogSection />
         <SubscribeCard />
       </LayoutPrimary>

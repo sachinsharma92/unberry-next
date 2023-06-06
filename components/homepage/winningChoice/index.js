@@ -6,7 +6,7 @@ import ButtonPrimary from "../../../common/buttonPrimary";
 // Styles here
 import styles from "./styles.module.scss";
 
-export default function WinningChoice() {
+export default function WinningChoice(props) {
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
@@ -24,9 +24,15 @@ export default function WinningChoice() {
       <div className={`container-width ${styles.containerStyle}`}>
         <div className={styles.rowSection}>
           <div className={styles.contentSection}>
-            <h1 className={`${styles.title1}`}>
-              A winning choice for HR teams
+            <h1 className={`${props.titleStyle1 ? styles.title1 : styles.title2}`}>
+              {props.title}
             </h1>
+
+            {props.orangeBox && <div className={`${styles.boxDesktop} ${styles.orangeBox}`}>
+              <div className={styles.largeNumber}>6x</div>
+              <p className={styles.boxDescription}>Reduced Screening Time</p>
+            </div>}
+
             <div className={`${styles.boxDesktop} ${styles.greenBox}`}>
               <div className={styles.largeNumber}>60%</div>
               <p className={styles.boxDescription}>Reduced Screening Time</p>

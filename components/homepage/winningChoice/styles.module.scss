@@ -58,6 +58,43 @@
     }
   }
 
+  .title2 {
+    color: $black;
+    font-weight: 400;
+font-size: 61.04px;
+line-height: 65px;
+    max-width: 70%;
+    margin-bottom: 160px;
+    margin-top: 100px;
+
+
+/* or 106% */
+
+letter-spacing: -0.02em;
+
+    @include tablet {
+      font-size: 45px;
+      line-height: 45px;
+      max-width: 100%;
+      margin: 50px 20px 50px;
+    }
+
+    @include mobile {
+      font-size: 31.25px;
+      line-height: 35px;
+      max-width: 100%;
+      margin: 50px 20px 50px;
+    }
+
+    span {
+      color: $theme-secondary-new;
+    }
+  }
+
+  .contentSection {
+    max-width: 450px;
+  }
+
   .rowSection {
     display: flex;
     gap: 0 50px;
@@ -128,6 +165,20 @@
       font-size: 20px;
       line-height: 26px;
       margin: 0;
+    }
+
+
+    &.orangeBox {
+      background: #FBEFE6;
+      margin-bottom: 15px;
+
+      .largeNumber {
+        color: #442712;
+      }
+
+      .description {
+        color: #442712;
+      }
     }
 
     &.violetBox {
