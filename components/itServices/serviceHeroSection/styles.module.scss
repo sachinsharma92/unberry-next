@@ -208,7 +208,7 @@
   }
 
   .workplaceSection {
-    background: url("/assets/images/it-service-hero.svg");
+    background: url("https://assets.unberry.com/media/images/it-service-hero.svg");
     background-repeat: no-repeat;
     background-position: center;
     max-width: 89%;
@@ -423,7 +423,7 @@
   }
 
   .mobileDivider {
-    background: url("/assets/shape-m.svg");
+    background: url("https://assets.unberry.com/media/images/shape-m.svg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 20px;
@@ -544,6 +544,11 @@
       width: 50px;
       height: 50px;
       margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }

@@ -18,7 +18,7 @@
   .title1 {
     color: $black;
     font-weight: 400;
-    font-size: 61.04px;
+    font-size:55px;
     line-height: 65px;
     letter-spacing: -2px;
 
@@ -65,7 +65,7 @@
   .contentSection {
     display: flex;
     align-items: center;
-    gap: 0 112px;
+    gap: 0 50px;
 
     @include tablet {
       flex-direction: column;
@@ -172,21 +172,20 @@
     font-size: 39.06px;
     line-height: 43px;
     letter-spacing: -0.04em;
-    max-width: 80%;
     text-transform: capitalize;
 
     @include tablet {
-      max-width: 100%;
+      max-width: 80%;
       font-weight: 500;
       font-size: 31.25px;
       line-height: 38px;
     }
 
     @include mobile {
-      max-width: 100%;
       font-weight: 500;
       font-size: 31.25px;
       line-height: 38px;
+      max-width: 80%;
     }
   }
 

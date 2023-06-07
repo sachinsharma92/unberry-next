@@ -3,19 +3,16 @@ import lottie from "lottie-web";
 import React, { useEffect } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
 
-import behavior from "../../../assets/json/hero-section/behavior-personality.json";
-import cognition from "../../../assets/json/hero-section/cognition-intelligence.json";
-import communication from "../../../assets/json/hero-section/communication-skills.json";
-import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
+import behavior from "../../../assets/json/behavior-personality.json";
+import cognition from "../../../assets/json/cognition-intelligence.json";
+import communication from "../../../assets/json/communication-skills.json";
+import jobKnowledge from "../../../assets/json/job-knowledge.json";
 
-import icon1 from "../../../assets/urge1.svg"
-import icon2 from "../../../assets/urge2.svg"
-import icon3 from "../../../assets/urge3.svg"
-import icon4 from "../../../assets/urge4.svg"
 
 // Styles here
 import styles from './styles.module.scss';
 import Image from "next/image";
+import ImageCustom from "../../../common/ImageCustom";
 
 export default function ServiceHeroSection(props) {
 
@@ -90,7 +87,7 @@ export default function ServiceHeroSection(props) {
         <div className={styles.urgGridStyle}>
           <div className={styles.urgGridItem}>
             <div className={styles.imgBox}>
-              <Image src={icon1} alt="" layout="fill" />
+              <ImageCustom src="urge1.svg" alt="" layout="fill" />
             </div>
             <div>
               <h4 className={styles.title}>Roles & workplaces have evolved </h4>
@@ -100,7 +97,7 @@ export default function ServiceHeroSection(props) {
 
           <div className={styles.urgGridItem}>
             <div className={styles.imgBox}>
-              <Image src={icon2} alt="" layout="fill" />
+              <ImageCustom src="urge2.svg" alt="" layout="fill" />
             </div>
             <div>
               <h4 className={styles.title}>Decision making today is highly subjective</h4>
@@ -110,7 +107,7 @@ export default function ServiceHeroSection(props) {
 
           <div className={styles.urgGridItem}>
             <div className={styles.imgBox}>
-              <Image src={icon3} alt="" layout="fill" />
+              <ImageCustom src="urge3.svg" alt="" layout="fill" />
             </div>
             <div>
               <h4 className={styles.title}>We are all competing for the same talent pools</h4>
@@ -120,7 +117,7 @@ export default function ServiceHeroSection(props) {
 
           <div className={styles.urgGridItem}>
             <div className={styles.imgBox}>
-              <Image src={icon4} alt="" layout="fill" />
+              <ImageCustom src="urge4.svg" alt="" layout="fill" />
             </div>
             <div>
               <h4 className={styles.title}>We’re dealing with a new generation of employees </h4>

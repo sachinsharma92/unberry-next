@@ -3,10 +3,10 @@ import lottie from "lottie-web";
 import React, { useEffect, useState } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
 
-import behavior from "../../../assets/json/hero-section/behavior-personality.json";
-import cognition from "../../../assets/json/hero-section/cognition-intelligence.json";
-import communication from "../../../assets/json/hero-section/communication-skills.json";
-import jobKnowledge from "../../../assets/json/hero-section/job-knowledge.json";
+import behavior from "../../../assets/json/behavior-personality.json";
+import cognition from "../../../assets/json/cognition-intelligence.json";
+import communication from "../../../assets/json/communication-skills.json";
+import jobKnowledge from "../../../assets/json/job-knowledge.json";
 
 // Styles here
 import Marquee from 'react-fast-marquee';

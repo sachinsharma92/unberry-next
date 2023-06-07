@@ -3,15 +3,15 @@ import React, { useEffect } from 'react';
 import lottie from "lottie-web";
 
 // Json File
-import content from "../../../assets/json/emoticon/content.json";
-import delighted from "../../../assets/json/emoticon/delighted.json";
-import eager from "../../../assets/json/emoticon/eager.json";
-import relieved from "../../../assets/json/emoticon/relieved.json";
+import content from "../../../assets/json/content.json";
+import delighted from "../../../assets/json/delighted.json";
+import eager from "../../../assets/json/eager.json";
+import relieved from "../../../assets/json/relieved.json";
 
-import mind from "../../../assets/json/emoticon/mind.json";
-import happy from "../../../assets/json/emoticon/happy.json";
-import excited from "../../../assets/json/emoticon/excited.json";
-import engaged from "../../../assets/json/emoticon/engaged.json";
+import mind from "../../../assets/json/mind.json";
+import happy from "../../../assets/json/happy.json";
+import excited from "../../../assets/json/excited.json";
+import engaged from "../../../assets/json/engaged.json";
 
 
 // Styles here

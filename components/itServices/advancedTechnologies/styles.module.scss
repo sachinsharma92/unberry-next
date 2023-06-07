@@ -44,11 +44,11 @@
 
     @include mobile {
       font-weight: 500;
-font-size: 31.25px;
-line-height: 31px;
-max-width: 100%;
-padding: 0 20px;
-text-align: left;
+      font-size: 31.25px;
+      line-height: 31px;
+      max-width: 100%;
+      padding: 0 20px;
+      text-align: left;
     }
   }
 
@@ -65,11 +65,16 @@ text-align: left;
       border-radius: 40px 0 0 40px;
     }
 
+    table {
+      width: 100%;
+    }
+
     .header {
       border-bottom: 1px solid $white;
 
       th {
         height: 130px;
+        padding: 0 20px;
 
         @include mobile {
           min-width: 140px;
@@ -78,18 +83,16 @@ text-align: left;
     }
 
     .unberrySec {
-      background-color: #E4DDEF;
+      background-color: #e4ddef;
     }
 
     .tdFirst {
       display: flex;
       align-items: flex-start;
-      width: 100%;
       gap: 0 20px;
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
-      width: 50%;
 
       @include mobile {
         width: 220px;

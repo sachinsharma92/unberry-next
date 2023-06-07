@@ -3,13 +3,13 @@ import React, { useEffect } from "react";
 import lottie from "lottie-web";
 
 // Json File
-import annoyed from "../../../assets/json/emoticon/annoyed.json";
-import anxious from "../../../assets/json/emoticon/anxious.json";
-import bored from "../../../assets/json/emoticon/bored.json";
-import dull from "../../../assets/json/emoticon/dull.json";
-import stressed from "../../../assets/json/emoticon/stressed.json";
-import weary from "../../../assets/json/emoticon/weary.json";
-import glum from "../../../assets/json/emoticon/glum.json";
+import annoyed from "../../../assets/json/annoyed.json";
+import anxious from "../../../assets/json/anxious.json";
+import bored from "../../../assets/json/bored.json";
+import dull from "../../../assets/json/dull.json";
+import stressed from "../../../assets/json/stressed.json";
+import weary from "../../../assets/json/weary.json";
+import glum from "../../../assets/json/glum.json";
 
 // Styles here
 import styles from "./styles.module.scss";
