@@ -6,16 +6,14 @@ import SubscribeCard from '../../common/subscribe';
 import BlogSection from '../../components/homepage/blogSection';
 import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
 import EndAutomation from '../../components/homepage/endAutomation';
-import ServeCustomersAcross from '../../components/homepage/serveCustomersAcross';
-import ServiceSection from '../../components/homepage/serviceSection';
-import WinningChoice from '../../components/homepage/winningChoice';
 
 // Styles here
-import ServiceHeroSection from '../../components/itServices/serviceHeroSection';
-import styles from './styles.module.scss';
-import AdvancedTechnologieSection from '../../components/itServices/advancedTechnologies';
-import TechSkillsSection from '../../components/itServices/techSkills';
 import InsightSection from '../../components/itServices/InsightSection';
+import AdvancedTechnologieSection from '../../components/itServices/advancedTechnologies';
+import MostModernSection from '../../components/itServices/mostModernSection';
+import ServiceHeroSection from '../../components/itServices/serviceHeroSection';
+import TechSkillsSection from '../../components/itServices/techSkills';
+import styles from './styles.module.scss';
 
 export default function ItServicesScreen(props) {
   const [headerColor, setHeaderColor] = useState("white")
@@ -60,7 +58,7 @@ export default function ItServicesScreen(props) {
 
       <LayoutPrimary className={`${styles.homepageStyle} ${headerColor}`}>
         <ServiceHeroSection />
-        <ServiceSection />
+        <MostModernSection />
         <CandidatesAbsolutely />
         <EndAutomation />
         <TechSkillsSection />

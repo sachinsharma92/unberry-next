@@ -28,23 +28,35 @@ export default function AdvancedTechnologieSection(props) {
         <div className={styles.tableSection}>
           <table>
             <tr className={styles.header}>
-              <th width="50%"></th>
+              <th></th>
               <th className={styles.unberrySec}>
-                <ImageCustom src="logo-black.svg" width="94" height="30" alt="logo" />
+                <div className={styles.iconHeadBox}>
+                  <ImageCustom src="logo-black.svg" width="94" height="30" alt="logo" />
+                </div>
               </th>
               <th>
-                <Image src={tIcon1} alt="" height={80} width={70} />
+                <div className={styles.iconHeadBox}>
+                  <Image src={tIcon1} alt="" height={80} width={70} />
+                </div>
               </th>
               <th>
-                <Image src={tIcon2} alt="" height={70} width={51} />
+                <div className={styles.iconHeadBox}>
+                  <Image src={tIcon2} alt="" height={70} width={51} />
+                </div>
               </th>
               <th>
-                <Image src={tIcon3} alt="" height={60} width={70} />
+                <div className={styles.iconHeadBox}>
+                  <Image src={tIcon3} alt="" height={60} width={70} />
+                </div>
               </th>
             </tr>
             <tr>
-              <td className={styles.tdFirst} width="50%">
-                <Image src={tEnvelope} alt="" height={40} width={40} /> Cognition tests
+              <td className={styles.tdFirst}>
+
+                <div className={styles.iconBox}>
+                  <Image src={tEnvelope} alt="" layout="fill" />
+                </div>
+                Cognition tests
               </td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><Image src={right} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
@@ -52,35 +64,55 @@ export default function AdvancedTechnologieSection(props) {
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
             </tr>
             <tr>
-              <td width="50%" className={styles.tdFirst}><Image src={tNote} alt="" height={40} width={40} /> Game based assessments, Immersive experiential caselets</td>
+              <td className={styles.tdFirst}>
+                <div className={styles.iconBox}>
+                  <Image src={tNote} alt="" layout="fill" />
+                </div>
+                Game based assessments, Immersive experiential caselets</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><Image src={right} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
             </tr>
             <tr>
-              <td width="50%" className={styles.tdFirst}><Image src={tDevice} alt="" height={40} width={40} /> AI based Writing, Speech assessment</td>
+              <td className={styles.tdFirst}>
+                <div className={styles.iconBox}>
+                  <Image src={tDevice} alt="" layout="fill" />
+                </div>
+                AI based Writing, Speech assessment</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><Image src={right} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
             </tr>
             <tr>
-              <td width="50%" className={styles.tdFirst}><Image src={tChats} alt="" height={40} width={40} /> Recorded videos; rate and evaluate</td>
+              <td className={styles.tdFirst}>
+                <div className={styles.iconBox}>
+                  <Image src={tChats} alt="" layout="fill" />
+                </div>
+                Recorded videos; rate and evaluate</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><Image src={right} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={right} alt="" height={20} width={20} /></td>
             </tr>
             <tr>
-              <td width="50%" className={styles.tdFirst}><Image src={tDevice} alt="" height={40} width={40} /> AI based Live Chat Simulators</td>
+              <td className={styles.tdFirst}>
+                <div className={styles.iconBox}>
+                  <Image src={tDevice} alt="" layout="fill" />
+                </div>
+                AI based Live Chat Simulators</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><Image src={right} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
             </tr>
             <tr>
-              <td width="50%" className={styles.tdFirst}><Image src={tChats} alt="" height={40} width={40} /> Ready APIs and SDK for integrations</td>
+              <td className={styles.tdFirst}>
+                <div className={styles.iconBox}>
+                  <Image src={tChats} alt="" layout="fill" />
+                </div>
+                Ready APIs and SDK for integrations</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><Image src={right} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>
               <td className={styles.textCenter}><Image src={wrong} alt="" height={20} width={20} /></td>

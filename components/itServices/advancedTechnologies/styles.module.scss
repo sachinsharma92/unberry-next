@@ -41,6 +41,15 @@
     letter-spacing: -1px;
     max-width: 70%;
     margin: 0 auto;
+
+    @include mobile {
+      font-weight: 500;
+font-size: 31.25px;
+line-height: 31px;
+max-width: 100%;
+padding: 0 20px;
+text-align: left;
+    }
   }
 
   .tableSection {
@@ -49,11 +58,22 @@
     max-width: 1127px;
     margin: 66px auto 0;
 
+    @include mobile {
+      overflow-x: scroll;
+      @include scrollHide;
+      margin-left: 20px;
+      border-radius: 40px 0 0 40px;
+    }
+
     .header {
       border-bottom: 1px solid $white;
 
       th {
         height: 130px;
+
+        @include mobile {
+          min-width: 140px;
+        }
       }
     }
 
@@ -69,10 +89,23 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
+      width: 50%;
 
-      img {
-        width: 30px !important;
+      @include mobile {
+        width: 220px;
+        display: flex;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .iconBox {
+        width: 30px;
         height: 30px;
+        position: relative;
+
+        @include mobile {
+          display: none;
+        }
       }
     }
 

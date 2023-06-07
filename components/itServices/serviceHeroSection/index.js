@@ -78,49 +78,62 @@ export default function ServiceHeroSection(props) {
             <ButtonPrimary href="/book-demo" title="BOOK DEMO" />
           </div>
         </div>
+      </div>
 
-        <div className={styles.weUrgSection}>
+      <div className={styles.weUrgSection}>
+        <div className={`container-width ${styles.containerStyle}`}>
           <div className={styles.urgTitle}>
             We urge to <br /> companies <br /> to see more <br /> in people
           </div>
+        </div>
 
-          <div className={styles.urgGridStyle}>
-            <div className={styles.urgGridItem}>
-              <Image src={icon1} alt="" height={80} width={80} />
-              <div>
-                <h4 className={styles.title}>Roles & workplaces have evolved </h4>
-                <p className={styles.desc}>Skill sets are becoming obsolete in as little as 18-24 months</p>
-              </div>
+        <div className={styles.urgGridStyle}>
+          <div className={styles.urgGridItem}>
+            <div className={styles.imgBox}>
+              <Image src={icon1} alt="" layout="fill" />
             </div>
-            <div className={styles.urgGridItem}>
-              <Image src={icon2} alt="" height={80} width={80} />
-              <div>
-                <h4 className={styles.title}>Decision making today is highly subjective</h4>
-                <p className={styles.desc}>Leading to bad talent decisions, inefficiencies & high churn</p>
-              </div>
-            </div>
-            <div className={styles.urgGridItem}>
-              <Image src={icon3} alt="" height={80} width={80} />
-              <div>
-                <h4 className={styles.title}>We are all competing for the same talent pools</h4>
-                <p className={styles.desc}>Restricted sourcing, highly competitive, spiralling salaries</p>
-              </div>
-            </div>
-            <div className={styles.urgGridItem}>
-              <Image src={icon4} alt="" height={80} width={80} />
-              <div>
-                <h4 className={styles.title}>We’re dealing with a new generation of employees </h4>
-                <p className={styles.desc}>Much more diverse - seeking personalisation & experience</p>
-              </div>
+            <div>
+              <h4 className={styles.title}>Roles & workplaces have evolved </h4>
+              <p className={styles.desc}>Skill sets are becoming obsolete in as little as 18-24 months</p>
             </div>
           </div>
 
-        </div>
+          <div className={styles.urgGridItem}>
+            <div className={styles.imgBox}>
+              <Image src={icon2} alt="" layout="fill" />
+            </div>
+            <div>
+              <h4 className={styles.title}>Decision making today is highly subjective</h4>
+              <p className={styles.desc}>Leading to bad talent decisions, inefficiencies & high churn</p>
+            </div>
+          </div>
 
+          <div className={styles.urgGridItem}>
+            <div className={styles.imgBox}>
+              <Image src={icon3} alt="" layout="fill" />
+            </div>
+            <div>
+              <h4 className={styles.title}>We are all competing for the same talent pools</h4>
+              <p className={styles.desc}>Restricted sourcing, highly competitive, spiralling salaries</p>
+            </div>
+          </div>
+
+          <div className={styles.urgGridItem}>
+            <div className={styles.imgBox}>
+              <Image src={icon4} alt="" layout="fill" />
+            </div>
+            <div>
+              <h4 className={styles.title}>We’re dealing with a new generation of employees </h4>
+              <p className={styles.desc}>Much more diverse - seeking personalisation & experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={`container-width ${styles.containerStyle}`}>
         <div>
-          <h4 className={styles.titleMedium}>Measure what matters to be a great coder, <br /> all in one experience</h4>
+          <h4 className={styles.titleMedium}>Measure what matters to be a great coder <br /> all in one experience</h4>
           <div className={styles.workplaceSection} id='workplaceSection'>
-            <div className={`${styles.gridDesktopSection}`}>
+            <div className={`${styles.gridSection}`}>
               <div className={styles.imgBoxStyle}>
                 <div className={styles.jsonItemBox}>
                   <div className={styles.jsonItem} id="jobKnowledge" />
@@ -149,45 +162,8 @@ export default function ServiceHeroSection(props) {
                 </div>
               </div>
             </div>
-
-            {/* Mobile */}
-            <div className={styles.gridMobileSection}>
-              <div className={styles.boxSet}>
-                <div className={styles.imgBoxStyle}>
-                  <div className={styles.jsonItemBox}>
-                    <div className={styles.jsonItem} id="jobKnowledge4" />
-                  </div>
-                  <h4 className={styles.title4}>Job Knowledge & <br /> Functional Skills</h4>
-                </div>
-                <div className={styles.mobileDivider}></div>
-                <div className={styles.imgBoxStyle}>
-                  <div className={styles.jsonItemBox}>
-                    <div className={styles.jsonItem} id="cognition2" />
-                  </div>
-                  <h4 className={styles.title4}>Cognition & <br /> Intelligence</h4>
-                </div>
-              </div>
-              <div className={styles.boxSet}>
-                <div className={styles.imgBoxStyle}>
-                  <div className={styles.jsonItemBox}>
-                    <div className={styles.jsonItem} id="communication3" />
-                  </div>
-                  <h4 className={styles.title4}>Communication <br /> Skills</h4>
-                </div>
-                <div className={`${styles.mobileDivider} ${styles.mobileDivider2}`}></div>
-                <div className={styles.imgBoxStyle}>
-                  <div className={styles.jsonItemBox}>
-                    <div className={styles.jsonItem} id="behavior1" />
-                  </div>
-                  <h4 className={styles.title4}>Behavioural & Personality</h4>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   )
