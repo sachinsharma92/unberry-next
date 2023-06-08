@@ -20,9 +20,8 @@ export default function EndAutomation() {
         panel.classList.add('active')
       })
     })
-
-
   }, [])
+
 
   return (
     <div className={styles.endAutomationStyle}>
@@ -31,7 +30,6 @@ export default function EndAutomation() {
           We use the most advanced technologies to provide a seamless experience
         </h1>
         <div className={`container-panel ${styles.containerPanel}`}>
-
           <div className="panel gray active">
             <div className={styles.accordianCard}>
               <div className="head head1">
@@ -85,7 +83,6 @@ export default function EndAutomation() {
               </div>
             </div>
           </div>
-
           <div className="panel purple">
             <div className={styles.accordianCard}>
               <div className="head head2">
@@ -139,7 +136,6 @@ export default function EndAutomation() {
               </div>
             </div>
           </div>
-
           <div className="panel orange">
             <div className={styles.accordianCard}>
               <div className="head head3">

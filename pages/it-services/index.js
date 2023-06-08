@@ -5,11 +5,11 @@ import LayoutPrimary from '../../common/layoutPrimary';
 import SubscribeCard from '../../common/subscribe';
 import BlogSection from '../../components/homepage/blogSection';
 import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
-import EndAutomation from '../../components/homepage/endAutomation';
 
 // Styles here
 import InsightSection from '../../components/itServices/InsightSection';
 import AdvancedTechnologieSection from '../../components/itServices/advancedTechnologies';
+import EndAutomationSection from '../../components/itServices/endAutomationSection';
 import MostModernSection from '../../components/itServices/mostModernSection';
 import ServiceHeroSection from '../../components/itServices/serviceHeroSection';
 import TechSkillsSection from '../../components/itServices/techSkills';
@@ -60,7 +60,7 @@ export default function ItServicesScreen(props) {
         <ServiceHeroSection />
         <MostModernSection />
         <CandidatesAbsolutely />
-        <EndAutomation />
+        <EndAutomationSection />
         <TechSkillsSection />
         <InsightSection />
         <AdvancedTechnologieSection />
