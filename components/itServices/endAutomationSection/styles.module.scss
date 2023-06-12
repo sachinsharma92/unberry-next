@@ -193,12 +193,15 @@
     @include mobile {
       display: block;
       scale: 1.4;
-      margin-left: 65px;
+      margin-right: 10px;
+      margin-left: auto;
+      width: 58vw;
+      top: 20px;
     }
 
     .bgMobileStyle {
       object-fit: contain;
-      object-position: left bottom;
+      object-position: right bottom;
     }
   }
 

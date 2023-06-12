@@ -1849,9 +1849,6 @@ HAMBURGER MENU
   margin: 50px auto 0;
   max-width: 1680px;
   
-  @include mobile {
-    padding-left: 20px;
-  }
 
   .cards {
     position: relative;
@@ -1868,6 +1865,7 @@ HAMBURGER MENU
       gap: 0 20px;
       @include scrollHide();
       justify-content: flex-start;
+      padding-left: 20px;
     }
   }
   .custom-card {
