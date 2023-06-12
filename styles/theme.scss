@@ -1858,8 +1858,9 @@ HAMBURGER MENU
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 86vh;
     margin-bottom: 90px;
+    overflow: hidden;
 
     @include mobile {
       overflow-x: scroll;
@@ -1883,19 +1884,21 @@ HAMBURGER MENU
       position: relative;
       min-width: 90%;
       border-radius: 20px;
-      height: auto;
+      height: 580px;
       overflow: hidden;
     }
   }
+
   .card1 {
-    background-color: #daeeee;
-    color: #184444;
+    background-color: #fbefe6;
+    color: #442712;
+
     @include desktop {
       z-index: 1;
-      background-image: url("https://assets.unberry.com/media/images/m-automation3.png");
+      background-image: url("https://assets.unberry.com/media/images/m-automation1.png");
       background-repeat: no-repeat;
-      background-position: 45vw 8vh;
-      background-size: contain;
+      background-size: 55%;
+      background-position: right 14vh;
     }
   }
   .card2 {
@@ -1910,16 +1913,15 @@ HAMBURGER MENU
     }
   }
   .card3 {
-    background-color: #fbefe6;
-    color: #442712;
-
+    background-color: #daeeee;
+    color: #184444;
     @include desktop {
       top: 80px;
       z-index: 3;
-      background-image: url("https://assets.unberry.com/media/images/m-automation1.png");
+      background-image: url("https://assets.unberry.com/media/images/m-automation3.png");
       background-repeat: no-repeat;
-      background-size: 55%;
-      background-position: right 14vh;
+      background-position: 45vw 8vh;
+      background-size: contain;
     }
   }
   .opacity {

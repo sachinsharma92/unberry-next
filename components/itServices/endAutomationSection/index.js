@@ -28,8 +28,6 @@ export default function EndAutomationSection() {
 
   useEffect(() => {
     if (!isSmallScreen) {
-
-
       gsap.registerPlugin(ScrollTrigger);
       let tl = gsap.timeline({
         scrollTrigger: {
@@ -45,12 +43,10 @@ export default function EndAutomationSection() {
       tl.addLabel("card1");
       tl.to('.card1', {
         yPercent: 0,
-        opacity: 1
       })
 
       tl.from('.card2', {
-        yPercent: 75,
-        opacity: 0,
+        yPercent: 300,
       })
       tl.addLabel("card2");
       // set the active section based on the direction, and position it part-way through the transition because that's more intuitive
@@ -58,17 +54,14 @@ export default function EndAutomationSection() {
       tl.to('.card1', {
         scale: 0.95,
         yPercent: -0.5,
-        opacity: 0.7
       }, "-=0.3")
 
       tl.to('.card2', {
         yPercent: 0,
-        opacity: 1
       })
 
       tl.from('.card3', {
-        yPercent: 75,
-        opacity: 0,
+        yPercent: 300,
       })
       tl.addLabel("card3");
       tl.add(() => setActiveNav(tl.scrollTrigger.direction > 0 ? 2 : 1), "-=0.15");
@@ -76,12 +69,10 @@ export default function EndAutomationSection() {
       tl.to('.card2', {
         scale: 0.98,
         yPercent: -0.4,
-        opacity: 0.7
       }, "-=0.3")
 
       tl.to('.card3', {
         yPercent: 0,
-        opacity: 1
       })
 
       tl.to('.card3', {});
@@ -119,42 +110,41 @@ export default function EndAutomationSection() {
             <div className="custom-card card1" id="1">
               <div className={styles.contentSec}>
                 <div className={styles.leftSection}>
-                  <h4 className={styles.title4}>Candidate Communication</h4>
-                  <p className={styles.description}>Automated communication with candidates to engage with your top talent with automated reminders and notifications.</p>
-
+                  <h4 className={styles.title4}>Advanced Proctoring</h4>
+                  <p className={styles.description}>Prevent cheating and unethical practices with our advanced remote and live proctoring, flagging suspicious usage.</p>
                   <table className={styles.listStyle}>
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="envelope.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Email & Messages
+                          <ImageCustom src="snapshots.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Candidate Snapshots
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="note.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Automated Reminders
+                          <ImageCustom src="switching.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Disable Tab Switching
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="device.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Mobile-friendly
+                          <ImageCustom src="copy-paste.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Disable Copy Paste
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="chats.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Dedicated Chat Support
+                          <ImageCustom src="prohibit.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Curb Plagiarism
                         </div>
                       </td>
                     </tr>
                   </table>
                 </div>
-                <div className={styles.bgMobileBoxStyle1}>
-                  <ImageCustom src="m-automation3.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                <div className={styles.bgMobileBoxStyle3}>
+                  <ImageCustom src="m-automation1.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
                 </div>
               </div>
             </div>
@@ -202,44 +192,47 @@ export default function EndAutomationSection() {
             <div className="custom-card card3" id="3">
               <div className={styles.contentSec}>
                 <div className={styles.leftSection}>
-                  <h4 className={styles.title4}>Advanced Proctoring</h4>
-                  <p className={styles.description}>Prevent cheating and unethical practices with our advanced remote and live proctoring, flagging suspicious usage.</p>
+                  <h4 className={styles.title4}>Candidate Communication</h4>
+                  <p className={styles.description}>Automated communication with candidates to engage with your top talent with automated reminders and notifications.</p>
+
                   <table className={styles.listStyle}>
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="snapshots.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Candidate Snapshots
+                          <ImageCustom src="envelope.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Email & Messages
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="switching.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Disable Tab Switching
+                          <ImageCustom src="note.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Automated Reminders
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="copy-paste.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Disable Copy Paste
+                          <ImageCustom src="device.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Mobile-friendly
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="prohibit.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Curb Plagiarism
+                          <ImageCustom src="chats.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          Dedicated Chat Support
                         </div>
                       </td>
                     </tr>
                   </table>
                 </div>
-                <div className={styles.bgMobileBoxStyle3}>
-                  <ImageCustom src="m-automation1.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                <div className={styles.bgMobileBoxStyle1}>
+                  <ImageCustom src="m-automation3.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
                 </div>
               </div>
             </div>
+
+
             {/* FOr Right SPace */}
             <div className={styles.accordianCardLast} />
           </div>
