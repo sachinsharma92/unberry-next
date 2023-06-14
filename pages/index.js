@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import Head from 'next/head'
-import HomePageScreen from './homepage'
+import Head from "next/head";
+import HomePageScreen from "./homepage";
 
 export default function Home() {
   return (
@@ -9,37 +9,74 @@ export default function Home() {
         <meta charset="utf-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
+        <meta
+          name="google-site-verification"
+          content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA"
+        />
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow" />
-        <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
+        <meta
+          name="google-site-verification"
+          content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA"
+        />
 
         <title>Transforming the future of hiring and developing talent.</title>
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="unberry" />
-        <meta property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
+        <meta
+          property="og:title"
+          content="Unberry - Transforming the future of hiring and developing talent."
+        />
         <meta property="og:url" content="https://www.unberry.com" />
-        <meta property="og:image" content="https://www.unberry.com/ogImage.png" />
-        <meta property="og:image:url" content="https://www.unberry.com/ogImage.png" />
-        <meta property="og:image:alt" content="Unberry - Transforming the future of hiring and developing talent" />
+        <meta
+          property="og:image"
+          content="https://www.unberry.com/ogImage.png"
+        />
+        <meta
+          property="og:image:url"
+          content="https://www.unberry.com/ogImage.png"
+        />
+        <meta
+          property="og:image:alt"
+          content="Unberry - Transforming the future of hiring and developing talent"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="images/png" />
-        <meta property="og:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" />
-
+        <meta
+          property="og:description"
+          content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent"
+        />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="Twitter @Unberry" />
-        <meta name="twitter:title" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta name="twitter:description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" />
-        <meta name="twitter:image" content="https://www.unberry.com/ogImage.png" />
+        <meta
+          name="twitter:title"
+          content="Unberry - Transforming the future of hiring and developing talent."
+        />
+        <meta
+          name="twitter:description"
+          content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.unberry.com/ogImage.png"
+        />
 
-
-        <meta name="name" content="Unberry - Transforming the future of hiring and developing talent." />
-        <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" />
+        <meta
+          name="name"
+          content="Unberry - Transforming the future of hiring and developing talent."
+        />
+        <meta
+          name="description"
+          content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent"
+        />
         <meta name="image" content="https://www.unberry.com/ogImage.png" />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-303682441"
+        ></script>
         <script
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -55,7 +92,10 @@ export default function Home() {
           }}
         ></script>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZKKD686VB" ></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-8ZKKD686VB"
+        ></script>
         <script
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -88,49 +128,62 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "Unberry",
-              "image": "",
+              name: "Unberry",
+              image: "",
               "@id": "",
-              "url": "https://unberry.com/",
-              "telephone": "9810046260",
-              "address": {
+              url: "https://unberry.com/",
+              telephone: "9810046260",
+              address: {
                 "@type": "PostalAddress",
-                "streetAddress": "Second Floor, S S Plaza, 218-220, Block A, Sector 47",
-                "addressLocality": "Gurugram",
-                "postalCode": "122018",
-                "addressCountry": "India",
-                "addressRegion": "Haryana"
+                streetAddress:
+                  "Second Floor, S S Plaza, 218-220, Block A, Sector 47",
+                addressLocality: "Gurugram",
+                postalCode: "122018",
+                addressCountry: "India",
+                addressRegion: "Haryana",
               },
-              "openingHoursSpecification": [
+              openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": [
+                  dayOfWeek: [
                     "Monday",
                     "Tuesday",
                     "Wednesday",
                     "Thursday",
-                    "Friday"
+                    "Friday",
                   ],
-                  "opens": "10:00",
-                  "closes": "17:00"
-                }
+                  opens: "10:00",
+                  closes: "17:00",
+                },
               ],
-              "sameAs": [
+              sameAs: [
                 "https://www.linkedin.com/company/unberry/",
                 "https://www.instagram.com/unberry_official/",
                 "https://www.linkedin.com/in/vini-khabya-6a0aa419/",
                 "https://www.linkedin.com/in/aakaargandhi/",
                 "https://www.linkedin.com/in/anuj-birla-55a84822/",
-                "https://www.linkedin.com/in/dhruv-goel-9042b824/"
-              ]
-            })
+                "https://www.linkedin.com/in/dhruv-goel-9042b824/",
+              ],
+            }),
           }}
-        >
-        </script>
+        ></script>
+
+        <script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src=“https://www.clarity.ms/tag/”+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, “clarity”, “script”, “hjoypyri4y”);
+            `,
+          }}
+        ></script>
       </Head>
       <main>
         <HomePageScreen />
       </main>
     </div>
-  )
+  );
 }
