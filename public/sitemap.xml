@@ -1,39 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
-<!-- www.check-domains.com sitemap generator -->
 
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-   <loc>https://unberry.com/</loc>
-   <lastmod>2022-03-30T04:12:20+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>1.0000</priority>
+<loc>https://www.unberry.com/</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-   <loc>https://unberry.com/blog</loc>
-   <lastmod>2022-03-30T04:12:20+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.8000</priority>
+<loc>https://www.unberry.com/book-demo</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://unberry.com/blog/hiring-in-current-scenario-do-you-still-rely-on-resumes</loc>
-   <lastmod>2022-03-30T04:12:20+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>1.0000</priority>
+<loc>https://www.unberry.com/blog</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://unberry.com/blog/time-to-build-a-more-human-approach-to-hiring</loc>
-   <lastmod>2022-03-30T04:12:20+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>1.0000</priority>
+<loc>https://www.unberry.com/privacy-policy</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-   <loc>https://unberry.com/blog/how-distracted-are-we-the-science-behind-attention</loc>
-   <lastmod>2022-03-30T04:12:20+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>1.0000</priority>
+<loc>https://www.unberry.com/blog/staying-ahead-of-the-game-the-latest-assessment-techniques-for-bpo-hiring</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/bfsi-sector-campus-recruitment-taking-top-priority-in-2023</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/learning-and-development-a-key-focus-area-to-bridge-talent-gaps-in-2023</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/global-captives-in-india-talent-outlook-and-hiring-trends-for-fy24</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/tech-up-your-employer-branding-game-in-2023</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/bpo-industrys-talent-outlook-and-challenges-in-2023</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/talent-pool-optimization-in-2023-creative-ways-to-build-your-team</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/traits-we-measure-measure-what-really-matters</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/faster-smarter-better-the-power-of-ai-in-recruitment</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/talent-trawling</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/time-to-build-a-more-human-approach-to-hiring</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/how-distracted-are-we-the-science-behind-attention</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.unberry.com/blog/hiring-in-current-scenario-do-you-still-rely-on-resumes</loc>
+<lastmod>2023-06-13T10:33:23+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 </urlset>
