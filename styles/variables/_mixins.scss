@@ -131,6 +131,12 @@ $desktop-width-lg: 1500px;
   }
 }
 
+@mixin customMQ($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
 // ----------------------------------
 // Transition Mixin
 // ----------------------------------

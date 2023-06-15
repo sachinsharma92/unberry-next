@@ -2,16 +2,16 @@
 import lottie from "lottie-web";
 import React, { useEffect, useState } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
-
+import Link from "next/link";
+import Marquee from 'react-fast-marquee';
 import behavior from "../../../assets/json/behavior-personality.json";
 import cognition from "../../../assets/json/cognition-intelligence.json";
 import communication from "../../../assets/json/communication-skills.json";
 import jobKnowledge from "../../../assets/json/job-knowledge.json";
+import ImageCustom from "../../../common/ImageCustom";
 
 // Styles here
-import Marquee from 'react-fast-marquee';
 import styles from './styles.module.scss';
-import Link from "next/link";
 
 export default function HeroSection(props) {
   const [showCookies, setShowCookies] = useState(true)
@@ -63,6 +63,50 @@ export default function HeroSection(props) {
     });
   }, []);
 
+
+  const companyLogo = [
+    {
+      imgUrl: 'h-logo1.svg',
+      width: 172,
+      height: 35
+    },
+    {
+      imgUrl: 'h-logo2.svg',
+      width: 140,
+      height: 22
+    },
+    {
+      imgUrl: 'h-logo3.svg',
+      width: 120,
+      height: 30
+    },
+    {
+      imgUrl: 'h-logo4.svg',
+      width: 231,
+      height: 43
+    },
+    {
+      imgUrl: 'h-logo5.svg',
+      width: 96,
+      height: 39
+    },
+    {
+      imgUrl: 'h-logo6.svg',
+      width: 185,
+      height: 33
+    },
+    {
+      imgUrl: 'h-logo7.svg',
+      width: 208,
+      height: 25
+    },
+    {
+      imgUrl: 'h-logo8.svg',
+      width: 104,
+      height: 43
+    },
+  ]
+
   return (
     <div className={styles.heroSectionStyle}>
       <div className={`container-width ${styles.containerStyle}`}>
@@ -89,6 +133,18 @@ export default function HeroSection(props) {
             <ButtonPrimary href="/book-demo" title="BOOK DEMO" />
           </div>
         </div>
+
+        <div className={`${styles.companyLogo} company-logos`}>
+          <Marquee speed={40}>
+            {companyLogo.map((item, index) => (
+              <div key={index} className={styles.logoBox}>
+                <ImageCustom src={item.imgUrl} alt='image services' width={item.width} height={item.height} />
+              </div>
+            ))}
+          </Marquee>
+        </div>
+
+
         <div className={`${styles.headingMobile}`}>
           <h3 className={`${styles.title3}`}>
             Mapping the holistic workplace footprint of a candidate

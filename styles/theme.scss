@@ -1930,3 +1930,28 @@ HAMBURGER MENU
     width: 95%;
   }
 }
+
+
+// Company Logos
+.company-logos {
+
+  .marquee-container {
+    gap: 0 70px;
+  }
+
+  .marquee:first-child {
+    margin-right: 0;
+  }
+
+  .marquee:last-child {
+    margin-left: -50px;
+  }
+
+  .child {
+    margin: 0 30px;
+
+    @include mobile {
+      margin: 0 20px;
+    }
+  }
+}
