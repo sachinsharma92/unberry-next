@@ -5,7 +5,7 @@
 // auto-section
 .endAutomationSectionStyle {
   background: $white;
-  padding: 94px $p-padding-inline;
+  padding: 94px $p-padding-inline 0;
 
   @include tablet {
     padding: 50px 0px;

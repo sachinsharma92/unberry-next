@@ -68,7 +68,7 @@ export default function ServiceHeroSection(props) {
             </div>
           </h1>
           <p className={`${styles.descriptionText} description animation-heading`}>
-            Dive into the rise of live chat, the skills and characteristics of top performing agents, and how to best assess them to reduce attrition and guarantee top notch customer service.
+            Our talent assessment suite is designed to measure the entire spectrum of human personality and skills, as well as critical cognitive attributes, known to be reliable indicators of how someone is likely to perform in the workplace
           </p>
 
           <div className={`${styles.btnSection} animation-heading`}>
@@ -137,7 +137,7 @@ export default function ServiceHeroSection(props) {
                 </div>
                 <div>
                   <h4 className={styles.title4}>Coding Skills</h4>
-                  <p className={styles.jsonDes}>Offer a memorable candidate-driven experience, that people talk about</p>
+                  <p className={styles.jsonDes}>Measure domain specific knowledge through coding simulations & skill assessments covering 500+ technologies</p>
                 </div>
               </div>
               <div className={styles.imgBoxStyle}>
@@ -146,7 +146,7 @@ export default function ServiceHeroSection(props) {
                 </div>
                 <div>
                   <h4 className={styles.title4}>Cognitive Skills</h4>
-                  <p className={styles.jsonDes}>Get much more precise signal with clear actionable people insights</p>
+                  <p className={styles.jsonDes}>Get much more precise signal on how someone processes information, manage situations & navigate through complex problems.</p>
                 </div>
               </div>
               <div className={styles.imgBoxStyle}>
@@ -155,7 +155,7 @@ export default function ServiceHeroSection(props) {
                 </div>
                 <div>
                   <h4 className={styles.title4}>Communication Skills</h4>
-                  <p className={styles.jsonDes}>Offer a memorable candidate-driven experience, that people talk about</p>
+                  <p className={styles.jsonDes}>Gauge speaking & writing abilities and understand how people comprehend communication in various formats and respond to them</p>
                 </div>
               </div>
             </div>

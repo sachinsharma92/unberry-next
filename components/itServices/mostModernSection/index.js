@@ -10,7 +10,7 @@ export default function MostModernSection(props) {
   const serviceCardList = [
     {
       title: 'Real-time coding simulators',
-      description: 'Dynamic environments modulating multiple pathways, generating exponentially more behavioural data, measuring the true potential of a candidate across modern workplace skills',
+      description: 'Real-life coding environment that covers 70+ coding languages and a wide range of coding problems of all complexity level that assesses the coding knowledge, problem-solving and logical approach of candidates.',
       videoUrl: 'https://assets.unberry.com/media/service3.mp4',
       badgeList: [
         'Code Accuracy', 'Code Quality', 'Code Optimisation', 'Code Performance', ,
@@ -18,7 +18,7 @@ export default function MostModernSection(props) {
     },
     {
       title: 'Skill assessments',
-      description: 'Helping evaluate the functional capabilities, domain knowledge and proficiency across a wide repository of modern day skills and coding languages across different functions & roles.',
+      description: 'With the largest skills library in the world covering over 100+ tech roles, around 600 odd skills and 2500+ concepts, our skill assessments can be customised for different levels - beginners, intermediate & advanced.',
       videoUrl: 'https://assets.unberry.com/media/service2.mp4',
       badgeList: [
         'Technology', 'Sales', 'Finance', 'Marketing', 'Customer Success', 'Business Management', "+500 Skills",
