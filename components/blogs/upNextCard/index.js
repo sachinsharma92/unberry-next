@@ -18,6 +18,7 @@ export default function UpNextCard() {
   const [isLoading, setIsLoading] = useState(false)
   const { asPath } = useRouter();
 
+  console.log(asPath, 'check asPath');
 
   useEffect(() => {
     document.title = "Unberry | Blogs"
@@ -42,7 +43,7 @@ export default function UpNextCard() {
       console.log('blog data err', err)
       setIsLoading(false)
     })
-  }, [])
+  }, [asPath])
 
   const settings = {
     dots: false,
@@ -76,9 +77,8 @@ export default function UpNextCard() {
   };
 
   return (
-    <div className={styles.upNextCardStyle}>
+    <div className={styles.upNextCardStyle} key={asPath}>
       <div className='container-width'>
-
         <div className={styles.contentSection}>
           <div className={styles.headingSection}>
             <h3 className={`${styles.heading}`}>Up next for you</h3>
@@ -94,7 +94,7 @@ export default function UpNextCard() {
         <div className={`${styles.cardGrid} blog-carousel upNext-blog-carousel`}>
           <Carousel afterChange={onChange} {...settings}>
             {[...blogs].reverse().map((item, index) => (
-              <a href={`/blog/${item.slug}`} key={index} className={styles.blogCards}>
+              <div key={index} className={styles.blogCards}>
                 <div className={styles.imgbox}>
                   <div className={styles.imgStyle} style={{ backgroundImage: `url(${item.bannerImage})` }} />
                 </div>
@@ -102,8 +102,14 @@ export default function UpNextCard() {
                   {item.heading}
                 </h4>
 
-                <a>Read More</a>
-              </a>
+                <Link href={{
+                  pathname: `/blog/${item.slug}`,
+                  query: { backTo: asPath },
+                }}
+                  as={`/blog/${item.slug}`}>
+                  <a>Read More</a>
+                </Link>
+              </div>
             ))}
           </Carousel>
         </div>

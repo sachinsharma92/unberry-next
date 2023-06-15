@@ -21,7 +21,7 @@ const BlogDetail = ({ heading }) => {
 	let id = pathArr[pathArr?.length - 1];
 	const [data, setData] = useState({});
 	let params = { slug: id };
-
+	const { asPath } = useRouter();
 
 	// Menu Color change after scroll 360
 	const listenScrollEvent = () => {
@@ -51,7 +51,7 @@ const BlogDetail = ({ heading }) => {
 			.catch((e) => {
 				console.log("blog detail err", e);
 			});
-	}, []);
+	}, [asPath]);
 
 	useEffect(() => {
 		window.scrollTo({
