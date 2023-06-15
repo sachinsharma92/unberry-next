@@ -8,7 +8,7 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;500&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
           rel="stylesheet" />
 
-        <title>Transforming the future of hiring and developing talent.</title>
+        {/* <title>Transforming the future of hiring and developing talent.</title>
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="unberry" />
         <meta property="og:title" content="Unberry - Transforming the future of hiring and developing talent." />
@@ -31,7 +31,7 @@ export default function Document() {
 
         <meta name="name" content="Unberry - Transforming the future of hiring and developing talent." />
         <meta name="description" content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and develop talent" />
-        <meta name="image" content="https://www.unberry.com/ogImage.png" />
+        <meta name="image" content="https://www.unberry.com/ogImage.png" /> */}
 
         {/* Animations JS */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" async />
