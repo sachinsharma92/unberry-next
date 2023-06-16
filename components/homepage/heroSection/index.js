@@ -66,44 +66,52 @@ export default function HeroSection(props) {
 
   const companyLogo = [
     {
-      imgUrl: 'h-logo1.svg',
-      width: 172,
-      height: 35
+      imgUrl: 'h-logo1.svg', width: 172, height: 35
     },
     {
-      imgUrl: 'h-logo2.svg',
-      width: 140,
-      height: 22
+      imgUrl: 'h-logo2.svg', width: 140, height: 22
     },
     {
-      imgUrl: 'h-logo3.svg',
-      width: 120,
-      height: 30
+      imgUrl: 'h-logo3.svg', width: 120, height: 30
     },
     {
-      imgUrl: 'h-logo4.svg',
-      width: 231,
-      height: 43
+      imgUrl: 'h-logo4.svg', width: 231, height: 43
     },
     {
-      imgUrl: 'h-logo5.svg',
-      width: 96,
-      height: 39
+      imgUrl: 'h-logo5.svg', width: 96, height: 39
     },
     {
-      imgUrl: 'h-logo6.svg',
-      width: 185,
-      height: 33
+      imgUrl: 'h-logo6.svg', width: 185, height: 33
     },
     {
-      imgUrl: 'h-logo7.svg',
-      width: 208,
-      height: 25
+      imgUrl: 'h-logo7.svg', width: 208, height: 25
     },
     {
-      imgUrl: 'h-logo8.svg',
-      width: 104,
-      height: 43
+      imgUrl: 'h-logo8.svg', width: 104, height: 43
+    },
+    {
+      imgUrl: 'h-logo1.svg', width: 172, height: 35
+    },
+    {
+      imgUrl: 'h-logo2.svg', width: 140, height: 22
+    },
+    {
+      imgUrl: 'h-logo3.svg', width: 120, height: 30
+    },
+    {
+      imgUrl: 'h-logo4.svg', width: 231, height: 43
+    },
+    {
+      imgUrl: 'h-logo5.svg', width: 96, height: 39
+    },
+    {
+      imgUrl: 'h-logo6.svg', width: 185, height: 33
+    },
+    {
+      imgUrl: 'h-logo7.svg', width: 208, height: 25
+    },
+    {
+      imgUrl: 'h-logo8.svg', width: 104, height: 43
     },
   ]
 
