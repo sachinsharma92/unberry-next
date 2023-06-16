@@ -1,0 +1,295 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.communicationHeroStyle {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://assets.unberry.com/media/images/hero-grid.svg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: 100%;
+
+    @include tablet {
+      background-size: 100%;
+      background: url("https://assets.unberry.com/media/images/hero-grid-mobile.svg");
+    }
+
+    @include mobile {
+      background-size: 100%;
+      background: url("https://assets.unberry.com/media/images/hero-grid-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .spanBlock {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin: 30px 0;
+  }
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .btnSection {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .titleDesktop {
+    text-align: center;
+    margin: 0 auto;
+    color: $black;
+    line-height: 80px;
+
+    @include desktop-lg {
+      max-width: 60%;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
+    span {
+      border-radius: 50px;
+      padding: 0 38px;
+      height: 79px;
+      display: inline-block;
+      line-height: 76px;
+      font-size: 39px;
+      position: relative;
+      top: -5px;
+
+      &.color1 {
+        background-color: #e4ddef;
+        color: #3d2f52;
+      }
+      &.color2 {
+        background-color: #daeeee;
+        color: #184443;
+      }
+      &.color3 {
+        background-color: #fbefe6;
+        color: #442811;
+      }
+    }
+  }
+
+  .descriptionText {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70%;
+
+    @include tablet {
+      max-width: 60%;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include mobile {
+      max-width: 95%;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .contentSection {
+    padding: 95px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      padding: 85px 0;
+    }
+
+    @include mobile {
+      padding: 85px 0;
+    }
+  }
+
+  // Communication Skills Section here
+  .communicationSkills {
+    border-radius: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 10vh;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: url("https://assets.unberry.com/media/images/grid-center.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .containerStyle {
+      position: relative;
+      z-index: 1;
+    }
+
+    @include mobile {
+      height: auto;
+      flex-direction: column;
+      padding: 0 0px;
+      border-radius: 20px;
+    }
+
+    .titleMedium {
+      font-weight: 400;
+      font-size: 57.83px;
+      line-height: 62px;
+      text-align: center;
+      letter-spacing: -2px;
+      margin: 0 auto 30px;
+
+      @include mobile {
+        max-width: 90%;
+        font-weight: 400;
+        font-size: 31.25px;
+        line-height: 35px;
+        letter-spacing: -1px;
+        margin: 0 auto 60px;
+      }
+    }
+
+    .desc {
+      font-size: 20px;
+      line-height: 31px;
+      color: $black;
+      opacity: 0.6;
+      max-width: 65%;
+      margin: 0 auto;
+      text-align: center;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+  .communicationGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 42px;
+    margin-top: 97px;
+
+    @include mobile {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gridItem {
+      background: #f4f4f4;
+      padding: 25px;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: -43px;
+        content: "";
+        width: 85px;
+        height: 110px;
+        background: url("https://assets.unberry.com/media/images/white-shape.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: -98px;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      &:nth-child(1) {
+        top: 56px;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &:nth-child(2) {
+        &::after {
+          top: 100px;
+        }
+      }
+      &:nth-child(3) {
+        top: 56px;
+
+        &::after {
+          top: auto;
+          bottom: 100px;
+        }
+      }
+
+      &:nth-child(4) {
+        &::after {
+          top: 100px;
+        }
+      }
+    }
+    .title4 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: -0.5px;
+      color: rgba($black, 0.8);
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba($black, 0.5);
+    }
+
+    .imgBox {
+      position: relative;
+      width: 76px;
+      height: 76px;
+      background: #e4ddef;
+      border-radius: 100%;
+      padding: 10px;
+      margin-bottom: 103px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
