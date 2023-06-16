@@ -1,0 +1,59 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.instantScoreStyle {
+  padding:50px 80px;
+  position: relative;
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .btnSection {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .title {
+    color: $black;
+    font-weight: 400;
+    font-size: 61.04px;
+    line-height: 65px;
+    letter-spacing: -2px;
+  }
+
+  .descriptionText {
+    max-width: 65%;
+  }
+
+  .contentSection {
+    padding: 95px 0 56px;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      padding: 85px 0;
+    }
+
+    @include mobile {
+      padding: 85px 0;
+    }
+  }
+
+  .cardSection {
+    display: flex;
+
+    .imageItem {
+      position: relative;
+      height: 440px;
+      width: 100%;
+    }
+  }
+}

@@ -31,11 +31,14 @@ export default function MostAdvancedAiTool(props) {
       description: `Assess the candidate's ability to express their thoughts and ideas on various topics, such as business and technology`
     }
   ]
+
+  const badgeList = [
+    'Problem Solving', 'Decision Making', 'Empathy', 'Adaptability', '& Many More'
+  ]
   return (
     <div className={styles.mostAdvancedAiToolStyle}>
       <div className={`container-width ${styles.containerStyle}`}>
         <div className={styles.gridSection}>
-
           <div className={styles.header}>
             <h3 className={styles.title}>Powered by the most advanced AI tools</h3>
             <div className={`${styles.btnSection} animation-heading`}>
@@ -58,6 +61,18 @@ export default function MostAdvancedAiTool(props) {
                   <ImageCustom src={item.imgUrl} alt="" layout="fill" />
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className={styles.skillCard}>
+        <div className={`container-width ${styles.containerStyle}`}>
+          <div className={styles.title}>
+            Our assessments can measure soft skills and other aspects of the candidate&apos;s behaviour and personality.
+          </div>
+          <div className={styles.tagItems}>
+            {badgeList.map((item, index) => (
+              <span key={index} className={styles.badge}>{item}</span>
             ))}
           </div>
         </div>

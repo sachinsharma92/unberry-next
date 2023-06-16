@@ -15,6 +15,7 @@ import TechSkillsSection from '../../components/itServices/techSkills';
 // Styles here
 import styles from './styles.module.scss';
 import MostAdvancedAiTool from '../../components/communications/mostAdvancedAiTool';
+import InstantScoreSection from '../../components/communications/instantScore';
 
 export default function CommunicationScreen(props) {
   const [headerColor, setHeaderColor] = useState("white")
@@ -37,6 +38,7 @@ export default function CommunicationScreen(props) {
       <LayoutPrimary className={`${styles.communicationtyle} ${headerColor}`}>
         <CommunicationHeroSection />
         <MostAdvancedAiTool />
+        <InstantScoreSection />
         <EndAutomationSection />
         <TechSkillsSection />
         <InsightSection />
