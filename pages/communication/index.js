@@ -3,19 +3,17 @@ import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import LayoutPrimary from '../../common/layoutPrimary';
 import SubscribeCard from '../../common/subscribe';
-import BlogSection from '../../components/homepage/blogSection';
-import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
 import CommunicationHeroSection from '../../components/communications/communicationHeroSection';
+import BlogSection from '../../components/homepage/blogSection';
 import InsightSection from '../../components/itServices/InsightSection';
-import AdvancedTechnologieSection from '../../components/itServices/advancedTechnologies';
-import EndAutomationSection from '../../components/itServices/endAutomationSection';
-import MostModernSection from '../../components/itServices/mostModernSection';
 import TechSkillsSection from '../../components/itServices/techSkills';
 
 // Styles here
-import styles from './styles.module.scss';
-import MostAdvancedAiTool from '../../components/communications/mostAdvancedAiTool';
+import CommunicationsAutomationSection from '../../components/communications/endAutomationSection';
 import InstantScoreSection from '../../components/communications/instantScore';
+import MostAdvancedAiTool from '../../components/communications/mostAdvancedAiTool';
+import SpokenCommunicationSection from '../../components/communications/spokenCommunication';
+import styles from './styles.module.scss';
 
 export default function CommunicationScreen(props) {
   const [headerColor, setHeaderColor] = useState("white")
@@ -39,7 +37,8 @@ export default function CommunicationScreen(props) {
         <CommunicationHeroSection />
         <MostAdvancedAiTool />
         <InstantScoreSection />
-        <EndAutomationSection />
+        <SpokenCommunicationSection />
+        <CommunicationsAutomationSection />
         <TechSkillsSection />
         <InsightSection />
         <BlogSection />

@@ -1,0 +1,262 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.spokenCommunicationStyle {
+  background: $white;
+  padding: 90px $p-padding-inline 30px;
+
+  @include tablet {
+    padding: 50px 40px;
+  }
+
+  @include mobile {
+    padding: 50px 20px;
+  }
+
+  .title1 {
+    color: $black;
+    font-weight: 400;
+    font-size: 61.04px;
+    line-height: 65px;
+    letter-spacing: -2px;
+
+    @include tablet {
+      font-weight: 500;
+      font-size: 48.83px;
+      line-height: 48px;
+    }
+
+    @include mobile {
+      font-weight: 500;
+      font-size: 48.83px;
+      line-height: 48px;
+    }
+  }
+
+  .description {
+    text-align: left;
+    width: 70%;
+
+    @include mobile {
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @include tablet {
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .btnStyle {
+    @include tablet {
+      margin-top: 20px;
+    }
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  .contentSection {
+    display: flex;
+    align-items: center;
+    gap: 0 112px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 0px;
+      align-items: flex-start;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 0px;
+      align-items: flex-start;
+    }
+  }
+}
+
+.serviceSectionStyle {
+  background: $black;
+  padding: 70px $p-padding-inline;
+  border-radius: 40px;
+
+  @include tablet {
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  @include mobile {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .serviceItemStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 90px 0;
+
+    @include tablet {
+      gap: 38px 0;
+    }
+
+    @include mobile {
+      gap: 38px 0;
+    }
+  }
+
+  .title1 {
+    color: $white;
+    font-weight: 500;
+    font-size: 39.06px;
+    line-height: 43px;
+    letter-spacing: -0.04em;
+    max-width: 80%;
+    text-transform: capitalize;
+
+    @include tablet {
+      max-width: 100%;
+      font-weight: 500;
+      font-size: 31.25px;
+      line-height: 38px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      font-weight: 500;
+      font-size: 31.25px;
+      line-height: 38px;
+    }
+  }
+
+  .description {
+    text-align: left;
+    color: rgba($white, 0.8);
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 100%;
+
+    @include tablet {
+      max-width: 90%;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  .contentSection {
+    display: flex;
+    align-items: center;
+    gap: 0 112px;
+  }
+
+  .serviceCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0 81px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      gap: 0;
+      border-bottom: 1px solid rgba($white, 0.2);
+      padding-bottom: 38px;
+
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+    }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      gap: 0;
+      border-bottom: 1px solid rgba($white, 0.2);
+      padding-bottom: 38px;
+
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+    }
+
+    .cardSection {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 42px;
+      margin-top: 60px;
+
+      .cardImage {
+        height: 379px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .title4 {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: $white;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .serviceCard:nth-child(1) {
+
+    .cardSection .cardItem {
+      &:nth-child(1) {
+        img {
+          scale: 1.1;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          top: 40px !important;
+        }
+      }
+      &:nth-child(3) {
+        img {
+          top: 30px !important;
+          scale: 0.95;
+        }
+      }
+    }
+  }
+
+
+  .serviceCard:nth-child(2) {
+
+    .cardSection .cardItem {
+      &:nth-child(1) {
+        img {
+          top: 40px !important;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          top: 40px !important;
+          scale: 0.95;
+        }
+      }
+      &:nth-child(3) {
+        img {
+          top: 20px !important;
+          scale: 0.95;
+        }
+      }
+    }
+  }
+}
