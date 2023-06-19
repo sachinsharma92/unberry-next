@@ -9,28 +9,6 @@ import ImageCustom from "../../../common/ImageCustom";
 import styles from './styles.module.scss';
 
 export default function InstantScoreSection(props) {
-  const communicationGrid = [
-    {
-      imgUrl: 'microphone.svg',
-      title: 'Speaking',
-      description: 'Evaluate a candidate’s ability to speak clearly, correctly and coherently'
-    },
-    {
-      imgUrl: 'ear.svg',
-      title: 'Listening',
-      description: 'Evaluate a candidate’s ability to listen and comprehend properly'
-    },
-    {
-      imgUrl: 'book-open.svg',
-      title: 'Reading',
-      description: 'Evaluate the ability to read, process & retain written information'
-    },
-    {
-      imgUrl: 'pencil-simple.svg',
-      title: 'Writing',
-      description: 'Evaluate the ability to write fluently and clearly, to express effectively'
-    }
-  ]
   return (
     <div className={styles.instantScoreStyle}>
       <div className={`container-width ${styles.containerStyle}`}>

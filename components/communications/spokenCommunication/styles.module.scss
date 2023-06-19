@@ -30,7 +30,7 @@
 
     @include mobile {
       font-weight: 500;
-      font-size: 48.83px;
+      font-size: 40px;
       line-height: 48px;
     }
   }
@@ -186,6 +186,10 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 42px;
       margin-top: 60px;
+
+      @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+      }
 
       .cardImage {
         height: 379px;

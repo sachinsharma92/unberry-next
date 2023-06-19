@@ -11,10 +11,10 @@ import HeroSection from '../../components/homepage/heroSection';
 import ServeCustomersAcross from '../../components/homepage/serveCustomersAcross';
 import ServiceSection from '../../components/homepage/serviceSection';
 import WinningChoice from '../../components/winningChoice';
+import ElevateCard from '../../components/elevateCard';
 
 // Styles here
 import styles from './styles.module.scss';
-import ElevateCard from '../../components/elevateCard';
 
 export default function HomePageScreen(props) {
   const [headerColor, setHeaderColor] = useState("white")
@@ -64,7 +64,9 @@ export default function HomePageScreen(props) {
         <ServiceSection />
         <EndAutomation />
         <ServeCustomersAcross />
-        <WinningChoice />
+        <WinningChoice>
+          <ElevateCard className={styles.elevateCardStyle} />
+        </WinningChoice>
         <BlogSection />
         <SubscribeCard />
       </LayoutPrimary>

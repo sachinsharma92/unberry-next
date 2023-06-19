@@ -6,17 +6,33 @@
 .mostAdvancedAiToolStyle {
   margin-top: 200px;
 
+  @include mobile {
+    margin-top: 50px;
+  }
+
   .containerStyle {
     padding: 0 80px;
+
+    @include mobile {
+      padding: 0 20px;
+    }
   }
 
   .gridSection {
     display: flex;
     gap: 0 86px;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   .header {
     max-width: 350px;
+
+    @include mobile {
+      max-width: 90%;
+    }
 
     .title {
       font-weight: 500;
@@ -24,11 +40,20 @@
       line-height: 53px;
       letter-spacing: -1px;
       color: $black;
+
+      @include mobile {
+        font-size: 35px;
+        line-height: 40px;
+      }
     }
 
     .btnSection {
       max-width: 190px;
       margin-top: 56px;
+
+      @include mobile {
+        margin-top: 30px;
+      }
     }
   }
 
@@ -37,6 +62,13 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @include mobile {
+      margin-top: 50px;
+      flex-direction: row;
+      overflow-x: scroll;
+      @include scrollHide;
+    }
 
     .imgBox {
       position: absolute;
@@ -47,10 +79,23 @@
       justify-content: center;
       right: 65px;
 
+      @include mobile {
+        position: relative;
+        right: 0px;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
+
+        @include mobile {
+          object-fit: cover;
+        }
       }
     }
 
@@ -63,11 +108,22 @@
       position: relative;
       overflow: hidden;
 
+      @include mobile {
+        padding: 20px;
+        border-radius: 20px;
+        flex-direction: column-reverse;
+        min-width: 90%;
+      }
+
       &:nth-child(1) {
         background: #e4ddef;
 
         .imgBox {
           bottom: -30px;
+
+          @include mobile {
+            bottom: 0px;
+          }
         }
       }
       &:nth-child(2) {
@@ -83,6 +139,10 @@
 
     .contentSection {
       max-width: 365px;
+
+      @include mobile {
+        max-width: 100%;
+      }
     }
 
     .title4 {
@@ -91,6 +151,12 @@
       line-height: 33px;
       letter-spacing: -1px;
       color: $black;
+
+      @include mobile {
+        margin-top: 30px;
+        font-size: 25px;
+        line-height: 30px;
+      }
     }
 
     .description {
@@ -108,6 +174,11 @@
     padding: 72px;
     margin-top: 92px;
 
+    @include mobile {
+      padding: 50px 10px;
+      border-radius: 20px;
+    }
+
     .title {
       font-weight: 400;
       font-size: 48.83px;
@@ -115,6 +186,12 @@
       text-align: center;
       letter-spacing: -3px;
       color: $white;
+
+      @include mobile {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -1px;
+      }
     }
 
     .tagItems {
@@ -133,6 +210,7 @@
       @include mobile {
         max-width: 100%;
         gap: 6px;
+        margin-top: 30px;
       }
     }
 
@@ -157,7 +235,7 @@
       @include mobile {
         font-size: 14px;
         line-height: 22px;
-        padding: 14px 20px;
+        padding: 12px 20px;
       }
     }
   }

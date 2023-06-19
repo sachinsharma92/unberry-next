@@ -93,8 +93,7 @@ export default function WinningChoice(props) {
           </div>
         </div>
       </div>
-
-      <ElevateCard className={styles.winningPageStyle} />
+      {props.children}
     </div>
   );
 }

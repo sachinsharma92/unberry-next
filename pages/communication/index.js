@@ -46,8 +46,8 @@ export default function CommunicationScreen(props) {
         <WrittenCommunicationSection />
         <WinningChoice className={styles.paddingLarge} />
         <CommunicationsHolistically />
-        <ElevateCard className={styles.paddingLarge} />
-        <BlogSection />
+        <ElevateCard className={styles.elevateCardStyle} />
+        <BlogSection className={styles.blogStyle} />
         <SubscribeCard />
       </LayoutPrimary>
     </>

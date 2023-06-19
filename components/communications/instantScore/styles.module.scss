@@ -13,6 +13,7 @@
 
   @include mobile {
     padding-bottom: 0;
+    padding:30px 20px;
   }
 
   .btnSection {
@@ -27,10 +28,20 @@
     font-size: 61.04px;
     line-height: 65px;
     letter-spacing: -2px;
+
+    @include mobile {
+      font-size: 40px;
+      line-height: 45px;
+      font-weight: 500;
+    }
   }
 
   .descriptionText {
     max-width: 65%;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   .contentSection {
@@ -43,17 +54,25 @@
     }
 
     @include mobile {
-      padding: 85px 0;
+      padding: 40px 0;
     }
   }
 
   .cardSection {
     display: flex;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .imageItem {
       position: relative;
       height: 440px;
       width: 100%;
+
+      @include mobile {
+        height: 240px;
+      }
     }
   }
 }

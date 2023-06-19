@@ -39,11 +39,82 @@
     }
   }
 
+  .title {
+    text-align: center;
+    margin: 0 auto;
+    color: $black;
+    line-height: 80px;
+
+    @include mobile {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    @include desktop-lg {
+      max-width: 60%;
+    }
+  }
+
+  .mediumBadge {
+    border-radius: 50px;
+    padding: 0 38px;
+    height: 79px;
+    display: inline-block;
+    line-height: 76px;
+    font-size: 39px;
+    position: relative;
+    top: -5px;
+    font-weight: 500;
+
+    @include mobile {
+      line-height: 30px;
+      font-size: 20px;
+      height: 49px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &.color1 {
+      background-color: #e4ddef;
+      color: #3d2f52;
+    }
+    &.color2 {
+      background-color: #daeeee;
+      color: #184443;
+    }
+    &.color3 {
+      background-color: #fbefe6;
+      color: #442811;
+    }
+  }
+
   .spanBlock {
     display: flex;
     align-items: center;
     gap: 0 10px;
     margin: 30px 0;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .marqueBlock {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .mobileSpanBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+    padding: 30px 0;
   }
 
   .btnSection {
@@ -57,53 +128,14 @@
     z-index: 1;
   }
 
-  .titleDesktop {
-    text-align: center;
-    margin: 0 auto;
-    color: $black;
-    line-height: 80px;
-
-    @include desktop-lg {
-      max-width: 60%;
-    }
-
-    @include tablet {
-      display: none;
-    }
-
-    @include mobile {
-      display: none;
-    }
-
-    span {
-      border-radius: 50px;
-      padding: 0 38px;
-      height: 79px;
-      display: inline-block;
-      line-height: 76px;
-      font-size: 39px;
-      position: relative;
-      top: -5px;
-
-      &.color1 {
-        background-color: #e4ddef;
-        color: #3d2f52;
-      }
-      &.color2 {
-        background-color: #daeeee;
-        color: #184443;
-      }
-      &.color3 {
-        background-color: #fbefe6;
-        color: #442811;
-      }
-    }
-  }
-
   .descriptionText {
     margin: 0 auto;
     text-align: center;
     max-width: 70%;
+
+    @include desktop-lg {
+      max-width: 55%;
+    }
 
     @include tablet {
       max-width: 60%;
@@ -113,7 +145,7 @@
 
     @include mobile {
       max-width: 95%;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 26px;
     }
   }
@@ -129,7 +161,7 @@
     }
 
     @include mobile {
-      padding: 85px 0;
+      padding: 40px 0;
     }
   }
 
@@ -172,11 +204,10 @@
 
       @include mobile {
         max-width: 90%;
-        font-weight: 400;
         font-size: 31.25px;
         line-height: 35px;
         letter-spacing: -1px;
-        margin: 0 auto 60px;
+        margin: 0 auto 20px;
       }
     }
 
@@ -190,8 +221,9 @@
       text-align: center;
 
       @include mobile {
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 17px;
+        line-height: 25px;
+        max-width: 85%;
       }
     }
   }
@@ -204,6 +236,8 @@
     @include mobile {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+      margin-top: 50px;
+      padding: 20px;
     }
 
     .gridItem {
@@ -213,6 +247,11 @@
       display: flex;
       flex-direction: column;
       position: relative;
+
+      @include mobile {
+        border-radius: 20px;
+        margin-bottom: 0px;
+      }
 
       &::after {
         position: absolute;
@@ -232,7 +271,10 @@
       }
 
       &:nth-child(1) {
-        top: 56px;
+
+        @include desktop {
+          top: 56px;
+        }
 
         &::after {
           display: none;
@@ -245,7 +287,9 @@
         }
       }
       &:nth-child(3) {
+        @include desktop {
         top: 56px;
+        }
 
         &::after {
           top: auto;
@@ -259,6 +303,7 @@
         }
       }
     }
+
     .title4 {
       font-weight: 600;
       font-size: 20px;
@@ -285,6 +330,10 @@
       align-items: center;
       justify-content: center;
 
+      @include mobile {
+        margin-bottom: 50px;
+      }
+
       img {
         width: 100%;
         height: 100%;
@@ -292,5 +341,4 @@
       }
     }
   }
-
 }

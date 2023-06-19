@@ -9,7 +9,7 @@ import BlogCard from '../../blogCard';
 import styles from './styles.module.scss';
 
 
-export default function BlogSection() {
+export default function BlogSection(props) {
   const [blogs, setBlogs] = useState([]);
   const { asPath } = useRouter();
   // Integration here
@@ -26,7 +26,7 @@ export default function BlogSection() {
   }, [])
 
   return (
-    <div className={`${styles.blogSectionStyle}`}>
+    <div className={`${styles.blogSectionStyle} ${props.className}`}>
       <div className='container-width'>
         <div className={styles.contentSection}>
           <div className={styles.headingSection}>

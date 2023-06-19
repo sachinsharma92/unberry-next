@@ -20,8 +20,7 @@ export default function CommunicationsHolistically() {
       <div className="container-width">
         <div className={styles.contentSection}>
           <h1 className={`${styles.title1}`}>
-            Holistically evaluate a candidate’s communication skills using
-            <span>deep tech</span>
+            Holistically evaluate a candidate’s communication skills using <span>deep tech</span>
           </h1>
         </div>
 

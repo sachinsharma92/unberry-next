@@ -7,6 +7,7 @@ import ImageCustom from "../../../common/ImageCustom";
 
 // Styles here
 import styles from './styles.module.scss';
+import Marquee from 'react-fast-marquee';
 
 export default function CommunicationHeroSection(props) {
   const communicationGrid = [
@@ -35,15 +36,25 @@ export default function CommunicationHeroSection(props) {
     <div className={styles.communicationHeroStyle}>
       <div className={`container-width ${styles.containerStyle}`}>
         <div className={`${styles.contentSection} animation-block`}>
-          <h1 className={`${styles.titleDesktop} title1`}>
+          <h1 className={`${styles.title} title1`}>
             Instant AI Spoken & Written <br />
             Communication Assessment <br />
-            <div className={styles.spanBlock}>
-              <span className={styles.color1}>Unbiased</span>
-              <span className={styles.color2}>Comprehensive</span>
-              <span className={styles.color2}>Engaging</span>
-            </div>
           </h1>
+          <div className={styles.spanBlock}>
+            <span className={`${styles.color1} ${styles.mediumBadge}`}>Unbiased</span>
+            <span className={`${styles.color2} ${styles.mediumBadge}`}>Comprehensive</span>
+            <span className={`${styles.color3} ${styles.mediumBadge}`}>Engaging</span>
+          </div>
+
+          <div className={styles.marqueBlock}>
+            <Marquee speed={40} gradient={false}>
+              <div className={styles.mobileSpanBlock}>
+                <span className={`${styles.color1} ${styles.mediumBadge}`}>Unbiased</span>
+                <span className={`${styles.color2} ${styles.mediumBadge}`}>Comprehensive</span>
+                <span className={`${styles.color3} ${styles.mediumBadge}`}>Engaging</span>
+              </div>
+            </Marquee>
+          </div>
           <p className={`${styles.descriptionText} description`}>
             That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.
           </p>

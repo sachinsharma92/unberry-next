@@ -30,7 +30,7 @@
 
     @include mobile {
       font-weight: 500;
-      font-size: 48.83px;
+      font-size: 40px;
       line-height: 48px;
     }
   }
@@ -168,6 +168,10 @@
       &:nth-child(3) {
         border-bottom: none;
       }
+
+      &:last-child {
+        border: none;
+      }
     }
 
     @include tablet {
@@ -187,12 +191,21 @@
       gap: 42px;
       margin-top: 60px;
 
+      @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
       .cardImage {
         height: 379px;
         width: 100%;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 25px;
         position: relative;
+
+        @include mobile {
+          height: 200px;
+          border-radius: 20px;
+        }
 
         img {
           object-fit: contain;
@@ -207,21 +220,23 @@
         letter-spacing: -0.5px;
         color: $white;
         margin-top: 25px;
-      }
-    }
-  }
 
-
-  .serviceCard:nth-child(1) {
-
-    .cardSection .cardItem {
-
-      &:nth-child(2) {
-        img {
-          top: 40px !important;
+        @include mobile {
+          font-size: 20px;
         }
       }
     }
   }
 
+  @include desktop {
+    .serviceCard:nth-child(1) {
+      .cardSection .cardItem {
+        &:nth-child(2) {
+          img {
+            top: 40px !important;
+          }
+        }
+      }
+    }
+  }
 }

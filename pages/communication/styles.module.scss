@@ -7,6 +7,18 @@
   overflow-x: hidden;
   
   .paddingLarge {
+    padding-block: 100px 0;
+
+    @include mobile {
+      padding-block: 0px 80px;
+    }
+  }
+
+  .elevateCardStyle {
     padding-block: 130px;
+
+    @include mobile {
+      padding-block:50px 0;
+    }
   }
 }
