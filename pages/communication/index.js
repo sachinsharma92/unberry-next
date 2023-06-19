@@ -4,19 +4,19 @@ import React, { useEffect, useState } from 'react';
 import LayoutPrimary from '../../common/layoutPrimary';
 import SubscribeCard from '../../common/subscribe';
 import CommunicationHeroSection from '../../components/communications/communicationHeroSection';
-import BlogSection from '../../components/homepage/blogSection';
 import CommunicationService from '../../components/communications/communicationService';
+import CommunicationsHolistically from '../../components/communications/communicationsHolistically';
 import CommunicationsAutomationSection from '../../components/communications/endAutomationSection';
 import InstantScoreSection from '../../components/communications/instantScore';
 import MostAdvancedAiTool from '../../components/communications/mostAdvancedAiTool';
 import SpokenCommunicationSection from '../../components/communications/spokenCommunication';
 import WrittenCommunicationSection from '../../components/communications/writtenCommunication';
-import WinningChoice from '../../components/winningChoice';
 import ElevateCard from '../../components/elevateCard';
+import BlogSection from '../../components/homepage/blogSection';
+import WinningChoice from '../../components/winningChoice';
 
 // Styles here
 import styles from './styles.module.scss';
-import CommunicationsHolistically from '../../components/communications/communicationsHolistically';
 
 export default function CommunicationScreen(props) {
   const [headerColor, setHeaderColor] = useState("white")
