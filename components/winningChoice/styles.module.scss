@@ -1,19 +1,22 @@
 // variables
-@import "../../../styles/variables/colors";
-@import "../../../styles/variables/mixins";
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
 
 // auto-section
 .winningChoiceStyle {
-  background: $white;
-  padding: 80px $p-padding-inline 150px;
+  background: transparent;
   position: relative;
 
-  @include tablet {
-    padding: 0;
-  }
+  .lSpace {
+    padding: 80px $p-padding-inline 150px;
 
-  @include mobile {
-    padding: 0;
+    @include tablet {
+      padding: 0;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
   }
 
   &::before {
@@ -57,7 +60,7 @@
       color: $theme-secondary-new;
     }
   }
-  
+
   .contentSection {
     max-width: 450px;
   }
@@ -134,9 +137,8 @@
       margin: 0;
     }
 
-
     &.orangeBox {
-      background: #FBEFE6;
+      background: #fbefe6;
       margin-bottom: 15px;
 
       .largeNumber {
@@ -215,7 +217,6 @@
       margin-right: 0;
       margin-left: auto;
       text-align: left;
-      
 
       .largeNumber {
         color: #3d2f52;
@@ -437,211 +438,7 @@
     }
   }
 
-  .hiringCard {
-    background: #ac95cf;
-    min-height: 300px;
-    border-radius: 40px;
-    margin-top: 146px;
-    position: relative;
-    max-width: 95%;
-
-    @include tablet {
-      margin: 53px 20px;
-      max-width: 100%;
-      border-radius: 20px;
-      background: #ac95cf;
-      padding-bottom: 170px;
-    }
-
-    @include mobile {
-      margin: 53px 20px;
-      max-width: 100%;
-      border-radius: 20px;
-      background: #ac95cf;
-      padding-bottom: 170px;
-    }
-
-    .content {
-      padding: 49px;
-      position: relative;
-      z-index: 1;
-
-      @include tablet {
-        padding: 40px 20px;
-      }
-
-      @include mobile {
-        padding: 40px 20px;
-      }
-    }
-
-    .title3 {
-      font-weight: 500;
-      font-size: 39.06px;
-      line-height: 46px;
-      letter-spacing: -0.04em;
-      color: $white;
-      max-width: 50%;
-
-      @include tablet {
-        max-width: 100%;
-        font-size: 30px;
-        line-height: 38px;
-      }
-
-      @include mobile {
-        max-width: 100%;
-        font-size: 30px;
-        line-height: 38px;
-      }
-    }
-
-    .curveLineSection {
-      height: 250px;
-      width: 100%;
-
-      @include desktop-l {
-        height: 300px;
-      }
-
-      @include desktop-lg {
-        height: 300px;
-      }
-
-      img {
-        scale: 1.3;
-        object-position: 0px 20px;
-
-        @include desktop-l {
-          object-position: 0px -20px;
-        }
-
-        @include desktop-lg {
-          object-position: 0px -50px;
-        }
-      }
-
-      @include tablet {
-        display: none;
-      }
-
-      @include mobile {
-        display: none;
-      }
-    }
-
-    .iconBoxes {
-      width: 100%;
-      position: relative;
-      padding: 0 20px;
-      margin-top: 10px;
-      display: none;
-
-      @include tablet {
-        display: block;
-      }
-
-      @include mobile {
-        display: block;
-      }
-
-      .gridSection {
-        display: flex;
-        flex-direction: column;
-        gap: 15px 0;
-
-        @include tablet {
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: 25px;
-        }
-      }
-
-      .title4 {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.2;
-        letter-spacing: -0.8px;
-        color: $white;
-        max-width: 100%;
-      }
-
-      .box {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: row;
-        text-align: left;
-        gap: 0 20px;
-
-        .imgBox {
-          min-width: 45px;
-          min-height: 45px;
-          background: #c9b6e6;
-          border-radius: 50%;
-          position: relative;
-
-          img {
-            scale: 0.6;
-          }
-        }
-      }
-    }
-  }
-
-  .btnStyle {
-    background: $white;
-    color: $black;
-    font-weight: 600;
-    height: 56px;
-    font-size: 20px;
-    padding: 0 30px;
-    max-width: 200px;
-
-    &:hover {
-      opacity: 0.7;
-    }
-
-    @include tablet {
-      margin-top: 40px;
-      font-size: 18px;
-    }
-
-    @include mobile {
-      margin-top: 40px;
-      font-size: 18px;
-    }
-  }
-
-  .sliderCard {
-    width: 422px;
-    height: 186px;
-    background: #fbefe6;
-    border-radius: 40px;
-    padding: 40px 30px;
-    position: absolute;
-    right: 80px;
-    margin-top: -100px;
-    font-style: italic;
-
-    @include tablet {
-      width: 80%;
-      position: relative;
-      border-radius: 20px;
-      right: 0;
-      height: auto;
-      margin: -180px auto 0;
-      padding: 30px 20px;
-    }
-
-    @include mobile {
-      width: 80%;
-      position: relative;
-      border-radius: 20px;
-      right: 0;
-      height: auto;
-      margin: -180px auto 0;
-      padding: 30px 20px;
-    }
+  .winningPageStyle {
+    padding-block: 0 130px;
   }
 }
