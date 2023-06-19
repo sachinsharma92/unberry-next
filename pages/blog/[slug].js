@@ -69,8 +69,8 @@ const BlogDetail = ({ heading }) => {
 		<>
 			<Head>
 				<title>{heading}</title>
-				<meta property="og:image" content="https://www.unberry.com/ogImage.png" />
-				<meta name="twitter:image" content="https://www.unberry.com/ogImage.png" />
+				<meta property="og:image" content={data?.bannerImage} />
+				<meta name="twitter:image" content={data?.bannerImage} />
 			</Head>
 
 			<LayoutPrimary className={`blog-detail-section ${headerColor}`}>
