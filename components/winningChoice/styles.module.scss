@@ -440,5 +440,9 @@
 
   .winningPageStyle {
     padding-block: 0 130px;
+
+    @include mobile {
+      padding-bottom: 0px;
+    }
   }
 }
