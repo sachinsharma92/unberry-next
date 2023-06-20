@@ -14,7 +14,7 @@ import { Mixpanel } from "../../services/mixpanel";
 
 // Images
 
-const BlogDetail = ({ heading }) => {
+const BlogDetail = ({ heading, bannerImage }) => {
 	const [headerColor, setHeaderColor] = useState("white")
 	const router = useRouter();
 	let pathArr = router.asPath?.split("/");
@@ -65,10 +65,14 @@ const BlogDetail = ({ heading }) => {
 		document.body.className = 'blog-detaul-mode';
 	});
 
+	// console.log(bannerImage, 'check banner');
+
 	return (
 		<>
 			<Head>
 				<title>{heading}</title>
+				<meta property="og:image" content={bannerImage} />
+				<meta name="twitter:image" content={bannerImage} />
 			</Head>
 
 			<LayoutPrimary className={`blog-detail-section ${headerColor}`}>
@@ -118,5 +122,5 @@ BlogDetail.getInitialProps = async (ctx) => {
 	const res = await axios.get(`https://cms-api.unberry.com/api/v1/article/`, {
 		params,
 	});
-	return { heading: res?.data?.data[0]?.heading };
+	return { heading: res?.data?.data[0]?.heading, bannerImage: res?.data?.data[0]?.bannerImage };
 };
