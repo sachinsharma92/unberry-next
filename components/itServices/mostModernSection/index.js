@@ -11,7 +11,7 @@ export default function MostModernSection(props) {
     {
       title: 'Real-time coding simulators',
       description: 'Real-life coding environment that covers 70+ coding languages and a wide range of coding problems of all complexity level that assesses the coding knowledge, problem-solving and logical approach of candidates.',
-      videoUrl: 'https://assets.unberry.com/media/service3.mp4',
+      videoUrl: 'https://assets.unberry.com/media/IT_services_Coding.mp4',
       badgeList: [
         'Code Accuracy', 'Code Quality', 'Code Optimisation', 'Code Performance', ,
       ]
