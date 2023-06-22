@@ -12,7 +12,7 @@ import { Mixpanel } from '../../../services/mixpanel';
 import styles from './styles.module.scss';
 
 
-export default function UpNextCard() {
+export default function UpNextCard({ currentData }) {
   const isBigScreen = useMediaQuery({ query: '(min-width: 1600px)' })
   const [blogs, setBlogs] = useState([])
   const [isLoading, setIsLoading] = useState(false)
@@ -93,7 +93,7 @@ export default function UpNextCard() {
 
         <div className={`${styles.cardGrid} blog-carousel upNext-blog-carousel`}>
           <Carousel afterChange={onChange} {...settings}>
-            {[...blogs].reverse().map((item, index) => (
+            {[...blogs].reverse().filter(i => i.id !== currentData.id).map((item, index) => (
               <div key={index} className={styles.blogCards}>
                 <div className={styles.imgbox}>
                   <div className={styles.imgStyle} style={{ backgroundImage: `url(${item.bannerImage})` }} />

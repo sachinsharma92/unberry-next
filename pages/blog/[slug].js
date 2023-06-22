@@ -103,7 +103,7 @@ const BlogDetail = ({ heading, bannerImage }) => {
 					</div>
 				</div>
 
-				<UpNextCard />
+				<UpNextCard currentData={data} />
 			</LayoutPrimary>
 		</>
 	);
