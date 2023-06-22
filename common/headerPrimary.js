@@ -5,18 +5,23 @@ import ImageCustom from './ImageCustom';
 export default function HeaderPrimary(props) {
   const [menuShow, setMenuShow] = useState(false);
 
-  const menuToggle = () => {
-    setMenuShow(!menuShow)
-  }
+  // const menuToggle = () => {
+  //   setMenuShow(!menuShow)
+  // }
 
   return (
     <div className="header-primary">
       <div className='container-width'>
-        <Link href="/">
-          <a className='logo-black'>
-            <ImageCustom src="logo-black.svg" width="124" height="34" alt="logo" />
-          </a>
-        </Link>
+        <div className='logo-sec'>
+          <Link href="/">
+            <a className='logo-black'>
+              <ImageCustom src="logo-black.svg" width="124" height="34" alt="logo" />
+            </a>
+          </Link>
+          {props.backHander && <button className="back-btn" onClick={props.backHander}>
+            <ImageCustom src="back.svg" alt='image services' width="24" height="24" />
+          </button>}
+        </div>
 
         <nav className={`menu-header ${menuShow && 'menu-active'}`}>
           {/* <Link href="/">Sectors</Link>

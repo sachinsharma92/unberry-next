@@ -7,7 +7,7 @@ import HeaderPrimary from './headerPrimary';
 export default function LayoutPrimary(props) {
   return (
     <Layout className={props.className}>
-      <HeaderPrimary />
+      <HeaderPrimary backHander={props.backHander} />
 
       <div className="site-layout-content">
         {props.children}

@@ -141,9 +141,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 36px;
-    margin-bottom: 30px;
     border: 0;
     background: none;
+    position: relative;
+    bottom: 1px;
+    margin-left: 10px;
   }
 }
 

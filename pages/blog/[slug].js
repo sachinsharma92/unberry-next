@@ -75,11 +75,8 @@ const BlogDetail = ({ heading, bannerImage }) => {
 				<meta name="twitter:image" content={bannerImage} />
 			</Head>
 
-			<LayoutPrimary className={`blog-detail-section ${headerColor}`}>
+			<LayoutPrimary className={`blog-detail-section ${headerColor}`} backHander={() => router.back()}>
 				<div className="blog-layout">
-					<button className="back-btn" onClick={() => router.back()}>
-						<ImageCustom src="back.svg" alt='image services' width="26" height="26" /> GO BACK
-					</button>
 					<div className="blog-header">
 						<h2 className="title2">{data?.heading}</h2>
 					</div>

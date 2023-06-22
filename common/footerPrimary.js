@@ -22,8 +22,8 @@ export default function FooterPrimary(props) {
             <a href="https://www.linkedin.com/company/unberry/" rel="noreferrer" className='icon-link' target="_blank">
               <ImageCustom className='icon' alt="social icons" src="linkedin.svg" width="18" height="17" />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=9891127771" rel="noreferrer" className='icon-link' target="_blank">
-              <ImageCustom className='icon' src="whatsapp.svg" alt="social icons" width="22" height="22" />
+            <a href="mailto:contact@unberry.com" rel="noreferrer" className='icon-link' target="_blank">
+              <ImageCustom className='icon img-white' src="mail.png" alt="social icons" width="22" height="22" />
             </a>
             <a href="https://twitter.com/UnberryHQ" target="_blank" rel="noreferrer" className='icon-link'>
               <ImageCustom className='icon img-white' src="twitter.svg" alt="social icons" width="12" height="16" />
