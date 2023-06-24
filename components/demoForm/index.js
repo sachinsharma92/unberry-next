@@ -92,7 +92,7 @@ export default function DemoForm(props) {
     <section className='contact-section' id={props.id}>
       <Link href="/">
         <a className={`logo-black`}>
-          <ImageCustom src="logo-black.svg" width="124" height="34" alt="logo" />
+          <ImageCustom src="logo-black.svg" width="124" height="34" alt="Unberry Talent Intelligence Platform" />
         </a>
       </Link>
       <h3 className="title3">Take the guesswork out...</h3>
@@ -186,7 +186,7 @@ export default function DemoForm(props) {
           htmlType="submit"
           disabled={disabledSave}
         >
-          BOOK DEMO
+          Request a Demo
         </Button>
       </Form>
 

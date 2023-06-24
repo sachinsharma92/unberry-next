@@ -54,7 +54,7 @@ export default function InsightSection(props) {
           <div className={styles.grayBoxSection}>
             <div className={styles.grayBox}>
               <div className={styles.imgItemBox}>
-                <ImageCustom src="icon1.svg" alt='image services' layout="fill" />
+                <ImageCustom src="icon1.svg" alt='Great Candidate Feedback' layout="fill" />
               </div>
               <div className={styles.grayContent}>
                 <h4 className={styles.title4}>
@@ -68,7 +68,7 @@ export default function InsightSection(props) {
             </div>
             <div className={styles.grayBox}>
               <div className={styles.imgItemBox}>
-                <ImageCustom src="icon2.svg" alt='image services' layout="fill" />
+                <ImageCustom src="icon2.svg" alt='High Quality of Hire' layout="fill" />
               </div>
               <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Improve the quality of hire</h4>
@@ -80,7 +80,7 @@ export default function InsightSection(props) {
             </div>
             <div className={styles.grayBox}>
               <div className={styles.imgItemBox}>
-                <ImageCustom src="icon3.svg" alt='image services' layout="fill" />
+                <ImageCustom src="icon3.svg" alt='Improve Recruitment Metrics' layout="fill" />
               </div>
               <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Find the hidden gems</h4>
@@ -92,7 +92,7 @@ export default function InsightSection(props) {
             </div>
             <div className={styles.grayBox}>
               <div className={styles.imgItemBox}>
-                <ImageCustom src="icon4.svg" alt='image services' layout="fill" />
+                <ImageCustom src="icon4.svg" alt='Faster Filling of Open Positions' layout="fill" />
               </div>
               <div className={styles.grayContent}>
                 <h4 className={styles.title4}>Hire faster and efficiently</h4>
@@ -128,7 +128,7 @@ export default function InsightSection(props) {
 
           {/* curve Line Section */}
           <div className={styles.curveLineSection}>
-            <ImageCustom src="dotted-curve-line.svg" alt='image services' layout="fill" />
+            <ImageCustom src="dotted-curve-line.svg" alt='Campus Hiring' layout="fill" />
           </div>
 
           {/* For Mobile */}

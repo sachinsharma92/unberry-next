@@ -32,7 +32,7 @@ export default function SubscribeCard(props) {
       <div className='subscribe-card'>
         <div className='content-sec'>
           <div className='icon-box'>
-            <ImageCustom className='icon-img' alt="social icons" src="envelope-color.svg" width="60" height="60" />
+            <ImageCustom className='icon-img' alt="Contact Unberry on Email" src="envelope-color.svg" width="60" height="60" />
           </div>
           <div>
             <h4 className="title4">Subscribe to our newsletter</h4>

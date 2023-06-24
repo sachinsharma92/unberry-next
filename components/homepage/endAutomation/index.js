@@ -36,7 +36,7 @@ export default function EndAutomation() {
                 <div className='head-wrap'>
                   <h2 className="heading">Advanced Proctoring</h2>
                   <div className="icon-plus">
-                    <ImageCustom src="plus.svg" alt='image services' width="34" height="34" />
+                    <ImageCustom src="plus.svg" alt='Unberry Features - Know More' width="34" height="34" />
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export default function EndAutomation() {
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="switching.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="switching.svg" alt='Unberry Autoproctoring No Cheating No Tab Switch' width="30" height="30" className={styles.imgIcon} />
                           Disable Tab Switching
                         </div>
                       </td>
@@ -63,13 +63,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="copy-paste.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="copy-paste.svg" alt='Unberry Autoproctoring No Cheating No Copy Paste' width="30" height="30" className={styles.imgIcon} />
                           Disable Copy Paste
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="prohibit.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="prohibit.svg" alt='Unberry Autoproctoring No Cheating No Plagiarism' width="30" height="30" className={styles.imgIcon} />
                           Curb Plagiarism
                         </div>
                       </td>
@@ -102,13 +102,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="cursor-click.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="cursor-click.svg" alt='Unberry Automated Hiring Assessments' width="30" height="30" className={styles.imgIcon} />
                           One click assessment launch
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="clock-countdown.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="clock-countdown.svg" alt='Unberry Real Time Hiring Assessments' width="30" height="30" className={styles.imgIcon} />
                           Real-time Status
                         </div>
                       </td>
@@ -116,13 +116,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="chart.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="chart.svg" alt='Unberry Talent Analytics' width="30" height="30" className={styles.imgIcon} />
                           Automated Instant Reports
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="repeat.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="repeat.svg" alt='Unberry Recruitment Dashboard' width="30" height="30" className={styles.imgIcon} />
                           Unlimited Recruiter Desks
                         </div>
                       </td>
@@ -142,7 +142,7 @@ export default function EndAutomation() {
                 <div className='head-wrap'>
                   <h2 className="heading">Candidate Communication</h2>
                   <div className="icon-plus">
-                    <ImageCustom src="plus.svg" alt='image services' width="34" height="34" />
+                    <ImageCustom src="plus.svg" alt='Unberry Features - Know More' width="34" height="34" />
                   </div>
                 </div>
               </div>
@@ -155,13 +155,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="envelope.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="envelope.svg" alt='Unberry Candidate Messaging' width="30" height="30" className={styles.imgIcon} />
                           Email & Messages
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="note.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="note.svg" alt='Unberry Test Reminders' width="30" height="30" className={styles.imgIcon} />
                           Automated Reminders
                         </div>
                       </td>
@@ -169,13 +169,13 @@ export default function EndAutomation() {
                     <tr>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="device.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="device.svg" alt='Unberry Mobile Remote Hiring' width="30" height="30" className={styles.imgIcon} />
                           Mobile-friendly
                         </div>
                       </td>
                       <td>
                         <div className={styles.listItem}>
-                          <ImageCustom src="chats.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
+                          <ImageCustom src="chats.svg" alt='Unberry Hybrid Hiring' width="30" height="30" className={styles.imgIcon} />
                           Dedicated Chat Support
                         </div>
                       </td>

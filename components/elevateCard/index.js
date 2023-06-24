@@ -39,7 +39,7 @@ export default function ElevateCard(props) {
 
           {/* curve Line Section */}
           <div className={styles.curveLineSection}>
-            <ImageCustom src="dotted-curve-line.svg" alt='image services' layout="fill" />
+            <ImageCustom src="dotted-curve-line.svg" alt='Campus Hiring' layout="fill" />
           </div>
 
           {/* For Mobile */}
@@ -47,7 +47,7 @@ export default function ElevateCard(props) {
             <div className={styles.gridSection}>
               <div className={styles.box}>
                 <div className={styles.imgBox}>
-                  <ImageCustom src="binoculars.svg" alt='image services' layout="fill" />
+                  <ImageCustom src="binoculars.svg" alt='Campus Drive' layout="fill" />
                 </div>
                 <h4 className={styles.title4}>
                   Find high potential candidates
@@ -56,7 +56,7 @@ export default function ElevateCard(props) {
 
               <div className={styles.box}>
                 <div className={styles.imgBox}>
-                  <ImageCustom src="eye-closed.svg" alt='image services' layout="fill" />
+                  <ImageCustom src="eye-closed.svg" alt='Campus Recruitment' layout="fill" />
                 </div>
                 <h4 className={styles.title4}>
                   Increase your employer branding
@@ -65,7 +65,7 @@ export default function ElevateCard(props) {
 
               <div className={styles.box}>
                 <div className={styles.imgBox}>
-                  <ImageCustom src="trend-up.svg" alt='image services' layout="fill" />
+                  <ImageCustom src="trend-up.svg" alt='Fresher Hiring' layout="fill" />
                 </div>
                 <h4 className={styles.title4}>
                   Reach untapped talent pools
@@ -74,7 +74,7 @@ export default function ElevateCard(props) {
 
               <div className={styles.box}>
                 <div className={styles.imgBox}>
-                  <ImageCustom src="magnet.svg" alt='image services' layout="fill" />
+                  <ImageCustom src="magnet.svg" alt='Fresher Campus Drive' layout="fill" />
                 </div>
                 <h4 className={styles.title4}>
                   Attract & hire diverse talent

@@ -48,7 +48,7 @@ export default function BetterTalent() {
 
         <div className={styles.buttonSection}>
           <button className={styles.buttonStyle} onClick={modalToggle}>
-            <ImageCustom src="button.svg" alt="image services" layout="fill" />
+            <ImageCustom src="button.svg" alt="Unberry - Know More in a Detailed Video " layout="fill" />
           </button>
         </div>
 

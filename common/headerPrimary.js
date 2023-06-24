@@ -15,11 +15,11 @@ export default function HeaderPrimary(props) {
         <div className='logo-sec'>
           <Link href="/">
             <a className='logo-black'>
-              <ImageCustom src="logo-black.svg" width="124" height="34" alt="logo" />
+              <ImageCustom src="logo-black.svg" width="124" height="34" alt="Unberry Talent Intelligence Platform" />
             </a>
           </Link>
           {props.backHander && <button className="back-btn" onClick={props.backHander}>
-            <ImageCustom src="back.svg" alt='image services' width="24" height="24" />
+            <ImageCustom src="back.svg" alt='Unberry - Know More in a Detailed Video ' width="24" height="24" />
           </button>}
         </div>
 

@@ -20,7 +20,7 @@ export default function AdvancedTechnologieSection(props) {
               <th></th>
               <th className={styles.unberrySec}>
                 <div className={styles.iconHeadBox}>
-                  <ImageCustom src="logo-black.svg" width="94" height="30" alt="logo" />
+                  <ImageCustom src="logo-black.svg" width="94" height="30" alt="Unberry Talent Intelligence Platform" />
                 </div>
               </th>
               <th>
