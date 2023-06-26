@@ -30,6 +30,7 @@ export default function BookDemoScreen() {
 
             <div className={styles.headSection}>
               <h2 className={styles.title2}>Make better talent decisions with unberry</h2>
+              <p className={styles.description}>Leverage generative AI, game tech, and data science to create a comprehensive candidate footprint in 30-45 minutes across skills, communication and personality.</p>
               <p className={styles.description}>Transform the way you identify, hire and develop talent. Switch to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
             </div>
           </div>
@@ -65,7 +66,7 @@ export default function BookDemoScreen() {
         <div className={styles.formSection}>
           <DemoForm id="bookDemo" />
         </div>
-      </div>
+      </div >
     </>
   )
 }
