@@ -66,7 +66,7 @@ export default function BookDemoScreen() {
         <div className={styles.formSection}>
           <DemoForm id="bookDemo" />
         </div>
-      </div >
+      </div>
     </>
   )
 }

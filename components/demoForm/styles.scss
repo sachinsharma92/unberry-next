@@ -172,12 +172,13 @@
     justify-content: center;
     background: #ac95cf;
     border-radius: 57px;
-    margin-top: 50px;
+    margin: 50px auto 0;
     height: 57px;
     font-size: 18px;
-    width: 100%;
+    min-width:250px;
     font-weight: 500;
     line-height: 23px;
+    padding-bottom: 10px;
 
     @include mobile {
       width: 100%;

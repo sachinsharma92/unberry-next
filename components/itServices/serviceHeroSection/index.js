@@ -3,52 +3,33 @@ import lottie from "lottie-web";
 import React, { useEffect } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
 
-import behavior from "../../../assets/json/behavior-personality.json";
-import cognition from "../../../assets/json/cognition-intelligence.json";
-import communication from "../../../assets/json/communication-skills.json";
-import jobKnowledge from "../../../assets/json/job-knowledge.json";
+import decisionMaking from "../../../assets/json/decision-making.json";
+import newGeneration from "../../../assets/json/new-generation.json";
+import rolesWorkplaces from "../../../assets/json/roles-workplaces.json";
+import sameTalentPool from "../../../assets/json/same-talent-pool.json";
 
 
 // Styles here
 import styles from './styles.module.scss';
-import Image from "next/image";
-import ImageCustom from "../../../common/ImageCustom";
 
 export default function ServiceHeroSection(props) {
 
   useEffect(() => {
     lottie.loadAnimation({
-      container: document.querySelector("#behavior"),
-      animationData: behavior,
+      container: document.querySelector("#rolesWorkplaces"),
+      animationData: rolesWorkplaces,
     });
     lottie.loadAnimation({
-      container: document.querySelector("#cognition"),
-      animationData: cognition,
+      container: document.querySelector("#decisionMaking"),
+      animationData: decisionMaking,
     });
     lottie.loadAnimation({
-      container: document.querySelector("#communication"),
-      animationData: communication,
+      container: document.querySelector("#sameTalentPool"),
+      animationData: sameTalentPool,
     });
     lottie.loadAnimation({
-      container: document.querySelector("#jobKnowledge"),
-      animationData: jobKnowledge,
-    });
-
-    lottie.loadAnimation({
-      container: document.querySelector("#behavior1"),
-      animationData: behavior,
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#cognition2"),
-      animationData: cognition,
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#communication3"),
-      animationData: communication,
-    });
-    lottie.loadAnimation({
-      container: document.querySelector("#jobKnowledge4"),
-      animationData: jobKnowledge,
+      container: document.querySelector("#newGeneration"),
+      animationData: newGeneration,
     });
   }, []);
 
@@ -86,8 +67,8 @@ export default function ServiceHeroSection(props) {
 
         <div className={styles.urgGridStyle}>
           <div className={styles.urgGridItem}>
-            <div className={styles.imgBox}>
-              <ImageCustom src="urge1.svg" alt="" layout="fill" />
+            <div className={`${styles.jsonItemBox}`}>
+              <div className={styles.jsonItem} id="rolesWorkplaces" />
             </div>
             <div>
               <h4 className={styles.title}>Roles & workplaces have evolved </h4>
@@ -96,8 +77,8 @@ export default function ServiceHeroSection(props) {
           </div>
 
           <div className={styles.urgGridItem}>
-            <div className={styles.imgBox}>
-              <ImageCustom src="urge2.svg" alt="" layout="fill" />
+            <div className={`${styles.jsonItemBox}`}>
+              <div className={styles.jsonItem} id="decisionMaking" />
             </div>
             <div>
               <h4 className={styles.title}>Decision making today is highly subjective</h4>
@@ -106,8 +87,8 @@ export default function ServiceHeroSection(props) {
           </div>
 
           <div className={styles.urgGridItem}>
-            <div className={styles.imgBox}>
-              <ImageCustom src="urge3.svg" alt="" layout="fill" />
+            <div className={`${styles.jsonItemBox}`}>
+              <div className={styles.jsonItem} id="sameTalentPool" />
             </div>
             <div>
               <h4 className={styles.title}>We are all competing for the same talent pools</h4>
@@ -116,8 +97,8 @@ export default function ServiceHeroSection(props) {
           </div>
 
           <div className={styles.urgGridItem}>
-            <div className={styles.imgBox}>
-              <ImageCustom src="urge4.svg" alt="" layout="fill" />
+            <div className={`${styles.jsonItemBox}`}>
+              <div className={styles.jsonItem} id="newGeneration" />
             </div>
             <div>
               <h4 className={styles.title}>We’re dealing with a new generation of employees </h4>
