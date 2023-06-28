@@ -4,8 +4,7 @@
 
 // auto-section
 .advancedTechnologieStyle {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 50px $p-padding-inline 100px;
   position: relative;
 
   &::before {
@@ -60,7 +59,6 @@
   .tableSection {
     background: #f4f4f4;
     border-radius: 40px;
-    max-width: 1127px;
     margin: 66px auto 0;
 
     @include mobile {
