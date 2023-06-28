@@ -1,4 +1,5 @@
 import { Layout } from 'antd';
+import dynamic from 'next/dynamic';
 import React from 'react';
 
 const BookADemo = dynamic(() => import('../components/homepage/bookADemo'))
