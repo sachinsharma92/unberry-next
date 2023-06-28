@@ -2,12 +2,14 @@
 import lottie from "lottie-web";
 import React, { useEffect } from 'react';
 import ButtonPrimary from '../../../common/buttonPrimary';
-
+import behavior from "../../../assets/json/behavior-personality.json";
+import cognition from "../../../assets/json/cognition-intelligence.json";
+import communication from "../../../assets/json/communication-skills.json";
 import decisionMaking from "../../../assets/json/decision-making.json";
+import jobKnowledge from "../../../assets/json/job-knowledge.json";
 import newGeneration from "../../../assets/json/new-generation.json";
 import rolesWorkplaces from "../../../assets/json/roles-workplaces.json";
 import sameTalentPool from "../../../assets/json/same-talent-pool.json";
-
 
 // Styles here
 import styles from './styles.module.scss';
@@ -15,6 +17,22 @@ import styles from './styles.module.scss';
 export default function ServiceHeroSection(props) {
 
   useEffect(() => {
+    lottie.loadAnimation({
+      container: document.querySelector("#behavior"),
+      animationData: behavior,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#cognition"),
+      animationData: cognition,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#communication"),
+      animationData: communication,
+    });
+    lottie.loadAnimation({
+      container: document.querySelector("#jobKnowledge"),
+      animationData: jobKnowledge,
+    });
     lottie.loadAnimation({
       container: document.querySelector("#rolesWorkplaces"),
       animationData: rolesWorkplaces,
@@ -117,7 +135,7 @@ export default function ServiceHeroSection(props) {
                   <div className={styles.jsonItem} id="jobKnowledge" />
                 </div>
                 <div>
-                  <h4 className={styles.title4}>Coding Skills</h4>
+                  <h4 className={styles.title4}>Technical Skills</h4>
                   <p className={styles.jsonDes}>Measure domain specific knowledge through coding simulations & skill assessments covering 500+ technologies</p>
                 </div>
               </div>

@@ -50,7 +50,7 @@ export default function MostModernSection(props) {
               Most modern & holistic assessments
             </h1>
             <p className={`${styles.description} description`}>
-              A suite of multi-dimensional, psychometrically-rigorous, gamified assessments that demand exploration and hands-on problem solving from the players to progress.
+              A smart combination of games & behavioural science, combined with skill assessments that helps you surface more predictive and actionable people insights around job-relevant traits, in just a few minutes.
             </p>
             <ButtonPrimary className={styles.btnStyle} href="/book-demo" title="BOOK DEMO" />
           </div>
