@@ -11,7 +11,6 @@ export default function ImageCustom(props) {
       width={props.width}
       className={`${props.className} lazyload`}
       quality={80}
-      priority
     />
   )
 }
