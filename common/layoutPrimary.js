@@ -1,8 +1,9 @@
 import { Layout } from 'antd';
 import React from 'react';
-import BookADemo from '../components/homepage/bookADemo';
-import FooterPrimary from './footerPrimary';
-import HeaderPrimary from './headerPrimary';
+
+const BookADemo = dynamic(() => import('../components/homepage/bookADemo'))
+const FooterPrimary = dynamic(() => import('./footerPrimary'))
+const HeaderPrimary = dynamic(() => import('./headerPrimary'))
 
 export default function LayoutPrimary(props) {
   return (
