@@ -35,7 +35,7 @@ export default function AdvancedTechnologieSection(props) {
               </th>
               <th>
                 <div className={styles.iconHeadBox}>
-                  <ImageCustom src="t-icon3.svg" alt="" height="60" width="70" />
+                  Other Coding <br /> Test Platforms
                 </div>
               </th>
             </tr>
