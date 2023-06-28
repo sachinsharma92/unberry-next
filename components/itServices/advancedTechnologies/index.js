@@ -45,7 +45,7 @@ export default function AdvancedTechnologieSection(props) {
                 <div className={styles.iconBox}>
                   <ImageCustom src="t-envelope.svg" alt="" layout="fill" />
                 </div>
-                Cognition tests
+                Wide Skill Assessment Repository
               </td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}>
                 <ImageCustom src="right.svg" alt="" height="20" width="20" />
@@ -59,7 +59,7 @@ export default function AdvancedTechnologieSection(props) {
                 <div className={styles.iconBox}>
                   <ImageCustom src="t-note.svg" alt="" layout="fill" />
                 </div>
-                Game based assessments, Immersive experiential caselets</td>
+                Real-time Coding Simulator</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><ImageCustom src="right.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
@@ -70,7 +70,7 @@ export default function AdvancedTechnologieSection(props) {
                 <div className={styles.iconBox}>
                   <ImageCustom src="t-device.svg" alt="" layout="fill" />
                 </div>
-                AI based Writing, Speech assessment</td>
+                Game Based Assessments / Cognition Checks</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><ImageCustom src="right.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
@@ -81,7 +81,7 @@ export default function AdvancedTechnologieSection(props) {
                 <div className={styles.iconBox}>
                   <ImageCustom src="t-chats.svg" alt="" layout="fill" />
                 </div>
-                Recorded videos; rate and evaluate</td>
+                AI Based Spoken Communication Test</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><ImageCustom src="right.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
@@ -92,7 +92,7 @@ export default function AdvancedTechnologieSection(props) {
                 <div className={styles.iconBox}>
                   <ImageCustom src="t-device.svg" alt="" layout="fill" />
                 </div>
-                AI based Live Chat Simulators</td>
+                AI Based Live Chat Simulations</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><ImageCustom src="right.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
@@ -103,7 +103,7 @@ export default function AdvancedTechnologieSection(props) {
                 <div className={styles.iconBox}>
                   <ImageCustom src="t-chats.svg" alt="" layout="fill" />
                 </div>
-                Ready APIs and SDK for integrations</td>
+                Ready APIs and SDK for Integrations</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><ImageCustom src="right.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>

@@ -21,7 +21,7 @@ export default function MostModernSection(props) {
       description: 'With the largest skills library in the world covering over 100+ tech roles, around 600 odd skills and 2500+ concepts, our skill assessments can be customised for different levels - beginners, intermediate & advanced.',
       videoUrl: 'https://assets.unberry.com/media/service2.mp4',
       badgeList: [
-        'Technology', 'Sales', 'Finance', 'Marketing', 'Customer Success', 'Business Management', "+500 Skills",
+        'Web Technologies', 'Backend Systems', 'Mobile Stacks', 'Machine Learning', 'Data Science', 'DevOps', "Artificial Intelligence", "+ Much More"
       ]
     },
     {
@@ -47,7 +47,7 @@ export default function MostModernSection(props) {
         <div className='container-width'>
           <div className={styles.contentSection}>
             <h1 className={`${styles.title1}`}>
-              Most modern & holistic assessments
+              The most modern & holistic assessment solution
             </h1>
             <p className={`${styles.description} description`}>
               A smart combination of games & behavioural science, combined with skill assessments that helps you surface more predictive and actionable people insights around job-relevant traits, in just a few minutes.
