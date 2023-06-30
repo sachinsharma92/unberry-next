@@ -25,22 +25,17 @@ export default function AdvancedTechnologieSection(props) {
               </th>
               <th>
                 <div className={styles.iconHeadBox}>
-                  Hacker Earth
-                </div>
-              </th>
-              <th>
-                <div className={styles.iconHeadBox}>
-                  SHL
-                </div>
-              </th>
-              <th>
-                <div className={styles.iconHeadBox}>
                   <ImageCustom src="t-icon1.svg" alt="" height="80" width="70" />
                 </div>
               </th>
               <th>
                 <div className={styles.iconHeadBox}>
                   <ImageCustom src="t-icon2.svg" alt="" height="70" width="51" />
+                </div>
+              </th>
+              <th>
+                <div className={styles.iconHeadBox}>
+                  <ImageCustom src="shl.svg" alt="" height="80" width="70" />
                 </div>
               </th>
               <th>
@@ -64,7 +59,7 @@ export default function AdvancedTechnologieSection(props) {
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
-              <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
+
             </tr>
             <tr>
               <td className={styles.tdFirst}>
@@ -73,7 +68,6 @@ export default function AdvancedTechnologieSection(props) {
                 </div>
                 Real-time Coding Simulator</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><ImageCustom src="right.svg" alt="" height="20" width="20" /></td>
-              <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
@@ -90,7 +84,6 @@ export default function AdvancedTechnologieSection(props) {
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
-              <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
             </tr>
             <tr>
               <td className={styles.tdFirst}>
@@ -99,7 +92,6 @@ export default function AdvancedTechnologieSection(props) {
                 </div>
                 AI Based Spoken Communication Test</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><ImageCustom src="right.svg" alt="" height="20" width="20" /></td>
-              <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
@@ -116,7 +108,6 @@ export default function AdvancedTechnologieSection(props) {
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
-              <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
             </tr>
             <tr>
               <td className={styles.tdFirst}>
@@ -125,7 +116,6 @@ export default function AdvancedTechnologieSection(props) {
                 </div>
                 Ready APIs and SDK for Integrations</td>
               <td className={`${styles.textCenter} ${styles.unberrySec}`}><ImageCustom src="right.svg" alt="" height="20" width="20" /></td>
-              <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
               <td className={styles.textCenter}><ImageCustom src="wrong.svg" alt="" height="20" width="20" /></td>
