@@ -95,7 +95,7 @@ export default function CommunicationsAutomationSection() {
       }
     }
 
-  }, [])
+  }, [isSmallScreen])
 
   const serviceCardList = [
     {

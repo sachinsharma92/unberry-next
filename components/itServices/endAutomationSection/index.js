@@ -95,7 +95,7 @@ export default function EndAutomationSection() {
       }
     }
 
-  }, [])
+  }, [isSmallScreen])
 
 
   return (

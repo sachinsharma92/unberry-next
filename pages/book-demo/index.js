@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
-import React from 'react';
-import DemoForm from '../../components/demoForm';
-import SeoHead from '../../components/seoHead';
-import ImageCustom from '../../common/ImageCustom';
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import React from "react";
+
+const DemoForm = dynamic(() => import("../../components/demoForm"));
+const SeoHead = dynamic(() => import("../../components/seoHead"));
+const ImageCustom = dynamic(() => import("../../common/ImageCustom"));
 
 // Styles here
-import styles from './styles.module.scss';
-
+import styles from "./styles.module.scss";
 
 export default function BookDemoScreen() {
-
   return (
     <>
       <SeoHead
@@ -24,39 +24,70 @@ export default function BookDemoScreen() {
           <div>
             <Link href="/">
               <a className={`logo-black ${styles.logoBlack}`}>
-                <ImageCustom src="logo-black.svg" width="124" height="34" alt="Unberry Talent Intelligence Platform" />
+                <ImageCustom
+                  src="logo-black.svg"
+                  width="124"
+                  height="34"
+                  alt="Unberry Talent Intelligence Platform"
+                />
               </a>
             </Link>
 
             <div className={styles.headSection}>
-              <h2 className={styles.title2}>Make better talent decisions with unberry</h2>
-              <p className={styles.description}>Leverage generative AI, game tech, and data science to create a comprehensive candidate footprint in 30-45 minutes across skills, communication and personality.</p>
-              <p className={styles.description}>Transform the way you identify, hire and develop talent. Switch to a smarter, unbiased, tech-driven and experiential way of hiring.</p>
+              <h2 className={styles.title2}>
+                Make better talent decisions with unberry
+              </h2>
+              <p className={styles.description}>
+                Leverage generative AI, game tech, and data science to create a
+                comprehensive candidate footprint in 30-45 minutes across
+                skills, communication and personality.
+              </p>
+              <p className={styles.description}>
+                Transform the way you identify, hire and develop talent. Switch
+                to a smarter, unbiased, tech-driven and experiential way of
+                hiring.
+              </p>
             </div>
           </div>
 
           <ul className={styles.listStyle}>
             <li className={styles.listItem}>
               <div className={styles.imgBox}>
-                <ImageCustom src="icon1.svg" alt='Great Candidate Feedback' layout="fill" />
+                <ImageCustom
+                  src="icon1.svg"
+                  alt="Great Candidate Feedback"
+                  layout="fill"
+                />
               </div>
               Elevate the candidate experience
             </li>
             <li className={styles.listItem}>
               <div className={styles.imgBox}>
-                <ImageCustom src="icon2.svg" alt='High Quality of Hire' layout="fill" />
+                <ImageCustom
+                  src="icon2.svg"
+                  alt="High Quality of Hire"
+                  layout="fill"
+                />
               </div>
               Improve the quality of hire
             </li>
             <li className={styles.listItem}>
               <div className={styles.imgBox}>
-                <ImageCustom src="icon3.svg" alt='Improve Recruitment Metrics' layout="fill" />
+                <ImageCustom
+                  src="icon3.svg"
+                  alt="Improve Recruitment Metrics"
+                  layout="fill"
+                />
               </div>
               Find the hidden gems
             </li>
             <li className={styles.listItem}>
               <div className={styles.imgBox}>
-                <ImageCustom src="icon4.svg" alt='Faster Filling of Open Positions' layout="fill" />
+                <ImageCustom
+                  src="icon4.svg"
+                  alt="Faster Filling of Open Positions"
+                  layout="fill"
+                />
               </div>
               Hire faster and efficiently
             </li>
@@ -68,5 +99,5 @@ export default function BookDemoScreen() {
         </div>
       </div>
     </>
-  )
+  );
 }

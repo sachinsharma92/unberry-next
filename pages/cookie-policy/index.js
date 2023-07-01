@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { Footer } from 'antd/lib/layout/layout';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import React from 'react';
-import ImageCustom from '../../common/ImageCustom';
-import SeoHead from '../../components/seoHead';
+
+const ImageCustom = dynamic(() => import('../../common/ImageCustom'));
+const SeoHead = dynamic(() => import('../../components/seoHead'));
 
 // Styles here
 import styles from "./styles.module.scss";

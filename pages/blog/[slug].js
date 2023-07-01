@@ -1,16 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import axios from "axios";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
-import ImageCustom from "../../common/ImageCustom";
-import LayoutPrimary from "../../common/layoutPrimary";
-import SubscribeCard from "../../common/subscribe";
-import UpNextCard from "../../components/blogs/upNextCard";
-import { Mixpanel } from "../../services/mixpanel";
+
+const Mixpanel = dynamic(() => import('../../services/mixpanel'));
+const LayoutPrimary = dynamic(() => import('../../common/layoutPrimary'));
+const SubscribeCard = dynamic(() => import('../../common/subscribe'))
+const UpNextCard = dynamic(() => import('../../components/blogs/upNextCard'))
 
 // Images
 
@@ -38,7 +39,6 @@ const BlogDetail = ({ heading, bannerImage }) => {
 		axios
 			.get(`https://cms-api.unberry.com/api/v1/article/`, { params })
 			.then((res) => {
-				console.log(res?.data?.data[0], "hhhhsahshshassah");
 				setData(res?.data?.data[0]);
 				Mixpanel.track(`Blog Opened: ${res?.data?.data[0]?.heading}`);
 				window.dataLayer.push({

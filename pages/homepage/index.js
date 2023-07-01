@@ -1,17 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
-import LayoutPrimary from '../../common/layoutPrimary';
-import SubscribeCard from '../../common/subscribe';
-import BetterTalent from '../../components/homepage/betterTalent';
-import BlogSection from '../../components/homepage/blogSection';
-import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
-import EndAutomation from '../../components/homepage/endAutomation';
-import HeroSection from '../../components/homepage/heroSection';
-import ServeCustomersAcross from '../../components/homepage/serveCustomersAcross';
-import ServiceSection from '../../components/homepage/serviceSection';
-import WinningChoice from '../../components/winningChoice';
-import ElevateCard from '../../components/elevateCard';
+
+const LayoutPrimary = dynamic(() => import('../../common/layoutPrimary'));
+const SubscribeCard = dynamic(() => import('../../common/subscribe'));
+const ElevateCard = dynamic(() => import('../../components/elevateCard'));
+const BetterTalent = dynamic(() => import('../../components/homepage/betterTalent'));
+const BlogSection = dynamic(() => import('../../components/homepage/blogSection'));
+const CandidatesAbsolutely = dynamic(() => import('../../components/homepage/candidatesAbsolutely'));
+const EndAutomation = dynamic(() => import('../../components/homepage/endAutomation'));
+const HeroSection = dynamic(() => import('../../components/homepage/heroSection'));
+const ServeCustomersAcross = dynamic(() => import('../../components/homepage/serveCustomersAcross'));
+const ServiceSection = dynamic(() => import('../../components/homepage/serviceSection'));
+const WinningChoice = dynamic(() => import('../../components/winningChoice'));
 
 // Styles here
 import styles from './styles.module.scss';

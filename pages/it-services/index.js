@@ -1,18 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
+import dynamic from "next/dynamic";
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
-import LayoutPrimary from '../../common/layoutPrimary';
-import SubscribeCard from '../../common/subscribe';
-import BlogSection from '../../components/homepage/blogSection';
-import CandidatesAbsolutely from '../../components/homepage/candidatesAbsolutely';
+
+const LayoutPrimary = dynamic(() => import('../../common/layoutPrimary'));
+const SubscribeCard = dynamic(() => import('../../common/subscribe'));
+const BlogSection = dynamic(() => import('../../components/homepage/blogSection'));
+const CandidatesAbsolutely = dynamic(() => import('../../components/homepage/candidatesAbsolutely'));
+const InsightSection = dynamic(() => import('../../components/itServices/InsightSection'));
+const AdvancedTechnologieSection = dynamic(() => import('../../components/itServices/advancedTechnologies'));
+const EndAutomationSection = dynamic(() => import('../../components/itServices/endAutomationSection'));
+const MostModernSection = dynamic(() => import('../../components/itServices/mostModernSection'));
+const ServiceHeroSection = dynamic(() => import('../../components/itServices/serviceHeroSection'));
+const TechSkillsSection = dynamic(() => import('../../components/itServices/techSkills'));
 
 // Styles here
-import InsightSection from '../../components/itServices/InsightSection';
-import AdvancedTechnologieSection from '../../components/itServices/advancedTechnologies';
-import EndAutomationSection from '../../components/itServices/endAutomationSection';
-import MostModernSection from '../../components/itServices/mostModernSection';
-import ServiceHeroSection from '../../components/itServices/serviceHeroSection';
-import TechSkillsSection from '../../components/itServices/techSkills';
+
 import styles from './styles.module.scss';
 
 export default function ItServicesScreen(props) {

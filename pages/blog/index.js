@@ -1,11 +1,13 @@
 import axios from 'axios';
 import { gsap } from 'gsap';
+import dynamic from "next/dynamic";
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import LayoutPrimary from '../../common/layoutPrimary';
 import { Mixpanel } from '../../services/mixpanel';
+
+const LayoutPrimary = dynamic(() => import('../../common/layoutPrimary'))
 
 export default function BlogScreen() {
   const [blogs, setBlogs] = useState([])

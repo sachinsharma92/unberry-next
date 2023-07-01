@@ -1,35 +1,55 @@
 /* eslint-disable @next/next/no-img-element */
-import Head from 'next/head';
-import React, { useEffect, useState } from 'react';
-import LayoutPrimary from '../../common/layoutPrimary';
-import SubscribeCard from '../../common/subscribe';
-import CommunicationHeroSection from '../../components/communications/communicationHeroSection';
-import CommunicationService from '../../components/communications/communicationService';
-import CommunicationsHolistically from '../../components/communications/communicationsHolistically';
-import CommunicationsAutomationSection from '../../components/communications/endAutomationSection';
-import InstantScoreSection from '../../components/communications/instantScore';
-import MostAdvancedAiTool from '../../components/communications/mostAdvancedAiTool';
-import SpokenCommunicationSection from '../../components/communications/spokenCommunication';
-import WrittenCommunicationSection from '../../components/communications/writtenCommunication';
-import ElevateCard from '../../components/elevateCard';
-import BlogSection from '../../components/homepage/blogSection';
-import WinningChoice from '../../components/winningChoice';
+import dynamic from "next/dynamic";
+import Head from "next/head";
+import React, { useEffect, useState } from "react";
+
+const LayoutPrimary = dynamic(() => import("../../common/layoutPrimary"));
+const SubscribeCard = dynamic(() => import("../../common/subscribe"));
+const CommunicationHeroSection = dynamic(() =>
+  import("../../components/communications/communicationHeroSection")
+);
+const CommunicationService = dynamic(() =>
+  import("../../components/communications/communicationService")
+);
+const CommunicationsHolistically = dynamic(() =>
+  import("../../components/communications/communicationsHolistically")
+);
+const CommunicationsAutomationSection = dynamic(() =>
+  import("../../components/communications/endAutomationSection")
+);
+const InstantScoreSection = dynamic(() =>
+  import("../../components/communications/instantScore")
+);
+const MostAdvancedAiTool = dynamic(() =>
+  import("../../components/communications/mostAdvancedAiTool")
+);
+const SpokenCommunicationSection = dynamic(() =>
+  import("../../components/communications/spokenCommunication")
+);
+const WrittenCommunicationSection = dynamic(() =>
+  import("../../components/communications/writtenCommunication")
+);
+const ElevateCard = dynamic(() => import("../../components/elevateCard"));
+const BlogSection = dynamic(() =>
+  import("../../components/homepage/blogSection")
+);
+const WinningChoice = dynamic(() => import("../../components/winningChoice"));
 
 // Styles here
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
 export default function CommunicationScreen(props) {
-  const [headerColor, setHeaderColor] = useState("white")
+  const [headerColor, setHeaderColor] = useState("white");
 
   // Menu Color change after scroll 360
   const listenScrollEvent = () => {
     window.scrollY > 20
       ? setHeaderColor("home-menu-white")
-      : setHeaderColor("")
-  }
+      : setHeaderColor("");
+  };
   useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent)
-  })
+    window.addEventListener("scroll", listenScrollEvent);
+  });
   return (
     <>
       <Head>
@@ -51,5 +71,5 @@ export default function CommunicationScreen(props) {
         <SubscribeCard />
       </LayoutPrimary>
     </>
-  )
+  );
 }
