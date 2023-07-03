@@ -11,12 +11,12 @@ export default function BookADemo() {
     <div className={styles.bookADemoStyle}>
       <div className='container-width'>
         <div className={styles.contentSection}>
-          <h1 className={`${styles.title1}`}>
+          <div className={`${styles.title1}`}>
             Take the <br className={styles.brStyle} /> guesswork out...
-          </h1>
-          <h2 className={`${styles.title2}`}>
+          </div>
+          <div className={`${styles.title2}`}>
             Book A Demo
-          </h2>
+          </div>
           <div className={styles.btnSection}>
             <p className={`${styles.description}`}>
               Transform the way you identify, hire and develop talent. Switch to a smarter, unbiased, tech-driven and experiential way of hiring.
