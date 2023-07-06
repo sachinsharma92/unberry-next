@@ -1,0 +1,87 @@
+// variables
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.blogDetailSection {
+  background: white;
+  min-height: 100vh;
+
+  @include mobile {
+    overflow-x: hidden;
+  }
+
+  .title2 {
+    font-size: 55px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    text-align: center;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  .blogLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    padding: 130px 0 110px;
+    background-color: #fbefe6;
+
+    @include mobile {
+      padding: 130px 20px 120px;
+      flex-direction: column;
+      width: auto;
+    }
+
+    .blogHeader {
+      display: flex;
+      align-items: center;
+      max-width: 70%;
+
+      @include mobile {
+        max-width: 100%;
+      }
+    }
+
+    .description {
+      padding: 80px 0px;
+      font-size: 16px;
+      margin: 0;
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .heroBannerImg {
+    height: 646px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 90%;
+    margin: -100px auto 0;
+    border-radius: 40px;
+    box-shadow: rgba($black, 0.1) 0px 1px 2px 0px;
+
+    @include mobile {
+      width: 90%;
+      height: 250px;
+      margin: -100px auto 0;
+      border-radius: 20px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

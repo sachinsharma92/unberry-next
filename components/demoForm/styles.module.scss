@@ -1,0 +1,64 @@
+// variables
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+// Section Contact
+.demoFormStyle {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    padding: 20px 20px 36px;
+  }
+
+  .logoBlackStyle {
+    margin-bottom: 50px;
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+
+    img {
+      filter: contrast(0) brightness(100);
+    }
+  }
+
+  .title3 {
+    color: $white;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    text-align: center;
+
+    @include mobile {
+      font-size: 35px;
+      line-height: 35px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      max-width: 80%;
+    }
+  }
+
+  .formStyle {
+    margin-top: 30px;
+    position: relative;
+
+    @include mobile {
+      padding-right: 0px;
+      margin-top: 10px;
+    }
+
+    .grid-form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

@@ -6,6 +6,9 @@ import ImageCustom from '../../common/ImageCustom';
 import { Mixpanel } from '../../services/mixpanel';
 import ThankModal from '../thankModal';
 
+// Styles here
+import styles from './styles.module.scss';
+
 const { Option } = Select;
 
 export default function DemoForm(props) {
@@ -89,19 +92,19 @@ export default function DemoForm(props) {
   }
 
   return (
-    <section className='contact-section' id={props.id}>
+    <section className={`${styles.demoFormStyle} demo-form-style`} id={props.id}>
       <Link href="/">
-        <a className={`logo-black`}>
+        <a className={`${logoBlackStyle}`}>
           <ImageCustom src="logo-black.svg" width="124" height="34" alt="Unberry Talent Intelligence Platform" />
         </a>
       </Link>
-      <h3 className="title3">Take the guesswork out...</h3>
+      <h3 className={styles.title3}>Take the guesswork out...</h3>
       <Form
         form={form}
         name="basic"
         autoComplete="off"
         layout="vertical"
-        className='form-style'
+        className={styles.formStyle}
         onFinish={bookADemo}
         preserve={false}
         ref={formRef}

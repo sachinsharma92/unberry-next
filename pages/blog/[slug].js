@@ -10,10 +10,12 @@ import remarkGfm from "remark-gfm";
 
 const Mixpanel = dynamic(() => import('../../services/mixpanel'));
 const LayoutPrimary = dynamic(() => import('../../common/layoutPrimary'));
-const SubscribeCard = dynamic(() => import('../../common/subscribe'))
-const UpNextCard = dynamic(() => import('../../components/blogs/upNextCard'))
+const SubscribeCard = dynamic(() => import('../../common/subscribe'));
+const UpNextCard = dynamic(() => import('../../components/blogs/upNextCard'));
 
-// Images
+// Styles here
+import styles from './styles.module.scss';
+
 
 const BlogDetail = ({ heading, bannerImage }) => {
 	const [headerColor, setHeaderColor] = useState("white")
@@ -75,13 +77,13 @@ const BlogDetail = ({ heading, bannerImage }) => {
 				<meta name="twitter:image" content={bannerImage} />
 			</Head>
 
-			<LayoutPrimary className={`blog-detail-section ${headerColor}`} backHander={() => router.back()}>
-				<div className="blog-layout">
-					<div className="blog-header">
-						<h2 className="title2">{data?.heading}</h2>
+			<LayoutPrimary className={`${styles.blogDetailSection} blog-detail-style ${headerColor}`} backHander={() => router.back()}>
+				<div className={styles.blogLayout}>
+					<div className={styles.blogHeader}>
+						<h2 className={styles.title2}>{data?.heading}</h2>
 					</div>
 				</div>
-				<div className="hero-banner-img">
+				<div className={styles.heroBannerImg}>
 					<img
 						className="img-blog"
 						src={data?.bannerImage}

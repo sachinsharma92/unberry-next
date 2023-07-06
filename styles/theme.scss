@@ -8,10 +8,7 @@
 @import "./xtras";
 @import "./fonts";
 
-@import "../pages/privacy-policy/privacy-policy.scss";
-@import "../pages/blog/blogDetails.scss";
 @import "../pages/blog/blog";
-@import "../components/demoForm/styles.scss";
 
 // custom css
 * {
@@ -272,51 +269,6 @@ p {
     }
   }
 }
-
-// .social-icon-styles {
-//   position: fixed;
-//   right: 0;
-//   top: 60vh;
-
-//   .social-sec {
-//     display: flex;
-//     align-items: center;
-//     flex-direction: column;
-//     gap: 5px 0;
-//     background: $colorCream;
-//     border-radius: 10px 0px 0px 10px;
-//     padding: 10px;
-//     box-shadow: 0 5px 32px rgba($black, 0.1);
-
-//     @include mobile {
-//       padding: 5px;
-//     }
-
-//     .icon-link {
-//       width: 40px;
-//       height: 40px;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       padding: 8px;
-//       transition: all 0.3s ease-in-out;
-
-//       &:hover {
-//         transform: scale(1.15);
-//       }
-
-//       @include mobile {
-//         padding: 5px;
-//         width: 30px;
-//         height: 30px;
-//       }
-
-//       .icon {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
 
 // Mobile Header
 .mobile-header {
@@ -1852,7 +1804,6 @@ HAMBURGER MENU
 .card-styles {
   margin: 50px auto 0;
   max-width: 1680px;
-  
 
   .cards {
     position: relative;
@@ -1935,10 +1886,8 @@ HAMBURGER MENU
   }
 }
 
-
 // Company Logos
 .company-logos {
-
   .marquee-container {
     gap: 0 70px;
   }
@@ -1957,5 +1906,264 @@ HAMBURGER MENU
     @include mobile {
       margin: 0 20px;
     }
+  }
+}
+
+// Section Contact
+.demo-form-style {
+  .ant-input {
+    border: none;
+    height: 53px;
+    background: rgb(25 25 25);
+    border-radius: 70px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: $white;
+    padding: 0 30px;
+    border: 1px solid transparent;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      box-shadow: none !important;
+    }
+  }
+
+  .ant-form-item-control-input .ant-select-selector {
+    height: 53px;
+    background: rgb(25 25 25);
+    border: none;
+    border-radius: 70px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: $white;
+    border: 1px solid transparent;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      box-shadow: none;
+      background: rgba(244, 244, 244, 0.1);
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+
+  ::placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+
+  :-ms-input-placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+
+  ::-ms-input-placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+
+  .ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ac95cf;
+    border-radius: 57px;
+    margin: 50px auto 0;
+    height: 57px;
+    font-size: 18px;
+    min-width: 250px;
+    font-weight: 500;
+    line-height: 23px;
+    padding-bottom: 10px;
+
+    @include mobile {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  .ant-input-status-error:not(.ant-input-disabled):not(
+      .ant-input-borderless
+    ).ant-input,
+  .ant-select-status-error.ant-select:not(.ant-select-disabled):not(
+      .ant-select-customize-input
+    )
+    .ant-select-selector {
+    background: rgba(244, 244, 244, 0.1);
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .ant-form-item-explain-error {
+    display: none;
+  }
+
+  .grid-style {
+    display: flex;
+  }
+
+  .ant-select-focused .ant-select-selector,
+  .ant-select-selector:focus,
+  .ant-select-selector:active,
+  .ant-select-open .ant-select-selector {
+    box-shadow: none !important;
+    background: rgba(244, 244, 244, 0.1);
+    border-color: rgba(244, 244, 244, 0.1) !important;
+  }
+
+  .ant-form-item {
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ant-select-arrow {
+    color: $white;
+    font-size: 17px;
+    right: 21px;
+
+    .anticon {
+      background: url("https://assets.unberry.com/media/images/arrow-down.svg");
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .checkbox-style {
+    .ant-form-item-control-input-content {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .ant-checkbox {
+      position: relative;
+      top: 6px;
+    }
+
+    .checkbox-text {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: $white;
+      opacity: 0.5;
+
+      a {
+        color: $white;
+        opacity: 1;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// markdown-style
+.markdown-style {
+  padding: 50px 0px;
+  margin: 0 auto;
+  width: 70%;
+
+  @include mobile {
+    width: 100%;
+    padding: 50px 20px 10px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 1.2 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.2 !important;
+    text-align: left !important;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: left !important;
+    color: rgba($black, 0.7);
+
+    span {
+      font-size: 18px !important;
+    }
+  }
+
+  a,
+  a span {
+    color: $theme-primary-new !important;
+  }
+
+  img {
+    @include mobile {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+}
+
+// blog-detail-style
+.blog-detail-style {
+
+  .header-primary {
+    background-color: #fbefe6;
+
+    @include mobile {
+      background-color: $white;
+    }
+  }
+
+  &.menu-white {
+    .header-primary {
+      background-color: $white;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: $black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    border: 0;
+    background: none;
+    position: relative;
+    bottom: 1px;
+    margin-left: 10px;
   }
 }

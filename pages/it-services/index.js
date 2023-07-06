@@ -15,7 +15,6 @@ const ServiceHeroSection = dynamic(() => import('../../components/itServices/ser
 const TechSkillsSection = dynamic(() => import('../../components/itServices/techSkills'));
 
 // Styles here
-
 import styles from './styles.module.scss';
 
 export default function ItServicesScreen(props) {
