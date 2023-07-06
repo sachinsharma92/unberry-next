@@ -72,9 +72,6 @@ export default function HeroSection(props) {
       imgUrl: 'h-logo2.svg', width: 140, height: 22
     },
     {
-      imgUrl: 'h-logo3.svg', width: 120, height: 30
-    },
-    {
       imgUrl: 'h-logo4.svg', width: 231, height: 43
     },
     {
@@ -94,9 +91,6 @@ export default function HeroSection(props) {
     },
     {
       imgUrl: 'h-logo2.svg', width: 140, height: 22
-    },
-    {
-      imgUrl: 'h-logo3.svg', width: 120, height: 30
     },
     {
       imgUrl: 'h-logo4.svg', width: 231, height: 43
