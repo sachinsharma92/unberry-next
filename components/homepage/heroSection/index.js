@@ -69,6 +69,9 @@ export default function HeroSection(props) {
       imgUrl: 'h-logo1.svg', width: 172, height: 35
     },
     {
+      imgUrl: 'h-logo6.svg', width: 185, height: 33
+    },
+    {
       imgUrl: 'h-logo2.svg', width: 140, height: 22
     },
     {
@@ -76,9 +79,6 @@ export default function HeroSection(props) {
     },
     {
       imgUrl: 'h-logo5.svg', width: 96, height: 39
-    },
-    {
-      imgUrl: 'h-logo6.svg', width: 185, height: 33
     },
     {
       imgUrl: 'h-logo7.svg', width: 208, height: 25
@@ -90,6 +90,9 @@ export default function HeroSection(props) {
       imgUrl: 'h-logo1.svg', width: 172, height: 35
     },
     {
+      imgUrl: 'h-logo6.svg', width: 185, height: 33
+    },
+    {
       imgUrl: 'h-logo2.svg', width: 140, height: 22
     },
     {
@@ -97,9 +100,6 @@ export default function HeroSection(props) {
     },
     {
       imgUrl: 'h-logo5.svg', width: 96, height: 39
-    },
-    {
-      imgUrl: 'h-logo6.svg', width: 185, height: 33
     },
     {
       imgUrl: 'h-logo7.svg', width: 208, height: 25
@@ -137,7 +137,7 @@ export default function HeroSection(props) {
         </div>
 
         <div className={`${styles.companyLogo} company-logos`}>
-          <Marquee speed={40}>
+          <Marquee speed={60}>
             {companyLogo.map((item, index) => (
               <div key={index} className={styles.logoBox}>
                 <ImageCustom src={item.imgUrl} alt='image services' width={item.width} height={item.height} />
