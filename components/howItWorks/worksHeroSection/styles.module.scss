@@ -1,0 +1,243 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.howItWorkHeroStyle {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  min-height: 100vh;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://assets.unberry.com/media/images/hero-grid.svg");
+    background-repeat: no-repeat;
+    content: "";
+    background-size: 100%;
+
+    @include tablet {
+      background-size: 100%;
+      background: url("https://assets.unberry.com/media/images/hero-grid-mobile.svg");
+    }
+
+    @include mobile {
+      background-size: 100%;
+      background: url("https://assets.unberry.com/media/images/hero-grid-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .containerStyle {
+    position: relative;
+  }
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .btnSection {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .titleDesktop {
+    text-align: center;
+    margin: 0 auto 13px;
+    color: $black;
+    line-height: 80px;
+
+    @include desktop-lg {
+      max-width: 60%;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
+    span {
+      border-radius: 50px;
+      padding: 0 38px;
+      height: 79px;
+      display: inline-block;
+      line-height: 70px;
+      font-size: 60px;
+      position: relative;
+      top: -5px;
+
+      &.color1 {
+        background-color: #e4ddef;
+        color: #3d2f52;
+      }
+      &.color2 {
+        background-color: #daeeee;
+        color: #184443;
+      }
+      &.color3 {
+        background-color: #fbefe6;
+        color: #442811;
+      }
+    }
+  }
+
+  .titleMobile {
+    text-align: center;
+    margin: 0 auto 13px;
+    max-width: 80%;
+    color: $black;
+    line-height: 80px;
+    display: none;
+
+    @include tablet {
+      max-width: 100%;
+      line-height: 70px;
+      display: block;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      line-height: 60px;
+      display: block;
+    }
+
+    .mobileStyle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 10px;
+      margin: 10px 0;
+    }
+
+    span {
+      border-radius: 50px;
+      padding: 0 20px;
+      height: 79px;
+      display: inline-block;
+      line-height: 70px;
+      font-size: 60px;
+
+      @include tablet {
+        line-height: 55px;
+        font-size: 39px;
+        height: 60px;
+      }
+
+      @include mobile {
+        line-height: 55px;
+        font-size: 39px;
+        height: 60px;
+      }
+
+      &.color1 {
+        background-color: #e4ddef;
+        color: #3d2f52;
+      }
+      &.color2 {
+        background-color: #daeeee;
+        color: #184443;
+      }
+      &.color3 {
+        background-color: #fbefe6;
+        color: #442811;
+      }
+    }
+  }
+
+  .descriptionText {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 60%;
+
+    @include tablet {
+      max-width: 60%;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include mobile {
+      max-width: 95%;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .contentSection {
+    padding: 95px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      padding: 85px 0;
+    }
+
+    @include mobile {
+      padding: 85px 0;
+    }
+  }
+
+  // Timeline Section
+  .timelineSection {
+    padding: 94px $p-padding-inline;
+
+    .titleMedium {
+      font-weight: 400;
+      font-size: 57.83px;
+      line-height: 62px;
+      letter-spacing: -2px;
+      margin: 0 0 70px;
+      max-width: 90%;
+  
+      span {
+        font-weight: 600;
+      }
+  
+      @include mobile {
+        max-width: 90%;
+        font-weight: 400;
+        font-size: 31.25px;
+        line-height: 35px;
+        letter-spacing: -1px;
+        margin: 0 auto 60px;
+      }
+    }
+
+    .timelineBox {
+      display: flex;
+      gap: 0 100px;
+    }
+
+    .imgBox {
+      width: 672px;
+      height: 690px;
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    .titleSM {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    .contentSection {
+      max-width: 550px;
+      display: flex;
+      gap: 50px 0;
+    }
+    
+  }
+}

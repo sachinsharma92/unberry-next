@@ -1,0 +1,91 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.footprintCandidateStyle {
+  padding: 94px $p-padding-inline;
+  position: relative;
+  min-height: 100vh;
+  background-color: $black;
+  border-radius: 40px;
+
+  .containerStyle {
+    position: relative;
+  }
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .titleDesktop {
+    text-align: center;
+    margin: 0 auto 13px;
+    color: $white;
+    line-height: 80px;
+    font-weight: 400;
+  }
+
+  .infoStyle {
+    position: relative;
+    margin-top: 50px;
+
+    .imgBox {
+      width: 100%;
+      height: 100vh;
+      left: 0;
+      right: 0;
+    }
+
+    .cardBox {
+      background-color: #0e0e0e;
+      border: 1px solid #ac95cf;
+      display: flex;
+      flex-direction: column;
+      gap: 32px 0;
+      padding: 32px;
+      border-radius: 20px;
+      position: absolute;
+      z-index: 1;
+      max-width: 434px;
+
+      &:nth-child(1) {
+        top: 50px;
+      }
+      &:nth-child(2) {
+        right: 0;
+        max-width: 334px;
+      }
+      &:nth-child(3) {
+        bottom: 0;
+      }
+      &:nth-child(4) {
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    .titleSM {
+      font-size: 22px;
+      color: $white;
+      margin: 0;
+    }
+
+    .description {
+      font-size: 18px;
+      color: $white;
+      opacity: 0.7;
+      margin: 0;
+    }
+
+    a {
+      color: $white;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
