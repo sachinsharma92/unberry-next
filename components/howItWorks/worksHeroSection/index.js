@@ -8,10 +8,8 @@ import styles from './styles.module.scss';
 
 export default function WorksHeroSection(props) {
 
-
-
   return (
-    <div className={styles.howItWorkHeroStyle}>
+    <div className={styles.workHeroStyle}>
       <div className="container-width">
         <div className={`${styles.containerStyle}`}>
           <div className={`${styles.contentSection} animation-block`}>

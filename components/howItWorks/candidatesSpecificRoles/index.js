@@ -38,7 +38,7 @@ export default function CandidatesSpecificRoleSection(props) {
       <div className="container-width">
         <div className={`${styles.containerStyle}`}>
           <h1 className={`${styles.titleDesktop} title1`}>
-            See how we measure the candidates for specific roles
+            {props.title || `See how we measure the candidates for specific roles`}
           </h1>
         </div>
       </div>

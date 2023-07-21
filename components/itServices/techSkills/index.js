@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 // Styles here
 import styles from "./styles.module.scss";
-import Marquee from "react-fast-marquee";
 
 export default function TechSkillsSection(props) {
   const tagData = ['Python', 'React JS', 'Flutter', '.NET', 'SQL', 'NodeJS', 'PHP', 'CSS', 'HTML', 'Python', 'React JS', 'Flutter', '.NET', 'SQL', 'NodeJS', 'PHP', 'CSS', 'HTML']
