@@ -12,21 +12,19 @@ export default function WorksHeroSection(props) {
     <div className={styles.workHeroStyle}>
       <div className="container-width">
         <div className={`${styles.containerStyle}`}>
-          <div className={`${styles.contentSection} animation-block`}>
-            <h1 className={`${styles.titleDesktop} title1 animation-heading`}>
+          <div className={`${styles.contentSection}`}>
+            <h1 className={`${styles.titleDesktop} title1`}>
               Immerse yourself <br />
               in the unberry experience
             </h1>
-            <p className={`${styles.descriptionText} description animation-heading`}>
+            <p className={`${styles.descriptionText} description`}>
               The most modern & experiential talent assessment suite, that can measure job-relevant skills and proficiencies in just a few minutes
             </p>
 
-            <div className={`${styles.btnSection} animation-heading`}>
+            <div className={`${styles.btnSection}`}>
               <ButtonPrimary href="/book-demo" title="BOOK DEMO" />
             </div>
           </div>
-        </div>
-        <div className={`${styles.containerStyle}`}>
 
           <div className={styles.timelineSection}>
             <h4 className={styles.titleMedium}>Geared for Rapidity. Optimized for Expansion. <span>Fueled by AI</span></h4>
@@ -36,28 +34,28 @@ export default function WorksHeroSection(props) {
               </div>
               <div className={styles.contentSection}>
                 <div className={styles.itemStyle}>
-                  <h4 className={`${styles.titleSM} title1 animation-heading`}>
+                  <h4 className={`${styles.titleSM} title1`}>
                     Data
                   </h4>
-                  <p className={`${styles.description} description animation-heading`}>
+                  <p className={`${styles.description} description`}>
                     We leverage a vast data network, contextual industry models, and deep learning to empower of dynamic platform.
                   </p>
                 </div>
 
                 <div className={styles.itemStyle}>
-                  <h4 className={`${styles.titleSM} title1 animation-heading`}>
+                  <h4 className={`${styles.titleSM} title1`}>
                     Intelligence
                   </h4>
-                  <p className={`${styles.description} description animation-heading`}>
+                  <p className={`${styles.description} description`}>
                     Dynamic system of intelligence that bridges the gap between people, data, and interactions .
                   </p>
                 </div>
 
                 <div className={styles.itemStyle}>
-                  <h4 className={`${styles.titleSM} title1 animation-heading`}>
+                  <h4 className={`${styles.titleSM} title1`}>
                     Experience
                   </h4>
-                  <p className={`${styles.description} description animation-heading`}>
+                  <p className={`${styles.description} description`}>
                     Integrating AI, automation, and personalisation for extraordinary talent experiences.
                   </p>
                 </div>
@@ -65,6 +63,7 @@ export default function WorksHeroSection(props) {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   )

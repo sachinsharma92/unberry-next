@@ -7,9 +7,17 @@
   position: relative;
   margin-bottom: 150px;
 
+  @include mobile {
+    margin-bottom: 100px;
+  }
+
   .containerStyle {
     position: relative;
     padding: 0 $p-padding-inline 50px;
+
+    @include mobile {
+      padding: 0px 20px 0;
+    }
   }
 
   @include tablet {
@@ -24,7 +32,13 @@
     color: $black;
     line-height: 80px;
     font-weight: 400;
-    max-width: 85%;
+
+    @include mobile {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 500;
+      text-align: center;
+    }
   }
 
   .infoStyle {
@@ -35,6 +49,11 @@
     overflow-x: scroll;
     padding-left: 80px;
     @include scrollHide();
+
+    @include mobile {
+      padding-left: 20px;
+      margin-top: 50px;
+    }
 
     .imgBox {
       width: 100%;
@@ -57,8 +76,16 @@
       position: relative;
       overflow: hidden;
 
+      @include mobile {
+        min-width: 95%;
+      }
+
       &:last-child {
         margin-right: 80px;
+
+        @include mobile {
+          margin-right: 20px;
+        }
       }
 
       &::before {
@@ -78,12 +105,21 @@
         font-size: 28px;
         color: $black;
         margin: 0;
+
+        @include mobile {
+          font-size: 22px;
+          font-weight: 600;
+        }
       }
   
       .description {
         font-size: 18px;
         color: $black;
         margin: 0;
+
+        @include mobile {
+          font-size: 16px;
+        }
       }
 
       .designation {
@@ -92,6 +128,10 @@
         color: #3D2F52;
         text-transform: uppercase;
         margin-bottom: 20px;
+
+        @include mobile {
+          margin-bottom: 10px;
+        }
       }
   
       a {

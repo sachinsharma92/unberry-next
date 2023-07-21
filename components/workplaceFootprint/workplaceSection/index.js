@@ -46,11 +46,6 @@ export default function WorksplaceSection(props) {
         </div>
 
         <div className={styles.techSkillsStyle}>
-          <div className={`container-width ${styles.containerStyle}`}>
-            <h2 className={styles.titleMain}>
-              Measure candidates across all tech skills
-            </h2>
-          </div>
           <Marquee speed={20} gradient={false} className={styles.tagStyle}>
             {tagData.map((item) => (
               <div key={item} className={styles.tagItem}>
@@ -140,20 +135,20 @@ export default function WorksplaceSection(props) {
             <div className={styles.infoSection}>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>500+ Technical & Non-technical Skills</h4>
-                  <p className={styles.description}>Across tech, sales, customer success, finance, business management & more</p>
+                  <h4 className={styles.title4}>Instant AI Speech Tool</h4>
+                  <p className={styles.description}>Measures English speaking skills using global standards like <span> IELTS, CEFT, TOEFL</span></p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>Fully automated Coding Environment</h4>
-                  <p className={styles.description}>Real-time simulator supporting 70+ languages across a wide range.</p>
+                  <h4 className={styles.title4}>AI Written Communication</h4>
+                  <p className={styles.description}>Generative AI tool simulating conversations that measures written communication</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>Highly customisable to different roles</h4>
-                  <p className={styles.description}>Each skill being measured at beginner, intermediate & advanced levels</p>
+                  <h4 className={styles.title4}>Audio based Spontaneous Questions</h4>
+                  <p className={styles.description}>Gauging proficiency across different competencies based on real-time answers <span>(also vernacular!)</span></p>
                 </div>
               </div>
             </div>
@@ -183,20 +178,20 @@ export default function WorksplaceSection(props) {
             <div className={styles.infoSection}>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>500+ Technical & Non-technical Skills</h4>
-                  <p className={styles.description}>Across tech, sales, customer success, finance, business management & more</p>
+                  <h4 className={styles.title4}>Games & Immersive Exercises</h4>
+                  <p className={styles.description}>Dynamic environment, modulating multiple pathways resulting in more authentic data & engaging experience</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>Fully automated Coding Environment</h4>
-                  <p className={styles.description}>Real-time simulator supporting 70+ languages across a wide range.</p>
+                  <h4 className={styles.title4}>Principles of Neuroscience</h4>
+                  <p className={styles.description}>Backed by validated neuroscience tasks that have existing for decades to measure human cognition & intelligence</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>Highly customisable to different roles</h4>
-                  <p className={styles.description}>Each skill being measured at beginner, intermediate & advanced levels</p>
+                  <h4 className={styles.title4}>Measures proof of potential</h4>
+                  <p className={styles.description}>Skills like problem solving, learning agility, sustained attention are far better predictors of workplace performance</p>
                 </div>
               </div>
             </div>
@@ -226,20 +221,20 @@ export default function WorksplaceSection(props) {
             <div className={styles.infoSection}>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>500+ Technical & Non-technical Skills</h4>
-                  <p className={styles.description}>Across tech, sales, customer success, finance, business management & more</p>
+                  <h4 className={styles.title4}>Story Format Immersive Exercises</h4>
+                  <p className={styles.description}>Complex real life scenarios requiring application of critical thinking, empathy & decision making skills</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>Fully automated Coding Environment</h4>
-                  <p className={styles.description}>Real-time simulator supporting 70+ languages across a wide range.</p>
+                  <h4 className={styles.title4}>Interactive Workplace Simulations</h4>
+                  <p className={styles.description}>Generates exponentially more data than any test and builds a detailed, holistic soft skill map</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>Highly customisable to different roles</h4>
-                  <p className={styles.description}>Each skill being measured at beginner, intermediate & advanced levels</p>
+                  <h4 className={styles.title4}>Dynamic & Demonstrable</h4>
+                  <p className={styles.description}>Authentic responses that go beyond consciously self reported data</p>
                 </div>
               </div>
             </div>

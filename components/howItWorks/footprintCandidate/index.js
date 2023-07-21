@@ -11,7 +11,7 @@ export default function FootprintCandidateSection(props) {
     <div className={styles.footprintCandidateStyle}>
       <div className="container-width">
         <div className={`${styles.containerStyle}`}>
-          <h1 className={`${styles.titleDesktop} title1`}>
+          <h1 className={`${styles.titleLarge} title1`}>
             How we map the holistic <br /> workplace footprint of a candidate
           </h1>
         </div>

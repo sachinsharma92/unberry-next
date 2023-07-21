@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 
-export default function ButtonPrimary(props) {
+export default function ButtonPrimary({ href, className = "", title }) {
   return (
-    <Link href={props.href || '/'}>
-      <a className={`btn-primary ${props.className}`}>
-        {props.title}
+    <Link href={href || '/'}>
+      <a className={`btn-primary ${className || ''}`}>
+        {title}
       </a>
     </Link>
   )

@@ -101,9 +101,11 @@ export default function ExperienceLooksSection() {
   return (
     <div className={styles.experienceLookStyle}>
       <div className='container-width'>
-        <h1 className={`${styles.title1}`}>
-          What the unberry <br /> experience looks like?
-        </h1>
+        <div className={styles.infoSection}>
+          <h1 className={`${styles.title1}`}>
+            What the unberry <br /> experience looks like?
+          </h1>
+        </div>
 
         <div className={styles.tagSection}>
           <div className={`${styles.tagItem} tag-black`}>For Recruiters</div>

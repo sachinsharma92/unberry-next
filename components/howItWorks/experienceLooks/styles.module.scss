@@ -14,6 +14,13 @@
     padding: 50px 0px 0;
   }
 
+  .infoSection {
+
+    @include mobile {
+      padding: 20px;
+    }
+  }
+
   .title1 {
     color: $black;
     font-weight: 500;
@@ -30,6 +37,7 @@
       text-align: left;
       max-width: 90%;
     }
+    
     @include mobile {
       font-size: 30px;
       line-height: 31px;
@@ -166,14 +174,6 @@
     padding-left: 20px;
   }
 
-
-  .cardStyles {
-
-    // @include mobile {
-    //   display: none;
-    // }
-  }
-
   .bgMobileBoxStyle1 {
     height: 200px;
     width: 100%;
@@ -275,6 +275,14 @@
     display: flex;
     align-items: center;
     gap: 15px;
+
+    @include mobile {
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      @include scrollHide();
+      padding-left: 20px;
+    }
 
     .tagItem {
       height: 57px;
