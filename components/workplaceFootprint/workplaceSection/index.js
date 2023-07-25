@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import ImageCustom from "../../../common/ImageCustom";
 import Marquee from "react-fast-marquee";
+import ImageCustom from "../../../common/ImageCustom";
+import ButtonPrimary from '../../../common/buttonPrimary';
 
 // Styles here
 import styles from './styles.module.scss';
-import ButtonPrimary from '../../../common/buttonPrimary';
 
 export default function WorksplaceSection(props) {
   const tagData = ['Engineering', 'Product', 'Speaking', 'Customer Service', 'Efficiency', 'Listening', 'Marketing', 'Sales', 'Engineering', 'Product', 'Speaking', 'Customer Service', 'Efficiency', 'Listening', 'Marketing', 'Sales',]

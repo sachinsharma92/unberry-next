@@ -94,7 +94,7 @@ export default function DemoForm(props) {
   return (
     <section className={`${styles.demoFormStyle} demo-form-style`} id={props.id}>
       <Link href="/">
-        <a className={`${logoBlackStyle}`}>
+        <a className={`${styles.logoBlackStyle}`}>
           <ImageCustom src="logo-black.svg" width="124" height="34" alt="Unberry Talent Intelligence Platform" />
         </a>
       </Link>

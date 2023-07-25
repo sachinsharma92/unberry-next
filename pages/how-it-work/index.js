@@ -4,6 +4,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
 const LayoutPrimary = dynamic(() => import("../../common/layoutPrimary"));
+
 const ExperienceLooksSection = dynamic(() =>
   import("../../components/howItWorks/experienceLooks")
 );
