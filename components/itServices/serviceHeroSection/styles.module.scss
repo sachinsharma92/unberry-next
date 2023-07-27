@@ -8,6 +8,10 @@
   padding-bottom: 50px;
   position: relative;
 
+  @include mobile {
+    padding-top: 50px;
+  }
+
   &::before {
     position: absolute;
     top: 0;

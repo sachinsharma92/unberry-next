@@ -39,7 +39,6 @@ export default function ItServicesScreen(props) {
         <ServiceHeroSection />
         <MostModernSection />
         <EndAutomationSection />
-        {/* <TechSkillsSection /> */}
         <InsightSection />
         <CandidatesAbsolutely />
         <HiringCard />

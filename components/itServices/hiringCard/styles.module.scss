@@ -8,6 +8,10 @@
   padding: 50px $p-padding-inline 150px;
   position: relative;
 
+  @include mobile {
+    padding: 0px 0;
+  }
+
   .hiringCard {
     background: #ac95cf;
     min-height: 300px;
