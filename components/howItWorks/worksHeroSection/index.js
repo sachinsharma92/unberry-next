@@ -8,7 +8,7 @@ import ButtonPrimary from '../../../common/buttonPrimary';
 import styles from './styles.module.scss';
 
 export default function WorksHeroSection(props) {
-  const [count, setCount] = useState(5);
+  const [count, setCount] = useState(3);
   const [activeTitle, setActiveTitle] = useState(1)
 
   const dataList = [
@@ -38,7 +38,7 @@ export default function WorksHeroSection(props) {
   useEffect(() => {
     let ImageSourceInterval;
     if (count < dataList.length) {
-      ImageSourceInterval = setInterval(() => setCount(count + 1), 2500);
+      ImageSourceInterval = setInterval(() => setCount(count + 1), 3000);
     }
     if (count >= dataList.length) {
       setCount(0);
@@ -46,7 +46,7 @@ export default function WorksHeroSection(props) {
     setImageSource(dataList[count]?.imgUrl);
     setActiveTitle(dataList[count]?.id)
     return () => clearInterval(ImageSourceInterval);
-  }, [count]);
+  }, [dataList]);
 
 
   useEffect(() => {
@@ -101,7 +101,11 @@ export default function WorksHeroSection(props) {
               <div className={`${styles.contentSection} ${styles.contentTimeline}`} id="contentSection">
                 <div>
                   {dataList.map((data, index) => (
-                    <div key={index} className={`${styles.itemStyle} ${data.id === activeTitle ? styles.active : ''}`} id={`item${index + 1}`}>
+                    <div
+                      key={index}
+                      className={`${styles.itemStyle} ${data.id === activeTitle ? styles.active : ''}`}
+                      id={`item${index + 1}`}
+                    >
                       <h4 className={`${styles.titleSM} title1`}>
                         {data.title}
                       </h4>

@@ -54,7 +54,7 @@ export default function ServiceHeroSection(props) {
 
   return (
     <div className={styles.itServiceHeroStyle}>
-      <div className={`container-width ${styles.containerStyle}`}>
+      {/* <div className={`container-width ${styles.containerStyle}`}>
         <div className={`${styles.contentSection} animation-block`}>
           <h1 className={`${styles.titleDesktop} title1 animation-heading`}>
             The better, smarter & faster way <br />
@@ -124,10 +124,12 @@ export default function ServiceHeroSection(props) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
       <div className={`container-width ${styles.containerStyle}`}>
         <div>
-          <h4 className={styles.titleMedium}>Measure what matters to be a great coder <br /> all in one experience</h4>
+          <h4 className={styles.titleMedium}>Measure what matters to be a great coder, <br />
+            all in one experience</h4>
           <div className={styles.workplaceSection} id='workplaceSection'>
             <div className={`${styles.gridSection}`}>
               <div className={styles.imgBoxStyle}>

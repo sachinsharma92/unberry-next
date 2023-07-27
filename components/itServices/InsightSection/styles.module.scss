@@ -5,7 +5,7 @@
 // auto-section
 .insightSectionStyle {
   background: $white;
-  padding: 150px $p-padding-inline 150px;
+  padding: 0px $p-padding-inline 50px;
   position: relative;
 
   @include tablet {
@@ -19,7 +19,7 @@
   &::before {
     background: url("https://assets.unberry.com/media/images/winning-grid.svg");
     background-repeat: no-repeat;
-    background-position: 0vh -50vh;
+    background-position: 0vh -25vh;
     content: "";
     position: absolute;
     top: 0;

@@ -12,7 +12,7 @@ const AdvancedTechnologieSection = dynamic(() => import('../../components/itServ
 const EndAutomationSection = dynamic(() => import('../../components/itServices/endAutomationSection'));
 const MostModernSection = dynamic(() => import('../../components/itServices/mostModernSection'));
 const ServiceHeroSection = dynamic(() => import('../../components/itServices/serviceHeroSection'));
-const TechSkillsSection = dynamic(() => import('../../components/itServices/techSkills'));
+const HiringCard = dynamic(() => import('../../components/itServices/hiringCard'));
 
 // Styles here
 import styles from './styles.module.scss';
@@ -38,10 +38,11 @@ export default function ItServicesScreen(props) {
       <LayoutPrimary className={`${styles.homepageStyle} ${headerColor}`}>
         <ServiceHeroSection />
         <MostModernSection />
-        <CandidatesAbsolutely />
         <EndAutomationSection />
-        <TechSkillsSection />
+        {/* <TechSkillsSection /> */}
         <InsightSection />
+        <CandidatesAbsolutely />
+        <HiringCard />
         <AdvancedTechnologieSection />
         <BlogSection />
         <SubscribeCard />
