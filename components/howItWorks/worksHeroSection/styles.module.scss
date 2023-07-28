@@ -211,13 +211,13 @@
     100% {
       height: 340px;
     }
-}
+  }
 
   .itemStyle {
     position: relative;
 
     &::before {
-      height:20px;
+      height: 20px;
       width: 20px;
       background-color: rgba(244, 244, 244, 1);
       position: absolute;
@@ -228,9 +228,50 @@
       border-radius: 50%;
       z-index: 1;
     }
+
     &.active {
       &::before {
         background-color: rgba(172, 149, 207, 1);
+      }
+    }
+
+    &:nth-child(1) {
+      &::before {
+        background-color: rgba(172, 149, 207, 1);
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        animation: change2;
+        animation-delay: 5s;
+        background-color: rgba(244, 244, 244, 1);
+      }
+
+      @keyframes change2 {
+        0% {
+          background-color: rgba(244, 244, 244, 1);
+        }
+        100% {
+          background-color: rgba(172, 149, 207, 1);
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        animation: change3;
+        animation-delay: 7s;
+        background-color: rgba(244, 244, 244, 1);
+      }
+
+      @keyframes change3 {
+        0% {
+          background-color: rgba(244, 244, 244, 1);
+        }
+        100% {
+          background-color: rgba(172, 149, 207, 1);
+        }
       }
     }
   }

@@ -11,13 +11,6 @@ export default function FooterPrimary(props) {
             <Image src="https://assets.unberry.com/media/images/logo-black.svg" width={150} height={50} alt="Unberry Talent Intelligence Platform" />
           </div>
 
-          {/* <nav className={`menu-footer`}>
-            <Link href="/">Sectors</Link>
-            <Link href="/">Explore Suite</Link>
-            <Link href="/blog">Blogs</Link>
-            <Link href="/">Contact Us</Link>
-          </nav> */}
-
           <div className='social-sec'>
             <a href="https://www.linkedin.com/company/unberry/" rel="noreferrer" className='icon-link' target="_blank">
               <ImageCustom className='icon' alt="contact Unberry on LinkedIn" src="linkedin.svg" width="18" height="17" />

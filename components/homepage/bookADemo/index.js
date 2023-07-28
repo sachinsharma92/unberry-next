@@ -15,7 +15,7 @@ export default function BookADemo() {
             Take the <br className={styles.brStyle} /> guesswork out...
           </div>
           <div className={`${styles.title2}`}>
-            Book A Demo
+            Request A Demo
           </div>
           <div className={styles.btnSection}>
             <p className={`${styles.description}`}>

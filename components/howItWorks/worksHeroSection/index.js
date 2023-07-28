@@ -87,7 +87,7 @@ export default function WorksHeroSection(props) {
           </div>
 
           <div className={styles.timelineSection}>
-            <h4 className={styles.titleMedium}>Geared for Rapidity. Optimized for Expansion. <span>Fueled by AI</span></h4>
+            <h4 className={styles.titleMedium}>Geared for Rapidity. Optimized for Expansion.<span>Fueled by AI</span></h4>
             <div className={styles.timelineBox}>
               {imageSource && (<div className={styles.imgBox}>
                 <ImageCustom
@@ -103,7 +103,7 @@ export default function WorksHeroSection(props) {
                   {dataList.map((data, index) => (
                     <div
                       key={index}
-                      className={`${styles.itemStyle} ${data.id === activeTitle ? styles.active : ''}`}
+                      className={`${styles.itemStyle} ${data.id === activeTitle ? styles.active : styles.activeFill}`}
                       id={`item${index + 1}`}
                     >
                       <h4 className={`${styles.titleSM} title1`}>

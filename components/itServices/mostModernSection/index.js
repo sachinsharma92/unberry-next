@@ -9,7 +9,7 @@ export default function MostModernSection(props) {
 
   const serviceCardList = [
     {
-      title: 'Real-time coding simulators',
+      title: 'Generative AI backed Coding Simulator',
       description: 'Real-life coding environment that covers 70+ coding languages and a wide range of coding problems of all complexity level that assesses the coding knowledge, problem-solving and logical approach of candidates.',
       videoUrl: 'https://assets.unberry.com/media/IT_services_Coding.mp4',
       badgeList: [
@@ -18,26 +18,26 @@ export default function MostModernSection(props) {
     },
     {
       title: 'Skill assessments',
-      description: 'With the largest skills library in the world covering over 100+ tech roles, around 600 odd skills and 2500+ concepts, our skill assessments can be customised for different levels - beginners, intermediate & advanced.',
+      description: 'With one of the largest skills library in the world covering over 100+ tech roles, 600+ skills and 2500+ concepts, our skill assessments can be customised for different proficiency levels - for beginners, intermediate & advanced.',
       videoUrl: 'https://assets.unberry.com/media/service2.mp4',
       badgeList: [
         'Web Technologies', 'Backend Systems', 'Mobile Stacks', 'Machine Learning', 'Data Science', 'DevOps', "Artificial Intelligence", "+ Much More"
       ]
     },
     {
-      title: 'Games & Immersive Exercises',
+      title: 'Cognition Check with Game Based Assessments',
       description: 'Dynamic environments modulating multiple pathways, generating exponentially more behavioural data, measuring the true potential of a candidate across modern workplace skills',
       videoUrl: 'https://assets.unberry.com/media/service1.mp4',
       badgeList: [
-        'Problem Solving', 'Tolerance To Ambiguity', 'Learning Agility', 'Attention Span', 'Processing Speed', 'Efficiency', 'Multitasking'
+        'Problem Solving', 'Tolerance To Ambiguity', 'Learning Agility', 'Attention Span', 'Processing Speed', 'Remove Efficiency', 'Multitasking'
       ]
     },
     {
-      title: 'Communication Tools',
+      title: 'GPT backed Communication Tools',
       description: 'That automates meaningful conversations with candidates scoring them on their spoken & written communication skills and their ability to respond and react to different scenarios and situations.',
       videoUrl: 'https://assets.unberry.com/media/service3.mp4',
       badgeList: [
-        'Speaking', 'Listening', 'Writing', 'Reading', 'English Proficiency',
+        'Speaking', 'Listening', 'Writing', 'Reading', 'Pronounciation', 'Grammar', 'Fluency', 'CEFR'
       ]
     }
   ]
@@ -50,7 +50,7 @@ export default function MostModernSection(props) {
               Most modern & holistic assessments
             </h1>
             <p className={`${styles.description} description`}>
-              A smart combination of games & behavioural science, combined with skill assessments that helps you surface more predictive and actionable people insights around job-relevant traits, in just a few minutes.
+              A smart combination of skill and coding assessments, combined with cognitive & behavioural checks that helps you surface more predictive and actionable people insights around job-relevant traits, in just a few minutes.
             </p>
             <ButtonPrimary className={styles.btnStyle} href="/book-demo" title="BOOK DEMO" />
           </div>
