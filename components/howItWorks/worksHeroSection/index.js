@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { gsap } from 'gsap';
+import lottie from "lottie-web";
 import React, { useEffect, useState } from 'react';
+import sliderTimeline from "../../../assets/json/slider-timeline.json";
 import ImageCustom from "../../../common/ImageCustom";
 import ButtonPrimary from '../../../common/buttonPrimary';
 
@@ -38,7 +40,7 @@ export default function WorksHeroSection(props) {
   useEffect(() => {
     let ImageSourceInterval;
     if (count < dataList.length) {
-      ImageSourceInterval = setInterval(() => setCount(count + 1), 3000);
+      ImageSourceInterval = setInterval(() => setCount(count + 1), 5000);
     }
     if (count >= dataList.length) {
       setCount(0);
@@ -68,6 +70,13 @@ export default function WorksHeroSection(props) {
     })
   }, [])
 
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: document.querySelector("#sliderTimeline"),
+      animationData: sliderTimeline,
+    });
+  }, []);
+
   return (
     <div className={styles.workHeroStyle}>
       <div className="container-width">
@@ -86,7 +95,8 @@ export default function WorksHeroSection(props) {
             </div>
           </div>
 
-          <div className={styles.timelineSection}>
+          {/* For Desktop */}
+          <div className={styles.timelineDesktopSection}>
             <h4 className={styles.titleMedium}>Geared for Rapidity. Optimized for Expansion.<span>Fueled by AI</span></h4>
             <div className={styles.timelineBox}>
               {imageSource && (<div className={styles.imgBox}>
@@ -99,6 +109,9 @@ export default function WorksHeroSection(props) {
               </div>
               )}
               <div className={`${styles.contentSection} ${styles.contentTimeline}`} id="contentSection">
+                <div className={styles.jsonItemBox}>
+                  <div className={styles.jsonItem} id="sliderTimeline" />
+                </div>
                 <div>
                   {dataList.map((data, index) => (
                     <div
@@ -114,6 +127,79 @@ export default function WorksHeroSection(props) {
                       </p>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* For Mobile */}
+          <div className={styles.timelineMobileSection}>
+            <h4 className={styles.titleMedium}>Geared for Rapidity. Optimized for Expansion.<span>Fueled by AI</span></h4>
+
+            <div className={styles.mobileTimeline}>
+              <div className={styles.timelineBox}>
+                <div className={styles.imgBox}>
+                  <ImageCustom
+                    src="h-1.png"
+                    alt="Unberry"
+                    layout="fill"
+                  />
+                </div>
+                <div className={`${styles.contentSection} ${styles.contentTimeline}`} id="contentSection">
+                  <div>
+                    <div className={`${styles.itemStyle}`}>
+                      <h4 className={`${styles.titleSM} title1`}>
+                        Data
+                      </h4>
+                      <p className={`${styles.description} description`}>
+                        We leverage a vast data network, contextual industry models, and deep learning to empower of dynamic platform.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.timelineBox}>
+                <div className={styles.imgBox}>
+                  <ImageCustom
+                    src="score-1.svg"
+                    alt="Unberry"
+                    layout="fill"
+                  />
+                </div>
+                <div className={`${styles.contentSection} ${styles.contentTimeline}`} id="contentSection">
+                  <div>
+                    <div className={`${styles.itemStyle}`}>
+                      <h4 className={`${styles.titleSM} title1`}>
+                        Intelligence
+                      </h4>
+                      <p className={`${styles.description} description`}>
+                        Dynamic system of intelligence that bridges the gap between people, data, and interactions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.timelineBox}>
+                <div className={styles.imgBox}>
+                  <ImageCustom
+                    src="score-2.svg"
+                    alt="Unberry"
+                    layout="fill"
+                  />
+                </div>
+                <div className={`${styles.contentSection} ${styles.contentTimeline}`} id="contentSection">
+                  <div>
+                    <div className={`${styles.itemStyle}`}>
+                      <h4 className={`${styles.titleSM} title1`}>
+                        Experience
+                      </h4>
+                      <p className={`${styles.description} description`}>
+                        Integrating AI, automation, and personalisation for extraordinary talent experiences.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

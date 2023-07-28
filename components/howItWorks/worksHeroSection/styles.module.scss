@@ -64,6 +64,10 @@
       font-size: 40px;
       line-height: 45px;
     }
+
+    @include iphone5 {
+      font-size: 35px;
+    }
   }
 
   .descriptionText {
@@ -78,7 +82,7 @@
     }
 
     @include mobile {
-      max-width: 90%;
+      max-width: 100%;
       font-size: 18px;
       line-height: 30px;
     }
@@ -90,25 +94,31 @@
     flex-direction: column;
     align-items: center;
 
+    br {
+      @include mobile {
+        display: none;
+      }
+    }
+
     @include tablet {
       padding: 85px 0;
     }
 
     @include mobile {
-      padding: 85px 0;
+      padding: 25px 20px 50px;
     }
   }
 
   // Timeline Section
-  .timelineSection {
+  .timelineDesktopSection {
     padding: 94px $p-padding-inline;
 
     @include mobile {
-      padding: 20px;
+      display: none;
     }
 
     .contentSection {
-      max-width: 550px;
+      max-width: 580px;
       display: flex;
       flex-direction: row;
       align-items: flex-start;
@@ -118,60 +128,64 @@
         padding: 0;
       }
     }
+  }
 
-    .titleMedium {
+  .titleMedium {
+    font-weight: 400;
+    font-size: 57.83px;
+    line-height: 62px;
+    letter-spacing: -2px;
+    margin: 0 0 70px;
+    max-width: 90%;
+
+    span {
+      font-weight: 600;
+    }
+
+    @include mobile {
       font-weight: 400;
-      font-size: 57.83px;
-      line-height: 62px;
-      letter-spacing: -2px;
-      margin: 0 0 70px;
-      max-width: 90%;
+      font-size: 30px;
+      line-height: 35px;
+      letter-spacing: -1px;
+      margin: 0 auto 60px;
+    }
+  }
 
-      span {
-        font-weight: 600;
-      }
+  .timelineBox {
+    display: flex;
+    gap: 0 100px;
 
-      @include mobile {
-        max-width: 100%;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 35px;
-        letter-spacing: -1px;
-        margin: 0 auto 60px;
-      }
+    @include mobile {
+      flex-direction: column;
+      gap: 30px;
+      min-width: 90%;
+    }
+  }
+
+  .imgBox {
+    width: 672px;
+    height: 690px;
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+
+    @include mobile {
+      width: 100%;
+      height: 290px;
+      border-radius: 20px;
     }
 
-    .timelineBox {
-      display: flex;
-      gap: 0 100px;
-
-      @include mobile {
-        flex-direction: column;
-        gap: 30px;
-      }
+    img {
+      object-fit: cover;
     }
+  }
 
-    .imgBox {
-      width: 672px;
-      height: 690px;
-      position: relative;
-      border-radius: 40px;
-      overflow: hidden;
+  .titleSM {
+    font-size: 40px;
+    line-height: 1.2;
 
-      @include mobile {
-        width: 100%;
-        height: 290px;
-        border-radius: 20px;
-      }
-
-      img {
-        object-fit: cover;
-      }
-    }
-
-    .titleSM {
-      font-size: 40px;
-      line-height: 1.2;
+    @include mobile {
+      font-size: 30px;
     }
   }
 }
@@ -180,99 +194,33 @@
   position: relative;
   display: flex;
 
-  &::before {
-    background-color: rgba(244, 244, 244, 1);
-    height: 340px;
-    width: 2px;
-    position: relative;
-    content: "";
-    margin-right: 40px;
-    top: 13px;
-  }
-
-  &::after {
-    background-color: rgba(172, 149, 207, 1);
-    height: 0px;
-    width: 2px;
-    position: absolute;
-    content: "";
-    margin-right: 40px;
-    bottom: 0;
-    top: 110px;
-    left: 0;
-    right: auto;
-    animation: change-height 9s ease-in-out infinite;
-  }
-
-  @keyframes change-height {
-    0% {
-      height: 0px;
-    }
-    100% {
-      height: 340px;
-    }
+  .jsonItemBox {
+    height: 390px;
+    width: 55px;
+    margin-right: 20px;
   }
 
   .itemStyle {
     position: relative;
+  }
+}
 
-    &::before {
-      height: 20px;
-      width: 20px;
-      background-color: rgba(244, 244, 244, 1);
-      position: absolute;
-      content: "";
-      margin-right: 40px;
-      top: 13px;
-      left: -50px;
-      border-radius: 50%;
-      z-index: 1;
-    }
 
-    &.active {
-      &::before {
-        background-color: rgba(172, 149, 207, 1);
-      }
-    }
+// mobileTimeline
+.mobileTimeline {
+  display: flex;
+  gap: 0 20px;
+  padding-left: 20px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  @include scrollHide();
+  padding-right: 20px;
 
-    &:nth-child(1) {
-      &::before {
-        background-color: rgba(172, 149, 207, 1);
-      }
-    }
+  @include desktop {
+    display: none;
+  }
 
-    &:nth-child(2) {
-      &::before {
-        animation: change2;
-        animation-delay: 5s;
-        background-color: rgba(244, 244, 244, 1);
-      }
-
-      @keyframes change2 {
-        0% {
-          background-color: rgba(244, 244, 244, 1);
-        }
-        100% {
-          background-color: rgba(172, 149, 207, 1);
-        }
-      }
-    }
-
-    &:nth-child(3) {
-      &::before {
-        animation: change3;
-        animation-delay: 7s;
-        background-color: rgba(244, 244, 244, 1);
-      }
-
-      @keyframes change3 {
-        0% {
-          background-color: rgba(244, 244, 244, 1);
-        }
-        100% {
-          background-color: rgba(172, 149, 207, 1);
-        }
-      }
-    }
+  .contentSection {
+    padding: 0 0 50px;
   }
 }
