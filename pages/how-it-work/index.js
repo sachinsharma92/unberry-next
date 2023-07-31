@@ -17,6 +17,9 @@ const FootprintCandidateSection = dynamic(() =>
 const CandidatesSpecificRoleSection = dynamic(() =>
   import("../../components/howItWorks/candidatesSpecificRoles")
 );
+const RapiditySection = dynamic(() =>
+  import("../../components/howItWorks/rapiditySection")
+);
 
 // Styles here
 import styles from "./styles.module.scss";
@@ -44,6 +47,7 @@ export default function HowItWorksScreen(props) {
         <FootprintCandidateSection />
         <ExperienceLooksSection />
         <CandidatesSpecificRoleSection />
+        <RapiditySection />
       </LayoutPrimary>
     </>
   );

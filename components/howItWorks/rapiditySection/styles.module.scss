@@ -1,0 +1,206 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+// auto-section
+.rapiditySectionStyle {
+  padding-bottom: 50px;
+  position: relative;
+  min-height: 100vh;
+
+  .containerStyle {
+    position: relative;
+  }
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .btnSection {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .titleDesktop {
+    text-align: center;
+    margin: 0 auto 13px;
+    color: $black;
+    line-height: 80px;
+
+    @include desktop-lg {
+      max-width: 60%;
+    }
+
+    @include mobile {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    @include iphone5 {
+      font-size: 35px;
+    }
+  }
+
+  .descriptionText {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 60%;
+
+    @include tablet {
+      max-width: 60%;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .contentSection {
+    padding: 95px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    br {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      padding: 85px 0;
+    }
+
+    @include mobile {
+      padding: 25px 20px 50px;
+    }
+  }
+
+  // Timeline Section
+  .timelineDesktopSection {
+    padding: 0px $p-padding-inline 50px;
+
+    @include mobile {
+      display: none;
+    }
+
+    .contentSection {
+      max-width: 580px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 50px 0;
+
+      @include mobile {
+        padding: 0;
+      }
+    }
+  }
+
+  .titleMedium {
+    font-weight: 400;
+    font-size: 57.83px;
+    line-height: 62px;
+    letter-spacing: -2px;
+    margin: 0 0 70px;
+    max-width: 90%;
+
+    span {
+      font-weight: 600;
+    }
+
+    @include mobile {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 35px;
+      letter-spacing: -1px;
+      margin: 0 auto 60px;
+    }
+  }
+
+  .timelineBox {
+    display: flex;
+    gap: 0 100px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 30px;
+      min-width: 90%;
+    }
+  }
+
+  .imgBox {
+    width: 672px;
+    height: 690px;
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+
+    @include mobile {
+      width: 100%;
+      height: 290px;
+      border-radius: 20px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .titleSM {
+    font-size: 40px;
+    line-height: 1.2;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+}
+
+.contentTimeline {
+  position: relative;
+  display: flex;
+
+  .jsonItemBox {
+    height: 340px;
+    width: 55px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+
+  .itemStyle {
+    position: relative;
+  }
+}
+
+
+.timelineMobileSection {
+
+  @include desktop {
+    display: none;
+  }
+}
+
+// mobileTimeline
+.mobileTimeline {
+  display: flex;
+  gap: 0 20px;
+  padding-left: 20px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  @include scrollHide();
+  padding-right: 20px;
+
+  .contentSection {
+    padding: 0 0 50px;
+  }
+}
