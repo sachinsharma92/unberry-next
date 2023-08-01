@@ -19,7 +19,6 @@
     position: relative;
   }
 
-
   .titleLarge {
     text-align: center;
     margin: 0 auto 13px;
@@ -31,7 +30,6 @@
       font-size: 40px;
       line-height: 45px;
     }
-  
   }
 
   .infoStyle {
@@ -72,22 +70,21 @@
       }
 
       @include desktop {
-
-      &:nth-child(1) {
-        top: 50px;
+        &:nth-child(1) {
+          top: 50px;
+        }
+        &:nth-child(2) {
+          right: 0;
+          max-width: 334px;
+        }
+        &:nth-child(3) {
+          bottom: 0;
+        }
+        &:nth-child(4) {
+          right: 0;
+          bottom: 0;
+        }
       }
-      &:nth-child(2) {
-        right: 0;
-        max-width: 334px;
-      }
-      &:nth-child(3) {
-        bottom: 0;
-      }
-      &:nth-child(4) {
-        right: 0;
-        bottom: 0;
-      }
-    }
     }
 
     .titleSM {
@@ -103,10 +100,250 @@
       margin: 0;
     }
 
-    a {
-      color: $white;
+    button {
       font-size: 20px;
       font-weight: 500;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.lightSection {
+  background-color: $white;
+  border-radius: 40px;
+  padding: 60px;
+  position: relative;
+
+  @include mobile {
+    margin: 100px 20px 0;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &::before {
+    position: absolute;
+    width: 418px;
+    height: 344px;
+    right: 0;
+    bottom: -10vh;
+    background: #e4ddef;
+    opacity: 0.6;
+    filter: blur(62.5px);
+    border-radius: 100%;
+    content: "";
+  }
+
+  .title3 {
+    font-size: 40px;
+    line-height: 65px;
+    margin: 0;
+
+    @include mobile {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 35px;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .headStyle {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  .btnSection {
+    margin: 0;
+  }
+
+  .badgeSection {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+
+    @include mobile {
+      margin: 20px -20px;
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      @include scrollHide();
+      padding-left: 20px;
+    }
+
+    .badgeStyle {
+      height: 54px;
+      min-width: 131px;
+      padding: 0 20px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      line-height: 30px;
+
+      @include mobile {
+        white-space: nowrap;
+        min-width: auto;
+      }
+    }
+  }
+
+  .imgBox {
+    width: 100%;
+    height: 509px;
+    position: relative;
+    border-radius: 300px;
+    overflow: hidden;
+    margin: 50px 0 70px;
+
+    @include mobile {
+      height: 209px;
+      border-radius: 20px;
+    }
+  }
+
+  .infoSection {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    position: relative;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+
+    .infoItem {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 30%;
+
+      @include mobile {
+        min-width: 100%;
+      }
+
+      &::after {
+        content: "";
+        border-right: 1px solid #d9d9d9;
+        height: 75px;
+        margin: 0 20px;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      .title4 {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -2%;
+        margin: 15px auto;
+        font-weight: 600;
+        max-width: 90%;
+
+        @include mobile {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+      .description {
+        font-size: 20px;
+        line-height: 27px;
+        opacity: 0.5;
+        max-width: 90%;
+        margin: 0 auto;
+
+        @include mobile {
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        span {
+          opacity: 1;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  section {
+    text-align: center;
+    margin-bottom: 175px;
+
+    @include mobile {
+      margin-bottom: 100px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .headStyle {
+      justify-content: center;
+    }
+
+    .badgeSection {
+      justify-content: center;
+
+      @include mobile {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  .sectionOne {
+    .badgeStyle {
+      background: #e4ddef;
+      color: #3d2f52;
+    }
+  }
+
+  .sectionTwo {
+    .badgeStyle {
+      background: #fbefe6;
+      color: #442712;
+    }
+  }
+
+  .sectionThree {
+    .badgeStyle {
+      background: #daeeee;
+      color: #184444;
+    }
+  }
+
+  .sectionFour {
+    .badgeStyle {
+      background: #f4f4f4;
+      color: $black;
     }
   }
 }

@@ -2173,3 +2173,21 @@ HAMBURGER MENU
   background-color: $black;
   color: $white;
 }
+
+// skill-modal
+.skill-modal {
+
+  .ant-modal {
+    min-width: 96vw;
+    height: 94vh;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .ant-modal-body {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 94vh;
+    border-radius: 20px;
+  }
+}
