@@ -7,7 +7,7 @@ import ImageCustom from '../../../common/ImageCustom';
 import styles from './styles.module.scss';
 
 export default function CandidatesSpecificRoleSection(props) {
-  const [isTechModalOpen, setIsTechModalOpen] = useState(true);
+  const [isTechModalOpen, setIsTechModalOpen] = useState(false);
 
   const techToggleModal = () => {
     setIsTechModalOpen(!isTechModalOpen);

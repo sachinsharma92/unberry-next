@@ -32,7 +32,7 @@ export default function ElevateCard(props) {
             <ButtonPrimary
               className={styles.btnStyle}
               href="/book-demo"
-              title="BOOK A DEMO"
+              title="Request A Demo"
             />
           </div>
 

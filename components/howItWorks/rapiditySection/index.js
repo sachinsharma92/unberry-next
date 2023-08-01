@@ -82,7 +82,7 @@ export default function RapiditySection(props) {
         <div className={`${styles.containerStyle}`}>
           {/* For Desktop */}
           <div className={styles.timelineDesktopSection}>
-            <h4 className={styles.titleMedium}>Geared for Rapidity. Optimized for Expansion.<span>Fueled by AI</span></h4>
+            <h4 className={styles.titleMedium}>Unberry? Geared for Rapidity. Optimized for Expansion.<span>Fueled by AI</span></h4>
             <div className={styles.timelineBox}>
               {imageSource && (<div className={styles.imgBox}>
                 <ImageCustom

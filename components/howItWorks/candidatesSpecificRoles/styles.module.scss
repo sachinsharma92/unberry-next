@@ -65,6 +65,7 @@
     .cardBox {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       gap: 32px 0;
       padding: 32px;
       border-radius: 20px;
