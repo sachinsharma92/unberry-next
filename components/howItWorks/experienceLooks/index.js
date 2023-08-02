@@ -197,45 +197,32 @@ export default function ExperienceLooksSection() {
                 </div>
               </div>
             </div>
-            <div className="custom-card card3" id="3">
+            <div className="custom-card hiring-mngr" id="3">
               <div className={styles.contentSec}>
                 <div className={styles.leftSection}>
-                  <h4 className={styles.title4}>Candidate Communication</h4>
-                  <p className={styles.description}>Automated communication with candidates to engage with your top talent with automated reminders and notifications.</p>
-
-                  <table className={styles.listStyle}>
-                    <tr>
-                      <td>
-                        <div className={styles.listItem}>
-                          <ImageCustom src="envelope.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Email & Messages
-                        </div>
-                      </td>
-                      <td>
-                        <div className={styles.listItem}>
-                          <ImageCustom src="note.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Automated Reminders
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className={styles.listItem}>
-                          <ImageCustom src="device.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Mobile-friendly
-                        </div>
-                      </td>
-                      <td>
-                        <div className={styles.listItem}>
-                          <ImageCustom src="chats.svg" alt='image services' width="30" height="30" className={styles.imgIcon} />
-                          Dedicated Chat Support
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
+                  <h4 className={styles.title4}>For Hiring Managers</h4>
+                  <p className={styles.description}>We leverage a vast data network, contextual industry models, and deep learning to empower of dynamic platform.</p>
+                  <div className={styles.listBlockStyle}>
+                    <div className={styles.listItem}>
+                      <ImageCustom src="list-icon.svg" alt='image services' width="22" height="22" className={styles.imgIcon} />
+                      Deep tech enabled, holistic evaluation
+                    </div>
+                    <div className={styles.listItem}>
+                      <ImageCustom src="list-icon.svg" alt='image services' width="22" height="22" className={styles.imgIcon} />
+                      Interview best-fits and save time to hire
+                    </div>
+                    <div className={styles.listItem}>
+                      <ImageCustom src="list-icon.svg" alt='image services' width="22" height="22" className={styles.imgIcon} />
+                      Instantly generated, easy-to-read reports
+                    </div>
+                    <div className={styles.listItem}>
+                      <ImageCustom src="list-icon.svg" alt='image services' width="22" height="22" className={styles.imgIcon} />
+                      Scoring with industry benchmarks
+                    </div>
+                  </div>
                 </div>
                 <div className={styles.bgMobileBoxStyle1}>
-                  <ImageCustom src="m-automation3.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
+                  <ImageCustom src="hiring-mngr.png" alt='image services' layout='fill' className={styles.bgMobileStyle} />
                 </div>
               </div>
             </div>
