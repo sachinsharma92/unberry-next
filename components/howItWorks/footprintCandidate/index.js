@@ -137,7 +137,7 @@ export default function FootprintCandidateSection(props) {
               <div className={styles.infoItem}>
                 <div>
                   <h4 className={styles.title4}>Fully automated Coding Environment</h4>
-                  <p className={styles.description}>Real-time simulator supporting 70+ languages across a wide range.</p>
+                  <p className={styles.description}>Regerative AI backed advanced coding simulator that helps check proficiency in 70+ languages</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
@@ -178,7 +178,7 @@ export default function FootprintCandidateSection(props) {
               </div>
               <div className={styles.infoItem}>
                 <div>
-                  <h4 className={styles.title4}>AI Written Communication</h4>
+                  <h4 className={styles.title4}>Chat Proficiency Analyser</h4>
                   <p className={styles.description}>Generative AI tool simulating conversations that measures written communication</p>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function FootprintCandidateSection(props) {
           <section className={styles.sectionFour} id="section4">
             <div className={styles.headStyle}>
               <div>
-                <h3 className={styles.title3}>Behavioural & Personality</h3>
+                <h3 className={styles.title3}>Behaviour and Personality</h3>
                 <p className={styles.description}>How they control & conduct themselves, and react to social situations</p>
               </div>
             </div>
